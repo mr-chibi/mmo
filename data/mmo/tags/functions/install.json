@@ -1,0 +1,18 @@
+{
+	"values": [
+		"mmo:scoreboards/install",
+		"mmo:scoreboards/player_stats",
+		"mmo:scoreboards/stat_experience",
+		"mmo:scoreboards/statistics",
+		"mmo_attack:scoreboards/install",
+		"mmo_defense:scoreboards/install",
+		"mmo_cooking:scoreboards/install",
+		"mmo_excavation:scoreboards/install",
+		"mmo_farming:scoreboards/install",
+		"mmo_fishing:scoreboards/install",
+		"mmo_hunter:scoreboards/install",
+		"mmo_mining:scoreboards/install",
+		"mmo_woodcutting:scoreboards/install",
+		"mmo_hitpoints:scoreboards/install"
+	]
+}

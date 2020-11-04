@@ -1,0 +1,19 @@
+{
+    "display": {
+        "title": "MMO Excavation",
+        "description": "",
+        
+        "icon": {
+            "item": "minecraft:iron_shovel"
+        }
+    },
+
+    "parent": "mmo:mining/root",
+
+
+    "criteria": {
+        "trigger_1": {
+            "trigger": "minecraft:location"
+        }
+    }
+}

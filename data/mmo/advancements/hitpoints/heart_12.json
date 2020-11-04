@@ -1,0 +1,19 @@
+{
+    "display": {
+        "title": "Health Increase 12",
+        "description": "Requirements: Skill Points (1)",
+        
+        "icon": {
+            "item": "minecraft:potion"
+        }
+    },
+
+    "parent": "mmo:hitpoints/heart_11",
+
+
+    "criteria": {
+        "trigger_1": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

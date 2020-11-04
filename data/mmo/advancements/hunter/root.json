@@ -1,0 +1,19 @@
+{
+    "display": {
+        "title": "MMO Hunter",
+        "description": "",
+        
+        "icon": {
+            "item": "minecraft:skeleton_skull"
+        }
+    },
+
+    "parent": "mmo:attack/root",
+
+
+    "criteria": {
+        "trigger_1": {
+            "trigger": "minecraft:location"
+        }
+    }
+}

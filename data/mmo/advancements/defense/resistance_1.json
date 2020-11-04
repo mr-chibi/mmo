@@ -1,0 +1,19 @@
+{
+    "display": {
+        "title": "Defense Resistance 1",
+        "description": "Skill Points (3) & Defense Level (5)",
+        
+        "icon": {
+            "item": "minecraft:shield"
+        }
+    },
+
+    "parent": "mmo:defense/root",
+
+
+    "criteria": {
+        "trigger_1": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

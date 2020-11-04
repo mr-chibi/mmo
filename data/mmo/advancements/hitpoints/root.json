@@ -1,0 +1,20 @@
+{
+    "display": {
+        "title": "MMO HitPoints",
+        "description": "",
+        
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner:\"IM_\"}"
+        }
+    },
+
+    "parent": "mmo:attack/root",
+
+
+    "criteria": {
+        "trigger_1": {
+            "trigger": "minecraft:location"
+        }
+    }
+}

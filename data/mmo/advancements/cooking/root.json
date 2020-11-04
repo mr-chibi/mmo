@@ -1,0 +1,19 @@
+{
+    "display": {
+        "title": "MMO Cooking",
+        "description": "",
+        
+        "icon": {
+            "item": "minecraft:smoker"
+        }
+    },
+
+    "parent": "mmo:farming/root",
+
+
+    "criteria": {
+        "trigger_1": {
+            "trigger": "minecraft:location"
+        }
+    }
+}

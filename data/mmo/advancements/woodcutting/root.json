@@ -1,0 +1,19 @@
+{
+    "display": {
+        "title": "MMO Woodcutting",
+        "description": "",
+        
+        "icon": {
+            "item": "minecraft:iron_axe"
+        }
+    },
+
+    "parent": "mmo:farming/root",
+
+
+    "criteria": {
+        "trigger_1": {
+            "trigger": "minecraft:location"
+        }
+    }
+}

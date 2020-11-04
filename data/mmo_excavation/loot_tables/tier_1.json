@@ -1,0 +1,47 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "empty",
+                    "weight": 1,
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.90
+                        }
+                    ]
+                },
+
+
+                {
+                    "type": "item",
+                    "name": "minecraft:glowstone_dust",
+                    "weight": 1,
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.010
+                        }
+                    ],
+                    "quanity": 1
+                },
+
+
+                {
+                    "type": "item",
+                    "name": "minecraft:diamond",
+                    "weight": 1,
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.0010
+                        }
+                    ],
+                    "quanity": 1
+                }
+            ]
+        }
+    ]
+}
