@@ -4,9 +4,6 @@
 scoreboard objectives add stats_scoreboard dummy
 scoreboard objectives add level_up dummy
 scoreboard objectives add level_up_sound dummy
-scoreboard objectives add mmo_skill_buy trigger
-scoreboard objectives add mmo_skill_tree trigger
-scoreboard objectives add mmo_skill_point dummy
 scoreboard objectives add mmo_gamerules dummy
 scoreboard objectives add mmo_toggle_skill dummy
 
@@ -17,7 +14,6 @@ scoreboard objectives add mmo_toggle_skill dummy
 scoreboard objectives add mmo_menu trigger
 scoreboard objectives add mmo_help trigger
 scoreboard objectives add mmo_stats trigger
-scoreboard objectives add mmo_mob_stats trigger
 scoreboard objectives add mmo_user_setting trigger
 scoreboard objectives add mmo_world_settin trigger
 scoreboard objectives add mmo_ability trigger

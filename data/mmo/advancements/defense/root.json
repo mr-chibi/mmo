@@ -5,10 +5,12 @@
         
         "icon": {
             "item": "minecraft:shield"
-        }
+        },
+        
+        "background": "minecraft:textures/block/barrel_bottom.png",
+        "show_toast": false,
+        "announce_to_chat": false
     },
-
-    "parent": "mmo:attack/root",
 
 
     "criteria": {

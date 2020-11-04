@@ -1,12 +1,12 @@
 {
     "display": {
-        "title": "MMO Farming Skill Tree",
-        "description": "Woodcutting, Fishing, Cooking unlocked! What more secrets lie behind these skills? Level up and purchase more perks!",
+        "title": "MMO Farming",
+        "description": "",
         
         "icon": {
             "item": "minecraft:iron_hoe"
         },
-
+        
         "background": "minecraft:textures/block/barrel_bottom.png",
         "show_toast": false,
         "announce_to_chat": false

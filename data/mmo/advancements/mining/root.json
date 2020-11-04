@@ -1,12 +1,12 @@
 {
     "display": {
-        "title": "MMO Mining Skill Tree",
-        "description": "Mining, Excavation unlocked! What more secrets lie behind these skills? Level up and purchase more perks!",
+        "title": "MMO Mining",
+        "description": "",
         
         "icon": {
             "item": "minecraft:iron_pickaxe"
         },
-
+        
         "background": "minecraft:textures/block/barrel_bottom.png",
         "show_toast": false,
         "announce_to_chat": false

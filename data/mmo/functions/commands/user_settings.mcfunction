@@ -8,7 +8,7 @@ playsound minecraft:ui.loom.take_result master @s[scores={sound_settings=0}] ~ ~
 	# Enable [User Settings]: #
 ############################################################################################
 scoreboard players enable @s[scores={hunter_lvl=10..}] hunter_settings
-scoreboard players enable @s[advancements={mmo:mining/iron_smelting=true}] mining_settings
+scoreboard players enable @s[scores={mining_lvl=30..}] mining_settings
 
 
 ############################################################################################
@@ -54,11 +54,9 @@ tellraw @s[scores={mining_settings=0}] [{"text": "Smelt Mining: ", "color": "whi
 tellraw @s[scores={mining_settings=1}] [{"text": "Smelt Mining: ", "color": "white", "bold":true},{"text":"[Enabled]","color":"green", "bold": false}]
 
 # [Mining Toggle]:
-tellraw @s[scores={mining_settings=0},advancements={mmo:mining/iron_smelting=true}] [{"text": "- "},{"text":"[Enable Smelting]","color":"green","clickEvent":{"action":"run_command","value":"/trigger mining_settings set 1"}}]
-tellraw @s[scores={mining_settings=1},advancements={mmo:mining/iron_smelting=true}] [{"text": "- "},{"text":"[Disable Smelting]","color":"red","clickEvent":{"action":"run_command","value":"/trigger mining_settings set 0"}}]
-tellraw @s[advancements={mmo:mining/iron_smelting=true}] [{"text": ""}]
-
-
+tellraw @s[scores={mining_settings=0,mining_lvl=30..}] [{"text": "- "},{"text":"[Enable Smelting]","color":"green","clickEvent":{"action":"run_command","value":"/trigger mining_settings set 1"}}]
+tellraw @s[scores={mining_settings=1,mining_lvl=30..}] [{"text": "- "},{"text":"[Disable Smelting]","color":"red","clickEvent":{"action":"run_command","value":"/trigger mining_settings set 0"}}]
+tellraw @s[scores={mining_lvl=30..}] [{"text": ""}]
 
 
 ############################################################################################

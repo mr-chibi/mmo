@@ -1,16 +1,17 @@
 {
     "display": {
-        "title": "MMO Attack Skill Tree",
-        "description": "Attack, Defense, Hunter, & Hitpoints unlocked! What more secrets lie behind these skills? Level up and purchase more perks!",
+        "title": "MMO Attack",
+        "description": "",
         
         "icon": {
             "item": "minecraft:iron_sword"
         },
-
+        
         "background": "minecraft:textures/block/barrel_bottom.png",
         "show_toast": false,
         "announce_to_chat": false
     },
+
 
     "criteria": {
         "trigger_1": {

@@ -3,7 +3,6 @@
 		"mmo:scoreboards/install",
 		"mmo:scoreboards/player_stats",
 		"mmo:scoreboards/stat_experience",
-		"mmo:scoreboards/statistics",
 		"mmo_attack:scoreboards/install",
 		"mmo_defense:scoreboards/install",
 		"mmo_cooking:scoreboards/install",

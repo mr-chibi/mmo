@@ -11,12 +11,9 @@ execute as @a at @s run function mmo:gamerules
 execute as @a at @s run scoreboard players enable @s mmo_menu
 execute as @a at @s run scoreboard players enable @s mmo_help
 execute as @a at @s run scoreboard players enable @s mmo_stats
-execute as @a at @s run scoreboard players enable @s mmo_skill_tree
-execute as @a at @s run scoreboard players enable @s mmo_mob_stats
 execute as @a at @s run scoreboard players enable @s mmo_user_setting
 execute as @a at @s run scoreboard players enable @s sound_settings
 execute as @a at @s run scoreboard players enable @s exp_settings
-
 
 
 ############################################################################################
@@ -60,18 +57,3 @@ execute as @a at @s[scores={mmo_user_setting=1..}] run function mmo:commands/use
 execute as @a at @s[scores={mmo_stats=1}] run function mmo:commands/stats
 execute as @a at @s[scores={mmo_stats=2}] run function mmo:commands/stats2
 execute as @a at @s[scores={mmo_stats=3}] run function mmo:commands/stats3
-
-############################################################################################
-	# Player Statistics Menu: #
-############################################################################################
-execute as @a at @s[scores={mmo_mob_stats=1}] run function mmo:commands/mob_stats
-execute as @a at @s[scores={mmo_mob_stats=2}] run function mmo:commands/mob_stats2
-execute as @a at @s[scores={mmo_mob_stats=3}] run function mmo:commands/mob_stats3
-execute as @a at @s[scores={mmo_mob_stats=4}] run function mmo:commands/mob_stats4
-
-
-############################################################################################
-	# Player Statistics Menu: #
-############################################################################################
-execute as @a at @s[scores={mmo_skill_tree=1}] run function mmo:commands/skills/menu
-execute as @a at @s[scores={mmo_skill_buy=1..}] run function mmo:commands/skills/purchase
