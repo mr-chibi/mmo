@@ -25,6 +25,7 @@ scoreboard objectives add mmo_ability trigger
 scoreboard objectives add sound_settings trigger
 scoreboard objectives add hunter_settings trigger
 scoreboard objectives add mining_settings trigger
+scoreboard objectives add agility_settings trigger
 scoreboard objectives add exp_settings trigger
 
 
@@ -68,6 +69,9 @@ scoreboard players add disable_woodcutting_ability mmo_gamerules 0
 scoreboard players add disable_hitpoints mmo_gamerules 0
 scoreboard players add disable_hitpoints_ability mmo_gamerules 0
 
+scoreboard players add disable_agility mmo_gamerules 0
+scoreboard players add disable_agility_ability mmo_gamerules 0
+
 
 ############################################################################################
 	# Stats Scoreboard Next Level Up: #
@@ -82,6 +86,7 @@ scoreboard players set mining_stat stats_scoreboard 190
 scoreboard players set hunter_stat stats_scoreboard 165
 scoreboard players set woodcutting_stat stats_scoreboard 150
 scoreboard players set hitpoints_stat stats_scoreboard 120
+scoreboard players set agility_stat stats_scoreboard 350
 
 # Add double experience into pack
 scoreboard players add double_exp mmo_gamerules 2

@@ -33,6 +33,12 @@ execute as @s if score disable_woodcutting mmo_gamerules matches 1 run tellraw @
 tellraw @s [{"text": ""}]
 
 
+tellraw @s [{"text": "Agility ", "color": "white", "bold":true}]
+execute as @s if score disable_agility mmo_gamerules matches 0 run tellraw @s [{"text":"[Disabled Skill] ","color":"red", "bold": false, "clickEvent":{"action":"run_command","value":"/scoreboard players set disable_agility mmo_gamerules 1"}}, {"text":"[Edit Gamerules]", "color":"green", "bold": false, "clickEvent":{"action":"run_command","value":"/function mmo:gamerules/agility"}}]
+execute as @s if score disable_agility mmo_gamerules matches 1 run tellraw @s [{"text":"[Enable Skill] ","color":"green", "bold": false, "clickEvent":{"action":"run_command","value":"/scoreboard players set disable_agility mmo_gamerules 0"}}, {"text":"[Edit Gamerules]", "color":"dark_green", "bold": false, "clickEvent":{"action":"run_command","value":"/function mmo:gamerules/agility"}}]
+tellraw @s [{"text": ""}]
+
+
 ############################################################################################
 	# Page Navigation #
 ############################################################################################

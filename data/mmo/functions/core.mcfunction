@@ -42,6 +42,7 @@ execute as @a at @s if score disable_hunter mmo_gamerules matches 0 run function
 execute as @a at @s if score disable_mining mmo_gamerules matches 0 run function mmo_mining:core
 execute as @a at @s if score disable_woodcutting mmo_gamerules matches 0 run function mmo_woodcutting:core
 execute as @a at @s if score disable_hitpoints mmo_gamerules matches 0 run function mmo_hitpoints:core 
+execute as @a at @s if score disable_agility mmo_gamerules matches 0 run function mmo_agility:core
 
 
 ############################################################################################

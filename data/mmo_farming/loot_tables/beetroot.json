@@ -1,0 +1,66 @@
+{
+    "pools": [
+        {
+            "rolls": {
+
+                "min": 1,
+                "max": 9
+            },
+
+            "entries": [
+                {
+                    "type": "empty",
+                    "weight": 1,
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.90
+                        }
+                    ]
+                },
+
+
+                {
+                    "type": "item",
+                    "name": "minecraft:beetroot",
+                    "weight": 1,
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.75
+                        }
+                    ],
+                    "quanity": 3
+                },
+
+
+                {
+                    "type": "item",
+                    "name": "minecraft:beetroot",
+                    "weight": 1,
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.50
+                        }
+                    ],
+                    "quanity": 6
+                },
+
+
+                {
+                    "type": "item",
+                    "name": "minecraft:beetroot",
+                    "weight": 1,
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.25
+                        }
+                    ],
+                    "quanity": 9
+                }
+            ]
+        }
+    ]
+}

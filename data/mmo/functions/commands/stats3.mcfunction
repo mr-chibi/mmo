@@ -25,6 +25,12 @@ tellraw @s [{"text": "Experience: "}, {"score":{"name": "@s", "objective":"woodc
 tellraw @s [{"text": ""}]
 
 
+# Woodcutting Stat:
+tellraw @s [{"text": "Agility Level: ", "color": "aqua"},{"score":{"name": "@s", "objective":"agility_lvl"},"color": "white", "bold":true}]
+tellraw @s [{"text": "Experience: "}, {"score":{"name": "@s", "objective":"agility_exp"}, "color":"yellow"}, {"text": "/", "color": "white"}, {"score":{"name": "@s", "objective":"agility_lvlup"}, "color":"dark_green"}, {"text": " EXP", "color":"green", "bold":true}]
+tellraw @s [{"text": ""}]
+
+
 ############################################################################################
 	# Page Navigation #
 ############################################################################################

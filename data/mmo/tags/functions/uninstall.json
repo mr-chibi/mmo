@@ -10,6 +10,7 @@
 		"mmo_hunter:scoreboards/uninstall",
 		"mmo_mining:scoreboards/uninstall",
 		"mmo_woodcutting:scoreboards/uninstall",
-		"mmo_hitpoints:scoreboards/uninstall"
+		"mmo_hitpoints:scoreboards/uninstall",
+		"mmo_agility:scoreboards/uninstall"
 	]
 }

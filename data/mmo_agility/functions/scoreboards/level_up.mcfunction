@@ -1,26 +1,25 @@
 ############################################################################################
-	# Farming Tags #
+	# Fishing Level up Incriment #
 ############################################################################################
-function mmo_farming:tags/harvesting
+scoreboard players add @s agility_lvl 1
+scoreboard players operation @s agility_lvlup = agility_stat stats_scoreboard
+scoreboard players operation @s agility_lvlup *= @s agility_lvl
+
 
 ############################################################################################
-	# Farming Gained EXP #
+	# Fishing Advancements #
 ############################################################################################
-function mmo_farming:scoreboards/gained_exp
-function mmo_farming:scoreboards/loot
-function mmo_farming:scoreboards/reset_exp
+function mmo_agility:advancements
+
 
 ############################################################################################
-	# Farming Level Up #
+	# Fishing Level up Text #
 ############################################################################################
-execute if score @s farming_exp >= @s farming_lvlup run scoreboard players set @s level_up 4
+tellraw @s [{"text": "Agility ", "color": "blue"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"agility_lvl"}, "color": "green", "bold": true}]]
+tellraw @s [{"text": "Next level will be in ", "color": "blue"},{"score":{"name":"@s","objective":"agility_lvlup"}, "color":"dark_green", "bold": true},{"text": " Exp", "color": "green", "bold": true}]
+
 
 ############################################################################################
-	# Sound GUI #
+	# Fishing EXP Reset #
 ############################################################################################
-execute as @s[scores={level_up=4,sound_settings=0}] run function mmo:sounds/level_up
-
-############################################################################################
-	# Incriment Farming Level Up & EXP #
-############################################################################################
-execute as @s[scores={level_up=4}] run function mmo_farming:scoreboards/level_up
+scoreboard players set @s agility_exp 0

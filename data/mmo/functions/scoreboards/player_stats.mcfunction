@@ -72,3 +72,9 @@ scoreboard players add @s hitpoints_lvl 0
 scoreboard players set @s[scores={hitpoints_lvl=0}] hitpoints_exp 0
 scoreboard players operation @s[scores={hitpoints_lvl=0}] hitpoints_lvlup = hitpoints_stat stats_scoreboard
 scoreboard players add @s[scores={hitpoints_lvl=0}] hitpoints_lvl 1
+
+# Agility Stats [11]
+scoreboard players add @s agility_lvl 0
+scoreboard players set @s[scores={agility_lvl=0}] agility_exp 0
+scoreboard players operation @s[scores={agility_lvl=0}] agility_lvlup = agility_stat stats_scoreboard
+scoreboard players add @s[scores={agility_lvl=0}] agility_lvl 1

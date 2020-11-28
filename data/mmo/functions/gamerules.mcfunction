@@ -31,3 +31,6 @@ execute if score disable_woodcutting mmo_gamerules matches 1 run effect clear @s
 #
 execute if score disable_hitpoints mmo_gamerules matches 1 run tag @s remove mmo_hitpoints
 execute if score disable_hitpoints mmo_gamerules matches 1 run attribute @s[tag=!mmo_hitpoints] minecraft:generic.max_health base set 20
+
+#
+execute if score disable_agility mmo_gamerules matches 1 run effect clear @s minecraft:speed

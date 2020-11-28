@@ -137,3 +137,10 @@ attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=71..75}] minecraft:generic.
 attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=76..80}] minecraft:generic.max_health base set 36
 attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=81..85}] minecraft:generic.max_health base set 38
 attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=86..}] minecraft:generic.max_health base set 40
+
+
+############################################################################################
+	# Agility Perks: #
+############################################################################################
+execute if score disable_agility_ability mmo_gamerules matches 0 if score @s agility_settings matches 1 run effect give @s[scores={agility_lvl=10..19}] minecraft:speed 9999 0 true
+execute if score disable_agility_ability mmo_gamerules matches 0 if score @s agility_settings matches 1 run effect give @s[scores={agility_lvl=20..}] minecraft:speed 9999 1 true
