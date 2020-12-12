@@ -90,3 +90,10 @@ scoreboard players set agility_stat stats_scoreboard 350
 
 # Add double experience into pack
 scoreboard players add double_exp mmo_gamerules 2
+
+
+############################################################################################
+	# Stats Scoreboard Mob Health: #
+############################################################################################
+scoreboard objectives add mob_health_min dummy
+scoreboard objectives add mob_health_max dummy

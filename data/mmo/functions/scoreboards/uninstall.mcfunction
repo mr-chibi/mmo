@@ -25,5 +25,12 @@ scoreboard objectives remove mining_settings
 scoreboard objectives remove agility_settings
 scoreboard objectives remove exp_settings
 
+
+############################################################################################
+	# Stats Scoreboard Mob Health: #
+############################################################################################
+scoreboard objectives remove mob_health_min
+scoreboard objectives remove mob_health_max
+
 #
 execute as @a at @s run effect clear @s

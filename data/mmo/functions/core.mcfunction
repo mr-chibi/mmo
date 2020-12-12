@@ -20,7 +20,7 @@ execute as @a at @s run scoreboard players enable @s exp_settings
 	# Detect Abilties: #
 ############################################################################################
 execute as @a at @s run function mmo:abilities
-execute as @a at @s[scores={exp_settings=1..}] run function mmo:experience_display
+execute as @a at @s[scores={exp_settings=0}] run function mmo:experience_display
 
 
 ############################################################################################

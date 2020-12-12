@@ -79,8 +79,8 @@ tellraw @s[scores={exp_settings=0}] [{"text": "Exp Settings: ", "color": "white"
 tellraw @s[scores={exp_settings=1}] [{"text": "Exp Settings: ", "color": "white", "bold":true},{"text":"[Enabled]","color":"green", "bold": false}]
 
 # [Experience Toggle]:
-tellraw @s[scores={exp_settings=0}] [{"text": "- "},{"text":"[Enable Exp Settings]","color":"green","clickEvent":{"action":"run_command","value":"/trigger exp_settings set 1"}}]
-tellraw @s[scores={exp_settings=1}] [{"text": "- "},{"text":"[Disable Exp Settings]","color":"red","clickEvent":{"action":"run_command","value":"/trigger exp_settings set 0"}}]
+tellraw @s[scores={exp_settings=1}] [{"text": "- "},{"text":"[Enable Exp Settings]","color":"green","clickEvent":{"action":"run_command","value":"/trigger exp_settings set 0"}}]
+tellraw @s[scores={exp_settings=0}] [{"text": "- "},{"text":"[Disable Exp Settings]","color":"red","clickEvent":{"action":"run_command","value":"/trigger exp_settings set 1"}}]
 tellraw @s [{"text": ""}]
 
 
