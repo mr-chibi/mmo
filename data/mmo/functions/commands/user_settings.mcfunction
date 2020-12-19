@@ -88,8 +88,8 @@ tellraw @s[scores={agility_lvl=10..}] [{"text": ""}]
 ############################################################################################
 	# Experience Settings: #
 ############################################################################################
-tellraw @s[scores={exp_settings=0}] [{"text": "Exp Settings: ", "color": "white", "bold":true},{"text":"[Enabled]","color":"red", "bold": false}]
-tellraw @s[scores={exp_settings=1}] [{"text": "Exp Settings: ", "color": "white", "bold":true},{"text":"[Disabled]","color":"green", "bold": false}]
+tellraw @s[scores={exp_settings=0}] [{"text": "Exp Settings: ", "color": "white", "bold":true},{"text":"[Enabled]","color":"green", "bold": false}]
+tellraw @s[scores={exp_settings=1}] [{"text": "Exp Settings: ", "color": "white", "bold":true},{"text":"[Disabled]","color":"red", "bold": false}]
 
 # [Experience Toggle]:
 tellraw @s[scores={exp_settings=1}] [{"text": "- "},{"text":"[Enable Exp Settings]","color":"green","clickEvent":{"action":"run_command","value":"/trigger exp_settings set 0"}}]
