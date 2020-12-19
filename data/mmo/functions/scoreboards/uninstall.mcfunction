@@ -22,6 +22,7 @@ scoreboard objectives remove mmo_ability
 scoreboard objectives remove sound_settings
 scoreboard objectives remove hunter_settings
 scoreboard objectives remove mining_settings
+scoreboard objectives remove hammer_settings
 scoreboard objectives remove agility_settings
 scoreboard objectives remove exp_settings
 

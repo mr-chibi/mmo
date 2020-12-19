@@ -101,6 +101,63 @@ execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=40..,mining_settings=1,m
 execute if score disable_mining_ability mmo_gamerules matches 0 run give @s[tag=mmo_holdingPickaxe,scores={mining_lvl=40..,mining_settings=1,mined_gold=1..}] minecraft:gold_ingot 1
 
 
+
+############################################################################################
+	# Mining Level 50 Perks: #
+############################################################################################
+# North
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=135..-135,scores={mining_lvl=50..,hammer_settings=1,mined_stone=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~-1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=135..-135,scores={mining_lvl=50..,hammer_settings=1,mined_diorite=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~-1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=135..-135,scores={mining_lvl=50..,hammer_settings=1,mined_granite=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~-1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=135..-135,scores={mining_lvl=50..,hammer_settings=1,mined_andersite=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~-1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=135..-135,scores={mining_lvl=50..,hammer_settings=1,mined_coal=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~-1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=135..-135,scores={mining_lvl=50..,hammer_settings=1,mined_iron=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~-1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=135..-135,scores={mining_lvl=50..,hammer_settings=1,mined_gold=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~-1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=135..-135,scores={mining_lvl=50..,hammer_settings=1,mined_emerald=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~-1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=135..-135,scores={mining_lvl=50..,hammer_settings=1,mined_lapis=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~-1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=135..-135,scores={mining_lvl=50..,hammer_settings=1,mined_redstone=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~-1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=135..-135,scores={mining_lvl=50..,hammer_settings=1,mined_diamond=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~-1 minecraft:air destroy
+
+# East
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=-135..-45,scores={mining_lvl=50..,hammer_settings=1,mined_stone=1..}] run fill ~1 ~2 ~-1 ~-1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=-135..-45,scores={mining_lvl=50..,hammer_settings=1,mined_diorite=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=-135..-45,scores={mining_lvl=50..,hammer_settings=1,mined_granite=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=-135..-45,scores={mining_lvl=50..,hammer_settings=1,mined_andersite=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=-135..-45,scores={mining_lvl=50..,hammer_settings=1,mined_coal=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=-135..-45,scores={mining_lvl=50..,hammer_settings=1,mined_iron=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=-135..-45,scores={mining_lvl=50..,hammer_settings=1,mined_gold=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=-135..-45,scores={mining_lvl=50..,hammer_settings=1,mined_emerald=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=-135..-45,scores={mining_lvl=50..,hammer_settings=1,mined_lapis=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=-135..-45,scores={mining_lvl=50..,hammer_settings=1,mined_redstone=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=-135..-45,scores={mining_lvl=50..,hammer_settings=1,mined_diamond=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
+
+# South
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=-45..45,scores={mining_lvl=50..,hammer_settings=1,mined_stone=1..}] run fill ~1 ~2 ~1 ~-1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=-45..45,scores={mining_lvl=50..,hammer_settings=1,mined_diorite=1..}] run fill ~-1 ~2 ~1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=-45..45,scores={mining_lvl=50..,hammer_settings=1,mined_granite=1..}] run fill ~-1 ~2 ~1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=-45..45,scores={mining_lvl=50..,hammer_settings=1,mined_andersite=1..}] run fill ~-1 ~2 ~1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=-45..45,scores={mining_lvl=50..,hammer_settings=1,mined_coal=1..}] run fill ~-1 ~2 ~1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=-45..45,scores={mining_lvl=50..,hammer_settings=1,mined_iron=1..}] run fill ~-1 ~2 ~1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=-45..45,scores={mining_lvl=50..,hammer_settings=1,mined_gold=1..}] run fill ~-1 ~2 ~1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=-45..45,scores={mining_lvl=50..,hammer_settings=1,mined_emerald=1..}] run fill ~-1 ~2 ~1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=-45..45,scores={mining_lvl=50..,hammer_settings=1,mined_lapis=1..}] run fill ~-1 ~2 ~1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=-45..45,scores={mining_lvl=50..,hammer_settings=1,mined_redstone=1..}] run fill ~-1 ~2 ~1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=-45..45,scores={mining_lvl=50..,hammer_settings=1,mined_diamond=1..}] run fill ~-1 ~2 ~1 ~1 ~0 ~1 minecraft:air destroy
+
+# West
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=45..135,scores={mining_lvl=50..,hammer_settings=1,mined_stone=1..}] run fill ~-1 ~2 ~1 ~-1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=45..135,scores={mining_lvl=50..,hammer_settings=1,mined_diorite=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=45..135,scores={mining_lvl=50..,hammer_settings=1,mined_granite=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=45..135,scores={mining_lvl=50..,hammer_settings=1,mined_andersite=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=45..135,scores={mining_lvl=50..,hammer_settings=1,mined_coal=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=45..135,scores={mining_lvl=50..,hammer_settings=1,mined_iron=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=45..135,scores={mining_lvl=50..,hammer_settings=1,mined_gold=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=45..135,scores={mining_lvl=50..,hammer_settings=1,mined_emerald=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=45..135,scores={mining_lvl=50..,hammer_settings=1,mined_lapis=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=45..135,scores={mining_lvl=50..,hammer_settings=1,mined_redstone=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,y_rotation=45..135,scores={mining_lvl=50..,hammer_settings=1,mined_diamond=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
+
+
 ############################################################################################
 	# Woodcutting Perks: #
 ############################################################################################

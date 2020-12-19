@@ -9,6 +9,7 @@ playsound minecraft:ui.loom.take_result master @s[scores={sound_settings=0}] ~ ~
 ############################################################################################
 scoreboard players enable @s[scores={hunter_lvl=10..}] hunter_settings
 scoreboard players enable @s[scores={mining_lvl=30..}] mining_settings
+scoreboard players enable @s[scores={mining_lvl=50..}] hammer_settings
 scoreboard players enable @s[scores={agility_lvl=10..}] agility_settings
 
 
@@ -61,6 +62,18 @@ tellraw @s[scores={mining_lvl=30..}] [{"text": ""}]
 
 
 ############################################################################################
+	# Hammer Settings: #
+############################################################################################
+tellraw @s[scores={hammer_settings=0}] [{"text": "Hammer Mining: ", "color": "white", "bold":true},{"text":"[Disabled]","color":"red", "bold": false}]
+tellraw @s[scores={hammer_settings=1}] [{"text": "Hammer Mining: ", "color": "white", "bold":true},{"text":"[Enabled]","color":"green", "bold": false}]
+
+# [Mining Toggle]:
+tellraw @s[scores={hammer_settings=0,mining_lvl=50..}] [{"text": "- "},{"text":"[Enable Hammer]","color":"green","clickEvent":{"action":"run_command","value":"/trigger hammer_settings set 1"}}]
+tellraw @s[scores={hammer_settings=1,mining_lvl=50..}] [{"text": "- "},{"text":"[Disable Hammer]","color":"red","clickEvent":{"action":"run_command","value":"/trigger hammer_settings set 0"}}]
+tellraw @s[scores={mining_lvl=50..}] [{"text": ""}]
+
+
+############################################################################################
 	# Agility Settings: #
 ############################################################################################
 tellraw @s[scores={agility_settings=0}] [{"text": "Agility: ", "color": "white", "bold":true},{"text":"[Disabled]","color":"red", "bold": false}]
@@ -100,6 +113,7 @@ scoreboard players set @s mmo_user_setting 0
 ############################################################################################
 scoreboard players set @s[scores={sound_settings=2..}] sound_settings 0
 scoreboard players set @s[scores={mining_settings=2..}] mining_settings 0
+scoreboard players set @s[scores={hammer_settings=2..}] hammer_settings 0
 scoreboard players set @s[scores={hunter_settings=2..}] hunter_settings 0
 scoreboard players set @s[scores={agility_settings=2..}] agility_settings 0
 scoreboard players set @s[scores={exp_settings=2..}] exp_settings 0

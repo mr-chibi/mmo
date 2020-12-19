@@ -25,6 +25,7 @@ scoreboard objectives add mmo_ability trigger
 scoreboard objectives add sound_settings trigger
 scoreboard objectives add hunter_settings trigger
 scoreboard objectives add mining_settings trigger
+scoreboard objectives add hammer_settings trigger
 scoreboard objectives add agility_settings trigger
 scoreboard objectives add exp_settings trigger
 
