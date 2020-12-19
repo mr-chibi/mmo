@@ -47,7 +47,5 @@ title @s[tag=mmo_holdingShield,tag=mmo_holdingSword] actionbar [{"text": "Defens
 
 title @s[tag=mmo_holdingShield,tag=mmo_holdingSword,scores={mob_health_min=1..,mob_health_max=1..}] actionbar [{"selector": "@e[type=!minecraft:player,type=!item,type=!minecraft:experience_orb,distance=0..7,limit=1,sort=nearest]", "color": "yellow"}, {"text": ": "}, {"score":{"name":"@p", "objective": "mob_health_min"}, "color": "green"}, {"text": "/", "color": "white"}, {"score":{"name":"@p", "objective": "mob_health_max"}, "color": "red"}, {"text": " HP ", "color": "red"}, {"text": " | "}, {"text": "Defense: ", "color": "blue"}, {"score":{"name": "@s", "objective": "defense_exp"}, "color": "green"}, {"text": "/", "color": "white"}, {"score":{"name": "@s", "objective": "defense_lvlup"}, "color": "yellow"}, {"text": " XP ", "color": "gold"}, {"text": "| ", "color": "white"}, {"text": "Atk: ", "color": "red"}, {"score":{"name": "@s", "objective": "attack_exp"}, "color": "green"}, {"text": "/", "color": "white"}, {"score":{"name": "@s", "objective": "attack_lvlup"}, "color": "yellow"}, {"text": " XP ", "color": "gold"}, {"text": "| ", "color": "white"}, {"text": "Hunter: ", "color": "red"}, {"score":{"name": "@s", "objective": "hunter_exp"}, "color": "green"}, {"text": "/", "color": "white"}, {"score":{"name": "@s", "objective": "hunter_lvlup"}, "color": "yellow"}, {"text": " XP ", "color": "gold"}]
 
-
-
 #
 scoreboard players set @s[scores={exp_settings=2..}] exp_settings 0

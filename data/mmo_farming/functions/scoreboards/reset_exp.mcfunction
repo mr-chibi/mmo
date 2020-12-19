@@ -21,7 +21,7 @@ scoreboard players set @s[scores={plant_pumpkin=1..}] plant_pumpkin 0
 scoreboard players set @s[scores={plant_melon=1..}] plant_melon 0
 scoreboard players set @s[scores={plant_beetroot=1..}] plant_beetroot 0
 scoreboard players set @s[scores={plant_sugarcane=1..}] plant_sugarcane 0
-scoreboard players set @s[scores={plant_warts=1..}] plant_warts
+scoreboard players set @s[scores={plant_warts=1..}] plant_warts 0
 
 #
 scoreboard players set @s[scores={harvest_wheat=1..}] harvest_wheat 0

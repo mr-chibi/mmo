@@ -52,7 +52,7 @@ scoreboard players operation @s farming_stat += @s harvest_melon
 ############################################################################################
 	#  #
 ############################################################################################
-title @s[scores={exp_settings=1..,farming_stat=1..}] actionbar [{"text": "Farming: ", "color": "dark_green"}, {"score":{"name": "@s", "objective": "farming_exp"}, "color": "green"}, {"text": "/", "color": "white"}, {"score":{"name": "@s", "objective": "farming_lvlup"}, "color": "yellow"}, {"text": " XP ", "color": "gold"}]
+title @s[scores={exp_settings=0..,farming_stat=1..}] actionbar [{"text": "Farming: ", "color": "dark_green"}, {"score":{"name": "@s", "objective": "farming_exp"}, "color": "green"}, {"text": "/", "color": "white"}, {"score":{"name": "@s", "objective": "farming_lvlup"}, "color": "yellow"}, {"text": " XP ", "color": "gold"}]
 
 
 ############################################################################################

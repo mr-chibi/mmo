@@ -1,0 +1,56 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+
+            "entries": [
+                {
+                    "type": "empty",
+                    "weight": 1,
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.90
+                        }
+                    ]
+                },
+
+
+                {
+                    "type": "item",
+                    "name": "minecraft:chest",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{Name:'{\"text\": \"Treasure Chest\", \"color\": \"gold\"}'},BlockEntityTag:{Items:[{Slot:13b, id:'minecraft:tropical_fish', Count:1b, tag:{fishing_mmo:1b}}]}}"
+                        }
+                    ],
+                    
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.75
+                        }
+                    ],
+                    "quanity": 1
+                },
+
+
+                {
+                    "type": "item",
+                    "name": "minecraft:iron_nugget",
+                    "weight": 1,
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 100
+                        }
+                    ],
+                    "quanity": 3
+                }
+            ]
+        }
+    ]
+}

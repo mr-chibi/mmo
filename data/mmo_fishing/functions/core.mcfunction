@@ -2,6 +2,7 @@
 	# Fishing Tags #
 ############################################################################################
 function mmo_fishing:tags/holdingfishing_rod
+function mmo_fishing:tags/caught_fish
 
 ############################################################################################
 	# Fishing EXP #

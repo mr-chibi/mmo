@@ -1,1 +1,0 @@
-execute as @s[scores={fish_caught=1..}] run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 1 1

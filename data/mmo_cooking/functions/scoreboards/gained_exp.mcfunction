@@ -39,7 +39,7 @@ scoreboard players operation @s cooking_stat += @s cooked_susp_soup
 
 
 #
-title @s[scores={exp_settings=1..,cooking_stat=1..}] actionbar [{"text": "Cooking: ", "color": "yellow"}, {"score":{"name": "@s", "objective": "cooking_exp"}, "color": "green"}, {"text": "/", "color": "white"}, {"score":{"name": "@s", "objective": "cooking_lvlup"}, "color": "yellow"}, {"text": " XP ", "color": "gold"}]
+title @s[scores={exp_settings=0..,cooking_stat=1..}] actionbar [{"text": "Cooking: ", "color": "yellow"}, {"score":{"name": "@s", "objective": "cooking_exp"}, "color": "green"}, {"text": "/", "color": "white"}, {"score":{"name": "@s", "objective": "cooking_lvlup"}, "color": "yellow"}, {"text": " XP ", "color": "gold"}]
 
 
 ############################################################################################
