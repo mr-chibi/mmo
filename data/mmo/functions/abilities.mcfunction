@@ -101,76 +101,37 @@ execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=40..,mining_settings=1,m
 execute if score disable_mining_ability mmo_gamerules matches 0 run give @s[tag=mmo_holdingPickaxe,scores={mining_lvl=40..,mining_settings=1,mined_gold=1..}] minecraft:gold_ingot 1
 
 
-
 ############################################################################################
 	# Mining Level 50 Perks: #
 ############################################################################################
-# North
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=135..-135,scores={mining_lvl=50..,hammer_settings=1,mined_stone=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~-1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=135..-135,scores={mining_lvl=50..,hammer_settings=1,mined_diorite=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~-1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=135..-135,scores={mining_lvl=50..,hammer_settings=1,mined_granite=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~-1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=135..-135,scores={mining_lvl=50..,hammer_settings=1,mined_andersite=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~-1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=135..-135,scores={mining_lvl=50..,hammer_settings=1,mined_coal=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~-1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=135..-135,scores={mining_lvl=50..,hammer_settings=1,mined_iron=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~-1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=135..-135,scores={mining_lvl=50..,hammer_settings=1,mined_gold=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~-1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=135..-135,scores={mining_lvl=50..,hammer_settings=1,mined_emerald=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~-1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=135..-135,scores={mining_lvl=50..,hammer_settings=1,mined_lapis=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~-1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=135..-135,scores={mining_lvl=50..,hammer_settings=1,mined_redstone=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~-1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=135..-135,scores={mining_lvl=50..,hammer_settings=1,mined_diamond=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~-1 minecraft:air destroy
-
-# East
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=-135..-45,scores={mining_lvl=50..,hammer_settings=1,mined_stone=1..}] run fill ~1 ~2 ~-1 ~-1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=-135..-45,scores={mining_lvl=50..,hammer_settings=1,mined_diorite=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=-135..-45,scores={mining_lvl=50..,hammer_settings=1,mined_granite=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=-135..-45,scores={mining_lvl=50..,hammer_settings=1,mined_andersite=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=-135..-45,scores={mining_lvl=50..,hammer_settings=1,mined_coal=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=-135..-45,scores={mining_lvl=50..,hammer_settings=1,mined_iron=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=-135..-45,scores={mining_lvl=50..,hammer_settings=1,mined_gold=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=-135..-45,scores={mining_lvl=50..,hammer_settings=1,mined_emerald=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=-135..-45,scores={mining_lvl=50..,hammer_settings=1,mined_lapis=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=-135..-45,scores={mining_lvl=50..,hammer_settings=1,mined_redstone=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=-135..-45,scores={mining_lvl=50..,hammer_settings=1,mined_diamond=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
-
-# South
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=-45..45,scores={mining_lvl=50..,hammer_settings=1,mined_stone=1..}] run fill ~1 ~2 ~1 ~-1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=-45..45,scores={mining_lvl=50..,hammer_settings=1,mined_diorite=1..}] run fill ~-1 ~2 ~1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=-45..45,scores={mining_lvl=50..,hammer_settings=1,mined_granite=1..}] run fill ~-1 ~2 ~1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=-45..45,scores={mining_lvl=50..,hammer_settings=1,mined_andersite=1..}] run fill ~-1 ~2 ~1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=-45..45,scores={mining_lvl=50..,hammer_settings=1,mined_coal=1..}] run fill ~-1 ~2 ~1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=-45..45,scores={mining_lvl=50..,hammer_settings=1,mined_iron=1..}] run fill ~-1 ~2 ~1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=-45..45,scores={mining_lvl=50..,hammer_settings=1,mined_gold=1..}] run fill ~-1 ~2 ~1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=-45..45,scores={mining_lvl=50..,hammer_settings=1,mined_emerald=1..}] run fill ~-1 ~2 ~1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=-45..45,scores={mining_lvl=50..,hammer_settings=1,mined_lapis=1..}] run fill ~-1 ~2 ~1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=-45..45,scores={mining_lvl=50..,hammer_settings=1,mined_redstone=1..}] run fill ~-1 ~2 ~1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=-45..45,scores={mining_lvl=50..,hammer_settings=1,mined_diamond=1..}] run fill ~-1 ~2 ~1 ~1 ~0 ~1 minecraft:air destroy
-
-# West
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=45..135,scores={mining_lvl=50..,hammer_settings=1,mined_stone=1..}] run fill ~-1 ~2 ~1 ~-1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=45..135,scores={mining_lvl=50..,hammer_settings=1,mined_diorite=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=45..135,scores={mining_lvl=50..,hammer_settings=1,mined_granite=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=45..135,scores={mining_lvl=50..,hammer_settings=1,mined_andersite=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=45..135,scores={mining_lvl=50..,hammer_settings=1,mined_coal=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=45..135,scores={mining_lvl=50..,hammer_settings=1,mined_iron=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=45..135,scores={mining_lvl=50..,hammer_settings=1,mined_gold=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=45..135,scores={mining_lvl=50..,hammer_settings=1,mined_emerald=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=45..135,scores={mining_lvl=50..,hammer_settings=1,mined_lapis=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=45..135,scores={mining_lvl=50..,hammer_settings=1,mined_redstone=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
-execute as @s[tag=mmo_holdingPickaxe,y_rotation=45..135,scores={mining_lvl=50..,hammer_settings=1,mined_diamond=1..}] run fill ~-1 ~2 ~-1 ~1 ~0 ~1 minecraft:air destroy
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=50..,vein_settings=1,mined_coal=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=50..,vein_settings=1,mined_iron=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=50..,vein_settings=1,mined_gold=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=50..,vein_settings=1,mined_lapis=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=50..,vein_settings=1,mined_redstone=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=50..,vein_settings=1,mined_emerald=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=50..,vein_settings=1,mined_diamond=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
 
 
 ############################################################################################
 	# Woodcutting Perks: #
 ############################################################################################
 execute if score disable_woodcutting_ability mmo_gamerules matches 0 run effect give @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=10..19}] minecraft:haste 9999 0 true
-execute if score disable_woodcutting_ability mmo_gamerules matches 0 run effect give @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=20..29}] minecraft:haste 9999 1 true
-execute if score disable_woodcutting_ability mmo_gamerules matches 0 run effect give @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=30..39}] minecraft:haste 9999 2 true
-execute if score disable_woodcutting_ability mmo_gamerules matches 0 run effect give @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=40..49}] minecraft:haste 9999 3 true
-execute if score disable_woodcutting_ability mmo_gamerules matches 0 run effect give @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=50..59}] minecraft:haste 9999 4 true
-execute if score disable_woodcutting_ability mmo_gamerules matches 0 run effect give @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=60..69}] minecraft:haste 9999 5 true
-execute if score disable_woodcutting_ability mmo_gamerules matches 0 run effect give @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=70..79}] minecraft:haste 9999 6 true
-execute if score disable_woodcutting_ability mmo_gamerules matches 0 run effect give @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=80..89}] minecraft:haste 9999 7 true
-execute if score disable_woodcutting_ability mmo_gamerules matches 0 run effect give @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=90..98}] minecraft:haste 9999 8 true
-execute if score disable_woodcutting_ability mmo_gamerules matches 0 run effect give @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=99..}] minecraft:haste 9999 9 true
+execute if score disable_woodcutting_ability mmo_gamerules matches 0 run effect give @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=20..}] minecraft:haste 9999 1 true
+
+
+############################################################################################
+	# Mining Level 30 Perks: #
+############################################################################################
+execute as @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=30..,vein_settings=1,cut_oak=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run function mmo_woodcutting:tree_faller
+execute as @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=30..,vein_settings=1,cut_spruce=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run function mmo_woodcutting:tree_faller
+execute as @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=30..,vein_settings=1,cut_birch=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run function mmo_woodcutting:tree_faller
+execute as @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=30..,vein_settings=1,cut_jungle=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run function mmo_woodcutting:tree_faller
+execute as @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=30..,vein_settings=1,cut_acacia=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run function mmo_woodcutting:tree_faller
+execute as @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=30..,vein_settings=1,cut_dark_oak=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run function mmo_woodcutting:tree_faller
+execute as @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=30..,vein_settings=1,cut_warped_stem=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run function mmo_woodcutting:tree_faller
+execute as @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=30..,vein_settings=1,cut_crimson_stem=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run function mmo_woodcutting:tree_faller
+
 
 
 ############################################################################################

@@ -4,6 +4,9 @@ scoreboard objectives add woodcutting_exp dummy
 scoreboard objectives add woodcutting_lvup dummy
 
 #
+scoreboard objectives add wc_vein_count dummy
+
+#
 scoreboard objectives add cut_oak minecraft.mined:minecraft.oak_log
 scoreboard objectives add cut_spruce minecraft.mined:minecraft.spruce_log
 scoreboard objectives add cut_birch minecraft.mined:minecraft.birch_log

@@ -4,6 +4,9 @@ scoreboard objectives add mining_exp dummy
 scoreboard objectives add mining_lvlup dummy
 
 #
+scoreboard objectives add vein_mining_cnt dummy
+
+#
 scoreboard objectives add mined_coal minecraft.mined:minecraft.coal_ore
 scoreboard objectives add mined_iron minecraft.mined:minecraft.iron_ore
 scoreboard objectives add mined_gold minecraft.mined:minecraft.gold_ore

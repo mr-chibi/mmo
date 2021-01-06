@@ -4,6 +4,9 @@ scoreboard objectives remove woodcutting_exp
 scoreboard objectives remove woodcutting_lvup
 
 #
+scoreboard objectives remove wc_vein_count
+
+#
 scoreboard objectives remove cut_oak
 scoreboard objectives remove cut_spruce
 scoreboard objectives remove cut_birch

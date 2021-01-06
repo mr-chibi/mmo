@@ -4,6 +4,11 @@
 function mmo_woodcutting:tags/holdingaxe
 
 ############################################################################################
+	# Woodcutting TreeFaller EXP Gained: #
+############################################################################################
+execute as @s[scores={woodcutting_lvl=30..,vein_settings=1},tag=mmo_holdingAxe] run function mmo_woodcutting:scoreboards/treefaller_exp
+
+############################################################################################
 	# Woodcutting EXP Gained: #
 ############################################################################################
 function mmo_woodcutting:scoreboards/gained_exp

@@ -4,6 +4,9 @@ scoreboard objectives remove mining_exp
 scoreboard objectives remove mining_lvlup
 
 #
+scoreboard objectives remove vein_mining_cnt
+
+#
 scoreboard objectives remove mined_coal
 scoreboard objectives remove mined_iron
 scoreboard objectives remove mined_gold
