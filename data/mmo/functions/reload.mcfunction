@@ -2,4 +2,7 @@
 function #mmo:install
 
 # Reload Message:
-execute as @a at @s run tellraw @s [{"text":"Reloading... ", "color": "green"},{"text": "Mr_Chibi'sMMO", "color":"gold"}]
+execute as @a at @s run tellraw @s [{"text": "[", "color": "white"},{"text": "Mr_Chibi'sMMO", "color":"gold"}, {"text": "] ", "color": "white"},{"text":"Reloading... ", "color": "green"}]
+
+# Addons Message:
+execute if score mmo_npcs mmo_addon = mrchibismmo mmo_addon run tellraw @a [{"text": "\nMr_Chibi'sMMO Addons installed:\n", "color": "yellow"}, {"text": "[MMO NPCS Quests]", "color": "light_purple"}]

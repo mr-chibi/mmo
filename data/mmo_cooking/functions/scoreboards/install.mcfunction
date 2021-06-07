@@ -8,6 +8,10 @@ scoreboard objectives add cooking_stat dummy
 scoreboard objectives add cooking_perk dummy
 
 
+#
+scoreboard players set lvl_10 cooking_lvl 10
+
+
 ############################################################################################
 	# Cooking Interact #
 ############################################################################################

@@ -1,0 +1,50 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:chest",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{Name:'{\"text\": \"Common Salmon Loot\", \"color\": \"gold\"}'},BlockEntityTag:{Items:[{Slot:3b,id:'minecraft:salmon',Count:1b, tag:{fishing_mmo:1b}}]}}"
+                        }
+                    ],
+                    
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.75
+                        }
+                    ],
+                    "quanity": 1
+                },
+
+
+                {
+                    "type": "item",
+                    "name": "minecraft:chest",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{Name:'{\"text\": \"Common Salmon Treasure Chest\", \"color\": \"gold\"}'},BlockEntityTag:{Items:[{Slot:3b,id:'minecraft:salmon',Count:1b, tag:{fishing_mmo:1b}}, {Slot:25b,id:'minecraft:salmon',Count:2b, tag:{fishing_mmo:1b}}]}}"
+                        }
+                    ],
+                    
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.25
+                        }
+                    ],
+                    "quanity": 1
+                }
+            ]
+        }
+    ]
+}

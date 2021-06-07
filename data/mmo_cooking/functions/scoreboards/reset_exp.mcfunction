@@ -32,3 +32,9 @@ scoreboard players reset @s[scores={ate_rabbit_stew=1}] ate_rabbit_stew
 scoreboard players reset @s[scores={ate_cookie=1}] ate_cookie
 scoreboard players reset @s[scores={ate_sweet_berry=1}] ate_sweet_berry
 scoreboard players reset @s[scores={ate_salmon=1}] ate_salmon
+
+
+############################################################################################
+	# Reset Cooking Stat: #
+############################################################################################
+scoreboard players reset @s[scores={cooking_stat=1..}] cooking_stat

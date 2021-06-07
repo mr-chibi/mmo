@@ -25,11 +25,16 @@ tellraw @s [{"text": "Experience: "}, {"score":{"name": "@s", "objective":"woodc
 tellraw @s [{"text": ""}]
 
 
-# Woodcutting Stat:
+# Agility Stat:
 tellraw @s [{"text": "Agility Level: ", "color": "aqua"},{"score":{"name": "@s", "objective":"agility_lvl"},"color": "white", "bold":true}]
 tellraw @s [{"text": "Experience: "}, {"score":{"name": "@s", "objective":"agility_exp"}, "color":"yellow"}, {"text": "/", "color": "white"}, {"score":{"name": "@s", "objective":"agility_lvlup"}, "color":"dark_green"}, {"text": " EXP", "color":"green", "bold":true}]
 tellraw @s [{"text": ""}]
 
+
+# smithing Stat:
+tellraw @s [{"text": "Smithing Level: ", "color": "light_purple"},{"score":{"name": "@s", "objective":"smithing_lvl"},"color": "white", "bold":true}]
+tellraw @s [{"text": "Experience: "}, {"score":{"name": "@s", "objective":"smithing_exp"}, "color":"yellow"}, {"text": "/", "color": "white"}, {"score":{"name": "@s", "objective":"smithing_lvlup"}, "color":"dark_green"}, {"text": " EXP", "color":"green", "bold":true}]
+tellraw @s [{"text": ""}]
 
 ############################################################################################
 	# Page Navigation #

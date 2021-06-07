@@ -11,6 +11,7 @@
 		"mmo_mining:scoreboards/uninstall",
 		"mmo_woodcutting:scoreboards/uninstall",
 		"mmo_hitpoints:scoreboards/uninstall",
-		"mmo_agility:scoreboards/uninstall"
+		"mmo_agility:scoreboards/uninstall",
+		"mmo_smithing:scoreboards/uninstall"
 	]
 }

@@ -1,7 +1,7 @@
 ############################################################################################
 	# Hitpoints Tags #
 ############################################################################################
-execute if score disable_hitpoints_ability mmo_gamerules matches 0 run function mmo_hitpoints:tags/hp
+execute if score disable_hitpoints mmo_gamerules matches 1 run function mmo_hitpoints:tags/hp
  
 
 ############################################################################################

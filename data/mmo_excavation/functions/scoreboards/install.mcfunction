@@ -6,6 +6,10 @@ scoreboard objectives add excavation_exp dummy
 scoreboard objectives add excavation_lvlup dummy
 scoreboard objectives add excavation_bonus dummy
 
+#
+scoreboard players set lvl_10 excavation_lvl 10
+scoreboard players set lvl_20 excavation_lvl 20
+
 
 ############################################################################################
 	# Excavation Scoreboards: #

@@ -4,38 +4,70 @@
 playsound minecraft:ui.loom.take_result master @s[scores={sound_settings=0}] ~ ~ ~ 20 1
 
 ############################################################################################
-	# MMO Gamerules #
+	# Abilities [List]: #
 ############################################################################################
-tellraw @s [{"text": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=", "color": "blue"}]
-tellraw @s [{"text": "Mr_Chibi'sMMO", "color": "aqua"}, {"text": ", ", "color": "white"}, {"text": "Gamerules", "color": "yellow"}]
-tellraw @s [{"text": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=", "color": "blue"}]
+tellraw @s [{"text": "========================================"}]
+tellraw @s [{"text": "Global Abilities 1 / 2 ", "color": "yellow", "bold":true}]
+tellraw @s [{"text": "========================================\n"}]
+
+
+############################################################################################
+	# agility Perk Settings [Multiplayer] Settings: #
+############################################################################################
+execute as @s if score disable_agility_ability mmo_gamerules matches 0 run tellraw @s [{"text": "Agility Ability: ", "color": "white", "bold":true},{"text":"[Enabled]","color":"green", "bold": false}]
+execute as @s if score disable_agility_ability mmo_gamerules matches 1 run tellraw @s [{"text": "Agility Ability: ", "color": "white", "bold":true},{"text":"[disable]","color":"red", "bold": false}]
+
+# [Setting Description]:
+tellraw @s [{"text": "Removes abilities:['speed'] from agility.", "color": "gray"}]
+
+# [Bonus EXP Toggle]:
+execute as @s if score disable_agility_ability mmo_gamerules matches 0 run tellraw @s [{"text": "- "},{"text":"[Disable Agility Ability]","color":"red","clickEvent":{"action":"run_command","value":"/scoreboard players set disable_agility_ability mmo_gamerules 1"}}]
+execute as @s if score disable_agility_ability mmo_gamerules matches 1 run tellraw @s [{"text": "- "},{"text":"[Enable Agility Ability]","color":"green","clickEvent":{"action":"run_command","value":"/scoreboard players set disable_agility_ability mmo_gamerules 0"}}]
 tellraw @s [{"text": ""}]
 
 
 ############################################################################################
-	# Skill [List]: #
+	# Attack Perk Settings [Multiplayer] Settings: #
 ############################################################################################
-tellraw @s [{"text": "Excavation ", "color": "white", "bold":true}]
-execute as @s if score disable_excavation mmo_gamerules matches 0 run tellraw @s [{"text":"[Disabled Skill] ","color":"red", "bold": false, "clickEvent":{"action":"run_command","value":"/scoreboard players set disable_excavation mmo_gamerules 1"}}, {"text":"[Edit Gamerules]", "color":"green", "bold": false, "clickEvent":{"action":"run_command","value":"/function mmo:gamerules/excavation"}}]
-execute as @s if score disable_excavation mmo_gamerules matches 1 run tellraw @s [{"text":"[Enable Skill] ","color":"green", "bold": false, "clickEvent":{"action":"run_command","value":"/scoreboard players set disable_excavation mmo_gamerules 0"}}, {"text":"[Edit Gamerules]", "color":"dark_green", "bold": false, "clickEvent":{"action":"run_command","value":"/function mmo:gamerules/excavation"}}]
+execute as @s if score disable_attack_ability mmo_gamerules matches 0 run tellraw @s [{"text": "Attack Ability: ", "color": "white", "bold":true},{"text":"[Enabled]","color":"green", "bold": false}]
+execute as @s if score disable_attack_ability mmo_gamerules matches 1 run tellraw @s [{"text": "Attack Ability: ", "color": "white", "bold":true},{"text":"[disable]","color":"red", "bold": false}]
+
+# [Setting Description]:
+tellraw @s [{"text": "Removes abilities:['strength'] from attack.", "color": "gray"}]
+
+# [Bonus EXP Toggle]:
+execute as @s if score disable_attack_ability mmo_gamerules matches 0 run tellraw @s [{"text": "- "},{"text":"[Disable Attack Ability]","color":"red","clickEvent":{"action":"run_command","value":"/scoreboard players set disable_attack_ability mmo_gamerules 1"}}]
+execute as @s if score disable_attack_ability mmo_gamerules matches 1 run tellraw @s [{"text": "- "},{"text":"[Enable Attack Ability]","color":"green","clickEvent":{"action":"run_command","value":"/scoreboard players set disable_attack_ability mmo_gamerules 0"}}]
 tellraw @s [{"text": ""}]
 
 
-tellraw @s [{"text": "Farming ", "color": "white", "bold":true}]
-execute as @s if score disable_farming mmo_gamerules matches 0 run tellraw @s [{"text":"[Disabled Skill] ","color":"red", "bold": false, "clickEvent":{"action":"run_command","value":"/scoreboard players set disable_farming mmo_gamerules 1"}}, {"text":"[Edit Gamerules]", "color":"green", "bold": false, "clickEvent":{"action":"run_command","value":"/function mmo:gamerules/farming"}}]
-execute as @s if score disable_farming mmo_gamerules matches 1 run tellraw @s [{"text":"[Enable Skill] ","color":"green", "bold": false, "clickEvent":{"action":"run_command","value":"/scoreboard players set disable_farming mmo_gamerules 0"}}, {"text":"[Edit Gamerules]", "color":"dark_green", "bold": false, "clickEvent":{"action":"run_command","value":"/function mmo:gamerules/farming"}}]
+############################################################################################
+	# Defense Ability Settings [Multiplayer] Settings: #
+############################################################################################
+execute as @s if score disable_defense_ability mmo_gamerules matches 0 run tellraw @s [{"text": "Defense Ability: ", "color": "white", "bold":true},{"text":"[Enabled]","color":"green", "bold": false}]
+execute as @s if score disable_defense_ability mmo_gamerules matches 1 run tellraw @s [{"text": "Defense Ability: ", "color": "white", "bold":true},{"text":"[disable]","color":"red", "bold": false}]
+
+# [Setting Description]:
+tellraw @s [{"text": "Removes abilities:['resistance'] from defense.", "color": "gray"}]
+
+# [Bonus EXP Toggle]:
+execute as @s if score disable_defense_ability mmo_gamerules matches 0 run tellraw @s [{"text": "- "},{"text":"[Disable Defense Ability]","color":"red","clickEvent":{"action":"run_command","value":"/scoreboard players set disable_defense_ability mmo_gamerules 1"}}]
+execute as @s if score disable_defense_ability mmo_gamerules matches 1 run tellraw @s [{"text": "- "},{"text":"[Enable Defense Ability]","color":"green","clickEvent":{"action":"run_command","value":"/scoreboard players set disable_defense_ability mmo_gamerules 0"}}]
 tellraw @s [{"text": ""}]
 
 
-tellraw @s [{"text": "Fishing ", "color": "white", "bold":true}]
-execute as @s if score disable_fishing mmo_gamerules matches 0 run tellraw @s [{"text":"[Disabled Skill] ","color":"red", "bold": false, "clickEvent":{"action":"run_command","value":"/scoreboard players set disable_fishing mmo_gamerules 1"}}, {"text":"[Edit Gamerules]", "color":"green", "bold": false, "clickEvent":{"action":"run_command","value":"/function mmo:gamerules/fishing"}}]
-execute as @s if score disable_fishing mmo_gamerules matches 1 run tellraw @s [{"text":"[Enable Skill] ","color":"green", "bold": false, "clickEvent":{"action":"run_command","value":"/scoreboard players set disable_fishing mmo_gamerules 0"}}, {"text":"[Edit Gamerules]", "color":"dark_green", "bold": false, "clickEvent":{"action":"run_command","value":"/function mmo:gamerules/fishing"}}]
-tellraw @s [{"text": ""}]
+############################################################################################
+	# Excavation Ability Settings [Multiplayer] Settings: #
+############################################################################################
+execute as @s if score disable_excavation_ability mmo_gamerules matches 0 run tellraw @s [{"text": "Excavation Ability: ", "color": "white", "bold":true},{"text":"[Enabled]","color":"green", "bold": false}]
+execute as @s if score disable_excavation_ability mmo_gamerules matches 1 run tellraw @s [{"text": "Excavation Ability: ", "color": "white", "bold":true},{"text":"[Disabled]","color":"red", "bold": false}]
 
+# [Setting Description]:
+tellraw @s [{"text": "Removes abilities:['haste'] from excavation.", "color": "gray"}]
 
-tellraw @s [{"text": "Hitpoints ", "color": "white", "bold":true}]
-execute as @s if score disable_hitpoints mmo_gamerules matches 0 run tellraw @s [{"text":"[Disabled Skill] ","color":"red", "bold": false, "clickEvent":{"action":"run_command","value":"/scoreboard players set disable_hitpoints mmo_gamerules 1"}}, {"text":"[Edit Gamerules]", "color":"green", "bold": false, "clickEvent":{"action":"run_command","value":"/function mmo:gamerules/hitpoints"}}]
-execute as @s if score disable_hitpoints mmo_gamerules matches 1 run tellraw @s [{"text":"[Enable Skill] ","color":"green", "bold": false, "clickEvent":{"action":"run_command","value":"/scoreboard players set disable_hitpoints mmo_gamerules 0"}}, {"text":"[Edit Gamerules]", "color":"dark_green", "bold": false, "clickEvent":{"action":"run_command","value":"/function mmo:gamerules/hitpoints"}}]
+# [Bonus EXP Toggle]:
+execute as @s if score disable_excavation_ability mmo_gamerules matches 0 run tellraw @s [{"text": "- "},{"text":"[Disable Excavation Ability]","color":"red","clickEvent":{"action":"run_command","value":"/scoreboard players set disable_excavation_ability mmo_gamerules 1"}}]
+execute as @s if score disable_excavation_ability mmo_gamerules matches 1 run tellraw @s [{"text": "- "},{"text":"[Enable Excavation Ability]","color":"green", "clickEvent":{"action":"run_command","value":"/scoreboard players set disable_excavation_ability mmo_gamerules 0"}}]
 tellraw @s [{"text": ""}]
 
 
@@ -50,4 +82,4 @@ tellraw @s [{"text": "Page 2", "color": "white"}]
 	# Update Navigation #
 ############################################################################################
 tellraw @s [{"text":""}]
-tellraw @s [{"text":"[Update Page]", "color":"aqua", "clickEvent":{"action":"run_command","value":"/function mmo:commands/mmo_gamerules2"}}]
+tellraw @s [{"text":"[Save Changes & Reload]", "color":"aqua", "clickEvent":{"action":"run_command","value":"/function mmo:commands/mmo_gamerules2"}}]

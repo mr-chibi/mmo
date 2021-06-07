@@ -78,3 +78,9 @@ scoreboard players add @s agility_lvl 0
 scoreboard players set @s[scores={agility_lvl=0}] agility_exp 0
 scoreboard players operation @s[scores={agility_lvl=0}] agility_lvlup = agility_stat stats_scoreboard
 scoreboard players add @s[scores={agility_lvl=0}] agility_lvl 1
+
+# smithing Stats [12]
+scoreboard players add @s smithing_lvl 0
+scoreboard players set @s[scores={smithing_lvl=0}] smithing_exp 0
+scoreboard players operation @s[scores={smithing_lvl=0}] smithing_lvlup = smithing_stat stats_scoreboard
+scoreboard players add @s[scores={smithing_lvl=0}] smithing_lvl 1

@@ -1,0 +1,93 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:chest",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{Name:'{\"text\": \"Common Cod Loot\", \"color\": \"gold\"}'},BlockEntityTag:{Items:[{Slot:3b,id:'minecraft:cod',Count:1b, tag:{fishing_mmo:1b}}]}}"
+                        }
+                    ],
+                    
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.80
+                        }
+                    ],
+                    "quanity": 1
+                },
+
+
+                {
+                    "type": "item",
+                    "name": "minecraft:chest",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{Name:'{\"text\": \"Common Cod Treasure Chest\", \"color\": \"gold\"}'},BlockEntityTag:{Items:[{Slot:3b,id:'minecraft:cod',Count:1b, tag:{fishing_mmo:1b}}, {Slot:25b,id:'minecraft:cod',Count:2b, tag:{fishing_mmo:1b}}]}}"
+                        }
+                    ],
+                    
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.60
+                        }
+                    ],
+                    "quanity": 1
+                },
+
+
+                {
+                    "type": "item",
+                    "name": "minecraft:chest",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{Name:'{\"text\": \"Uncommon Cod Treasure Chest\", \"color\": \"gold\"}'},BlockEntityTag:{Items:[{Slot:1b,id:'minecraft:cod',Count:2b}, {Slot:4b,id:'minecraft:cod',Count:1b}, {Slot:7b,id:'minecraft:cobweb',Count:1b}, {Slot:11b,id:'minecraft:cobweb',Count:1b}, {Slot:17b,id:'minecraft:cobweb',Count:1b}, {Slot:24b,id:'minecraft:bone',Count:3b}]}}"
+                        }
+                    ],
+                    
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.40
+                        }
+                    ],
+                    "quanity": 1
+                },
+
+
+
+                {
+                    "type": "item",
+                    "name": "minecraft:chest",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{Name:'{\"text\": \"Rare Cod Treasure Chest\", \"color\": \"gold\"}'},BlockEntityTag:{Items:[{Slot:1b,id:'minecraft:cod',Count:2b}, {Slot:4b,id:'minecraft:experience_bottle',Count:1b}, {Slot:7b,id:'minecraft:spectral_arrow',Count:1b}, {Slot:11b,id:'minecraft:spectral_arrow',Count:1b}, {Slot:17b,id:'minecraft:spectral_arrow',Count:1b}, {Slot:24b,id:'minecraft:cod',Count:3b}]}}"
+                        }
+                    ],
+                    
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.20
+                        }
+                    ],
+                    "quanity": 1
+                }
+            ]
+        }
+    ]
+}

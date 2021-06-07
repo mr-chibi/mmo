@@ -5,6 +5,14 @@ scoreboard objectives add farming_lvlup dummy
 scoreboard objectives add farming_stat dummy
 
 #
+scoreboard players set lvl_5 farming_lvl 5
+scoreboard players set lvl_10 farming_lvl 10
+scoreboard players set lvl_15 farming_lvl 15
+scoreboard players set lvl_20 farming_lvl 20
+scoreboard players set lvl_25 farming_lvl 25
+scoreboard players set lvl_30 farming_lvl 30
+
+#
 scoreboard objectives add plant_wheat minecraft.used:minecraft.wheat_seeds
 scoreboard objectives add plant_carrot minecraft.used:minecraft.carrot
 scoreboard objectives add plant_potato minecraft.used:minecraft.potato

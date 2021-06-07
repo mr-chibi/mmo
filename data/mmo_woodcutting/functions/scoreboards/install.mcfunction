@@ -4,6 +4,11 @@ scoreboard objectives add woodcutting_exp dummy
 scoreboard objectives add woodcutting_lvup dummy
 
 #
+scoreboard players set lvl_10 woodcutting_lvl 10
+scoreboard players set lvl_20 woodcutting_lvl 20
+scoreboard players set lvl_20 woodcutting_lvl 30
+
+#
 scoreboard objectives add wc_vein_count dummy
 
 #

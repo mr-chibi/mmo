@@ -1,8 +1,12 @@
 #
+scoreboard objectives remove mmo_addon
+
+#
 scoreboard objectives remove stats_scoreboard
 scoreboard objectives remove stats_experience
 scoreboard objectives remove level_up
 scoreboard objectives remove level_up_sound
+scoreboard objectives remove next_lvl
 scoreboard objectives remove mmo_toggle_skill
 
 #
@@ -38,3 +42,8 @@ scoreboard objectives remove mob_health_max
 
 #
 execute as @a at @s run effect clear @s
+
+
+
+# Disable MMO Datpack:
+datapack disable "file/mmo"

@@ -1,9 +1,9 @@
 ############################################################################################
 	# Scoreboards #
 ############################################################################################
+execute as @a at @s run function mmo:scoreboards/updates
 execute as @a at @s run function mmo:scoreboards/player_stats
 execute as @a at @s run function mmo:gamerules
-
 
 ############################################################################################
 	# Enable [Commands]: #
@@ -28,21 +28,26 @@ execute as @a at @s[scores={exp_settings=0}] run function mmo:experience_display
 ############################################################################################
 execute as @a at @s[scores={sound_settings=0}] run function #mmo:sounds
 
+############################################################################################
+	# Addon Mr_Chibi'sMMO NPCS Quests: #
+############################################################################################
+execute as @a at @s if score mmo_npcs mmo_addon = mrchibismmo mmo_addon run function mmo_npcs:scoreboards/count
 
 ############################################################################################
 	# Skills Menu: #
 ############################################################################################
-execute as @a at @s if score disable_attack mmo_gamerules matches 0 run function mmo_attack:core
-execute as @a at @s if score disable_cooking mmo_gamerules matches 0 run function mmo_cooking:core
-execute as @a at @s if score disable_defense mmo_gamerules matches 0 run function mmo_defense:core
-execute as @a at @s if score disable_excavation mmo_gamerules matches 0 run function mmo_excavation:core
-execute as @a at @s if score disable_farming mmo_gamerules matches 0 run function mmo_farming:core
-execute as @a at @s if score disable_fishing mmo_gamerules matches 0 run function mmo_fishing:core
-execute as @a at @s if score disable_hunter mmo_gamerules matches 0 run function mmo_hunter:core
-execute as @a at @s if score disable_mining mmo_gamerules matches 0 run function mmo_mining:core
-execute as @a at @s if score disable_woodcutting mmo_gamerules matches 0 run function mmo_woodcutting:core
-execute as @a at @s if score disable_hitpoints mmo_gamerules matches 0 run function mmo_hitpoints:core 
-execute as @a at @s if score disable_agility mmo_gamerules matches 0 run function mmo_agility:core
+execute as @a at @s run function mmo_attack:core
+execute as @a at @s run function mmo_cooking:core
+execute as @a at @s run function mmo_defense:core
+execute as @a at @s run function mmo_excavation:core
+execute as @a at @s run function mmo_farming:core
+execute as @a at @s run function mmo_fishing:core
+execute as @a at @s run function mmo_hunter:core
+execute as @a at @s run function mmo_mining:core
+execute as @a at @s run function mmo_woodcutting:core
+execute as @a at @s run function mmo_hitpoints:core 
+execute as @a at @s run function mmo_agility:core
+execute as @a at @s run function mmo_smithing:core
 
 
 ############################################################################################

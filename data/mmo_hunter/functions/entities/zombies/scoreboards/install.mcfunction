@@ -1,0 +1,21 @@
+# Create Array:
+execute as @e[type=minecraft:zombie,sort=random,limit=1] at @s if entity @a[distance=0..5] unless score @s mmo_zombies matches 0 run scoreboard players set @s mmo_zombies 1
+execute as @e[type=minecraft:zombie,sort=random,limit=1] at @s if entity @a[distance=0..5] unless score @s mmo_zombies matches 0 run scoreboard players set @s mmo_zombies 2
+execute as @e[type=minecraft:zombie,sort=random,limit=1] at @s if entity @a[distance=0..5] unless score @s mmo_zombies matches 0 run scoreboard players set @s mmo_zombies 3
+execute as @e[type=minecraft:zombie,sort=random,limit=1] at @s if entity @a[distance=0..5] unless score @s mmo_zombies matches 0 run scoreboard players set @s mmo_zombies 4
+execute as @e[type=minecraft:zombie,sort=random,limit=1] at @s if entity @a[distance=0..5] unless score @s mmo_zombies matches 0 run scoreboard players set @s mmo_zombies 5
+execute as @e[type=minecraft:zombie,sort=random,limit=1] at @s if entity @a[distance=0..5] unless score @s mmo_zombies matches 0 run scoreboard players set @s mmo_zombies 6
+execute as @e[type=minecraft:zombie,sort=random,limit=1] at @s if entity @a[distance=0..5] unless score @s mmo_zombies matches 0 run scoreboard players set @s mmo_zombies 7
+execute as @e[type=minecraft:zombie,sort=random,limit=1] at @s if entity @a[distance=0..5] unless score @s mmo_zombies matches 0 run scoreboard players set @s mmo_zombies 8
+execute as @e[type=minecraft:zombie,sort=random,limit=1] at @s if entity @a[distance=0..5] unless score @s mmo_zombies matches 0 run scoreboard players set @s mmo_zombies 9
+execute as @e[type=minecraft:zombie,sort=random,limit=1] at @s if entity @a[distance=0..5] unless score @s mmo_zombies matches 0 run scoreboard players set @s mmo_zombies 10
+execute as @e[type=minecraft:zombie,sort=random,limit=1] at @s if entity @a[distance=0..5] unless score @s mmo_zombies matches 0 run scoreboard players set @s mmo_zombies 11
+execute as @e[type=minecraft:zombie,sort=random,limit=1] at @s if entity @a[distance=0..5] unless score @s mmo_zombies matches 0 run scoreboard players set @s mmo_zombies 12
+execute as @e[type=minecraft:zombie,sort=random,limit=1] at @s if entity @a[distance=0..5] unless score @s mmo_zombies matches 0 run scoreboard players set @s mmo_zombies 13
+execute as @e[type=minecraft:zombie,sort=random,limit=1] at @s if entity @a[distance=0..5] unless score @s mmo_zombies matches 0 run scoreboard players set @s mmo_zombies 14
+execute as @e[type=minecraft:zombie,sort=random,limit=1] at @s if entity @a[distance=0..5] unless score @s mmo_zombies matches 0 run scoreboard players set @s mmo_zombies 15
+execute as @e[type=minecraft:zombie,sort=random,limit=1] at @s if entity @a[distance=0..5] unless score @s mmo_zombies matches 0 run scoreboard players set @s mmo_zombies 16
+execute as @e[type=minecraft:zombie,sort=random,limit=1] at @s if entity @a[distance=0..5] unless score @s mmo_zombies matches 0 run scoreboard players set @s mmo_zombies 17
+execute as @e[type=minecraft:zombie,sort=random,limit=1] at @s if entity @a[distance=0..5] unless score @s mmo_zombies matches 0 run scoreboard players set @s mmo_zombies 18
+execute as @e[type=minecraft:zombie,sort=random,limit=1] at @s if entity @a[distance=0..5] unless score @s mmo_zombies matches 0 run scoreboard players set @s mmo_zombies 19
+execute as @e[type=minecraft:zombie,sort=random,limit=1] at @s if entity @a[distance=0..5] unless score @s mmo_zombies matches 0 run scoreboard players set @s mmo_zombies 20

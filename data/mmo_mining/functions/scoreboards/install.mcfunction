@@ -4,6 +4,13 @@ scoreboard objectives add mining_exp dummy
 scoreboard objectives add mining_lvlup dummy
 
 #
+scoreboard players set lvl_10 mining_lvl 10
+scoreboard players set lvl_20 mining_lvl 20
+scoreboard players set lvl_30 mining_lvl 30
+scoreboard players set lvl_40 mining_lvl 40
+scoreboard players set lvl_50 mining_lvl 50
+
+#
 scoreboard objectives add vein_mining_cnt dummy
 
 #

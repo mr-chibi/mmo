@@ -1,0 +1,92 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:chest",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{Name:'{\"text\": \"Common Salmon Loot\", \"color\": \"gold\"}'},BlockEntityTag:{Items:[{Slot:3b,id:'minecraft:salmon',Count:1b, tag:{fishing_mmo:1b}}]}}"
+                        }
+                    ],
+                    
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.95
+                        }
+                    ],
+                    "quanity": 1
+                },
+
+
+                {
+                    "type": "item",
+                    "name": "minecraft:chest",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{Name:'{\"text\": \"Common Salmon Treasure Chest\", \"color\": \"gold\"}'},BlockEntityTag:{Items:[{Slot:3b,id:'minecraft:salmon',Count:1b, tag:{fishing_mmo:1b}}, {Slot:25b,id:'minecraft:salmon',Count:2b, tag:{fishing_mmo:1b}}]}}"
+                        }
+                    ],
+                    
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.85
+                        }
+                    ],
+                    "quanity": 1
+                },
+
+
+                {
+                    "type": "item",
+                    "name": "minecraft:chest",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{Name:'{\"text\": \"Uncommon Salmon Treasure Chest\", \"color\": \"gold\"}'},BlockEntityTag:{Items:[{Slot:0b,id:'minecraft:salmon',Count:1b}, {Slot:3b,id:'minecraft:sea_pickle',Count:1b}, {Slot:17b,id:'minecraft:bubble_coral',Count:1b}, {Slot:19b,id:'minecraft:seagrass',Count:1b}, {Slot:20b,id:'minecraft:sea_pickle',Count:1b}, {Slot:22b,id:'minecraft:seagrass',Count:1b}, {Slot:24b,id:'minecraft:bubble_coral',Count:1b}, {Slot:25b,id:'minecraft:salmon',Count:3b}]}}"
+                        }
+                    ],
+                    
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.65
+                        }
+                    ],
+                    "quanity": 1
+                },
+
+
+                {
+                    "type": "item",
+                    "name": "minecraft:chest",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{Name:'{\"text\": \"Rare Salmon Treasure Chest\", \"color\": \"gold\"}'},BlockEntityTag:{Items:[{Slot:1b,id:'minecraft:rotten_flesh',Count:1b}, {Slot:3b,id:'minecraft:cobweb',Count:1b}, {Slot:13b,id:'minecraft:rotten_flesh',Count:1b}, {Slot:15b,id:'minecraft:rotten_flesh',Count:1b}, {Slot:18b,id:'minecraft:cobweb',Count:1b}, {Slot:19b,id:'minecraft:rotten_flesh',Count:1b}, {Slot:24b,id:'minecraft:cobweb',Count:1b}]}}"
+                        }
+                    ],
+                    
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.45
+                        }
+                    ],
+                    "quanity": 1
+                }
+            ]
+        }
+    ]
+}

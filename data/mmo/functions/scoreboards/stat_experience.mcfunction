@@ -65,50 +65,50 @@ scoreboard players set harvest_warts stats_experience 8
 ############################################################################################
 	# Hunter EXP #
 ############################################################################################
-scoreboard players set slain_player stats_experience 10
-scoreboard players set slain_creeper stats_experience 7
+scoreboard players set slain_player stats_experience 55
+scoreboard players set slain_creeper stats_experience 40
 
 # Skeletons
-scoreboard players set slain_skeleton stats_experience 6
-scoreboard players set slain_stray stats_experience 7
+scoreboard players set slain_skeleton stats_experience 50
+scoreboard players set slain_stray stats_experience 55
 
 # Zombies
-scoreboard players set slain_zombie stats_experience 4
-scoreboard players set slain_zombie_vil stats_experience 4
-scoreboard players set slain_husk stats_experience 4
-scoreboard players set slain_drown stats_experience 6
+scoreboard players set slain_zombie stats_experience 55
+scoreboard players set slain_zombie_vil stats_experience 55
+scoreboard players set slain_husk stats_experience 55
+scoreboard players set slain_drown stats_experience 55
 
 # Caves / Night Time
-scoreboard players set slain_spider stats_experience 6
-scoreboard players set slain_cav_spider stats_experience 6
-scoreboard players set slain_slime stats_experience 8
-scoreboard players set slain_phantom stats_experience 10
+scoreboard players set slain_spider stats_experience 50
+scoreboard players set slain_cav_spider stats_experience 50
+scoreboard players set slain_slime stats_experience 45
+scoreboard players set slain_phantom stats_experience 55
 
 # Ocean
-scoreboard players set slain_guardian stats_experience 5
-scoreboard players set slain_eld_guard stats_experience 10
+scoreboard players set slain_guardian stats_experience 30
+scoreboard players set slain_eld_guard stats_experience 55
 
 # Raids
-scoreboard players set slain_ravager stats_experience 9
-scoreboard players set slain_pillager stats_experience 6
-scoreboard players set slain_evoker stats_experience 6
-scoreboard players set slain_vindicator stats_experience 6
-scoreboard players set slain_witch stats_experience 7
+scoreboard players set slain_ravager stats_experience 50
+scoreboard players set slain_pillager stats_experience 35
+scoreboard players set slain_evoker stats_experience 35
+scoreboard players set slain_vindicator stats_experience 35
+scoreboard players set slain_witch stats_experience 40
 
 # The Nether
-scoreboard players set slain_pigman stats_experience 6
-scoreboard players set slain_ghast stats_experience 5
-scoreboard players set slain_wither_ske stats_experience 7
-scoreboard players set slain_blaze stats_experience 5
-scoreboard players set slain_magma_cube stats_experience 5
+scoreboard players set slain_pigman stats_experience 35
+scoreboard players set slain_ghast stats_experience 30
+scoreboard players set slain_wither_ske stats_experience 40
+scoreboard players set slain_blaze stats_experience 30
+scoreboard players set slain_magma_cube stats_experience 30
 
 # The End
-scoreboard players set slain_enderman stats_experience 8
-scoreboard players set slain_shulker stats_experience 9
+scoreboard players set slain_enderman stats_experience 45
+scoreboard players set slain_shulker stats_experience 50
 
 # Bosses
-scoreboard players set slain_enderdrag stats_experience 400
-scoreboard players set slain_wither stats_experience 200
+scoreboard players set slain_enderdrag stats_experience 800
+scoreboard players set slain_wither stats_experience 400
 
 
 ############################################################################################
@@ -158,6 +158,7 @@ scoreboard players set mined_nether_qua stats_experience 7
 scoreboard players set mined_netherbric stats_experience 6
 scoreboard players set mined_magma_bloc stats_experience 6
 
+
 ############################################################################################
 	# Mining "The Nether" NEW BIOMES: #
 ############################################################################################
@@ -167,7 +168,6 @@ scoreboard players set mined_gilded stats_experience 10
 scoreboard players set mined_crim_nyli stats_experience 7
 scoreboard players set mined_warp_nyli stats_experience 7
 scoreboard players set mined_anc_debris stats_experience 24
-
 
 
 ############################################################################################
@@ -181,3 +181,32 @@ scoreboard players set cut_acacia stats_experience 10
 scoreboard players set cut_dark_oak stats_experience 10
 scoreboard players set cut_crimson_stem stats_experience 10
 scoreboard players set cut_warped_stem stats_experience 10
+
+
+############################################################################################
+	# Smithing EXP #
+############################################################################################
+scoreboard players set smelt_brick stats_experience 15
+scoreboard players set smelt_iron stats_experience 20
+scoreboard players set smelt_gold stats_experience 15
+scoreboard players set smelt_scrap stats_experience 30
+
+############################################################################################
+	# Smithing Armor EXP #
+############################################################################################
+scoreboard players set smith_iron_helm stats_experience 100
+scoreboard players set smith_iron_chest stats_experience 160
+scoreboard players set smith_iron_leg stats_experience 140
+scoreboard players set smith_iron_boots stats_experience 80
+
+#
+scoreboard players set smith_gold_helm stats_experience 75
+scoreboard players set smith_gold_chest stats_experience 120
+scoreboard players set smith_gold_leg stats_experience 105
+scoreboard players set smith_gold_boots stats_experience 60
+
+#
+scoreboard players set smith_diam_helm stats_experience 125
+scoreboard players set smith_diam_chest stats_experience 200
+scoreboard players set smith_diam_leg stats_experience 175
+scoreboard players set smith_diam_boots stats_experience 100

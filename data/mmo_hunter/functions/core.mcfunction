@@ -9,6 +9,12 @@ function mmo_hunter:tags/holdingsword
 execute if score disable_hunter_loot mmo_gamerules matches 0 run function mmo_hunter:loot
 
 ############################################################################################
+	# Hunter Entities #
+############################################################################################
+execute if score disable_hunter_mobs mmo_gamerules matches 1 run function mmo_hunter:entities/zombies/init
+execute if score disable_hunter_mobs mmo_gamerules matches 1 run function mmo_hunter:entities/skeletons/init
+
+############################################################################################
 	# Hunter EXP #
 ############################################################################################
 function mmo_hunter:scoreboards/gained_exp

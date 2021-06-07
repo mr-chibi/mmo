@@ -1,4 +1,11 @@
 #
+function mmo_hunter:entities/zombies/scoreboards/uninstall
+function mmo_hunter:entities/skeletons/scoreboards/uninstall
+
+#
+scoreboard objectives remove mmo_mob_cooldown
+
+#
 scoreboard objectives remove hunter_lvl
 scoreboard objectives remove hunter_exp
 scoreboard objectives remove hunter_lvlup
@@ -39,6 +46,3 @@ scoreboard objectives remove slain_shulker
 # "Bosses":
 scoreboard objectives remove slain_enderdrag
 scoreboard objectives remove slain_wither
-
-#
-execute as @a at @s run advancement revoke @s through stats:hunter/level90

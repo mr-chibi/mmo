@@ -1,8 +1,34 @@
 #
+function mmo_hunter:entities/zombies/scoreboards/bossbar
+function mmo_hunter:entities/skeletons/scoreboards/bossbar
+
+#
+scoreboard objectives add mmo_mob_cooldown dummy
+
+#
+scoreboard players set armored_goblin mmo_mob_cooldown 200
+scoreboard players set skeleton_solider mmo_mob_cooldown 120
+scoreboard players set skeleton_knight mmo_mob_cooldown 300
+
+
+#
 scoreboard objectives add hunter_lvl dummy
 scoreboard objectives add hunter_exp dummy
 scoreboard objectives add hunter_lvlup dummy
 scoreboard objectives add hunter_stat dummy
+
+#
+scoreboard players set lvl_10 hunter_lvl 10
+scoreboard players set lvl_20 hunter_lvl 20
+scoreboard players set lvl_30 hunter_lvl 30
+scoreboard players set lvl_40 hunter_lvl 40
+scoreboard players set lvl_50 hunter_lvl 50
+scoreboard players set lvl_60 hunter_lvl 60
+scoreboard players set lvl_70 hunter_lvl 70
+scoreboard players set lvl_80 hunter_lvl 80
+scoreboard players set lvl_90 hunter_lvl 90
+scoreboard players set lvl_99 hunter_lvl 99
+
 
 #
 scoreboard objectives add slain_player minecraft.killed:minecraft.player

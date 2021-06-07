@@ -8,7 +8,7 @@ playsound minecraft:ui.button.click master @s[scores={sound_settings=0}] ~ ~ ~ 2
 	# MMO Main Menu #
 ############################################################################################
 tellraw @s [{"text": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=", "color": "blue"}]
-tellraw @s [{"text": "Mr_Chibi'sMMO", "color": "aqua"}, {"text": ", ", "color": "white"}, {"text": "Pack Version: 3", "color": "light_purple"}]
+tellraw @s [{"text": "Mr_Chibi'sMMO", "color": "aqua"}, {"text": ", ", "color": "white"}, {"text": "Pack Version: 4", "color": "light_purple"}]
 tellraw @s [{"text": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=", "color": "blue"}]
 tellraw @s [{"text": ""}]
 

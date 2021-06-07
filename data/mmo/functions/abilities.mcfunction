@@ -138,22 +138,22 @@ execute as @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=30..,vein_settings=1,cu
 	# Hitpoints Perks: #
 ############################################################################################
 attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=1..5}] minecraft:generic.max_health base set 6
-attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=6..10}] minecraft:generic.max_health base set 8
-attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=11..15}] minecraft:generic.max_health base set 10
-attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=16..20}] minecraft:generic.max_health base set 12
-attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=21..25}] minecraft:generic.max_health base set 14
-attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=26..30}] minecraft:generic.max_health base set 16
-attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=31..35}] minecraft:generic.max_health base set 18
-attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=36..40}] minecraft:generic.max_health base set 20
-attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=41..45}] minecraft:generic.max_health base set 22
-attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=46..50}] minecraft:generic.max_health base set 24
-attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=51..55}] minecraft:generic.max_health base set 26
-attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=56..60}] minecraft:generic.max_health base set 28
-attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=61..65}] minecraft:generic.max_health base set 30
-attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=66..70}] minecraft:generic.max_health base set 32
-attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=71..75}] minecraft:generic.max_health base set 34
-attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=76..80}] minecraft:generic.max_health base set 36
-attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=81..85}] minecraft:generic.max_health base set 38
+attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=5..10}] minecraft:generic.max_health base set 8
+attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=10..15}] minecraft:generic.max_health base set 10
+attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=15..20}] minecraft:generic.max_health base set 12
+attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=20..25}] minecraft:generic.max_health base set 14
+attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=25..30}] minecraft:generic.max_health base set 16
+attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=30..35}] minecraft:generic.max_health base set 18
+attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=35..40}] minecraft:generic.max_health base set 20
+attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=40..45}] minecraft:generic.max_health base set 22
+attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=45..50}] minecraft:generic.max_health base set 24
+attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=50..55}] minecraft:generic.max_health base set 26
+attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=55..60}] minecraft:generic.max_health base set 28
+attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=60..65}] minecraft:generic.max_health base set 30
+attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=65..70}] minecraft:generic.max_health base set 32
+attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=70..75}] minecraft:generic.max_health base set 34
+attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=75..80}] minecraft:generic.max_health base set 36
+attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=80..85}] minecraft:generic.max_health base set 38
 attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=86..}] minecraft:generic.max_health base set 40
 
 

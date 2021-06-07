@@ -1,5 +1,6 @@
 {
 	"values": [
+		"mmo:scoreboards/packs",
 		"mmo:scoreboards/install",
 		"mmo:scoreboards/player_stats",
 		"mmo:scoreboards/stat_experience",
@@ -13,6 +14,7 @@
 		"mmo_mining:scoreboards/install",
 		"mmo_woodcutting:scoreboards/install",
 		"mmo_hitpoints:scoreboards/install",
-		"mmo_agility:scoreboards/install"
+		"mmo_agility:scoreboards/install",
+		"mmo_smithing:scoreboards/install"
 	]
 }
