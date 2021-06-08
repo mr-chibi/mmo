@@ -44,7 +44,7 @@ execute if score @s mining_lvl >= lvl_10 mining_lvl if score @s mining_lvl < lvl
 execute if score @s mining_lvl = lvl_20 mining_lvl run tellraw @s [{"text": "Unlocked Haste II", "color": "yellow"}]
 
 #
-execute if score @s mining_lvl >= lvl_20 mining_lvl if score @s mining_lvl < lvl_30 mining_lvl run tellraw @s [{"text": "Unlocking Iron Smelting will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
+execute if score @s mining_lvl >= lvl_20 mining_lvl if score @s mining_lvl < lvl_30 mining_lvl run tellraw @s [{"text": "Unlocking Iron & Copper Smelting will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
 execute if score @s mining_lvl = lvl_30 mining_lvl run tellraw @s [{"text": "Unlocked Iron Smelting can be toggled in /trigger mmo_user_setting", "color": "yellow"}]
 
 #

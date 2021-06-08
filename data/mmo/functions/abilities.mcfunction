@@ -89,16 +89,43 @@ execute if score disable_mining_ability mmo_gamerules matches 0 run effect give 
 	# Mining Level 30 Perks: #
 ############################################################################################
 execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=30..,mining_settings=1,mined_iron=1..}] if score disable_mining_ability mmo_gamerules matches 0 run particle minecraft:flame ~ ~ ~ 0.25 0.75 0.25 0 100
-execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=30..,mining_settings=1,mined_iron=1..}] if score disable_mining_ability mmo_gamerules matches 0 run kill @e[type=item,nbt={Item:{id:"minecraft:iron_ore"}},distance=0..15]
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=30..,mining_settings=1,mined_copper=1..}] if score disable_mining_ability mmo_gamerules matches 0 run particle minecraft:flame ~ ~ ~ 0.25 0.75 0.25 0 100
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=30..,mining_settings=1,mined_deep_iron=1..}] if score disable_mining_ability mmo_gamerules matches 0 run particle minecraft:flame ~ ~ ~ 0.25 0.75 0.25 0 100
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=30..,mining_settings=1,mined_deep_cop=1..}] if score disable_mining_ability mmo_gamerules matches 0 run particle minecraft:flame ~ ~ ~ 0.25 0.75 0.25 0 100
+
+# Stone Ores
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=30..,mining_settings=1,mined_iron=1..}] if score disable_mining_ability mmo_gamerules matches 0 run kill @e[type=item,nbt={Item:{id:"minecraft:raw_iron"}},distance=0..15]
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=30..,mining_settings=1,mined_copper=1..}] if score disable_mining_ability mmo_gamerules matches 0 run kill @e[type=item,nbt={Item:{id:"minecraft:raw_copper"}},distance=0..15]
+
+# Deepslate ores
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=30..,mining_settings=1,mined_deep_iron=1..}] if score disable_mining_ability mmo_gamerules matches 0 run kill @e[type=item,nbt={Item:{id:"minecraft:raw_iron"}},distance=0..15]
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=30..,mining_settings=1,mined_deep_cop=1..}] if score disable_mining_ability mmo_gamerules matches 0 run kill @e[type=item,nbt={Item:{id:"minecraft:raw_copper"}},distance=0..15]
+
+
+# Mined stone ore:
 execute if score disable_mining_ability mmo_gamerules matches 0 run give @s[tag=mmo_holdingPickaxe,scores={mining_lvl=30..,mining_settings=1,mined_iron=1..}] minecraft:iron_ingot 1
+execute if score disable_mining_ability mmo_gamerules matches 0 run give @s[tag=mmo_holdingPickaxe,scores={mining_lvl=30..,mining_settings=1,mined_copper=1..}] minecraft:copper_ingot 1
+
+# Mined deepslate ore:
+execute if score disable_mining_ability mmo_gamerules matches 0 run give @s[tag=mmo_holdingPickaxe,scores={mining_lvl=30..,mining_settings=1,mined_deep_iron=1..}] minecraft:iron_ingot 1
+execute if score disable_mining_ability mmo_gamerules matches 0 run give @s[tag=mmo_holdingPickaxe,scores={mining_lvl=30..,mining_settings=1,mined_deep_cop=1..}] minecraft:copper_ingot 1
 
 
 ############################################################################################
 	# Mining Level 40 Perks: #
 ############################################################################################
 execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=40..,mining_settings=1,mined_gold=0..}] if score disable_mining_ability mmo_gamerules matches 0 run particle minecraft:flame ~ ~ ~ 0.25 0.75 0.25 0 100
-execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=40..,mining_settings=1,mined_gold=0..}] if score disable_mining_ability mmo_gamerules matches 0 run kill @e[type=item,nbt={Item:{id:"minecraft:gold_ore"}},distance=0..15]
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=40..,mining_settings=1,mined_deep_gold=0..}] if score disable_mining_ability mmo_gamerules matches 0 run particle minecraft:flame ~ ~ ~ 0.25 0.75 0.25 0 100
+
+# Stone ores:
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=40..,mining_settings=1,mined_gold=0..}] if score disable_mining_ability mmo_gamerules matches 0 run kill @e[type=item,nbt={Item:{id:"minecraft:raw_gold"}},distance=0..15]
+
+# Deepslate ores
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=40..,mining_settings=1,mined_deep_gold=0..}] if score disable_mining_ability mmo_gamerules matches 0 run kill @e[type=item,nbt={Item:{id:"minecraft:raw_gold"}},distance=0..15]
+
+#
 execute if score disable_mining_ability mmo_gamerules matches 0 run give @s[tag=mmo_holdingPickaxe,scores={mining_lvl=40..,mining_settings=1,mined_gold=1..}] minecraft:gold_ingot 1
+execute if score disable_mining_ability mmo_gamerules matches 0 run give @s[tag=mmo_holdingPickaxe,scores={mining_lvl=40..,mining_settings=1,mined_deep_gold=1..}] minecraft:gold_ingot 1
 
 
 ############################################################################################
@@ -107,10 +134,23 @@ execute if score disable_mining_ability mmo_gamerules matches 0 run give @s[tag=
 execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=50..,vein_settings=1,mined_coal=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
 execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=50..,vein_settings=1,mined_iron=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
 execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=50..,vein_settings=1,mined_gold=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=50..,vein_settings=1,mined_copper=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
 execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=50..,vein_settings=1,mined_lapis=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
 execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=50..,vein_settings=1,mined_redstone=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
 execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=50..,vein_settings=1,mined_emerald=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
 execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=50..,vein_settings=1,mined_diamond=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
+
+############################################################################################
+	# Mining Level 50 Deepslate ores Perks: #
+############################################################################################
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=50..,vein_settings=1,mined_deep_coal=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=50..,vein_settings=1,mined_deep_iron=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=50..,vein_settings=1,mined_deep_gold=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=50..,vein_settings=1,mined_deep_cop=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=50..,vein_settings=1,mined_deep_lapis=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=50..,vein_settings=1,mined_deep_emer=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=50..,vein_settings=1,mined_deep_redst=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
+execute as @s[tag=mmo_holdingPickaxe,scores={mining_lvl=50..,vein_settings=1,mined_deep_diam=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
 
 
 ############################################################################################

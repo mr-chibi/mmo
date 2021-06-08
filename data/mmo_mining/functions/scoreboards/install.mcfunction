@@ -14,20 +14,40 @@ scoreboard players set lvl_50 mining_lvl 50
 scoreboard objectives add vein_mining_cnt dummy
 
 #
+scoreboard objectives add mined_stone minecraft.mined:minecraft.stone
+scoreboard objectives add mined_andesite minecraft.mined:minecraft.andesite
+scoreboard objectives add mined_granite minecraft.mined:minecraft.granite
+scoreboard objectives add mined_diorite minecraft.mined:minecraft.diorite
+scoreboard objectives add mined_obsidian minecraft.mined:minecraft.obsidian
+
+#
+scoreboard objectives add mined_dripstone minecraft.mined:minecraft.dripstone_block
+scoreboard objectives add mined_deepslate minecraft.mined:minecraft.deepslate
+scoreboard objectives add mined_calcite minecraft.mined:minecraft.calcite
+scoreboard objectives add mined_tuff minecraft.mined:minecraft.tuff
+scoreboard objectives add mined_smo_basalt minecraft.mined:minecraft.smooth_basalt
+scoreboard objectives add mined_amethyst minecraft.mined:minecraft.amethyst_block
+
+
+#
 scoreboard objectives add mined_coal minecraft.mined:minecraft.coal_ore
 scoreboard objectives add mined_iron minecraft.mined:minecraft.iron_ore
 scoreboard objectives add mined_gold minecraft.mined:minecraft.gold_ore
+scoreboard objectives add mined_copper minecraft.mined:minecraft.copper_ore
 scoreboard objectives add mined_lapis minecraft.mined:minecraft.lapis_ore
 scoreboard objectives add mined_emerald minecraft.mined:minecraft.emerald_ore
 scoreboard objectives add mined_redstone minecraft.mined:minecraft.redstone_ore
 scoreboard objectives add mined_diamond minecraft.mined:minecraft.diamond_ore
 
 #
-scoreboard objectives add mined_stone minecraft.mined:minecraft.stone
-scoreboard objectives add mined_andesite minecraft.mined:minecraft.andesite
-scoreboard objectives add mined_granite minecraft.mined:minecraft.granite
-scoreboard objectives add mined_diorite minecraft.mined:minecraft.diorite
-scoreboard objectives add mined_obsidian minecraft.mined:minecraft.obsidian
+scoreboard objectives add mined_deep_coal minecraft.mined:minecraft.deepslate_coal_ore
+scoreboard objectives add mined_deep_iron minecraft.mined:minecraft.deepslate_iron_ore
+scoreboard objectives add mined_deep_gold minecraft.mined:minecraft.deepslate_gold_ore
+scoreboard objectives add mined_deep_cop minecraft.mined:minecraft.deepslate_copper_ore
+scoreboard objectives add mined_deep_lapis minecraft.mined:minecraft.deepslate_lapis_ore
+scoreboard objectives add mined_deep_emer minecraft.mined:minecraft.deepslate_emerald_ore
+scoreboard objectives add mined_deep_redst minecraft.mined:minecraft.deepslate_redstone_ore
+scoreboard objectives add mined_deep_diam minecraft.mined:minecraft.deepslate_diamond_ore
 
 #
 scoreboard objectives add mined_terracotta minecraft.mined:minecraft.terracotta

@@ -114,20 +114,40 @@ scoreboard players set slain_wither stats_experience 400
 ############################################################################################
 	# Mining EXP #
 ############################################################################################
+scoreboard players set mined_stone stats_experience 6
+scoreboard players set mined_andesite stats_experience 6
+scoreboard players set mined_granite stats_experience 6
+scoreboard players set mined_diorite stats_experience 6
+scoreboard players set mined_obsidian stats_experience 10
+
+#
+scoreboard players set mined_dripstone stats_experience 12
+scoreboard players set mined_deepslate stats_experience 12
+scoreboard players set mined_calcite stats_experience 12
+scoreboard players set mined_tuff stats_experience 12
+scoreboard players set mined_smo_basalt stats_experience 12
+scoreboard players set mined_amethyst stats_experience 30
+
+#
 scoreboard players set mined_coal stats_experience 7
 scoreboard players set mined_iron stats_experience 9
 scoreboard players set mined_gold stats_experience 10
+scoreboard players set mined_copper stats_experience 8
 scoreboard players set mined_lapis stats_experience 10
 scoreboard players set mined_emerald stats_experience 15
 scoreboard players set mined_redstone stats_experience 8
 scoreboard players set mined_diamond stats_experience 12
 
 #
-scoreboard players set mined_stone stats_experience 6
-scoreboard players set mined_andesite stats_experience 6
-scoreboard players set mined_granite stats_experience 6
-scoreboard players set mined_diorite stats_experience 6
-scoreboard players set mined_obsidian stats_experience 10
+scoreboard players set mined_deep_coal stats_experience 14
+scoreboard players set mined_deep_iron stats_experience 18
+scoreboard players set mined_deep_gold stats_experience 20
+scoreboard players set mined_deep_cop stats_experience 16
+scoreboard players set mined_deep_lapis stats_experience 20
+scoreboard players set mined_deep_emer stats_experience 30
+scoreboard players set mined_deep_redst stats_experience 16
+scoreboard players set mined_deep_diam stats_experience 24
+
 
 #
 scoreboard players set mined_terracotta stats_experience 6

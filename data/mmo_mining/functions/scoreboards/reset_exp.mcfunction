@@ -1,16 +1,4 @@
 ############################################################################################
-	# Mining Reset Ore Experience #
-############################################################################################
-scoreboard players reset @s[scores={mined_coal=1..}] mined_coal
-scoreboard players reset @s[scores={mined_iron=1..}] mined_iron
-scoreboard players reset @s[scores={mined_gold=1..}] mined_gold
-scoreboard players reset @s[scores={mined_lapis=1..}] mined_lapis
-scoreboard players reset @s[scores={mined_emerald=1..}] mined_emerald
-scoreboard players reset @s[scores={mined_redstone=1..}] mined_redstone
-scoreboard players reset @s[scores={mined_diamond=1..}] mined_diamond
-
-
-############################################################################################
 	# Mining Reset Stone Experience #
 ############################################################################################
 scoreboard players reset @s[scores={mined_stone=1..}] mined_stone
@@ -18,6 +6,43 @@ scoreboard players reset @s[scores={mined_andesite=1..}] mined_andesite
 scoreboard players reset @s[scores={mined_granite=1..}] mined_granite
 scoreboard players reset @s[scores={mined_diorite=1..}] mined_diorite
 scoreboard players reset @s[scores={mined_obsidian=1..}] mined_obsidian
+
+
+############################################################################################
+	# Mining Reset Stone Experience #
+############################################################################################
+scoreboard players reset @s[scores={mined_dripstone=1..}] mined_dripstone
+scoreboard players reset @s[scores={mined_deepslate=1..}] mined_deepslate
+scoreboard players reset @s[scores={mined_calcite=1..}] mined_calcite
+scoreboard players reset @s[scores={mined_tuff=1..}] mined_tuff
+scoreboard players reset @s[scores={mined_smo_basalt=1..}] mined_smo_basalt
+scoreboard players reset @s[scores={mined_amethyst=1..}] mined_amethyst
+
+
+############################################################################################
+	# Mining Reset Ore Experience #
+############################################################################################
+scoreboard players reset @s[scores={mined_coal=1..}] mined_coal
+scoreboard players reset @s[scores={mined_iron=1..}] mined_iron
+scoreboard players reset @s[scores={mined_gold=1..}] mined_gold
+scoreboard players reset @s[scores={mined_copper=1..}] mined_copper
+scoreboard players reset @s[scores={mined_lapis=1..}] mined_lapis
+scoreboard players reset @s[scores={mined_emerald=1..}] mined_emerald
+scoreboard players reset @s[scores={mined_redstone=1..}] mined_redstone
+scoreboard players reset @s[scores={mined_diamond=1..}] mined_diamond
+
+
+############################################################################################
+	# Mining Deepslate Reset Ore Experience #
+############################################################################################
+scoreboard players reset @s[scores={mined_deep_coal=1..}] mined_deep_coal
+scoreboard players reset @s[scores={mined_deep_iron=1..}] mined_deep_iron
+scoreboard players reset @s[scores={mined_deep_gold=1..}] mined_deep_gold
+scoreboard players reset @s[scores={mined_deep_cop=1..}] mined_deep_cop
+scoreboard players reset @s[scores={mined_deep_lapis=1..}] mined_deep_lapis
+scoreboard players reset @s[scores={mined_deep_emer=1..}] mined_deep_emer
+scoreboard players reset @s[scores={mined_deep_redst=1..}] mined_deep_redst
+scoreboard players reset @s[scores={mined_deep_diam=1..}] mined_deep_diam
 
 
 ############################################################################################

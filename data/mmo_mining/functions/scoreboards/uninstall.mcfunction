@@ -7,20 +7,38 @@ scoreboard objectives remove mining_lvlup
 scoreboard objectives remove vein_mining_cnt
 
 #
+scoreboard objectives remove mined_stone
+scoreboard objectives remove mined_andesite
+scoreboard objectives remove mined_granite
+scoreboard objectives remove mined_diorite
+scoreboard objectives remove mined_obsidian
+
+#
+scoreboard objectives remove mined_dripstone
+scoreboard objectives remove mined_deepslate
+scoreboard objectives remove mined_calcite
+scoreboard objectives remove mined_tuff
+scoreboard objectives remove mined_smo_basalt
+
+#
 scoreboard objectives remove mined_coal
 scoreboard objectives remove mined_iron
 scoreboard objectives remove mined_gold
+scoreboard objectives remove mined_copper
 scoreboard objectives remove mined_lapis
 scoreboard objectives remove mined_emerald
 scoreboard objectives remove mined_redstone
 scoreboard objectives remove mined_diamond
 
 #
-scoreboard objectives remove mined_stone
-scoreboard objectives remove mined_andesite
-scoreboard objectives remove mined_granite
-scoreboard objectives remove mined_diorite
-scoreboard objectives remove mined_obsidian
+scoreboard objectives remove mined_deep_coal
+scoreboard objectives remove mined_deep_iron
+scoreboard objectives remove mined_deep_gold
+scoreboard objectives remove mined_deep_cop
+scoreboard objectives remove mined_deep_lapis
+scoreboard objectives remove mined_deep_emer
+scoreboard objectives remove mined_deep_redst
+scoreboard objectives remove mined_deep_diam
 
 #
 scoreboard objectives remove mined_terracotta
