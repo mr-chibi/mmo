@@ -9,6 +9,12 @@
   <li>Server Owners can disable <b>Certain Skills</b> or <b>Features</b> in the Gamerule Settings</li>
 </ul>
 
+<h2>Introducing MMO Resource Pack!</h2>
+<ul>
+<li>Created, by a Rekn0wn & Myself!</li>
+<li>Datapack now supports custom resourcepack for custom models that were coded into pack!</li>
+</ul>
+
 <h2>How it was written in:</h2>
 <ul>
   <li>Json</li>
