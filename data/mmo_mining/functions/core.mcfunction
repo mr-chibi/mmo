@@ -2,7 +2,13 @@
 	# Mining Tags #
 ############################################################################################
 function mmo_mining:tags/holdingpickaxe
+function mmo_mining:tags/holdingcrystalpickaxe
 
+
+############################################################################################
+	# Mining Perks: #
+############################################################################################
+function mmo_mining:perks/crystal_pickaxe
 
 ############################################################################################
 	# Hunter Loot #
@@ -11,7 +17,7 @@ execute if score disable_mining_loot mmo_gamerules matches 0 run function mmo_mi
 
 
 ############################################################################################
-	# Woodcutting TreeFaller EXP Gained: #
+	# Mining Vein Miner EXP Gained: #
 ############################################################################################
 execute as @s[scores={mining_lvl=50..,vein_settings=1},tag=mmo_holdingPickaxe] run function mmo_mining:scoreboards/vein_exp
 

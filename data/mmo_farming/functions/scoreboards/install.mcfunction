@@ -5,6 +5,10 @@ scoreboard objectives add farming_lvlup dummy
 scoreboard objectives add farming_stat dummy
 
 #
+scoreboard objectives add instant_growth dummy
+scoreboard players set growth_limit instant_growth 200
+
+#
 scoreboard players set lvl_5 farming_lvl 5
 scoreboard players set lvl_10 farming_lvl 10
 scoreboard players set lvl_15 farming_lvl 15

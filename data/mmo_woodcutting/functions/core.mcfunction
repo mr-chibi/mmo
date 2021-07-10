@@ -2,6 +2,12 @@
 	# Woodcutting Tags #
 ############################################################################################
 function mmo_woodcutting:tags/holdingaxe
+function mmo_woodcutting:tags/holdingcrystalaxe
+
+############################################################################################
+	# Woodcutting Perks: #
+############################################################################################
+function mmo_woodcutting:perks/charcoal_smelt
 
 ############################################################################################
 	# Woodcutting TreeFaller EXP Gained: #

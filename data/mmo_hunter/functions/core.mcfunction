@@ -6,7 +6,9 @@ function mmo_hunter:tags/holdingsword
 ############################################################################################
 	# Hunter Loot #
 ############################################################################################
-execute if score disable_hunter_loot mmo_gamerules matches 0 run function mmo_hunter:loot
+execute if score disable_hunter_loot mmo_gamerules matches 0 run function mmo_hunter:loot_tables/skulls
+execute if score disable_hunter_loot mmo_gamerules matches 0 run function mmo_hunter:loot_tables/tools
+
 
 ############################################################################################
 	# Hunter Entities #
@@ -14,11 +16,19 @@ execute if score disable_hunter_loot mmo_gamerules matches 0 run function mmo_hu
 execute if score disable_hunter_mobs mmo_gamerules matches 1 run function mmo_hunter:entities/zombies/init
 execute if score disable_hunter_mobs mmo_gamerules matches 1 run function mmo_hunter:entities/skeletons/init
 
+
+############################################################################################
+	# MMO Addon: #
+############################################################################################
+execute if score mmo_worldgen mmo_addon = mrchibismmo mmo_addon run function mmo_worldgen:scoreboards/total_kills
+
+
 ############################################################################################
 	# Hunter EXP #
 ############################################################################################
 function mmo_hunter:scoreboards/gained_exp
 function mmo_hunter:scoreboards/reset_exp
+
 
 ############################################################################################
 	# Level Up Hunter #

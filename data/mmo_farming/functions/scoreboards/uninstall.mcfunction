@@ -5,6 +5,9 @@ scoreboard objectives remove farming_lvlup
 scoreboard objectives remove farming_stat
 
 #
+scoreboard objectives remove instant_growth
+
+#
 scoreboard objectives remove plant_wheat
 scoreboard objectives remove plant_carrot
 scoreboard objectives remove plant_potato

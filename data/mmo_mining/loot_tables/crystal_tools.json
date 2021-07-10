@@ -1,0 +1,118 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": {
+            "type": "minecraft:uniform",
+            "min": 1.0,
+            "max": 1.0
+        },
+            "entries": [             
+                {
+                  "type": "minecraft:item",
+                  "weight": 100,
+                  "name": "minecraft:iron_pickaxe",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:1, crystal_tool:1b, display:{Name:'{\"text\": \"Crystal Pickaxe\", \"color\": \"#8D86F9\"}'}, Damage:120, Enchantments:[{lvl:3s, id:\"minecraft:unbreaking\"}, {lvl:1s, id:\"minecraft:efficiency\"}], HideFlags:3}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.025,
+                            "looting_multiplier": 0.01
+                        }
+                    ]
+                },
+
+
+                {
+                  "type": "minecraft:item",
+                  "weight": 10,
+                  "name": "minecraft:iron_sword",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:1, crystal_tool:1b, display:{Name:'{\"text\": \"Crystal Sword\", \"color\": \"#8D86F9\"}'}, Damage:100, Enchantments:[{lvl:3s, id:\"minecraft:unbreaking\"}], HideFlags:3}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.025,
+                            "looting_multiplier": 0.01
+                        }
+                    ]
+                },
+
+
+                {
+                  "type": "minecraft:item",
+                  "weight": 25,
+                  "name": "minecraft:iron_shovel",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:1, crystal_tool:1b, display:{Name:'{\"text\": \"Crystal Shovel\", \"color\": \"#8D86F9\"}'}, Damage:100, Enchantments:[{lvl:3s, id:\"minecraft:unbreaking\"}, {lvl:1s, id:\"minecraft:efficiency\"}], HideFlags:3}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.025,
+                            "looting_multiplier": 0.01
+                        }
+                    ]
+                },
+
+
+
+                {
+                  "type": "minecraft:item",
+                  "weight": 100,
+                  "name": "minecraft:iron_hoe",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:1, crystal_tool:1b, display:{Name:'{\"text\": \"Crystal Hoe\", \"color\": \"#8D86F9\"}'}, Damage:100, Enchantments:[{lvl:3s, id:\"minecraft:unbreaking\"}], HideFlags:3}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.025,
+                            "looting_multiplier": 0.01
+                        }
+                    ]
+                },
+
+
+                {
+                  "type": "minecraft:item",
+                  "weight": 100,
+                  "name": "minecraft:iron_axe",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:1, crystal_tool:1b, display:{Name:'{\"text\": \"Crystal Axe\", \"color\": \"#8D86F9\"}'}, Damage:100, Enchantments:[{lvl:3s, id:\"minecraft:unbreaking\"}], HideFlags:3}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.025,
+                            "looting_multiplier": 0.01
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

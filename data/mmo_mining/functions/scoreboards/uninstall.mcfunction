@@ -31,6 +31,7 @@ scoreboard objectives remove mined_redstone
 scoreboard objectives remove mined_diamond
 
 #
+scoreboard objectives remove mined_amethyst
 scoreboard objectives remove mined_deep_coal
 scoreboard objectives remove mined_deep_iron
 scoreboard objectives remove mined_deep_gold

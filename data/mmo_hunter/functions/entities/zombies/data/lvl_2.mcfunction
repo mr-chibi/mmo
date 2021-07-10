@@ -2,6 +2,9 @@
 playsound minecraft:entity.lightning_bolt.thunder master @a[distance=0..5] ~ ~ ~ 1 1.5
 
 #
+tag @s add peasant_goblin
+
+#
 attribute @s minecraft:generic.max_health base set 15
 data modify entity @s Health set value 15f
 

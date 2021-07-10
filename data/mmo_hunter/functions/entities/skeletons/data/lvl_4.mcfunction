@@ -2,7 +2,7 @@
 playsound minecraft:entity.lightning_bolt.thunder master @a[distance=0..5] ~ ~ ~ 1 1.5
 
 #
-tag @s add skeleton_solider
+tag @s add skeleton_archer
 
 #
 attribute @s minecraft:generic.max_health base set 30
