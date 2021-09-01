@@ -1,5 +1,6 @@
 {
 	"values": [
-		"mmo:reload"
+		"mmo:reload",
+		"mmo_hunter:loops/init"
 	]
 }

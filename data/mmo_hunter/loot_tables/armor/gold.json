@@ -1,0 +1,348 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": {
+            "type": "minecraft:uniform",
+            "min": 1.0,
+            "max": 1.0
+        },
+            "entries": [             
+                {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "minecraft:golden_helmet",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mmo_armor:1b, tier:1, display:{Name:'{\"text\": \"Common Gold Helmet\", \"color\": \"white\"}'}, AttributeModifiers:[{Slot:\"head\", AttributeName:\"generic.armor\", Name:\"generic.armor\", Operation: 0, Amount:2.0, UUID:[I; 1, 1, 1, 1]}]}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.25,
+                            "looting_multiplier": 0.01
+                        }
+                    ]
+                },
+
+
+                {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "minecraft:golden_helmet",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mmo_armor:1b, tier:2, display:{Name:'{\"text\": \"Uncommon Gold Helmet\", \"color\": \"yellow\"}'}, AttributeModifiers:[{Slot:\"head\", AttributeName:\"generic.armor\", Name:\"generic.armor\", Operation: 0, Amount:4.0, UUID:[I; 1, 1, 1, 1]}]}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.075,
+                            "looting_multiplier": 0.01
+                        }
+                    ]
+                },
+
+
+                {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "minecraft:golden_helmet",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mmo_armor:1b, tier:3, display:{Name:'{\"text\": \"Rare Gold Helmet\", \"color\": \"#E42020\"}'}, AttributeModifiers:[{Slot:\"head\", AttributeName:\"generic.armor\", Name:\"generic.armor\", Operation: 0, Amount:6.0, UUID:[I; 1, 1, 1, 1]}]}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.050,
+                            "looting_multiplier": 0.01
+                        }
+                    ]
+                },
+
+
+                {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "minecraft:golden_helmet",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mmo_armor:1b, tier:4, display:{Name:'{\"text\": \"Legendary Gold Helmet\", \"color\": \"#7921DF\"}'}, AttributeModifiers:[{Slot:\"head\", AttributeName:\"generic.armor\", Name:\"generic.armor\", Operation: 0, Amount:8.0, UUID:[I; 1, 1, 1, 1]}]}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.035,
+                            "looting_multiplier": 0.01
+                        }
+                    ]
+                },
+
+
+                {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "minecraft:golden_chestplate",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mmo_armor:1b, tier:1, display:{Name:'{\"text\": \"Common Gold Chestplate\", \"color\": \"white\"}'}, AttributeModifiers:[{Slot:\"chest\", AttributeName:\"generic.armor\", Name:\"generic.armor\", Operation: 0, Amount:8.0, UUID:[I; 1, 1, 1, 1]}]}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.25,
+                            "looting_multiplier": 0.01
+                        }
+                    ]
+                },
+
+
+                {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "minecraft:golden_chestplate",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mmo_armor:1b, tier:2, display:{Name:'{\"text\": \"Uncommon Gold Chestplate\", \"color\": \"yellow\"}'}, AttributeModifiers:[{Slot:\"chest\", AttributeName:\"generic.armor\", Name:\"generic.armor\", Operation: 0, Amount:10.0, UUID:[I; 1, 1, 1, 1]}]}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.075,
+                            "looting_multiplier": 0.01
+                        }
+                    ]
+                },
+
+
+                {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "minecraft:golden_chestplate",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mmo_armor:1b, tier:3, display:{Name:'{\"text\": \"Rare Gold Chestplate\", \"color\": \"#E42020\"}'}, AttributeModifiers:[{Slot:\"chest\", AttributeName:\"generic.armor\", Name:\"generic.armor\", Operation: 0, Amount:12.0, UUID:[I; 1, 1, 1, 1]}]}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.050,
+                            "looting_multiplier": 0.01
+                        }
+                    ]
+                },
+
+
+                {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "minecraft:golden_chestplate",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mmo_armor:1b, tier:4, display:{Name:'{\"text\": \"Legendary Gold Chestplate\", \"color\": \"#7921DF\"}'}, AttributeModifiers:[{Slot:\"chest\", AttributeName:\"generic.armor\", Name:\"generic.armor\", Operation: 0, Amount:14.0, UUID:[I; 1, 1, 1, 1]}]}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.035,
+                            "looting_multiplier": 0.01
+                        }
+                    ]
+                },
+
+
+                {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "minecraft:golden_leggings",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mmo_armor:1b, tier:1, display:{Name:'{\"text\": \"Common Gold Leggings\", \"color\": \"white\"}'}, AttributeModifiers:[{Slot:\"legs\", AttributeName:\"generic.armor\", Name:\"generic.armor\", Operation: 0, Amount:7.5, UUID:[I; 1, 1, 1, 1]}]}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.25,
+                            "looting_multiplier": 0.01
+                        }
+                    ]
+                },
+
+
+                {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "minecraft:golden_leggings",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mmo_armor:1b, tier:2, display:{Name:'{\"text\": \"Uncommon Gold Leggings\", \"color\": \"yellow\"}'}, AttributeModifiers:[{Slot:\"legs\", AttributeName:\"generic.armor\", Name:\"generic.armor\", Operation: 0, Amount:9.5, UUID:[I; 1, 1, 1, 1]}]}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.075,
+                            "looting_multiplier": 0.01
+                        }
+                    ]
+                },
+
+
+                {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "minecraft:golden_leggings",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mmo_armor:1b, tier:3, display:{Name:'{\"text\": \"Rare Gold Leggings\", \"color\": \"#E42020\"}'}, AttributeModifiers:[{Slot:\"legs\", AttributeName:\"generic.armor\", Name:\"generic.armor\", Operation: 0, Amount:11.5, UUID:[I; 1, 1, 1, 1]}]}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.050,
+                            "looting_multiplier": 0.01
+                        }
+                    ]
+                },
+
+
+                {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "minecraft:golden_leggings",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mmo_armor:1b, tier:4, display:{Name:'{\"text\": \"Legendary Gold Leggings\", \"color\": \"#7921DF\"}'}, AttributeModifiers:[{Slot:\"legs\", AttributeName:\"generic.armor\", Name:\"generic.armor\", Operation: 0, Amount:13.5, UUID:[I; 1, 1, 1, 1]}]}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.035,
+                            "looting_multiplier": 0.01
+                        }
+                    ]
+                },
+
+
+                {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "minecraft:golden_boots",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mmo_armor:1b, tier:1, display:{Name:'{\"text\": \"Common Gold Boots\", \"color\": \"white\"}'}, AttributeModifiers:[{Slot:\"feet\", AttributeName:\"generic.armor\", Name:\"generic.armor\", Operation: 0, Amount:6.0, UUID:[I; 1, 1, 1, 1]}]}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.25,
+                            "looting_multiplier": 0.01
+                        }
+                    ]
+                },
+
+
+                {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "minecraft:golden_boots",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mmo_armor:1b, tier:2, display:{Name:'{\"text\": \"Uncommon Gold Boots\", \"color\": \"yellow\"}'}, AttributeModifiers:[{Slot:\"feet\", AttributeName:\"generic.armor\", Name:\"generic.armor\", Operation: 0, Amount:8.0, UUID:[I; 1, 1, 1, 1]}]}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.075,
+                            "looting_multiplier": 0.01
+                        }
+                    ]
+                },
+
+
+                {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "minecraft:golden_boots",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mmo_armor:1b, tier:3, display:{Name:'{\"text\": \"Rare Gold Boots\", \"color\": \"#E42020\"}'}, AttributeModifiers:[{Slot:\"feet\", AttributeName:\"generic.armor\", Name:\"generic.armor\", Operation: 0, Amount:10.0, UUID:[I; 1, 1, 1, 1]}]}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.050,
+                            "looting_multiplier": 0.01
+                        }
+                    ]
+                },
+
+
+                {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "minecraft:golden_boots",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mmo_armor:1b, tier:4, display:{Name:'{\"text\": \"Legendary Gold Boots\", \"color\": \"#7921DF\"}'}, AttributeModifiers:[{Slot:\"feet\", AttributeName:\"generic.armor\", Name:\"generic.armor\", Operation: 0, Amount:12.0, UUID:[I; 1, 1, 1, 1]}]}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.035,
+                            "looting_multiplier": 0.01
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

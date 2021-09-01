@@ -1,9 +1,11 @@
 #
-function mmo_hunter:entities/zombies/scoreboards/uninstall
-function mmo_hunter:entities/skeletons/scoreboards/uninstall
+scoreboard objectives remove hunter_rng
 
 #
-scoreboard objectives remove mmo_mob_cooldown
+scoreboard objectives remove zombie_drops
+scoreboard objectives remove skeleton_drops
+
+
 
 #
 scoreboard objectives remove hunter_lvl

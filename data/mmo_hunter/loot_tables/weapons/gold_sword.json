@@ -1,0 +1,112 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": {
+            "type": "minecraft:uniform",
+            "min": 1.0,
+            "max": 1.0
+        },
+            "entries": [
+                {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "minecraft:golden_sword",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mmo_sword:1b, tier:1, display:{Name:'{\"text\": \"Common Gold Sword\", \"color\": \"white\"}'}, AttributeModifiers:[{Slot:\"mainhand\", AttributeName:\"generic.attack_damage\", Name:\"generic.attack_damage\", Operation: 0, Amount:22.0, UUID:[I; 1, 1, 1, 1]}, {Slot:\"mainhand\", AttributeName:\"generic.attack_damage\", Name:\"generic.attack_speed\", Operation: 0, Amount:2.2, UUID:[I; 1, 1, 1, 1]}]}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                          "condition": "minecraft:killed_by_player"
+                        },
+
+                        {
+                          "condition": "minecraft:random_chance_with_looting",
+                          "chance": 0.25,
+                          "looting_multiplier": 0.01
+                        }
+                    ]
+                },
+
+
+                {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "minecraft:golden_sword",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mmo_sword:1b, tier:2, display:{Name:'{\"text\": \"Uncommon Gold Sword\", \"color\": \"yellow\"}'}, AttributeModifiers:[{Slot:\"mainhand\", AttributeName:\"generic.attack_damage\", Name:\"generic.attack_damage\", Operation: 0, Amount:24.0, UUID:[I; 1, 1, 1, 1]}, {Slot:\"mainhand\", AttributeName:\"generic.attack_damage\", Name:\"generic.attack_speed\", Operation: 0, Amount:2.4, UUID:[I; 1, 1, 1, 1]}]}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                          "condition": "minecraft:killed_by_player"
+                        },
+
+                        {
+                          "condition": "minecraft:random_chance_with_looting",
+                          "chance": 0.015,
+                          "looting_multiplier": 0.01
+                        }
+                    ]
+                },
+
+
+                {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "minecraft:golden_sword",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mmo_sword:1b, tier:3, display:{Name:'{\"text\": \"Rare Gold Sword\", \"color\": \"#E42020\"}'}, AttributeModifiers:[{Slot:\"mainhand\", AttributeName:\"generic.attack_damage\", Name:\"generic.attack_damage\", Operation: 0, Amount:26.0, UUID:[I; 1, 1, 1, 1]}, {Slot:\"mainhand\", AttributeName:\"generic.attack_damage\", Name:\"generic.attack_speed\", Operation: 0, Amount:2.6, UUID:[I; 1, 1, 1, 1]}]}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                          "condition": "minecraft:killed_by_player"
+                        },
+
+                        {
+                          "condition": "minecraft:random_chance_with_looting",
+                          "chance": 0.0050,
+                          "looting_multiplier": 0.01
+                        }
+                    ]
+                },
+
+
+                {
+                  "type": "minecraft:item",
+                  "weight": 5,
+                  "name": "minecraft:golden_sword",
+                  "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{mmo_sword:1b, tier:4, display:{Name:'{\"text\": \"Legendary Gold Sword\", \"color\": \"#7921DF\"}'}, AttributeModifiers:[{Slot:\"mainhand\", AttributeName:\"generic.attack_damage\", Name:\"generic.attack_damage\", Operation: 0, Amount:28.0, UUID:[I; 1, 1, 1, 1]}, {Slot:\"mainhand\", AttributeName:\"generic.attack_damage\", Name:\"generic.attack_speed\", Operation: 0, Amount:2.8, UUID:[I; 1, 1, 1, 1]}]}"
+                        }
+                    ],
+
+                    "conditions": [
+                        {
+                          "condition": "minecraft:killed_by_player"
+                        },
+
+                        {
+                          "condition": "minecraft:random_chance_with_looting",
+                          "chance": 0.0025,
+                          "looting_multiplier": 0.01
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

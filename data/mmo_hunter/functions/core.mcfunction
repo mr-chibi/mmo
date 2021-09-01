@@ -11,10 +11,14 @@ execute if score disable_hunter_loot mmo_gamerules matches 0 run function mmo_hu
 
 
 ############################################################################################
-	# Hunter Entities #
+	# Hunter Display Items #
 ############################################################################################
-execute if score disable_hunter_mobs mmo_gamerules matches 1 run function mmo_hunter:entities/zombies/init
-execute if score disable_hunter_mobs mmo_gamerules matches 1 run function mmo_hunter:entities/skeletons/init
+execute if score disable_hunter_mobs mmo_gamerules matches 1 run function mmo_hunter:display/leather
+execute if score disable_hunter_mobs mmo_gamerules matches 1 run function mmo_hunter:display/chainmail
+execute if score disable_hunter_mobs mmo_gamerules matches 1 run function mmo_hunter:display/iron
+execute if score disable_hunter_mobs mmo_gamerules matches 1 run function mmo_hunter:display/gold
+execute if score disable_hunter_mobs mmo_gamerules matches 1 run function mmo_hunter:display/diamond
+execute if score disable_hunter_mobs mmo_gamerules matches 1 run function mmo_hunter:display/netherite
 
 
 ############################################################################################
