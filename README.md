@@ -7,6 +7,7 @@
   <li>Each player has there own individual sound setting & Skills.</li>
   <li>Certain skills require levels to unlock secret effects or recipes.</li>
   <li>Server Owners can disable <b>Certain Skills</b> or <b>Features</b> in the Gamerule Settings</li>
+  <li>Custom Item/Armor Stats, Tiers of items & Custom Leveled Mobs</li>
 </ul>
 
 <h2>Introducing MMO Resource Pack!</h2>
