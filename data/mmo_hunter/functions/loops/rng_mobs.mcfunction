@@ -76,7 +76,3 @@ execute as @e[type=minecraft:skeleton,sort=random,limit=1] at @s if entity @a[di
 # Loot Functions:
 function mmo_hunter:loops/loot/zombies
 function mmo_hunter:loops/loot/skeletons
-
-
-# Reset Function:
-schedule function mmo_hunter:loops/rng_mobs 1t
