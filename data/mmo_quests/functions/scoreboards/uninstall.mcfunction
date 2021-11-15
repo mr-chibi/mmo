@@ -2,6 +2,10 @@
 scoreboard objectives remove quest_info
 
 #
+scoreboard objectives remove rng_quest_timer
+scoreboard objectives remove rng_quest_loot
+
+#
 scoreboard objectives remove qs_caught_fish
 scoreboard objectives remove qs_cut_tree
 scoreboard objectives remove qs_cooked_food

@@ -19,7 +19,7 @@ function mmo_quests:trigger/mine_ore
 function mmo_quests:trigger/plant_crops
 function mmo_quests:trigger/slay_mob
 function mmo_quests:trigger/slay_boss
-function mmo_quests:trigger/level_up
+execute if score mmo_mobs mmo_addon = mrchibismmo mmo_addon run function mmo_quests:trigger/level_up
 function mmo_quests:trigger/ran
 
 ############################################################################################
@@ -33,7 +33,7 @@ function mmo_quests:rewards/mine_ore
 function mmo_quests:rewards/plant_crops
 function mmo_quests:rewards/slay_mob
 function mmo_quests:rewards/slay_boss
-function mmo_quests:rewards/level_up
+execute if score mmo_mobs mmo_addon = mrchibismmo mmo_addon run function mmo_quests:rewards/level_up
 function mmo_quests:rewards/ran
 
 ############################################################################################

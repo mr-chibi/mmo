@@ -27,21 +27,6 @@ tellraw @s [{"text": ""}]
 
 
 ############################################################################################
-	# Hunter Mobs Settings [Multiplayer] Settings: #
-############################################################################################
-execute as @s if score disable_hunter_mobs mmo_gamerules matches 1 run tellraw @s [{"text": "Hunter Mobs: ", "color": "white", "bold":true},{"text":"[Enabled]","color":"green", "bold": false}]
-execute as @s if score disable_hunter_mobs mmo_gamerules matches 0 run tellraw @s [{"text": "Hunter Mobs: ", "color": "white", "bold":true},{"text":"[Disabled]","color":"red", "bold": false}]
-
-# [Setting Description]:
-tellraw @s [{"text": "Removes custom mobs from hunter.", "color": "gray"}]
-
-# [Bonus EXP Toggle]:
-execute as @s if score disable_hunter_mobs mmo_gamerules matches 1 run tellraw @s [{"text": "- "},{"text":"[Disable Hunter Mobs]","color":"red","clickEvent":{"action":"run_command","value":"/scoreboard players set disable_hunter_mobs mmo_gamerules 0"}}]
-execute as @s if score disable_hunter_mobs mmo_gamerules matches 0 run tellraw @s [{"text": "- "},{"text":"[Enable Hunter Mobs]","color":"green", "clickEvent":{"action":"run_command","value":"/scoreboard players set disable_hunter_mobs mmo_gamerules 1"}}]
-tellraw @s [{"text": ""}]
-
-
-############################################################################################
 	# Lootables [List]: #
 ############################################################################################
 tellraw @s [{"text": "========================================"}]
