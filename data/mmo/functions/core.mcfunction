@@ -14,6 +14,7 @@ execute as @a at @s run scoreboard players enable @s mmo_stats
 execute as @a at @s run scoreboard players enable @s mmo_user_setting
 execute as @a at @s run scoreboard players enable @s sound_settings
 execute as @a at @s run scoreboard players enable @s exp_settings
+execute as @a at @s run scoreboard players enable @s quest_notify
 
 
 ############################################################################################
@@ -29,15 +30,17 @@ execute as @a at @s[scores={exp_settings=0}] run function mmo:experience_display
 execute as @a at @s[scores={sound_settings=0}] run function #mmo:sounds
 
 ############################################################################################
-	# Addon Mr_Chibi'sMMO NPCS Quests: #
+	# MMO Quests Gamerule: #
 ############################################################################################
-execute as @a at @s if score mmo_npcs mmo_addon = mrchibismmo mmo_addon run function mmo_npcs:scoreboards/count
+execute as @a at @s if score disable_quests mmo_gamerules matches 1 run function mmo_quests:init
+execute as @a at @s run function mmo_minecraft:init
 
 ############################################################################################
 	# Skills Menu: #
 ############################################################################################
 execute as @a at @s run function mmo_attack:core
 execute as @a at @s run function mmo_cooking:core
+execute as @a at @s run function mmo_crafting:core
 execute as @a at @s run function mmo_defense:core
 execute as @a at @s run function mmo_excavation:core
 execute as @a at @s run function mmo_farming:core

@@ -23,6 +23,21 @@ tellraw @s [{"text": ""}]
 
 
 ############################################################################################
+	# Quest Notifications Settings: #
+############################################################################################
+tellraw @s[scores={quest_notify=0}] [{"text": "Quest Notifications: ", "color": "white", "bold":true},{"text":"[Disabled]","color":"red", "bold": false}]
+tellraw @s[scores={quest_notify=1}] [{"text": "Quest Notifications: ", "color": "white", "bold":true},{"text":"[Enabled]","color":"green", "bold": false}]
+
+# [Setting Description]:
+tellraw @s [{"text": "Notifications that pop up when finishing a quest.", "color": "gray"}]
+
+# [Sound Toggle]:
+tellraw @s[scores={quest_notify=0}] [{"text": "- "},{"text":"[Enable Notifications]","color":"green","clickEvent":{"action":"run_command","value":"/trigger quest_notify set 1"}}]
+tellraw @s[scores={quest_notify=1}] [{"text": "- "},{"text":"[Disable Notifications]","color":"red","clickEvent":{"action":"run_command","value":"/trigger quest_notify set 0"}}]
+tellraw @s [{"text": ""}]
+
+
+############################################################################################
 	# Sound Settings: #
 ############################################################################################
 tellraw @s[scores={sound_settings=0}] [{"text": "DataPack Sounds: ", "color": "white", "bold":true},{"text":"[Enabled]","color":"green", "bold": false}]
@@ -118,3 +133,4 @@ scoreboard players set @s[scores={vein_settings=2..}] vein_settings 0
 scoreboard players set @s[scores={hunter_settings=2..}] hunter_settings 0
 scoreboard players set @s[scores={agility_settings=2..}] agility_settings 0
 scoreboard players set @s[scores={exp_settings=2..}] exp_settings 0
+scoreboard players set @s[scores={quest_notify=2..}] quest_notify 0

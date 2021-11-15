@@ -29,6 +29,7 @@ scoreboard objectives remove mining_settings
 scoreboard objectives remove vein_settings
 scoreboard objectives remove agility_settings
 scoreboard objectives remove exp_settings
+scoreboard objectives remove quest_notify
 
 #
 scoreboard objectives remove mmo_durabliity

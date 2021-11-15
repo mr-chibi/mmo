@@ -96,6 +96,25 @@ tellraw @s [{"text": ""}]
 
 
 ############################################################################################
+	# MMO Quests: #
+############################################################################################
+tellraw @s [{"text": "========================================"}]
+tellraw @s [{"text": "MMO Quests ", "color": "yellow", "bold":true}]
+tellraw @s [{"text": "========================================\n"}]
+
+execute as @s if score disable_quests mmo_gamerules matches 1 run tellraw @s [{"text": "Quests: ", "color": "white", "bold":true},{"text":"[Enabled]","color":"green", "bold": false}]
+execute as @s if score disable_quests mmo_gamerules matches 0 run tellraw @s [{"text": "Quests: ", "color": "white", "bold":true},{"text":"[Disabled]","color":"red", "bold": false}]
+
+# [Setting Description]:
+tellraw @s [{"text": "Removes Quests from mmo", "color": "gray"}]
+
+# [Bonus EXP Toggle]:
+execute as @s if score disable_quests mmo_gamerules matches 1 run tellraw @s [{"text": "- "},{"text":"[Disable Quests]","color":"red","clickEvent":{"action":"run_command","value":"/scoreboard players set disable_quests mmo_gamerules 0"}}]
+execute as @s if score disable_quests mmo_gamerules matches 0 run tellraw @s [{"text": "- "},{"text":"[Enable Quests]","color":"green", "clickEvent":{"action":"run_command","value":"/scoreboard players set disable_quests mmo_gamerules 1"}}]
+tellraw @s [{"text": ""}]
+
+
+############################################################################################
 	# Page Navigation #
 ############################################################################################
 tellraw @s [{"text":"[Next]", "color":"green", "clickEvent":{"action":"run_command","value":"/function mmo:commands/mmo_gamerules2"}}]

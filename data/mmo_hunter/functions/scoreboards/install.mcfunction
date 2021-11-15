@@ -1,14 +1,6 @@
 ########################################################################
 # 
-########################################################################
-scoreboard objectives add hunter_rng dummy
-
-#
-scoreboard objectives add zombie_drops minecraft.killed:minecraft.zombie
-scoreboard objectives add skeleton_drops minecraft.killed:minecraft.skeleton
-
-
-#
+#########################################################################
 scoreboard objectives add hunter_lvl dummy
 scoreboard objectives add hunter_exp dummy
 scoreboard objectives add hunter_lvlup dummy

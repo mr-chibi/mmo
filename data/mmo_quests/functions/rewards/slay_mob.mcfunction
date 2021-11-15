@@ -1,0 +1,6 @@
+#
+execute as @s[scores={quest_info=1}] if score @e[type=minecraft:villager,tag=mmo_quests,distance=0..5,limit=1] qs_slay_mob matches 1 if score @s qs_slay_mob matches 0 run tellraw @s [{"text": "[MMO Quest]: ", "color": "gold"}, {"text": "Slay Mob: ", "color": "yellow"}, {"text": "[Locked]", "color": "gray"}]
+execute as @s[scores={quest_info=1}] if score @e[type=minecraft:villager,tag=mmo_quests,distance=0..5,limit=1] qs_slay_mob matches 1 if score @s qs_slay_mob matches 1 run tellraw @s [{"text": "[MMO Quest]: ", "color": "gold"}, {"text": "Completed Slay Mob, Added 65 EXP to hunter!", "color": "green"}]
+execute as @s[scores={quest_info=1}] if score @e[type=minecraft:villager,tag=mmo_quests,distance=0..5,limit=1] qs_slay_mob matches 1 if score @s qs_slay_mob matches 1 run scoreboard players add @s hunter_exp 65
+execute as @s[scores={quest_info=1}] if score @e[type=minecraft:villager,tag=mmo_quests,distance=0..5,limit=1] qs_slay_mob matches 1 if score @s qs_slay_mob matches 1 run experience add @s 15 points
+execute as @s[scores={quest_info=1}] if score @e[type=minecraft:villager,tag=mmo_quests,distance=0..5,limit=1] qs_slay_mob matches 1 if score @s qs_slay_mob matches 1 run scoreboard players reset @s qs_slay_mob

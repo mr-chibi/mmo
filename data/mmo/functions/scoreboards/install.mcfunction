@@ -28,6 +28,7 @@ scoreboard objectives add mining_settings trigger
 scoreboard objectives add vein_settings trigger
 scoreboard objectives add agility_settings trigger
 scoreboard objectives add exp_settings trigger
+scoreboard objectives add quest_notify trigger
 
 
 ############################################################################################
@@ -40,8 +41,7 @@ scoreboard objectives add mmo_durabliity dummy
 	# MMO Global Rules #
 ############################################################################################
 scoreboard players add disable_hitpoints mmo_gamerules 0
-scoreboard players add disable_hunter_mobs mmo_gamerules 0
-
+scoreboard players add disable_quests mmo_gamerules 0
 
 ############################################################################################
 	# MMO Global Abilities #

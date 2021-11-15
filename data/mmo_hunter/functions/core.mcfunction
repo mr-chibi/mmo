@@ -11,13 +11,9 @@ execute if score disable_hunter_loot mmo_gamerules matches 0 run function mmo_hu
 
 
 ############################################################################################
-	# Hunter Display Items #
-############################################################################################
-execute if score disable_hunter_mobs mmo_gamerules matches 1 run function mmo_hunter:loops/init
-
-############################################################################################
 	# MMO Addon: #
 ############################################################################################
+execute if score mmo_mobs mmo_addon = mrchibismmo mmo_addon run function mmo_mobs:init
 execute if score mmo_worldgen mmo_addon = mrchibismmo mmo_addon run function mmo_worldgen:scoreboards/total_kills
 
 
