@@ -25,6 +25,7 @@ execute if score disable_defense_ability mmo_gamerules matches 0 run effect give
 	# Cooking Recipes: #
 ############################################################################################
 recipe give @s[scores={cooking_lvl=10..}] mmo_cooking:rotten_flesh
+recipe give @s[scores={cooking_lvl=15..}] mmo_cooking:nether_wart
 
 
 ############################################################################################
@@ -202,3 +203,11 @@ attribute @s[tag=mmo_hitpoints,scores={hitpoints_lvl=86..}] minecraft:generic.ma
 ############################################################################################
 execute if score disable_agility_ability mmo_gamerules matches 0 if score @s agility_settings matches 1 run effect give @s[scores={agility_lvl=10..19}] minecraft:speed 9999 0 true
 execute if score disable_agility_ability mmo_gamerules matches 0 if score @s agility_settings matches 1 run effect give @s[scores={agility_lvl=20..}] minecraft:speed 9999 1 true
+
+
+############################################################################################
+	# Smithing Perks: #
+############################################################################################
+recipe give @s[scores={smithing_lvl=5..}] mmo_smithing:iron_block
+recipe give @s[scores={smithing_lvl=10..}] mmo_smithing:copper_block
+recipe give @s[scores={smithing_lvl=15..}] mmo_smithing:gold_block

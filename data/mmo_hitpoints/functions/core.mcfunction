@@ -15,6 +15,7 @@ function mmo_hitpoints:scoreboards/reset_exp
 	# Hitpoints Level Up #
 ############################################################################################
 execute if score @s hitpoints_exp >= @s hitpoints_lvlup run scoreboard players set @s level_up 10
+execute if score @s hitpoints_exp >= @s hitpoints_lvlup run scoreboard players enable @s mmo_reward
 
 
 ############################################################################################

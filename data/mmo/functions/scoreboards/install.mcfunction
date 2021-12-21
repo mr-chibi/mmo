@@ -81,6 +81,7 @@ scoreboard players set woodcutting_stat stats_scoreboard 150
 scoreboard players set hitpoints_stat stats_scoreboard 750
 scoreboard players set agility_stat stats_scoreboard 350
 scoreboard players set smithing_stat stats_scoreboard 150
+scoreboard players set magic_stat stats_scoreboard 150
 
 # Add double experience into pack
 scoreboard players set double_exp mmo_gamerules 2

@@ -24,6 +24,7 @@ function mmo_woodcutting:scoreboards/reset_exp
 	# Woodcutting Level Up #
 ############################################################################################
 execute if score @s woodcutting_exp >= @s woodcutting_lvup run scoreboard players set @s level_up 8
+execute if score @s woodcutting_exp >= @s woodcutting_lvup run scoreboard players enable @s mmo_reward
 
 ############################################################################################
 	# Sound GUI #

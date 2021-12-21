@@ -1,4 +1,7 @@
 #
+scoreboard objectives remove mmo_reward
+
+#
 scoreboard objectives remove quest_info
 
 #

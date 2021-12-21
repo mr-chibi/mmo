@@ -56,10 +56,6 @@ execute as @e[type=minecraft:villager,tag=mmo_quests] at @s[scores={qs_slay_boss
 execute as @e[type=minecraft:villager,tag=mmo_quests] at @s[scores={qs_slay_boss=1}] if entity @p[distance=0..5] run tellraw @p [{"text": "Slay Boss: ", "color": "gray"}, {"text": "[Remove]", "color": "red", "clickEvent":{"action":"run_command","value":"/execute as @e[type=minecraft:villager,tag=mmo_quests,distance=0..5] at @s run scoreboard players set @s qs_slay_boss 0"}}]
 
 #
-execute as @e[type=minecraft:villager,tag=mmo_quests] at @s[scores={qs_level_up=0}] if entity @p[distance=0..5] run tellraw @p [{"text": "Level Up (Reward: Random Hunter Loot): ", "color": "gray"}, {"text": "[Add]", "color": "green", "clickEvent":{"action":"run_command","value":"/execute as @e[type=minecraft:villager,tag=mmo_quests,distance=0..5] at @s run scoreboard players set @s qs_level_up 1"}}]
-execute as @e[type=minecraft:villager,tag=mmo_quests] at @s[scores={qs_level_up=1}] if entity @p[distance=0..5] run tellraw @p [{"text": "Level Up (Reward: Random Hunter Loot): ", "color": "gray"}, {"text": "[Remove]", "color": "red", "clickEvent":{"action":"run_command","value":"/execute as @e[type=minecraft:villager,tag=mmo_quests,distance=0..5] at @s run scoreboard players set @s qs_level_up 0"}}]
-
-#
 execute as @e[type=minecraft:villager,tag=mmo_quests] at @s[scores={qs_ran=0}] if entity @p[distance=0..5] run tellraw @p [{"text": "Run few blocks ", "color": "gray"}, {"text": "[Add]", "color": "green", "clickEvent":{"action":"run_command","value":"/execute as @e[type=minecraft:villager,tag=mmo_quests,distance=0..5] at @s run scoreboard players set @s qs_ran 1"}}]
 execute as @e[type=minecraft:villager,tag=mmo_quests] at @s[scores={qs_ran=1}] if entity @p[distance=0..5] run tellraw @p [{"text": "Run few blocks ", "color": "gray"}, {"text": "[Remove]", "color": "red", "clickEvent":{"action":"run_command","value":"/execute as @e[type=minecraft:villager,tag=mmo_quests,distance=0..5] at @s run scoreboard players set @s qs_ran 0"}}]
 

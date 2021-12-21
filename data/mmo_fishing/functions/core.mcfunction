@@ -15,6 +15,7 @@ function mmo_fishing:scoreboards/reset_exp
 	# Fishing Level Up #
 ############################################################################################
 execute if score @s fishing_exp >= @s fishing_lvlup run scoreboard players set @s level_up 5
+execute if score @s fishing_exp >= @s fishing_lvlup run scoreboard players enable @s mmo_reward
 
 ############################################################################################
 	# Sound GUI #

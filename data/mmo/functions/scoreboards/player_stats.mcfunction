@@ -84,3 +84,9 @@ scoreboard players add @s smithing_lvl 0
 scoreboard players set @s[scores={smithing_lvl=0}] smithing_exp 0
 scoreboard players operation @s[scores={smithing_lvl=0}] smithing_lvlup = smithing_stat stats_scoreboard
 scoreboard players add @s[scores={smithing_lvl=0}] smithing_lvl 1
+
+# Magic Stats [13]
+scoreboard players add @s magic_lvl 0
+scoreboard players set @s[scores={magic_lvl=0}] magic_exp 0
+scoreboard players operation @s[scores={magic_lvl=0}] magic_lvlup = magic_stat stats_scoreboard
+scoreboard players add @s[scores={magic_lvl=0}] magic_lvl 1

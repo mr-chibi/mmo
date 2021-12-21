@@ -20,6 +20,7 @@ function mmo_farming:scoreboards/reset_exp
 	# Farming Level Up #
 ############################################################################################
 execute if score @s farming_exp >= @s farming_lvlup run scoreboard players set @s level_up 4
+execute if score @s farming_exp >= @s farming_lvlup run scoreboard players enable @s mmo_reward
 
 ############################################################################################
 	# Sound GUI #

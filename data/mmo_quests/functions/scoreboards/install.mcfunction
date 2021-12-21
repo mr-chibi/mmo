@@ -1,4 +1,7 @@
 #
+scoreboard objectives add mmo_reward trigger
+
+#
 scoreboard objectives add quest_info minecraft.custom:minecraft.talked_to_villager
 
 #

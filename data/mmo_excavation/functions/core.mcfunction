@@ -18,6 +18,7 @@ function mmo_excavation:scoreboards/reset_exp
 	# Excavation Level Up #
 ############################################################################################
 execute if score @s excavation_exp >= @s excavation_lvlup run scoreboard players set @s level_up 9
+execute if score @s excavation_exp >= @s excavation_lvlup run scoreboard players enable @s mmo_reward
 
 
 ############################################################################################

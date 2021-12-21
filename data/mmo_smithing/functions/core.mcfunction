@@ -8,6 +8,7 @@ function mmo_smithing:scoreboards/reset_exp
 	# smithing Level Up #
 ############################################################################################
 execute if score @s smithing_exp >= @s smithing_lvlup run scoreboard players set @s level_up 12
+execute if score @s smithing_exp >= @s smithing_lvlup run scoreboard players enable @s mmo_reward
 
 ############################################################################################
 	# Sound GUI #

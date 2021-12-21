@@ -14,6 +14,7 @@ function mmo_attack:scoreboards/reset_exp
 	# Attack Level Up #
 ############################################################################################
 execute if score @s attack_exp >= @s attack_lvlup run scoreboard players set @s level_up 1
+execute if score @s attack_exp >= @s attack_lvlup run scoreboard players enable @s mmo_reward
 
 
 ############################################################################################

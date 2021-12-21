@@ -1,48 +1,58 @@
+# Enable Spells book:
+execute as @a at @s[tag=magic_book] run scoreboard players enable @s mmo_spells
+execute as @a at @s[tag=magic_book] run scoreboard players enable @s mmo_active_spell
+
 ############################################################################################
-	# Mining Tags #
+	# Magic Gained EXP #
 ############################################################################################
-function mmo_mining:tags/holdingpickaxe
-function mmo_mining:tags/holdingcrystalpickaxe
+execute as @a at @s[tag=magic_book] run function mmo_magic:scoreboards/gained_exp
 
 
 ############################################################################################
-	# Mining Perks: #
+	# Magic SpellBook #
 ############################################################################################
-function mmo_mining:perks/crystal_pickaxe
-
-############################################################################################
-	# Hunter Loot #
-############################################################################################
-execute if score disable_mining_loot mmo_gamerules matches 0 run function mmo_mining:loot
+execute as @a at @s[tag=magic_book,scores={mmo_spells=1..}] run function mmo_magic:spellbook/page_1
 
 
 ############################################################################################
-	# Mining Vein Miner EXP Gained: #
+	# Magic Active Spell #
 ############################################################################################
-execute as @s[scores={mining_lvl=50..,vein_settings=1},tag=mmo_holdingPickaxe] run function mmo_mining:scoreboards/vein_exp
+execute as @a at @s[tag=magic_book] run function mmo_magic:active_spells
 
 
 ############################################################################################
-	# Mining Gained EXP #
+	# Magic Cooldowns  #
 ############################################################################################
-function mmo_mining:scoreboards/gained_exp
-function mmo_mining:scoreboards/reset_exp
+execute as @a at @s run function mmo_magic:cooldowns/spells
 
 
 ############################################################################################
-	# Mining Level Up #
+	# Magic Particles #
 ############################################################################################
-execute if score @s mining_exp >= @s mining_lvlup run scoreboard players set @s level_up 7
-execute if score @s mining_exp >= @s mining_lvlup run scoreboard players enable @s mmo_reward
+execute as @a at @s run function mmo_magic:particles/magic
+
+
+############################################################################################
+	# Magic Tags #
+############################################################################################
+execute as @a at @s run function mmo_magic:tags/magic_book
+execute as @a at @s run function mmo_magic:tags/toggle_spellbook
+
+
+############################################################################################
+	# Magic Level Up #
+############################################################################################
+execute if score @s magic_exp >= @s magic_lvlup run scoreboard players set @s level_up 13
+execute if score @s magic_exp >= @s magic_lvlup run scoreboard players enable @s mmo_reward
 
 
 ############################################################################################
 	# Sound GUI #
 ############################################################################################
-execute as @s[scores={level_up=7,sound_settings=0}] run function mmo:sounds/level_up
+execute as @s[scores={level_up=13,sound_settings=0}] run function mmo:sounds/level_up
 
 
 ############################################################################################
-	# Incriment Mining Level Up & EXP #
+	# Magic Level up Incriment #
 ############################################################################################
-execute as @s[scores={level_up=7}] run function mmo_mining:scoreboards/level_up
+execute as @s[scores={level_up=13}] run function mmo_magic:scoreboards/level_up

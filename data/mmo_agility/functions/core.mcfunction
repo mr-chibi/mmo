@@ -7,6 +7,7 @@ function mmo_agility:scoreboards/gained_exp
 	# Agility Level Up #
 ############################################################################################
 execute if score @s agility_exp >= @s agility_lvlup run scoreboard players set @s level_up 11
+execute if score @s agility_exp >= @s agility_lvlup run scoreboard players enable @s mmo_reward
 
 ############################################################################################
 	# Sound GUI #
