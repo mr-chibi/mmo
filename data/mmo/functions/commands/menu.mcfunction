@@ -3,14 +3,13 @@
 ############################################################################################
 playsound minecraft:ui.button.click master @s[scores={sound_settings=0}] ~ ~ ~ 20 1
 
-
 ############################################################################################
 	# MMO Main Menu #
 ############################################################################################
-tellraw @s [{"text": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=", "color": "blue"}]
-tellraw @s [{"text": "Mr_Chibi'sMMO", "color": "aqua"}, {"text": ", ", "color": "white"}, {"text": "Pack Version: 5", "color": "light_purple"}]
-tellraw @s [{"text": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=", "color": "blue"}]
-tellraw @s [{"text": ""}]
+tellraw @s [{"text": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=", "color": "#fefefe"}]
+tellraw @s [{"text": "MMO Main Menu", "color": "aqua", "bold":true}]
+tellraw @s [{"text": "Click [example], below to toggle pages.", "color": "#cecece"}]
+tellraw @s [{"text": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n", "color": "#fefefe"}]
 
 tellraw @s [{"text": "- "},{"text":"[Help]","color":"green","clickEvent":{"action":"run_command","value":"/trigger mmo_help"}},{"text": " List of Commands."}]
 tellraw @s [{"text": ""}]
@@ -21,10 +20,10 @@ tellraw @s [{"text": ""}]
 tellraw @s [{"text": "- "},{"text":"[Settings]","color":"green","clickEvent":{"action":"run_command","value":"/trigger mmo_user_setting"}},{"text": " Your MMO Player Settings."}]
 tellraw @s [{"text": ""}]
 
-tellraw @s [{"text": "- "},{"text":"[Gamerules]","color":"yellow","clickEvent":{"action":"run_command","value":"/function mmo:commands/mmo_gamerules"}},{"text": " Server/Singleplayer Datapack Rules."}]
-tellraw @s [{"text": ""}]
+tellraw @s [{"text": "- "},{"text":"[Gamerules]","color":"yellow","clickEvent":{"action":"run_command","value":"/function mmo:commands/gamerules/1"}},{"text": " Rules that affect world from the mmo."}]
+tellraw @s [{"text": "- ", "color": "white"}, {"text": "Multiplayer Server Operator / Singleplayer Datapack Rules. \n", "color": "red"}]
 
-execute as @s if score disable_quests mmo_gamerules matches 1 run tellraw @s [{"text": "- "},{"text":"[Create Quests]","color":"light_purple","clickEvent":{"action":"run_command","value":"/function mmo_quests:commands/create_quest"}},{"text": " Server/Singleplayer Datapack Server Operators Only."}]
+execute as @s if score disable_quests mmo_gamerules matches 1 run tellraw @s [{"text": "- "},{"text":"[Create Quests]","color":"light_purple","clickEvent":{"action":"run_command","value":"/function mmo_quests:commands/create_quest"}},{"text": " "}]
 execute as @s if score disable_quests mmo_gamerules matches 1 run tellraw @s [{"text": ""}]
 
 execute as @s if score disable_quests mmo_gamerules matches 1 run tellraw @s [{"text": "- "},{"text":"[Edit Quests]","color":"light_purple","clickEvent":{"action":"run_command","value":"/function mmo_quests:commands/quest_modify"}},{"text": " Server/Singleplayer Datapack Server Operators Only."}]

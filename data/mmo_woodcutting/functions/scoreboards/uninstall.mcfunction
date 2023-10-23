@@ -15,3 +15,41 @@ scoreboard objectives remove cut_acacia
 scoreboard objectives remove cut_dark_oak
 scoreboard objectives remove cut_crimson_stem
 scoreboard objectives remove cut_warped_stem
+scoreboard objectives remove cut_mangrove
+scoreboard objectives remove cut_cherry
+
+#
+scoreboard objectives remove cut_oak_wood
+scoreboard objectives remove cut_spruce_wood
+scoreboard objectives remove cut_birch_wood
+scoreboard objectives remove cut_jungle_wood
+scoreboard objectives remove cut_acacia_wood
+scoreboard objectives remove cut_dark_oak_wood
+scoreboard objectives remove cut_crimson_hyphae
+scoreboard objectives remove cut_warped_hyphae
+scoreboard objectives remove cut_mangrove_wood
+scoreboard objectives remove cut_cherry_wood
+
+#
+scoreboard objectives remove cut_stripped_oak_log
+scoreboard objectives remove cut_stripped_spruce_log
+scoreboard objectives remove cut_stripped_birch_log
+scoreboard objectives remove cut_stripped_jungle_log
+scoreboard objectives remove cut_stripped_acacia_log
+scoreboard objectives remove cut_stripped_dark_oak_log
+scoreboard objectives remove cut_stripped_crimson_stem
+scoreboard objectives remove cut_stripped_warped_stem
+scoreboard objectives remove cut_stripped_mangrove_log
+scoreboard objectives remove cut_stripped_cherry_log
+
+#
+scoreboard objectives remove cut_stripped_oak_wood
+scoreboard objectives remove cut_stripped_spruce_wood
+scoreboard objectives remove cut_stripped_birch_wood
+scoreboard objectives remove cut_stripped_jungle_wood
+scoreboard objectives remove cut_stripped_acacia_wood
+scoreboard objectives remove cut_stripped_dark_oak_wood
+scoreboard objectives remove cut_stripped_crimson_hyphae
+scoreboard objectives remove cut_stripped_warped_hyphae
+scoreboard objectives remove cut_stripped_mangrove_wood
+scoreboard objectives remove cut_stripped_cherry_wood

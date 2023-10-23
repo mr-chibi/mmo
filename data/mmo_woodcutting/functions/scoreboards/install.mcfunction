@@ -10,6 +10,8 @@ scoreboard players set lvl_20 woodcutting_lvl 30
 
 #
 scoreboard objectives add wc_vein_count dummy
+scoreboard players set spruce wc_vein_count 35
+
 
 #
 scoreboard objectives add cut_oak minecraft.mined:minecraft.oak_log
@@ -20,3 +22,41 @@ scoreboard objectives add cut_acacia minecraft.mined:minecraft.acacia_log
 scoreboard objectives add cut_dark_oak minecraft.mined:minecraft.dark_oak_log
 scoreboard objectives add cut_crimson_stem minecraft.mined:minecraft.crimson_stem
 scoreboard objectives add cut_warped_stem minecraft.mined:minecraft.warped_stem
+scoreboard objectives add cut_mangrove minecraft.mined:minecraft.mangrove_log
+scoreboard objectives add cut_cherry minecraft.mined:minecraft.cherry_log
+
+#
+scoreboard objectives add cut_oak_wood minecraft.mined:minecraft.oak_wood
+scoreboard objectives add cut_spruce_wood minecraft.mined:minecraft.spruce_wood
+scoreboard objectives add cut_birch_wood minecraft.mined:minecraft.birch_wood
+scoreboard objectives add cut_jungle_wood minecraft.mined:minecraft.jungle_wood
+scoreboard objectives add cut_acacia_wood minecraft.mined:minecraft.acacia_wood
+scoreboard objectives add cut_dark_oak_wood minecraft.mined:minecraft.dark_oak_wood
+scoreboard objectives add cut_crimson_hyphae minecraft.mined:minecraft.crimson_hyphae
+scoreboard objectives add cut_warped_hyphae minecraft.mined:minecraft.warped_hyphae
+scoreboard objectives add cut_mangrove_wood minecraft.mined:minecraft.mangrove_wood
+scoreboard objectives add cut_cherry_wood minecraft.mined:minecraft.cherry_wood
+
+#
+scoreboard objectives add cut_stripped_oak_log minecraft.mined:minecraft.stripped_oak_log
+scoreboard objectives add cut_stripped_spruce_log minecraft.mined:minecraft.stripped_spruce_log
+scoreboard objectives add cut_stripped_birch_log minecraft.mined:minecraft.stripped_birch_log
+scoreboard objectives add cut_stripped_jungle_log minecraft.mined:minecraft.stripped_jungle_log
+scoreboard objectives add cut_stripped_acacia_log minecraft.mined:minecraft.stripped_acacia_log
+scoreboard objectives add cut_stripped_dark_oak_log minecraft.mined:minecraft.stripped_dark_oak_log
+scoreboard objectives add cut_stripped_crimson_stem minecraft.mined:minecraft.stripped_crimson_stem
+scoreboard objectives add cut_stripped_warped_stem minecraft.mined:minecraft.stripped_warped_stem
+scoreboard objectives add cut_stripped_mangrove_log minecraft.mined:minecraft.stripped_mangrove_log
+scoreboard objectives add cut_stripped_cherry_log minecraft.mined:minecraft.stripped_cherry_log
+
+#
+scoreboard objectives add cut_stripped_oak_wood minecraft.mined:minecraft.stripped_oak_wood
+scoreboard objectives add cut_stripped_spruce_wood minecraft.mined:minecraft.stripped_spruce_wood
+scoreboard objectives add cut_stripped_birch_wood minecraft.mined:minecraft.stripped_birch_wood
+scoreboard objectives add cut_stripped_jungle_wood minecraft.mined:minecraft.stripped_jungle_wood
+scoreboard objectives add cut_stripped_acacia_wood minecraft.mined:minecraft.stripped_acacia_wood
+scoreboard objectives add cut_stripped_dark_oak_wood minecraft.mined:minecraft.stripped_dark_oak_wood
+scoreboard objectives add cut_stripped_crimson_hyphae minecraft.mined:minecraft.stripped_crimson_hyphae
+scoreboard objectives add cut_stripped_warped_hyphae minecraft.mined:minecraft.stripped_warped_hyphae
+scoreboard objectives add cut_stripped_mangrove_wood minecraft.mined:minecraft.stripped_mangrove_wood
+scoreboard objectives add cut_stripped_cherry_wood minecraft.mined:minecraft.stripped_cherry_wood

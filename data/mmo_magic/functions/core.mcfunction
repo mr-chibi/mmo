@@ -1,58 +1,50 @@
-# Enable Spells book:
-execute as @a at @s[tag=magic_book] run scoreboard players enable @s mmo_spells
-execute as @a at @s[tag=magic_book] run scoreboard players enable @s mmo_active_spell
+############################################################################################
+	# Check if player holding a brush #
+############################################################################################
+function mmo_magic:tags/brush
 
 ############################################################################################
-	# Magic Gained EXP #
+	# Magic Count Glyphs #
 ############################################################################################
-execute as @a at @s[tag=magic_book] run function mmo_magic:scoreboards/gained_exp
-
-
-############################################################################################
-	# Magic SpellBook #
-############################################################################################
-execute as @a at @s[tag=magic_book,scores={mmo_spells=1..}] run function mmo_magic:spellbook/page_1
+function mmo_magic:scoreboards/glyphs
 
 
 ############################################################################################
-	# Magic Active Spell #
+	# Magic cauldron function: #
 ############################################################################################
-execute as @a at @s[tag=magic_book] run function mmo_magic:active_spells
-
-
-############################################################################################
-	# Magic Cooldowns  #
-############################################################################################
-execute as @a at @s run function mmo_magic:cooldowns/spells
-
+execute anchored eyes positioned ^ ^ ^1 align xyz if block ~0.5 ~ ~0.5 minecraft:water_cauldron[level=3] if block ~0.5 ~-1 ~0.5 minecraft:campfire[lit=true] run function mmo_magic:cauldron/init
+execute anchored eyes positioned ^ ^ ^2 align xyz if block ~0.5 ~ ~0.5 minecraft:water_cauldron[level=3] if block ~0.5 ~-1 ~0.5 minecraft:campfire[lit=true] run function mmo_magic:cauldron/init
+execute anchored eyes positioned ^ ^ ^3 align xyz if block ~0.5 ~ ~0.5 minecraft:water_cauldron[level=3] if block ~0.5 ~-1 ~0.5 minecraft:campfire[lit=true] run function mmo_magic:cauldron/init
+execute anchored eyes positioned ^ ^ ^4 align xyz if block ~0.5 ~ ~0.5 minecraft:water_cauldron[level=3] if block ~0.5 ~-1 ~0.5 minecraft:campfire[lit=true] run function mmo_magic:cauldron/init
 
 ############################################################################################
-	# Magic Particles #
+	# Magic Glyphs functions: #
 ############################################################################################
-execute as @a at @s run function mmo_magic:particles/magic
-
+function mmo_magic:glyphs/nature/init
+function mmo_magic:glyphs/water/init
+function mmo_magic:glyphs/flame/init
 
 ############################################################################################
-	# Magic Tags #
+	# "New" Magic Functionallity Gamerule: #
 ############################################################################################
-execute as @a at @s run function mmo_magic:tags/magic_book
-execute as @a at @s run function mmo_magic:tags/toggle_spellbook
+execute if score disable_magic_ability mmo_gamerules matches 0 run function mmo_worldgen:magic/init
 
+############################################################################################
+	# Magic Reset Brush usage: #
+############################################################################################
+scoreboard players set @s[scores={magic_brush_used=1..}] magic_brush_used 0
 
 ############################################################################################
 	# Magic Level Up #
 ############################################################################################
 execute if score @s magic_exp >= @s magic_lvlup run scoreboard players set @s level_up 13
-execute if score @s magic_exp >= @s magic_lvlup run scoreboard players enable @s mmo_reward
-
 
 ############################################################################################
 	# Sound GUI #
 ############################################################################################
 execute as @s[scores={level_up=13,sound_settings=0}] run function mmo:sounds/level_up
 
-
 ############################################################################################
-	# Magic Level up Incriment #
+	# Incriment Mining Level Up & EXP #
 ############################################################################################
 execute as @s[scores={level_up=13}] run function mmo_magic:scoreboards/level_up

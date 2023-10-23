@@ -1,0 +1,8 @@
+{
+	"values": [
+		"mmo_woodcutting:skills/criteria/logs",
+		"mmo_woodcutting:skills/criteria/wood",
+		"mmo_woodcutting:skills/criteria/stripped_logs",
+		"mmo_woodcutting:skills/criteria/stripped_wood"
+	]
+}

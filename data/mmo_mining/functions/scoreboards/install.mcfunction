@@ -4,6 +4,14 @@ scoreboard objectives add mining_exp dummy
 scoreboard objectives add mining_lvlup dummy
 
 #
+scoreboard objectives add countEntities dummy
+
+#
+team add rng_blue
+team modify rng_blue color blue
+
+
+#
 scoreboard players set lvl_10 mining_lvl 10
 scoreboard players set lvl_20 mining_lvl 20
 scoreboard players set lvl_30 mining_lvl 30
@@ -12,6 +20,10 @@ scoreboard players set lvl_50 mining_lvl 50
 
 #
 scoreboard objectives add vein_mining_cnt dummy
+
+#
+scoreboard objectives add mined_cobblestone minecraft.mined:minecraft.cobblestone
+scoreboard objectives add mined_mossy_cobblestone minecraft.mined:minecraft.mossy_cobblestone
 
 #
 scoreboard objectives add mined_stone minecraft.mined:minecraft.stone
@@ -27,7 +39,6 @@ scoreboard objectives add mined_calcite minecraft.mined:minecraft.calcite
 scoreboard objectives add mined_tuff minecraft.mined:minecraft.tuff
 scoreboard objectives add mined_smo_basalt minecraft.mined:minecraft.smooth_basalt
 scoreboard objectives add mined_amethyst minecraft.mined:minecraft.amethyst_block
-
 
 #
 scoreboard objectives add mined_coal minecraft.mined:minecraft.coal_ore
@@ -85,3 +96,6 @@ scoreboard objectives add mined_neth_gold minecraft.mined:minecraft.nether_gold_
 scoreboard objectives add mined_blackstone minecraft.mined:minecraft.blackstone
 scoreboard objectives add mined_gilded minecraft.mined:minecraft.gilded_blackstone
 scoreboard objectives add mined_anc_debris minecraft.mined:minecraft.ancient_debris
+
+#
+scoreboard objectives add mined_end_stone minecraft.mined:minecraft.end_stone

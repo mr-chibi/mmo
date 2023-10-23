@@ -6,11 +6,9 @@ scoreboard players operation @s smithing_lvlup = smithing_stat stats_scoreboard
 scoreboard players operation @s smithing_lvlup *= @s smithing_lvl
 
 ############################################################################################
-	# smithing Level up Text #
+	# Display information when player levels up to next perk:
 ############################################################################################
-tellraw @s [{"text": "Smithing ", "color": "light_purple"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"smithing_lvl"}, "color": "green", "bold": true}]]
-tellraw @s [{"text": "Next level will be in ", "color": "blue"},{"score":{"name":"@s","objective":"smithing_lvlup"}, "color":"dark_green", "bold": true},{"text": " Exp", "color": "green", "bold": true}]
-
+function mmo_smithing:advancements
 
 ############################################################################################
 	# smithing EXP Reset #

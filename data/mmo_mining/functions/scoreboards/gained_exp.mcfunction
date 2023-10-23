@@ -1,6 +1,8 @@
 ############################################################################################
 	# Mining Stones Experience #
 ############################################################################################
+scoreboard players operation @s[scores={mined_cobblestone=1..}] mining_exp += mined_cobblestone stats_experience
+scoreboard players operation @s[scores={mined_mossy_cobblestone=1..}] mining_exp += mined_mossy_cobblestone stats_experience
 scoreboard players operation @s[scores={mined_stone=1..}] mining_exp += mined_stone stats_experience
 scoreboard players operation @s[scores={mined_andesite=1..}] mining_exp += mined_andesite stats_experience
 scoreboard players operation @s[scores={mined_granite=1..}] mining_exp += mined_granite stats_experience
@@ -94,3 +96,9 @@ scoreboard players operation @s[scores={mined_neth_gold=1..}] mining_exp += mine
 scoreboard players operation @s[scores={mined_blackstone=1..}] mining_exp += mined_blackstone stats_experience
 scoreboard players operation @s[scores={mined_gilded=1..}] mining_exp += mined_gilded stats_experience
 scoreboard players operation @s[scores={mined_anc_debris=1..}] mining_exp += mined_anc_debris stats_experience
+
+
+############################################################################################
+	# Mining "The End" NEW BIOMES: #
+############################################################################################
+scoreboard players operation @s[scores={mined_end_stone=1..}] mining_exp += mined_end_stone stats_experience

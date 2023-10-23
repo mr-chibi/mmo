@@ -5,6 +5,11 @@ scoreboard objectives add smithing_lvlup dummy
 scoreboard objectives add smithing_stat dummy
 
 #
+scoreboard players set lvl_5 smithing_lvl 5
+scoreboard players set lvl_10 smithing_lvl 10
+scoreboard players set lvl_15 smithing_lvl 15
+
+#
 scoreboard objectives add smelt_brick minecraft.crafted:minecraft.brick
 scoreboard objectives add smelt_iron minecraft.crafted:minecraft.iron_ingot
 scoreboard objectives add smelt_gold minecraft.crafted:minecraft.gold_ingot

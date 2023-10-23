@@ -1,6 +1,5 @@
 {
 	"values": [
-		"mmo:core",
-		"mmo:gamerules"
+		"mmo:core"
 	]
 }

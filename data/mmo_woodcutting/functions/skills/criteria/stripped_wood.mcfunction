@@ -1,0 +1,13 @@
+############################################################################################
+	# Woodcutting Tree Faller: (Stripped Wood) #
+############################################################################################
+execute as @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=30..,treeFaller_settings=1,cut_stripped_oak_wood=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run function mmo_woodcutting:skills/tree_faller
+execute as @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=30..,treeFaller_settings=1,cut_stripped_spruce_wood=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run function mmo_woodcutting:skills/tree_faller
+execute as @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=30..,treeFaller_settings=1,cut_stripped_birch_wood=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run function mmo_woodcutting:skills/tree_faller
+execute as @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=30..,treeFaller_settings=1,cut_stripped_jungle_wood=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run function mmo_woodcutting:skills/tree_faller
+execute as @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=30..,treeFaller_settings=1,cut_stripped_acacia_wood=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run function mmo_woodcutting:skills/tree_faller
+execute as @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=30..,treeFaller_settings=1,cut_stripped_dark_oak_wood=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run function mmo_woodcutting:skills/tree_faller
+execute as @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=30..,treeFaller_settings=1,cut_stripped_crimson_hyphae=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run function mmo_woodcutting:skills/tree_faller
+execute as @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=30..,treeFaller_settings=1,cut_stripped_warped_hyphae=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run function mmo_woodcutting:skills/tree_faller
+execute as @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=30..,treeFaller_settings=1,cut_stripped_mangrove_wood=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run function mmo_woodcutting:skills/tree_faller
+execute as @s[tag=mmo_holdingAxe,scores={woodcutting_lvl=30..,treeFaller_settings=1,cut_stripped_cherry_wood=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run function mmo_woodcutting:skills/tree_faller

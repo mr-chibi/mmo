@@ -1,46 +1,11 @@
-############################################################################################
-	# Quest Lock Trades: #
-############################################################################################
-execute as @e[type=minecraft:villager,tag=mmo_quests] at @s run data modify entity @s Offers.Recipes set value []
+# When "Player" right clicks assign "Task/Quest":
+execute as @s[scores={mmo_quest_villager_interact=1..}] as @e[type=minecraft:villager,sort=nearest,distance=0..2,limit=1,tag=!mmo_quest_villager] at @s if data entity @s {VillagerData:{profession:"minecraft:none"}} run function mmo_quests:random
 
-############################################################################################
-	# Quest Rewards Command Triggered: #
-############################################################################################
-execute as @s[scores={mmo_reward=1..}] run function mmo_quests:commands/reward
+# When "Player" right clicks, toggle "Dialog":
+execute as @s[scores={mmo_quest_villager_interact=1..}] unless score @s mmo_quest_villager_category matches 1..3 as @e[type=minecraft:villager,sort=nearest,distance=0..2,limit=1,tag=mmo_quest_villager] at @s if data entity @s {VillagerData:{profession:"minecraft:none"}} run function mmo_quests:villager/gui
 
-############################################################################################
-	# Toggle events only: #
-############################################################################################
-function mmo_quests:scoreboards/trigger
+# Villager Quest Functionallity:
+function mmo_quests:villager/init
 
-############################################################################################
-	# Quest Trigger Events: #
-############################################################################################
-function mmo_quests:trigger/caught_fish
-function mmo_quests:trigger/cooked_food
-function mmo_quests:trigger/cut_tree
-function mmo_quests:trigger/harvest_crops
-function mmo_quests:trigger/mine_ore
-function mmo_quests:trigger/plant_crops
-function mmo_quests:trigger/slay_mob
-function mmo_quests:trigger/slay_boss
-function mmo_quests:trigger/level_up
-function mmo_quests:trigger/ran
-
-############################################################################################
-	# Quest Rewards: #
-############################################################################################
-function mmo_quests:rewards/caught_fish
-function mmo_quests:rewards/cooked_food
-function mmo_quests:rewards/cut_tree
-function mmo_quests:rewards/harvest_crops
-function mmo_quests:rewards/mine_ore
-function mmo_quests:rewards/plant_crops
-function mmo_quests:rewards/slay_mob
-function mmo_quests:rewards/slay_boss
-function mmo_quests:rewards/ran
-
-############################################################################################
-	# Quest Reset: #
-############################################################################################
-scoreboard players reset @s quest_info
+# Reset Functionallity:
+function mmo_quests:villager/reset

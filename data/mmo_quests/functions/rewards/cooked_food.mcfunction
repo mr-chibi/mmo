@@ -1,7 +1,0 @@
-execute as @s[scores={quest_info=1}] if score @e[type=minecraft:villager,tag=mmo_quests,distance=0..5,limit=1] qs_cooked_food matches 1 if score @s qs_cooked_food matches 0 run tellraw @s [{"text": "[MMO Quest]: ", "color": "gold"}, {"text": "Cooked Food ", "color": "yellow"}, {"text": "[Locked]", "color": "gray"}]
-execute as @s[scores={quest_info=1}] if score @e[type=minecraft:villager,tag=mmo_quests,distance=0..5,limit=1] qs_cooked_food matches 1 if score @s qs_cooked_food matches 1 run tellraw @s [{"text": "[MMO Quest]: ", "color": "gold"}, {"text": "Completed Cooked Food, Added 75 EXP to cooking!", "color": "green"}]
-execute as @s[scores={quest_info=1}] if score @e[type=minecraft:villager,tag=mmo_quests,distance=0..5,limit=1] qs_cooked_food matches 1 if score @s qs_cooked_food matches 1 run scoreboard players add @s cooking_exp 75
-
-#
-execute as @s[scores={quest_info=1}] if score @e[type=minecraft:villager,tag=mmo_quests,distance=0..5,limit=1] qs_cooked_food matches 1 if score @s qs_cooked_food matches 1 run experience add @s 10 points
-execute as @s[scores={quest_info=1}] if score @e[type=minecraft:villager,tag=mmo_quests,distance=0..5,limit=1] qs_cooked_food matches 1 if score @s qs_cooked_food matches 1 run scoreboard players reset @s qs_cooked_food

@@ -5,6 +5,7 @@ scoreboard players reset @s[scores={shovel_grass_blc=1..}] shovel_grass_blc
 scoreboard players reset @s[scores={shovel_podzol=1..}] shovel_podzol
 scoreboard players reset @s[scores={shovel_mycelium=1..}] shovel_mycelium
 scoreboard players reset @s[scores={shovel_dirt=1..}] shovel_dirt
+scoreboard players reset @s[scores={shovel_clay=1..}] shovel_clay
 scoreboard players reset @s[scores={shovel_coar_dirt=1..}] shovel_coar_dirt
 scoreboard players reset @s[scores={shovel_gravel=1..}] shovel_gravel
 scoreboard players reset @s[scores={shovel_sand=1..}] shovel_sand

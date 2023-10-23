@@ -7,10 +7,10 @@ playsound minecraft:ui.loom.take_result master @s[scores={sound_settings=0}] ~ ~
 ############################################################################################
 	# Menu GUI #
 ############################################################################################
-tellraw @s [{"text": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=", "color": "blue"}]
-tellraw @s [{"text": "Mr_Chibi'sMMO Help", "color": "aqua"}]
-tellraw @s [{"text": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=", "color": "blue"}]
-tellraw @s [{"text": ""}]
+tellraw @s [{"text": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=", "color": "#fefefe"}]
+tellraw @s [{"text": "MMO Help", "color": "aqua", "bold":true}]
+tellraw @s [{"text": "Below will be a list of commands.", "color": "#cecece"}]
+tellraw @s [{"text": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n", "color": "#fefefe"}]
 
 
 # [/trigger mmo_help]:

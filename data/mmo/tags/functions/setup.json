@@ -1,0 +1,19 @@
+{
+	"values": [
+		"mmo_attack:core",
+		"mmo_cooking:core",
+		"mmo_crafting:core",
+		"mmo_defense:core",
+		"mmo_excavation:core",
+		"mmo_farming:core",
+		"mmo_fishing:core",
+		"mmo_hunter:core",
+		"mmo_mining:core",
+		"mmo_woodcutting:core",
+		"mmo_hitpoints:core",
+		"mmo_agility:core",
+		"mmo_smithing:core",
+		"mmo_magic:core",
+		"mmo_quests:init"
+	]
+}

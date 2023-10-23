@@ -15,6 +15,7 @@ scoreboard players set lvl_15 farming_lvl 15
 scoreboard players set lvl_20 farming_lvl 20
 scoreboard players set lvl_25 farming_lvl 25
 scoreboard players set lvl_30 farming_lvl 30
+scoreboard players set lvl_35 farming_lvl 35
 
 #
 scoreboard objectives add plant_wheat minecraft.used:minecraft.wheat_seeds
@@ -26,6 +27,7 @@ scoreboard objectives add plant_melon minecraft.used:minecraft.melon_seeds
 scoreboard objectives add plant_beetroot minecraft.used:minecraft.beetroot_seeds
 scoreboard objectives add plant_sugarcane minecraft.used:minecraft.sugar_cane
 scoreboard objectives add plant_warts minecraft.used:minecraft.nether_wart
+scoreboard objectives add plant_torchflower minecraft.used:minecraft.torchflower_seeds
 
 #
 scoreboard objectives add harvest_wheat minecraft.mined:minecraft.wheat
@@ -36,3 +38,4 @@ scoreboard objectives add harvest_pumpkin minecraft.mined:minecraft.pumpkin
 scoreboard objectives add harvest_melon minecraft.mined:minecraft.melon
 scoreboard objectives add harvest_beetroot minecraft.mined:minecraft.beetroots
 scoreboard objectives add harvest_warts minecraft.mined:minecraft.nether_wart
+scoreboard objectives add harvest_torchflower minecraft.mined:minecraft.torchflower

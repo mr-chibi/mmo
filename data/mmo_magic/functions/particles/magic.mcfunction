@@ -1,1 +1,0 @@
-execute as @s[tag=magic_book] run particle minecraft:enchant ~ ~ ~ 0.25 0.75 0.50 0 15

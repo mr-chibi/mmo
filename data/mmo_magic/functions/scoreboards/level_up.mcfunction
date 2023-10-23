@@ -6,10 +6,9 @@ scoreboard players operation @s magic_lvlup = magic_stat stats_scoreboard
 scoreboard players operation @s magic_lvlup *= @s magic_lvl
 
 ############################################################################################
-	# magic Level up Text #
+	# Display information when player levels up to next perk:
 ############################################################################################
-tellraw @s [{"text": "magic ", "color": "blue"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"magic_lvl"}, "color": "green", "bold": true}]]
-tellraw @s [{"text": "Next level will be in ", "color": "blue"},{"score":{"name":"@s","objective":"magic_lvlup"}, "color":"dark_green", "bold": true},{"text": " Exp", "color": "green", "bold": true}]
+function mmo_magic:advancements
 
 ############################################################################################
 	# magic EXP Reset #

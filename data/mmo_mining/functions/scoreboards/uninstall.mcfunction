@@ -3,8 +3,20 @@ scoreboard objectives remove mining_lvl
 scoreboard objectives remove mining_exp
 scoreboard objectives remove mining_lvlup
 
-#
+##################################################
+# New Mining System:
+##################################################
+scoreboard objectives remove countEntities
+team remove rng_blue
+
+##################################################
+# Mining Objectives:
+##################################################
 scoreboard objectives remove vein_mining_cnt
+
+#
+scoreboard objectives remove mined_cobblestone
+scoreboard objectives remove mined_mossy_cobblestone
 
 #
 scoreboard objectives remove mined_stone
@@ -78,3 +90,6 @@ scoreboard objectives remove mined_neth_gold
 scoreboard objectives remove mined_blackstone
 scoreboard objectives remove mined_gilded
 scoreboard objectives remove mined_anc_debris
+
+#
+scoreboard objectives remove mined_end_stone

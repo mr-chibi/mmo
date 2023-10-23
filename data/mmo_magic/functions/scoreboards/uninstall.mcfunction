@@ -1,15 +1,14 @@
 #
 scoreboard objectives remove magic_lvl 
 scoreboard objectives remove magic_exp 
-scoreboard objectives remove magic_lvlup 
+scoreboard objectives remove magic_lvlup
 
-# Spell Book:
-scoreboard objectives remove mmo_spellbook
-scoreboard objectives remove mmo_spells
+#
+scoreboard objectives remove magic_brush_used
 
-# Fungus on a stick wand:
-scoreboard objectives remove mmo_magic_use
-
-# Current spell active:
-scoreboard objectives remove mmo_active_spell
-scoreboard objectives remove mmo_magic_cooldown
+# Inventory of Glyphs check:
+scoreboard objectives remove nature_glyph
+scoreboard objectives remove flame_glyph
+scoreboard objectives remove water_glyph
+scoreboard objectives remove wind_glyph
+scoreboard objectives remove time_glyph

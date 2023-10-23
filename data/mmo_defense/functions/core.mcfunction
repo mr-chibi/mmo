@@ -9,13 +9,10 @@ function mmo_defense:tags/holdingshield
 function mmo_defense:scoreboards/gained_exp
 function mmo_defense:scoreboards/reset_exp
 
-
 ############################################################################################
 	# Defense Level Up #
 ############################################################################################
 execute if score @s defense_exp >= @s defense_lvlup run scoreboard players set @s level_up 2
-execute if score @s defense_exp >= @s defense_lvlup run scoreboard players enable @s mmo_reward
-
 
 ############################################################################################
 	# Sound GUI #

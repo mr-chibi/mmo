@@ -7,7 +7,8 @@ execute as @s[tag=mmo_crystalAxe,scores={cut_acacia=1..}] if score disable_woodc
 execute as @s[tag=mmo_crystalAxe,scores={cut_dark_oak=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run kill @e[type=item,nbt={Item:{id:"minecraft:dark_oak_log"}},distance=0..15]
 execute as @s[tag=mmo_crystalAxe,scores={cut_warped_stem=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run kill @e[type=item,nbt={Item:{id:"minecraft:warped_stem"}},distance=0..15]
 execute as @s[tag=mmo_crystalAxe,scores={cut_crimson_stem=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run kill @e[type=item,nbt={Item:{id:"minecraft:crimson_stem"}},distance=0..15]
-
+execute as @s[tag=mmo_crystalAxe,scores={cut_mangrove=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run kill @e[type=item,nbt={Item:{id:"minecraft:mangrove_log"}},distance=0..15]
+execute as @s[tag=mmo_crystalAxe,scores={cut_cherry=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run kill @e[type=item,nbt={Item:{id:"minecraft:cherry_log"}},distance=0..15]
 
 # Particle Player
 execute as @s[tag=mmo_crystalAxe,scores={cut_oak=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run particle minecraft:flame ~ ~ ~ 0.25 0.75 0.25 0 100
@@ -18,7 +19,8 @@ execute as @s[tag=mmo_crystalAxe,scores={cut_acacia=1..}] if score disable_woodc
 execute as @s[tag=mmo_crystalAxe,scores={cut_dark_oak=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run particle minecraft:flame ~ ~ ~ 0.25 0.75 0.25 0 100
 execute as @s[tag=mmo_crystalAxe,scores={cut_warped_stem=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run particle minecraft:flame ~ ~ ~ 0.25 0.75 0.25 0 100
 execute as @s[tag=mmo_crystalAxe,scores={cut_crimson_stem=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run particle minecraft:flame ~ ~ ~ 0.25 0.75 0.25 0 100
-
+execute as @s[tag=mmo_crystalAxe,scores={cut_mangrove=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run particle minecraft:flame ~ ~ ~ 0.25 0.75 0.25 0 100
+execute as @s[tag=mmo_crystalAxe,scores={cut_cherry=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run particle minecraft:flame ~ ~ ~ 0.25 0.75 0.25 0 100
 
 # Give Player Charcoal
 execute as @s[tag=mmo_crystalAxe,scores={cut_oak=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run give @s minecraft:charcoal 1
@@ -29,3 +31,5 @@ execute as @s[tag=mmo_crystalAxe,scores={cut_acacia=1..}] if score disable_woodc
 execute as @s[tag=mmo_crystalAxe,scores={cut_dark_oak=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run give @s minecraft:charcoal 1
 execute as @s[tag=mmo_crystalAxe,scores={cut_warped_stem=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run give @s minecraft:charcoal 1
 execute as @s[tag=mmo_crystalAxe,scores={cut_crimson_stem=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run give @s minecraft:charcoal 1
+execute as @s[tag=mmo_crystalAxe,scores={cut_mangrove=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run give @s minecraft:charcoal 1
+execute as @s[tag=mmo_crystalAxe,scores={cut_cherry=1..}] if score disable_woodcutting_ability mmo_gamerules matches 0 run give @s minecraft:charcoal 1

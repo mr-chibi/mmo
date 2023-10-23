@@ -28,6 +28,7 @@ scoreboard players set shovel_grass_blc stats_experience 7
 scoreboard players set shovel_podzol stats_experience 7
 scoreboard players set shovel_mycelium stats_experience 7
 scoreboard players set shovel_dirt stats_experience 7
+scoreboard players set shovel_clay stats_experience 7
 scoreboard players set shovel_coar_dirt stats_experience 7
 scoreboard players set shovel_gravel stats_experience 7
 scoreboard players set shovel_sand stats_experience 7
@@ -47,6 +48,7 @@ scoreboard players set plant_melon stats_experience 7
 scoreboard players set plant_beetroot stats_experience 7
 scoreboard players set plant_sugarcane stats_experience 7
 scoreboard players set plant_warts stats_experience 8
+scoreboard players set plant_torchflower stats_experience 8
 
 
 ############################################################################################
@@ -114,6 +116,10 @@ scoreboard players set slain_wither stats_experience 400
 ############################################################################################
 	# Mining EXP #
 ############################################################################################
+scoreboard players set mined_cobblestone stats_experience 3
+scoreboard players set mined_mossy_cobblestone stats_experience 3
+
+#
 scoreboard players set mined_stone stats_experience 6
 scoreboard players set mined_andesite stats_experience 6
 scoreboard players set mined_granite stats_experience 6
@@ -178,6 +184,9 @@ scoreboard players set mined_nether_qua stats_experience 7
 scoreboard players set mined_netherbric stats_experience 6
 scoreboard players set mined_magma_bloc stats_experience 6
 
+#
+scoreboard players set mined_end_stone stats_experience 8
+
 
 ############################################################################################
 	# Mining "The Nether" NEW BIOMES: #
@@ -191,7 +200,7 @@ scoreboard players set mined_anc_debris stats_experience 24
 
 
 ############################################################################################
-	# Woodcutting EXP #
+	# Woodcutting EXP (Log) #
 ############################################################################################
 scoreboard players set cut_oak stats_experience 10
 scoreboard players set cut_spruce stats_experience 10
@@ -201,7 +210,50 @@ scoreboard players set cut_acacia stats_experience 10
 scoreboard players set cut_dark_oak stats_experience 10
 scoreboard players set cut_crimson_stem stats_experience 10
 scoreboard players set cut_warped_stem stats_experience 10
+scoreboard players set cut_mangrove stats_experience 10
+scoreboard players set cut_cherry stats_experience 10
 
+############################################################################################
+	# Woodcutting EXP (Wood) #
+############################################################################################
+scoreboard players set cut_oak_wood stats_experience 10
+scoreboard players set cut_spruce_wood stats_experience 10
+scoreboard players set cut_birch_wood stats_experience 10
+scoreboard players set cut_jungle_wood stats_experience 10
+scoreboard players set cut_acacia_wood stats_experience 10
+scoreboard players set cut_dark_oak_wood stats_experience 10
+scoreboard players set cut_crimson_hyphae stats_experience 10
+scoreboard players set cut_warped_hyphae stats_experience 10
+scoreboard players set cut_mangrove_wood stats_experience 10
+scoreboard players set cut_cherry_wood stats_experience 10
+
+############################################################################################
+	# logcutting EXP (Stripped Log) #
+############################################################################################
+scoreboard players set cut_stripped_oak_log stats_experience 10
+scoreboard players set cut_stripped_spruce_log stats_experience 10
+scoreboard players set cut_stripped_birch_log stats_experience 10
+scoreboard players set cut_stripped_jungle_log stats_experience 10
+scoreboard players set cut_stripped_acacia_log stats_experience 10
+scoreboard players set cut_stripped_dark_oak_log stats_experience 10
+scoreboard players set cut_stripped_crimson_stem stats_experience 10
+scoreboard players set cut_stripped_warped_stem stats_experience 10
+scoreboard players set cut_stripped_mangrove_log stats_experience 10
+scoreboard players set cut_stripped_cherry_log stats_experience 10
+
+############################################################################################
+	# Woodcutting EXP (Stripped Wood) #
+############################################################################################
+scoreboard players set cut_stripped_oak_wood stats_experience 10
+scoreboard players set cut_stripped_spruce_wood stats_experience 10
+scoreboard players set cut_stripped_birch_wood stats_experience 10
+scoreboard players set cut_stripped_jungle_wood stats_experience 10
+scoreboard players set cut_stripped_acacia_wood stats_experience 10
+scoreboard players set cut_stripped_dark_oak_wood stats_experience 10
+scoreboard players set cut_stripped_crimson_hyphae stats_experience 10
+scoreboard players set cut_stripped_warped_hyphae stats_experience 10
+scoreboard players set cut_stripped_mangrove_wood stats_experience 10
+scoreboard players set cut_stripped_cherry_wood stats_experience 10
 
 ############################################################################################
 	# Smithing EXP #
@@ -230,3 +282,8 @@ scoreboard players set smith_diam_helm stats_experience 125
 scoreboard players set smith_diam_chest stats_experience 200
 scoreboard players set smith_diam_leg stats_experience 175
 scoreboard players set smith_diam_boots stats_experience 100
+
+############################################################################################
+	# Magic EXP: #
+############################################################################################
+scoreboard players set magic_auto_growth stats_experience 25

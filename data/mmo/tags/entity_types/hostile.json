@@ -1,0 +1,29 @@
+{
+	"values": [
+		"minecraft:creeper",
+		"minecraft:skeleton",
+		"minecraft:stray",
+		"minecraft:zombie",
+		"minecraft:zombie_villager",
+		"minecraft:husk",
+		"minecraft:drowned",
+		"minecraft:spider",
+		"minecraft:cave_spider",
+		"minecraft:slime",
+		"minecraft:phantom",
+		"minecraft:guardian",
+		"minecraft:elder_guardian",
+		"minecraft:ravager",
+		"minecraft:pillager",
+		"minecraft:evoker",
+		"minecraft:vindicator",
+		"minecraft:witch",
+		"minecraft:zombified_piglin",
+		"minecraft:ghast",
+		"minecraft:wither_skeleton",
+		"minecraft:blaze",
+		"minecraft:magma_cube",
+		"minecraft:enderman",
+		"minecraft:shulker"
+	]
+}
