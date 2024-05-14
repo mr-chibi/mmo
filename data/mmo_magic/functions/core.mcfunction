@@ -8,7 +8,6 @@ function mmo_magic:tags/brush
 ############################################################################################
 function mmo_magic:scoreboards/glyphs
 
-
 ############################################################################################
 	# Magic cauldron function: #
 ############################################################################################
@@ -21,8 +20,6 @@ execute anchored eyes positioned ^ ^ ^4 align xyz if block ~0.5 ~ ~0.5 minecraft
 	# Magic Glyphs functions: #
 ############################################################################################
 function mmo_magic:glyphs/nature/init
-function mmo_magic:glyphs/water/init
-function mmo_magic:glyphs/flame/init
 
 ############################################################################################
 	# "New" Magic Functionallity Gamerule: #

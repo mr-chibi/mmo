@@ -1,7 +1,7 @@
 ############################################################################################
 	# Fishing Level up Text #
 ############################################################################################
-tellraw @s [{"text": "Fishing ", "color": "blue"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"fishing_lvl"}, "color": "green", "bold": true}]]
+tellraw @s [{"text": "Fishing ", "color": "blue"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"fishing_lvl"}, "color": "green", "bold": true}]
 tellraw @s [{"text": "Next level will be in ", "color": "blue"},{"score":{"name":"@s","objective":"fishing_lvlup"}, "color":"dark_green", "bold": true},{"text": " Exp", "color": "green", "bold": true}]
 
 ############################################################################################

@@ -1,3 +1,6 @@
+#
+scoreboard players add @s mmo_error 0
+
 # Default Settings
 scoreboard players enable @s mmo_menu
 scoreboard players enable @s mmo_help

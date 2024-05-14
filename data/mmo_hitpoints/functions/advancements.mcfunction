@@ -1,7 +1,7 @@
 ############################################################################################
 	# Hitpoints Level Up Message: #
 ############################################################################################
-tellraw @s [{"text": "Hitpoints ", "color": "red"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"hitpoints_lvl"}, "color": "green", "bold": true}]]
+tellraw @s [{"text": "Hitpoints ", "color": "red"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"hitpoints_lvl"}, "color": "green", "bold": true}]
 tellraw @s [{"text": "Next level will be in ", "color": "blue"},{"score":{"name":"@s","objective":"hitpoints_lvlup"}, "color":"dark_green", "bold": true},{"text": " Exp", "color": "green", "bold": true}]
 
 ############################################################################################

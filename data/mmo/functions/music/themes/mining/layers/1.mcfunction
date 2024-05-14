@@ -1,6 +1,3 @@
-# Start
-execute if score @s mmo_music_note < mining mmo_music_note run scoreboard players add @s mmo_music_note 1
-
 # Notes Layer 1:
 execute if score @s mmo_music_note matches 5 run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 2 0.5
 

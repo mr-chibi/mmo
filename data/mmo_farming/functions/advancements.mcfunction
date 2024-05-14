@@ -1,7 +1,7 @@
 ############################################################################################
 	# Level Up Text #
 ############################################################################################
-tellraw @s [{"text": "Farming ", "color": "green"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"farming_lvl"}, "color": "green", "bold": true}]]
+tellraw @s [{"text": "Farming ", "color": "green"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"farming_lvl"}, "color": "green", "bold": true}]
 tellraw @s [{"text": "Next level will be in ", "color": "blue"},{"score":{"name":"@s","objective":"farming_lvlup"}, "color":"dark_green", "bold": true},{"text": " Exp", "color": "green", "bold": true}]
 
 ############################################################################################

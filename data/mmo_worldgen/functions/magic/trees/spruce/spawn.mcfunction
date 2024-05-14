@@ -1,0 +1,7 @@
+############################################################################################
+	# Spawn Tree [1] [Large]:
+############################################################################################
+execute as @s[y_rotation=135..-135] if block ~ ~ ~ minecraft:spruce_sapling align xyz as @e[type=minecraft:armor_stand,tag=block_rng,tag=selected,tag=1,team=rng_blue] at @s run place template mmo_worldgen:magic/spruce_tree_1/large ~-3 ~ ~3 none left_right
+execute as @s[y_rotation=-135..-45] if block ~ ~ ~ minecraft:spruce_sapling align xyz as @e[type=minecraft:armor_stand,tag=block_rng,tag=selected,tag=1,team=rng_blue] at @s run place template mmo_worldgen:magic/spruce_tree_1/large ~-3 ~ ~-3 clockwise_90 left_right
+execute as @s[y_rotation=-45..45] if block ~ ~ ~ minecraft:spruce_sapling align xyz as @e[type=minecraft:armor_stand,tag=block_rng,tag=selected,tag=1,team=rng_blue] at @s run place template mmo_worldgen:magic/spruce_tree_1/large ~3 ~ ~-3 180 left_right
+execute as @s[y_rotation=45..135] if block ~ ~ ~ minecraft:spruce_sapling align xyz as @e[type=minecraft:armor_stand,tag=block_rng,tag=selected,tag=1,team=rng_blue] at @s run place template mmo_worldgen:magic/spruce_tree_1/large ~3 ~ ~3 counterclockwise_90 left_right

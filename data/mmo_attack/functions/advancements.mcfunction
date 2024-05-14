@@ -1,7 +1,7 @@
 ############################################################################################
 	# Attack Level Up Message: #
 ############################################################################################
-tellraw @s [{"text": "Attack ", "color": "red"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"attack_lvl"}, "color": "green", "bold": true}]]
+tellraw @s [{"text": "Attack ", "color": "red"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"attack_lvl"}, "color": "green", "bold": true}]
 tellraw @s [{"text": "Next level will be in ", "color": "blue"},{"score":{"name":"@s","objective":"attack_lvlup"}, "color":"dark_green", "bold": true},{"text": " Exp", "color": "green", "bold": true}]
 
 ############################################################################################

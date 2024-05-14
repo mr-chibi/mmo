@@ -7,14 +7,12 @@ execute if score @s time_glyph matches ..5 run scoreboard players add @s mmo_err
 ############################################################################################
 	# Error Message:
 ############################################################################################
-execute if block ~ ~ ~ minecraft:birch_sapling run function mmo_worldgen:magic/error/missing_glyphs
+function mmo_worldgen:magic/error/missing_glyphs
 
 ############################################################################################
 	# Spawning Mechanics:
 ############################################################################################
 execute if score @s mmo_error matches 0 run function mmo_worldgen:magic/trees/birch/spawn
 
-############################################################################################
-	# Reset:
-############################################################################################
-execute if score @s mmo_error matches 0 if block ~ ~ ~ minecraft:birch_sapling run function mmo_worldgen:magic/trees/birch/reset
+
+execute if score @s mmo_error matches 0 run function mmo_worldgen:magic/trees/birch/reset

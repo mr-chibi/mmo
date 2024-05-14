@@ -10,8 +10,11 @@
                     "weight": 1,
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'{\"text\": \"Common Tropical Fish Loot\", \"color\": \"gold\"}'},BlockEntityTag:{Items:[{Slot:3b,id:'minecraft:tropical_fish',Count:1b, tag:{fishing_mmo:1b}}]}}"
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_data": {"minecraft:custom_name":"{\"text\": \"Common Tropical Fish Loot\", \"color\": \"gold\"}"},
+                                "minecraft:container": [{"item":{"count":1,"id":"minecraft:tropical_fish","components":{"minecraft:custom_data":{"fishing_mmo":1}}},"slot":3}]
+                            }
                         }
                     ],
                     
@@ -31,8 +34,11 @@
                     "weight": 1,
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'{\"text\": \"Common Tropical Fish Treasure Chest\", \"color\": \"gold\"}'},BlockEntityTag:{Items:[{Slot:3b,id:'minecraft:tropical_fish',Count:1b, tag:{fishing_mmo:1b}}, {Slot:25b,id:'minecraft:tropical_fish',Count:2b, tag:{fishing_mmo:1b}}]}}"
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_data": {"minecraft:custom_name":"{\"text\": \"Common Tropical Fish Treasure Chest\", \"color\": \"gold\"}"},
+                                "minecraft:container": [{"item":{"count":1,"id":"minecraft:tropical_fish","components":{"minecraft:custom_data":{"fishing_mmo":1}}},"slot":3},{"item":{"count":2,"id":"minecraft:tropical_fish"},"slot":25}]
+                            }
                         }
                     ],
                     
@@ -52,8 +58,11 @@
                     "weight": 1,
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'{\"text\": \"Rare Topical Fish Treasure Chest\", \"color\": \"gold\"}'},BlockEntityTag:{Items:[{Slot:0b,id:'minecraft:tropical_fish',Count:1b}, {Slot:3b,id:'minecraft:seagrass',Count:1b}, {Slot:17b,id:'minecraft:diamond',Count:1b}, {Slot:19b,id:'minecraft:iron_ingot',Count:1b}, {Slot:20b,id:'minecraft:seagrass',Count:1b}, {Slot:22b,id:'minecraft:iron_ingot',Count:1b}, {Slot:24b,id:'minecraft:diamond',Count:1b}, {Slot:25b,id:'minecraft:tropical_fish',Count:3b}]}}"
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_data": {"minecraft:custom_name":"{\"text\": \"Rare Tropical Fish Treasure Chest\", \"color\": \"gold\"}"},
+                                "minecraft:container": [{"item":{"count":1,"id":"minecraft:tropical_fish","components":{"minecraft:custom_data":{"fishing_mmo":1}}},"slot":0},{"item":{"count":1,"id":"minecraft:seagrass"},"slot":3},{"item":{"count":1,"id":"minecraft:diamond"},"slot":17},{"item":{"count":1,"id":"minecraft:iron_ingot"},"slot":19},{"item":{"count":1,"id":"minecraft:seagrass"},"slot":20},{"item":{"count":1,"id":"minecraft:iron_ingot"},"slot":22},{"item":{"count":1,"id":"minecraft:diamond"},"slot":24},{"item":{"count":3,"id":"minecraft:tropical_fish"},"slot":25}]
+                            }
                         }
                     ],
                     

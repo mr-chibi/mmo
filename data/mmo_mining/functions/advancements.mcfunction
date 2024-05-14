@@ -1,7 +1,7 @@
 ############################################################################################
 	# Mining Next Level Text #
 ############################################################################################
-tellraw @s [{"text": "Mining ", "color": "gray"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"mining_lvl"}, "color": "green", "bold": true}]]
+tellraw @s [{"text": "Mining ", "color": "gray"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"mining_lvl"}, "color": "green", "bold": true}]
 tellraw @s [{"text": "Next level will be in ", "color": "blue"},{"score":{"name":"@s","objective":"mining_lvlup"}, "color":"dark_green", "bold": true},{"text": " Exp", "color": "green", "bold": true}]
 
 ############################################################################################

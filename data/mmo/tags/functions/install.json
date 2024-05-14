@@ -12,7 +12,6 @@
 		"mmo_attack:scoreboards/install",
 		"mmo_defense:scoreboards/install",
 		"mmo_cooking:scoreboards/install",
-		"mmo_crafting:scoreboards/install",
 		"mmo_excavation:scoreboards/install",
 		"mmo_farming:scoreboards/install",
 		"mmo_fishing:scoreboards/install",

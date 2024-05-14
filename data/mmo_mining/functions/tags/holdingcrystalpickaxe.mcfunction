@@ -1,14 +1,13 @@
 #
-tag @s[tag=mmo_holdingPickaxe,nbt={SelectedItem:{id:"minecraft:iron_pickaxe",tag:{CustomModelData:1,crystal_tool:1b}}}] add mmo_crystalPickaxe
+tag @s[tag=mmo_holdingPickaxe,nbt={SelectedItem:{id:"minecraft:iron_pickaxe",components:{"minecraft:custom_model_data":1,"minecraft:custom_data":{"crystal_tool:":1b}}}}] add mmo_crystalPickaxe
 
 ############################################################################################
-	# If "Player" has "mmo_holdingPickaxe" tag run following below: #
+	# If "Player" has "mmo_crystalAxe" tag run following below: #
 ############################################################################################
-tag @s[tag=mmo_crystalPickaxe,nbt=!{SelectedItem:{id:"minecraft:iron_pickaxe",tag:{CustomModelData:1,crystal_tool:1b}}}] add mmo_notHoldingCrystalPickaxe
+tag @s[tag=!mmo_holdingPickaxe,nbt=!{SelectedItem:{id:"minecraft:iron_pickaxe",components:{"minecraft:custom_model_data":1,"minecraft:custom_data":{"crystal_tool:":1b}}}}] add mmo_notHoldingCrystalPickaxe
 tag @s[tag=mmo_notHoldingCrystalPickaxe] remove mmo_crystalPickaxe
 
-
 ############################################################################################
-	# If "Player" has "mmo_notHoldingPickaxe" tag run remove all effects: #
+	# If "Player" has "mmo_notHoldingCrystalPickaxe" tag run remove all effects: #
 ############################################################################################
 tag @s[tag=mmo_notHoldingCrystalPickaxe] remove mmo_notHoldingCrystalPickaxe

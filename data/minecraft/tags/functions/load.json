@@ -1,6 +1,5 @@
 {
 	"values": [
-		"mmo:reload",
-		"mmo:music/init"
+		"mmo:reload"
 	]
 }

@@ -1,9 +1,3 @@
-# Start
-execute if score @s mmo_music_note < battle mmo_music_note run scoreboard players add @s mmo_music_note 1
-
-# Course Notes Layer #2:
-function mmo:music/biome/plains/battle/verus_2
-
 # Notes Layer 1:
 execute if score @s mmo_music_note matches 5 run playsound minecraft:block.note_block.chime master @s ~ ~ ~ 2 0.56
 

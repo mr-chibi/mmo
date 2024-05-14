@@ -3,6 +3,8 @@
   "ingredient": {
     "item": "minecraft:raw_copper_block"
   },
-  "result": "minecraft:copper_block",
+  "result": {
+    "id": "minecraft:copper_block"
+  },
   "cookingtime": 60
 }

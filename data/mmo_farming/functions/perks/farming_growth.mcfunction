@@ -36,5 +36,5 @@ execute as @s[tag=mmo_crystalHoe] anchored eyes positioned ^ ^ ^2 if block ~ ~ ~
 
 #
 execute as @s[scores={instant_growth=200}] run tellraw @s [{"text": "Your hoe has vanished and reached its maxiumum use."}]
-execute as @s[scores={instant_growth=200}] run clear @s minecraft:iron_hoe{CustomModelData:1,crystal_tool:1b} 1
+execute as @s[scores={instant_growth=200}] run clear @s minecraft:iron_hoe[minecraft:custom_model_data=1,minecraft:custom_data={crystal_tool:1b}] 1
 execute as @s[scores={instant_growth=200}] run scoreboard players set @s instant_growth 0

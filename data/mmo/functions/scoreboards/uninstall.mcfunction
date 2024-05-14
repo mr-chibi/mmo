@@ -22,6 +22,7 @@ scoreboard objectives remove mmo_ability
 #
 scoreboard objectives remove mmo_music_note
 scoreboard objectives remove mmo_music_loop
+scoreboard objectives remove mmo_music_timer
 scoreboard objectives remove mmo_music_min
 
 #

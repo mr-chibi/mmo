@@ -1,7 +1,7 @@
 ############################################################################################
 	# Hunter Level up text #
 ############################################################################################
-tellraw @s [{"text": "Hunter ", "color": "dark_red"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"hunter_lvl"}, "color": "green", "bold": true}]]
+tellraw @s [{"text": "Hunter ", "color": "dark_red"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"hunter_lvl"}, "color": "green", "bold": true}]
 tellraw @s [{"text": "Next level will be in ", "color": "blue"},{"score":{"name":"@s","objective":"hunter_lvlup"}, "color":"dark_green", "bold": true},{"text": " Exp", "color": "green", "bold": true}]
 
 ############################################################################################

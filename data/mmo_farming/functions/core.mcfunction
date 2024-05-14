@@ -2,7 +2,7 @@
 	# Farming Tags #
 ############################################################################################
 function mmo_farming:tags/holdinghoe
-function mmo_farming:tags/holdingcrystalhoe
+function mmo_farming:tags/holdingcrop
 
 ############################################################################################
 	# Farming Perks #

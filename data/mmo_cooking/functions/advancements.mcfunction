@@ -1,7 +1,7 @@
 ############################################################################################
 	# Level Up Text #
 ############################################################################################
-tellraw @s [{"text": "Cooking ", "color": "yellow"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"cooking_lvl"}, "color": "green", "bold": true}]]
+tellraw @s [{"text": "Cooking ", "color": "yellow"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"cooking_lvl"}, "color": "green", "bold": true}]
 tellraw @s [{"text": "Next level will be in ", "color": "blue"},{"score":{"name":"@s","objective":"cooking_lvlup"}, "color":"dark_green", "bold": true},{"text": " Exp", "color": "green", "bold": true}]
 
 ############################################################################################

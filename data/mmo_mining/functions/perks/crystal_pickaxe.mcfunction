@@ -22,6 +22,5 @@ execute as @s[tag=mmo_crystalPickaxe,scores={mined_deep_emer=1..}] if score disa
 execute as @s[tag=mmo_crystalPickaxe,scores={mined_deep_redst=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
 execute as @s[tag=mmo_crystalPickaxe,scores={mined_deep_diam=1..}] if score disable_mining_ability mmo_gamerules matches 0 run function mmo_mining:vein_miner
 
-
 #
 execute as @s[tag=mmo_crystalPickaxe] run function mmo_mining:scoreboards/vein_exp

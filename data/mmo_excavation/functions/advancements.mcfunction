@@ -1,7 +1,7 @@
 ############################################################################################
 	# Excavation Next Level Text #
 ############################################################################################
-tellraw @s [{"text": "Excavation ", "color": "light_purple"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"excavation_lvl"}, "color": "green", "bold": true}]]
+tellraw @s [{"text": "Excavation ", "color": "light_purple"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"excavation_lvl"}, "color": "green", "bold": true}]
 tellraw @s [{"text": "Next level will be in ", "color": "blue"},{"score":{"name":"@s","objective":"excavation_lvlup"}, "color":"dark_green", "bold": true},{"text": " Exp", "color": "green", "bold": true}]
 
 ############################################################################################

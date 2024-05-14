@@ -1,7 +1,7 @@
 ############################################################################################
 	# Agility Level up Text #
 ############################################################################################
-tellraw @s [{"text": "Agility ", "color": "blue"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"agility_lvl"}, "color": "green", "bold": true}]]
+tellraw @s [{"text": "Agility ", "color": "blue"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"agility_lvl"}, "color": "green", "bold": true}]
 tellraw @s [{"text": "Next level will be in ", "color": "blue"},{"score":{"name":"@s","objective":"agility_lvlup"}, "color":"dark_green", "bold": true},{"text": " Exp", "color": "green", "bold": true}]
 
 ############################################################################################

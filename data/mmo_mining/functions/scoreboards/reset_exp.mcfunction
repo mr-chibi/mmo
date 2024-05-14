@@ -15,6 +15,7 @@ scoreboard players reset @s[scores={mined_obsidian=1..}] mined_obsidian
 ############################################################################################
 scoreboard players reset @s[scores={mined_dripstone=1..}] mined_dripstone
 scoreboard players reset @s[scores={mined_deepslate=1..}] mined_deepslate
+scoreboard players reset @s[scores={mined_cobbled_deepslate=1..}] mined_cobbled_deepslate
 scoreboard players reset @s[scores={mined_calcite=1..}] mined_calcite
 scoreboard players reset @s[scores={mined_tuff=1..}] mined_tuff
 scoreboard players reset @s[scores={mined_smo_basalt=1..}] mined_smo_basalt

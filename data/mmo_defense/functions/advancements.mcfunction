@@ -1,7 +1,7 @@
 ############################################################################################
 	# Defense Level up Text #
 ############################################################################################
-tellraw @s [{"text": "Defense ", "color": "aqua"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"defense_lvl"}, "color": "green", "bold": true}]]
+tellraw @s [{"text": "Defense ", "color": "aqua"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"defense_lvl"}, "color": "green", "bold": true}]
 tellraw @s [{"text": "Next level will be in ", "color": "blue"},{"score":{"name":"@s","objective":"defense_lvlup"}, "color":"dark_green", "bold": true},{"text": " Exp", "color": "green", "bold": true}]
 
 ############################################################################################

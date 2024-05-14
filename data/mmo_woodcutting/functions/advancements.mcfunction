@@ -1,7 +1,7 @@
 ############################################################################################
 	# Woodcutting Next Level Text #
 ############################################################################################
-tellraw @s [{"text": "Woodcutting ", "color": "green"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"woodcutting_lvl"}, "color": "green", "bold": true}]]
+tellraw @s [{"text": "Woodcutting ", "color": "green"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"woodcutting_lvl"}, "color": "green", "bold": true}]
 tellraw @s [{"text": "Next level will be in ", "color": "blue"},{"score":{"name":"@s","objective":"woodcutting_lvup"}, "color":"dark_green", "bold": true},{"text": " Exp", "color": "green", "bold": true}]
 
 ############################################################################################

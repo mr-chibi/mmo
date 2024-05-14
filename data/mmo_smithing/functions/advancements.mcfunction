@@ -1,7 +1,7 @@
 ############################################################################################
 	# smithing Level up Text #
 ############################################################################################
-tellraw @s [{"text": "Smithing ", "color": "light_purple"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"smithing_lvl"}, "color": "green", "bold": true}]]
+tellraw @s [{"text": "Smithing ", "color": "light_purple"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"smithing_lvl"}, "color": "green", "bold": true}]
 tellraw @s [{"text": "Next level will be in ", "color": "blue"},{"score":{"name":"@s","objective":"smithing_lvlup"}, "color":"dark_green", "bold": true},{"text": " Exp", "color": "green", "bold": true}]
 
 ############################################################################################

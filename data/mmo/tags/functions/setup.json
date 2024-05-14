@@ -2,7 +2,6 @@
 	"values": [
 		"mmo_attack:core",
 		"mmo_cooking:core",
-		"mmo_crafting:core",
 		"mmo_defense:core",
 		"mmo_excavation:core",
 		"mmo_farming:core",

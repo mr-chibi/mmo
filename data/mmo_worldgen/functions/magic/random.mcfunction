@@ -24,10 +24,14 @@ execute as @e[type=minecraft:armor_stand,tag=block_rng,tag=selected,team=!rng_bl
 ############################################################################################
 execute as @e[type=minecraft:armor_stand,tag=block_rng,tag=selected,team=rng_blue] at @s align xyz if block ~ ~ ~ #mmo_worldgen:particles/tree_types run particle minecraft:happy_villager ~0.50 ~ ~0.50 0.25 0.75 0.50 0 25
 
-#
-function #mmo_worldgen:magic/tree_types
+############################################################################################
+	# Tree Spawning Types:
+############################################################################################
+execute if block ~ ~ ~ minecraft:oak_sapling run function mmo_worldgen:magic/trees/oak/init
+execute if block ~ ~ ~ minecraft:birch_sapling run function mmo_worldgen:magic/trees/birch/init
+execute if block ~ ~ ~ minecraft:spruce_sapling run function mmo_worldgen:magic/trees/spruce/init
 
 #############################################################################################################
 # Selected Armorstand remove entity:
 #############################################################################################################
-execute as @e[type=minecraft:armor_stand,tag=block_rng,tag=selected,team=rng_blue,sort=nearest] at @s run kill @s
+execute as @e[type=minecraft:armor_stand,tag=block_rng,tag=selected,team=rng_blue,sort=nearest,distance=..7] at @s run kill @s

@@ -23,12 +23,14 @@ execute as @s[tag=mmo_holdingShovel,tag=mmo_debug] as @e[type=minecraft:armor_st
 #############################################################################################################
 # Drop Magic Loot:
 #############################################################################################################
-execute if biome ~ ~ ~ minecraft:swamp if score @s[tag=mmo_holdingShovel] shovel_clay matches 1.. as @e[type=minecraft:armor_stand,tag=block_rng,tag=selected] at @s[tag=5,team=rng_green] if block ~ ~ ~ minecraft:air run function mmo_worldgen:excavation/loot/magic/water_glyph
+execute as @s if biome ~ ~ ~ minecraft:swamp if score @s[tag=mmo_holdingShovel] shovel_grass_blc matches 1.. as @e[type=minecraft:armor_stand,tag=block_rng,tag=selected] at @s[tag=5,team=rng_green] if block ~ ~ ~ minecraft:air run function mmo_worldgen:excavation/loot/magic/water_glyph
+execute as @s if biome ~ ~ ~ minecraft:swamp if score @s[tag=mmo_holdingShovel] shovel_dirt matches 1.. as @e[type=minecraft:armor_stand,tag=block_rng,tag=selected] at @s[tag=5,team=rng_green] if block ~ ~ ~ minecraft:water run function mmo_worldgen:excavation/loot/magic/water_glyph
 
 #############################################################################################################
 # Drop Loot:
 #############################################################################################################
-# execute if score @s[tag=mmo_holdingShovel] shovel_grass_blc matches 1.. as @e[type=minecraft:armor_stand,tag=block_rng,tag=selected] at @s[tag=1,team=rng_green] if block ~ ~ ~ minecraft:air run function mmo_worldgen:excavation/loot/diamond
+execute if score @s[tag=mmo_holdingShovel] shovel_grass_blc matches 1.. as @e[type=minecraft:armor_stand,tag=block_rng,tag=selected] at @s[tag=1,team=rng_green] if block ~ ~ ~ minecraft:air run function mmo_worldgen:excavation/loot/glowstone_dust
+execute if score @s[tag=mmo_holdingShovel] shovel_dirt matches 1.. as @e[type=minecraft:armor_stand,tag=block_rng,tag=selected] at @s[tag=1,team=rng_green] if block ~ ~ ~ minecraft:water run function mmo_worldgen:excavation/loot/glowstone_dust
 execute if score @s[tag=mmo_holdingShovel] shovel_dirt matches 1.. as @e[type=minecraft:armor_stand,tag=block_rng,tag=selected] at @s[tag=1,team=rng_green] if block ~ ~ ~ minecraft:air run function mmo_worldgen:excavation/loot/glowstone_dust
 
 #############################################################################################################

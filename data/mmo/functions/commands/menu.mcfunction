@@ -7,7 +7,7 @@ playsound minecraft:ui.button.click master @s[scores={sound_settings=0}] ~ ~ ~ 2
 	# MMO Main Menu #
 ############################################################################################
 tellraw @s [{"text": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=", "color": "#fefefe"}]
-tellraw @s [{"text": "MMO Main Menu", "color": "aqua", "bold":true}]
+tellraw @s [{"text": "Main Menu", "color": "aqua", "bold":true}]
 tellraw @s [{"text": "Click [example], below to toggle pages.", "color": "#cecece"}]
 tellraw @s [{"text": "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n", "color": "#fefefe"}]
 

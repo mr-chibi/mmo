@@ -10,8 +10,11 @@
                     "weight": 1,
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'{\"text\": \"Common Cod Loot\", \"color\": \"gold\"}'},BlockEntityTag:{Items:[{Slot:3b,id:'minecraft:cod',Count:1b, tag:{fishing_mmo:1b}}]}}"
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_data": {"minecraft:custom_name":"{\"text\": \"Common Cod Loot\", \"color\": \"gold\"}"},
+                                "minecraft:container": [{"item":{"count":1,"id":"minecraft:cod","components":{"minecraft:custom_data":{"fishing_mmo":1}}},"slot":3}]
+                            }
                         }
                     ],
                     
@@ -31,8 +34,11 @@
                     "weight": 1,
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'{\"text\": \"Common Cod Treasure Chest\", \"color\": \"gold\"}'},BlockEntityTag:{Items:[{Slot:3b,id:'minecraft:cod',Count:1b, tag:{fishing_mmo:1b}}, {Slot:25b,id:'minecraft:cod',Count:2b, tag:{fishing_mmo:1b}}]}}"
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_data": {"minecraft:custom_name":"{\"text\": \"Common Cod Treasure Chest\", \"color\": \"gold\"}"},
+                                "minecraft:container": [{"item":{"count":1,"id":"minecraft:cod","components":{"minecraft:custom_data":{"fishing_mmo":1}}},"slot":3},{"item":{"count":2,"id":"minecraft:cod"},"slot":25}]
+                            }
                         }
                     ],
                     
@@ -52,8 +58,11 @@
                     "weight": 1,
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'{\"text\": \"Uncommon Cod Treasure Chest\", \"color\": \"gold\"}'},BlockEntityTag:{Items:[{Slot:1b,id:'minecraft:cod',Count:2b}, {Slot:4b,id:'minecraft:cod',Count:1b}, {Slot:7b,id:'minecraft:cobweb',Count:1b}, {Slot:11b,id:'minecraft:cobweb',Count:1b}, {Slot:17b,id:'minecraft:cobweb',Count:1b}, {Slot:24b,id:'minecraft:bone',Count:3b}]}}"
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_data": {"minecraft:custom_name":"{\"text\": \"Uncommon Cod Treasure Chest\", \"color\": \"gold\"}"},
+                                "minecraft:container": [{"item":{"count":2,"id":"minecraft:cod","components":{"minecraft:custom_data":{"fishing_mmo":1}}},"slot":1},{"item":{"count":2,"id":"minecraft:cod"},"slot":4},{"item":{"count":1,"id":"minecraft:cod"},"slot":7},{"item":{"count":1,"id":"minecraft:cobweb"},"slot":11},{"item":{"count":1,"id":"minecraft:cobweb"},"slot":17},{"item":{"count":3,"id":"minecraft:bone"},"slot":24}]
+                            }
                         }
                     ],
                     
@@ -74,8 +83,11 @@
                     "weight": 1,
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'{\"text\": \"Rare Cod Treasure Chest\", \"color\": \"gold\"}'},BlockEntityTag:{Items:[{Slot:1b,id:'minecraft:cod',Count:2b}, {Slot:4b,id:'minecraft:experience_bottle',Count:1b}, {Slot:7b,id:'minecraft:spectral_arrow',Count:1b}, {Slot:11b,id:'minecraft:spectral_arrow',Count:1b}, {Slot:17b,id:'minecraft:spectral_arrow',Count:1b}, {Slot:24b,id:'minecraft:cod',Count:3b}]}}"
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_data": {"minecraft:custom_name":"{\"text\": \"Rare Cod Treasure Chest\", \"color\": \"gold\"}"},
+                                "minecraft:container": [{"item":{"count":2,"id":"minecraft:cod","components":{"minecraft:custom_data":{"fishing_mmo":1}}},"slot":1},{"item":{"count":1,"id":"minecraft:experience_bottle"},"slot":4},{"item":{"count":1,"id":"minecraft:spectral_arrow"},"slot":7},{"item":{"count":1,"id":"minecraft:spectral_arrow"},"slot":11},{"item":{"count":1,"id":"minecraft:spectral_arrow"},"slot":17},{"item":{"count":3,"id":"minecraft:cod"},"slot":24}]
+                            }
                         }
                     ],
                     
