@@ -111,13 +111,13 @@ execute store result score @s[scores={cut_cherry_wood=1..}] wc_vein_count positi
 ############################################################################################
 	# Woodcutting TreeFaller Muliply woods chopped: #
 ############################################################################################
-execute as @s[scores={wc_vein_count=5..,cut_oak_wood=1..}] run scoreboard players operation @s wc_vein_count *= cut_oak_wood stats_experience
-execute as @s[scores={wc_vein_count=5..,cut_spruce_wood=1..}] run scoreboard players operation @s wc_vein_count *= cut_spruce_wood stats_experience
-execute as @s[scores={wc_vein_count=5..,cut_birch_wood=1..}] run scoreboard players operation @s wc_vein_count *= cut_birch_wood stats_experience
-execute as @s[scores={wc_vein_count=5..,cut_jungle_wood=1..}] run scoreboard players operation @s wc_vein_count *= cut_jungle_wood stats_experience
-execute as @s[scores={wc_vein_count=5..,cut_acacia_wood=1..}] run scoreboard players operation @s wc_vein_count *= cut_acacia_wood stats_experience
-execute as @s[scores={wc_vein_count=5..,cut_dark_oak_wood=1..}] run scoreboard players operation @s wc_vein_count *= cut_dark_oak_wood stats_experience
-execute as @s[scores={wc_vein_count=5..,cut_crimson_hyphae=1..}] run scoreboard players operation @s wc_vein_count *= cut_crimson_hyphae stats_experience
-execute as @s[scores={wc_vein_count=5..,cut_warped_hyphae=1..}] run scoreboard players operation @s wc_vein_count *= cut_warped_hyphae stats_experience
-execute as @s[scores={wc_vein_count=5..,cut_mangrove_wood=1..}] run scoreboard players operation @s wc_vein_count *= cut_mangrove_wood stats_experience
-execute as @s[scores={wc_vein_count=5..,cut_cherry_wood=1..}] run scoreboard players operation @s wc_vein_count *= cut_cherry_wood stats_experience
+execute if score @s[scores={wc_vein_count=5..}] cut_oak_wood matches 1.. run scoreboard players operation @s wc_vein_count *= cut_oak_wood stats_experience
+execute if score @s[scores={wc_vein_count=5..}] cut_spruce_wood matches 1.. run scoreboard players operation @s wc_vein_count *= cut_spruce_wood stats_experience
+execute if score @s[scores={wc_vein_count=5..}] cut_birch_wood matches 1.. run scoreboard players operation @s wc_vein_count *= cut_birch_wood stats_experience
+execute if score @s[scores={wc_vein_count=5..}] cut_jungle_wood matches 1.. run scoreboard players operation @s wc_vein_count *= cut_jungle_wood stats_experience
+execute if score @s[scores={wc_vein_count=5..}] cut_acacia_wood matches 1.. run scoreboard players operation @s wc_vein_count *= cut_acacia_wood stats_experience
+execute if score @s[scores={wc_vein_count=5..}] cut_dark_oak_wood matches 1.. run scoreboard players operation @s wc_vein_count *= cut_dark_oak_wood stats_experience
+execute if score @s[scores={wc_vein_count=5..}] cut_crimson_hyphae matches 1.. run scoreboard players operation @s wc_vein_count *= cut_crimson_hyphae stats_experience
+execute if score @s[scores={wc_vein_count=5..}] cut_warped_hyphae matches 1.. run scoreboard players operation @s wc_vein_count *= cut_warped_hyphae stats_experience
+execute if score @s[scores={wc_vein_count=5..}] cut_mangrove_wood matches 1.. run scoreboard players operation @s wc_vein_count *= cut_mangrove_wood stats_experience
+execute if score @s[scores={wc_vein_count=5..}] cut_cherry_wood matches 1.. run scoreboard players operation @s wc_vein_count *= cut_cherry_wood stats_experience

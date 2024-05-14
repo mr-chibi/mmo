@@ -11,9 +11,9 @@ execute if score @s agility_exp >= @s agility_lvlup run scoreboard players set @
 ############################################################################################
 	# Sound GUI #
 ############################################################################################
-execute as @s[scores={level_up=11,sound_settings=0}] run function mmo:sounds/level_up
+execute if score @s[scores={sound_settings=0}] level_up matches 11 run function mmo:sounds/level_up
 
 ############################################################################################
 	# Agility Level up Incriment #
 ############################################################################################
-execute as @s[scores={level_up=11}] run function mmo_agility:scoreboards/level_up
+execute if score @s level_up matches 11 run function mmo_agility:scoreboards/level_up

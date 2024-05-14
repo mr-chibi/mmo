@@ -6,7 +6,6 @@ tag @s[tag=mmo_holdingFishingRod,scores={fish_caught=1..},nbt={Inventory:[{id:"m
 tag @s[tag=mmo_holdingFishingRod,scores={fish_caught=1..},nbt={Inventory:[{id:"minecraft:tropical_fish"}]}] add caught_tropical_fish
 tag @s[tag=mmo_holdingFishingRod,scores={fish_caught=1..},nbt={Inventory:[{id:"minecraft:pufferfish"}]}] add caught_pufferfish
 
-
 #
 scoreboard players add @s[tag=mmo_holdingFishingRod,tag=caught_cod] fishing_exp 25
 scoreboard players add @s[tag=mmo_holdingFishingRod,tag=caught_salmon] fishing_exp 50
@@ -24,4 +23,3 @@ tag @s[tag=mmo_holdingFishingRod,tag=caught_cod] remove caught_cod
 tag @s[tag=mmo_holdingFishingRod,tag=caught_salmon] remove caught_salmon
 tag @s[tag=mmo_holdingFishingRod,tag=caught_tropical_fish] remove caught_tropical_fish
 tag @s[tag=mmo_holdingFishingRod,tag=caught_pufferfish] remove caught_pufferfish
-

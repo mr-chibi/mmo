@@ -7,10 +7,8 @@ scoreboard objectives add cooking_lvlup dummy
 scoreboard objectives add cooking_stat dummy
 scoreboard objectives add cooking_perk dummy
 
-
 #
 scoreboard players set lvl_10 cooking_lvl 10
-
 
 ############################################################################################
 	# Cooking Interact #
@@ -18,7 +16,6 @@ scoreboard players set lvl_10 cooking_lvl 10
 scoreboard objectives add furnace_cooking minecraft.custom:minecraft.interact_with_furnace
 scoreboard objectives add smoker_cooking minecraft.custom:minecraft.interact_with_smoker
 scoreboard objectives add crafting_cooking minecraft.custom:minecraft.interact_with_crafting_table
-
 
 ############################################################################################
 	# Cooking Objectives #
@@ -38,7 +35,6 @@ scoreboard objectives add cooked_bread minecraft.crafted:minecraft.bread
 scoreboard objectives add cooked_potato minecraft.crafted:minecraft.baked_potato
 scoreboard objectives add cooked_pumpkin minecraft.crafted:minecraft.pumpkin_pie
 scoreboard objectives add cooked_susp_soup minecraft.crafted:minecraft.suspicious_stew
-
 
 ############################################################################################
 	# Cooking Perks #

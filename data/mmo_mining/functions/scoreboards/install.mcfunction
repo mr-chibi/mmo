@@ -10,7 +10,6 @@ scoreboard objectives add countEntities dummy
 team add rng_blue
 team modify rng_blue color blue
 
-
 #
 scoreboard players set lvl_10 mining_lvl 10
 scoreboard players set lvl_20 mining_lvl 20

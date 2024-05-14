@@ -12,9 +12,9 @@ execute if score @s cooking_exp >= @s cooking_lvlup run scoreboard players set @
 ############################################################################################
 	# Sound GUI #
 ############################################################################################
-execute as @s[scores={level_up=3,sound_settings=0}] run function mmo:sounds/level_up
+execute if score @s[scores={sound_settings=0}] level_up matches 3 run function mmo:sounds/level_up
 
 ############################################################################################
-	# Incriment Level up #
+	# Cooking Level up Incriment #
 ############################################################################################
-execute as @s[scores={level_up=3}] run function mmo_cooking:scoreboards/level_up
+execute if score @s level_up matches 3 run function mmo_cooking:scoreboards/level_up

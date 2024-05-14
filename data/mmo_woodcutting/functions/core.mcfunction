@@ -12,7 +12,7 @@ function mmo_woodcutting:perks/charcoal_smelt
 ############################################################################################
 	# Woodcutting TreeFaller EXP Gained: #
 ############################################################################################
-execute as @s[scores={woodcutting_lvl=30..,treeFaller_settings=1},tag=mmo_holdingAxe] run function mmo_woodcutting:scoreboards/treefaller_exp
+execute if score @s[tag=mmo_holdingAxe,scores={treeFaller_settings=1}] woodcutting_lvl matches 30.. run function mmo_woodcutting:scoreboards/treefaller_exp
 
 ############################################################################################
 	# Woodcutting EXP Gained: #
@@ -28,9 +28,9 @@ execute if score @s woodcutting_exp >= @s woodcutting_lvup run scoreboard player
 ############################################################################################
 	# Sound GUI #
 ############################################################################################
-execute as @s[scores={level_up=8,sound_settings=0}] run function mmo:sounds/level_up
+execute if score @s[scores={sound_settings=0}] level_up matches 8 run function mmo:sounds/level_up
 
 ############################################################################################
-	# Incriment Woodcutting Level Up #
+	# Woodcutting Level up Incriment #
 ############################################################################################
-execute as @s[scores={level_up=8}] run function mmo_woodcutting:scoreboards/level_up
+execute if score @s level_up matches 8 run function mmo_woodcutting:scoreboards/level_up

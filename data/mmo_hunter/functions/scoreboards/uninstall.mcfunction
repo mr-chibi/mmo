@@ -5,8 +5,6 @@ scoreboard objectives remove hunter_rng
 scoreboard objectives remove zombie_drops
 scoreboard objectives remove skeleton_drops
 
-
-
 #
 scoreboard objectives remove hunter_lvl
 scoreboard objectives remove hunter_exp

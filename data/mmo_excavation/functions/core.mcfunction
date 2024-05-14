@@ -22,9 +22,9 @@ execute if score @s excavation_exp >= @s excavation_lvlup run scoreboard players
 ############################################################################################
 	# Sound GUI #
 ############################################################################################
-execute as @s[scores={level_up=9,sound_settings=0}] run function mmo:sounds/level_up
+execute if score @s[scores={sound_settings=0}] level_up matches 9 run function mmo:sounds/level_up
 
 ############################################################################################
-	# Incriment Excavation Level UP #
+	# Excavation Level up Incriment #
 ############################################################################################
-execute as @s[scores={level_up=9}] run function mmo_excavation:scoreboards/level_up
+execute if score @s level_up matches 9 run function mmo_excavation:scoreboards/level_up

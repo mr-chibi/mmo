@@ -28,9 +28,9 @@ execute if score @s hunter_exp >= @s hunter_lvlup run scoreboard players set @s 
 ############################################################################################
 	# Sound GUI #
 ############################################################################################
-execute as @s[scores={level_up=6,sound_settings=0}] run function mmo:sounds/level_up
+execute if score @s[scores={sound_settings=0}] level_up matches 6 run function mmo:sounds/level_up
 
 ############################################################################################
-	# Level Up Hunter Incriment #
+	# Hunter Level up Incriment #
 ############################################################################################
-execute as @s[scores={level_up=6}] run function mmo_hunter:scoreboards/level_up
+execute if score @s level_up matches 6 run function mmo_hunter:scoreboards/level_up

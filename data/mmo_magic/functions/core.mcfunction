@@ -39,9 +39,9 @@ execute if score @s magic_exp >= @s magic_lvlup run scoreboard players set @s le
 ############################################################################################
 	# Sound GUI #
 ############################################################################################
-execute as @s[scores={level_up=13,sound_settings=0}] run function mmo:sounds/level_up
+execute if score @s[scores={sound_settings=0}] level_up matches 13 run function mmo:sounds/level_up
 
 ############################################################################################
-	# Incriment Mining Level Up & EXP #
+	# Magic Level up Incriment #
 ############################################################################################
-execute as @s[scores={level_up=13}] run function mmo_magic:scoreboards/level_up
+execute if score @s level_up matches 13 run function mmo_magic:scoreboards/level_up

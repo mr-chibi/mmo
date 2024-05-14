@@ -17,9 +17,9 @@ execute if score @s attack_exp >= @s attack_lvlup run scoreboard players set @s 
 ############################################################################################
 	# Sound GUI #
 ############################################################################################
-execute as @s[scores={level_up=1,sound_settings=0}] run function mmo:sounds/level_up
+execute if score @s[scores={sound_settings=0}] level_up matches 1 run function mmo:sounds/level_up
 
 ############################################################################################
 	# Attack Level up Incriment #
 ############################################################################################
-execute as @s[scores={level_up=1}] run function mmo_attack:scoreboards/level_up
+execute if score @s level_up matches 1 run function mmo_attack:scoreboards/level_up

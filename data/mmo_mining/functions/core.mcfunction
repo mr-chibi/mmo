@@ -17,7 +17,7 @@ execute if score disable_mining_loot mmo_gamerules matches 0 run function mmo_wo
 ############################################################################################
 	# Mining Vein Miner EXP Gained: #
 ############################################################################################
-execute as @s[scores={mining_lvl=50..,vein_settings=1},tag=mmo_holdingPickaxe] run function mmo_mining:scoreboards/vein_exp
+execute if score @s[tag=mmo_holdingPickaxe,scores={vein_settings=1}] mining_lvl matches 50.. run function mmo_mining:scoreboards/vein_exp
 
 ############################################################################################
 	# Mining Gained EXP #
@@ -33,9 +33,9 @@ execute if score @s mining_exp >= @s mining_lvlup run scoreboard players set @s 
 ############################################################################################
 	# Sound GUI #
 ############################################################################################
-execute as @s[scores={level_up=7,sound_settings=0}] run function mmo:sounds/level_up
+execute if score @s[scores={sound_settings=0}] level_up matches 7 run function mmo:sounds/level_up
 
 ############################################################################################
-	# Incriment Mining Level Up & EXP #
+	# Mining Level up Incriment #
 ############################################################################################
-execute as @s[scores={level_up=7}] run function mmo_mining:scoreboards/level_up
+execute if score @s level_up matches 7 run function mmo_mining:scoreboards/level_up

@@ -13,61 +13,60 @@ tellraw @s [{"text": "========================================\n"}]
 ############################################################################################
 	# Excavation Loot Settings [Multiplayer] Settings: #
 ############################################################################################
-execute as @s if score disable_excavation_loot mmo_gamerules matches 0 run tellraw @s [{"text": "Excavation Loot: ", "color": "white", "bold":true},{"text":"[Enabled]","color":"green", "bold": false}]
-execute as @s if score disable_excavation_loot mmo_gamerules matches 1 run tellraw @s [{"text": "Excavation Loot: ", "color": "white", "bold":true},{"text":"[Disabled]","color":"red", "bold": false}]
+execute if score disable_excavation_loot mmo_gamerules matches 0 run tellraw @s [{"text": "Excavation Loot: ", "color": "white", "bold":true},{"text":"[Enabled]","color":"green", "bold": false}]
+execute if score disable_excavation_loot mmo_gamerules matches 1 run tellraw @s [{"text": "Excavation Loot: ", "color": "white", "bold":true},{"text":"[Disabled]","color":"red", "bold": false}]
 
 # [Setting Description]:
 tellraw @s [{"text": "Removes mmo world generation such as ['custom excavation loot']", "color": "gray"}]
 
 # [Bonus EXP Toggle]:
-execute as @s if score disable_excavation_loot mmo_gamerules matches 0 run tellraw @s [{"text": "- "},{"text":"[Disable Excavation Loot]","color":"red","clickEvent":{"action":"run_command","value":"/scoreboard players set disable_excavation_loot mmo_gamerules 1"}}]
-execute as @s if score disable_excavation_loot mmo_gamerules matches 1 run tellraw @s [{"text": "- "},{"text":"[Enable Excavation Loot]","color":"green", "clickEvent":{"action":"run_command","value":"/scoreboard players set disable_excavation_loot mmo_gamerules 0"}}]
+execute if score disable_excavation_loot mmo_gamerules matches 0 run tellraw @s [{"text": "- "},{"text":"[Disable Excavation Loot]","color":"red","clickEvent":{"action":"run_command","value":"/scoreboard players set disable_excavation_loot mmo_gamerules 1"}}]
+execute if score disable_excavation_loot mmo_gamerules matches 1 run tellraw @s [{"text": "- "},{"text":"[Enable Excavation Loot]","color":"green", "clickEvent":{"action":"run_command","value":"/scoreboard players set disable_excavation_loot mmo_gamerules 0"}}]
 tellraw @s [{"text": ""}]
 
 
 ############################################################################################
 	# Mining Loot Settings [Multiplayer] Settings: #
 ############################################################################################
-execute as @s if score disable_mining_loot mmo_gamerules matches 0 run tellraw @s [{"text": "Mining Loot: ", "color": "white", "bold":true},{"text":"[Enabled]","color":"green", "bold": false}]
-execute as @s if score disable_mining_loot mmo_gamerules matches 1 run tellraw @s [{"text": "Mining Loot: ", "color": "white", "bold":true},{"text":"[Disabled]","color":"red", "bold": false}]
+execute if score disable_mining_loot mmo_gamerules matches 0 run tellraw @s [{"text": "Mining Loot: ", "color": "white", "bold":true},{"text":"[Enabled]","color":"green", "bold": false}]
+execute if score disable_mining_loot mmo_gamerules matches 1 run tellraw @s [{"text": "Mining Loot: ", "color": "white", "bold":true},{"text":"[Disabled]","color":"red", "bold": false}]
 
 # [Setting Description]:
 tellraw @s [{"text": "Removes mmo world generation such as ['custom mining loot']", "color": "gray"}]
 
 # [Bonus EXP Toggle]:
-execute as @s if score disable_mining_loot mmo_gamerules matches 0 run tellraw @s [{"text": "- "},{"text":"[Disable Mining Loot]","color":"red","clickEvent":{"action":"run_command","value":"/scoreboard players set disable_mining_loot mmo_gamerules 1"}}]
-execute as @s if score disable_mining_loot mmo_gamerules matches 1 run tellraw @s [{"text": "- "},{"text":"[Enable Mining Loot]","color":"green", "clickEvent":{"action":"run_command","value":"/scoreboard players set disable_mining_loot mmo_gamerules 0"}}]
+execute if score disable_mining_loot mmo_gamerules matches 0 run tellraw @s [{"text": "- "},{"text":"[Disable Mining Loot]","color":"red","clickEvent":{"action":"run_command","value":"/scoreboard players set disable_mining_loot mmo_gamerules 1"}}]
+execute if score disable_mining_loot mmo_gamerules matches 1 run tellraw @s [{"text": "- "},{"text":"[Enable Mining Loot]","color":"green", "clickEvent":{"action":"run_command","value":"/scoreboard players set disable_mining_loot mmo_gamerules 0"}}]
 tellraw @s [{"text": ""}]
-
 
 
 ############################################################################################
 	# Hunter Loot Settings [Multiplayer] Settings: #
 ############################################################################################
-execute as @s if score disable_hunter_loot mmo_gamerules matches 0 run tellraw @s [{"text": "Hunter Loot: ", "color": "white", "bold":true},{"text":"[Enabled]","color":"green", "bold": false}]
-execute as @s if score disable_hunter_loot mmo_gamerules matches 1 run tellraw @s [{"text": "Hunter Loot: ", "color": "white", "bold":true},{"text":"[Disabled]","color":"red", "bold": false}]
+execute if score disable_hunter_loot mmo_gamerules matches 0 run tellraw @s [{"text": "Hunter Loot: ", "color": "white", "bold":true},{"text":"[Enabled]","color":"green", "bold": false}]
+execute if score disable_hunter_loot mmo_gamerules matches 1 run tellraw @s [{"text": "Hunter Loot: ", "color": "white", "bold":true},{"text":"[Disabled]","color":"red", "bold": false}]
 
 # [Setting Description]:
 tellraw @s [{"text": "Removes mmo world generation such as ['custom mob loot']", "color": "gray"}]
 
 # [Bonus EXP Toggle]:
-execute as @s if score disable_hunter_loot mmo_gamerules matches 0 run tellraw @s [{"text": "- "},{"text":"[Disable Hunter Loot]","color":"red","clickEvent":{"action":"run_command","value":"/scoreboard players set disable_hunter_loot mmo_gamerules 1"}}]
-execute as @s if score disable_hunter_loot mmo_gamerules matches 1 run tellraw @s [{"text": "- "},{"text":"[Enable Hunter Loot]","color":"green", "clickEvent":{"action":"run_command","value":"/scoreboard players set disable_hunter_loot mmo_gamerules 0"}}]
+execute if score disable_hunter_loot mmo_gamerules matches 0 run tellraw @s [{"text": "- "},{"text":"[Disable Hunter Loot]","color":"red","clickEvent":{"action":"run_command","value":"/scoreboard players set disable_hunter_loot mmo_gamerules 1"}}]
+execute if score disable_hunter_loot mmo_gamerules matches 1 run tellraw @s [{"text": "- "},{"text":"[Enable Hunter Loot]","color":"green", "clickEvent":{"action":"run_command","value":"/scoreboard players set disable_hunter_loot mmo_gamerules 0"}}]
 tellraw @s [{"text": ""}]
 
 
 ############################################################################################
 	# Magic World Gen Settings [Multiplayer] Settings: #
 ############################################################################################
-execute as @s if score disable_magic_ability mmo_gamerules matches 0 run tellraw @s [{"text": "Custom Magic Trees: ", "color": "white", "bold":true},{"text":"[Enabled]","color":"green", "bold": false}]
-execute as @s if score disable_magic_ability mmo_gamerules matches 1 run tellraw @s [{"text": "Custom Magic Trees: ", "color": "white", "bold":true},{"text":"[Disabled]","color":"red", "bold": false}]
+execute if score disable_magic_ability mmo_gamerules matches 0 run tellraw @s [{"text": "Custom Magic Trees: ", "color": "white", "bold":true},{"text":"[Enabled]","color":"green", "bold": false}]
+execute if score disable_magic_ability mmo_gamerules matches 1 run tellraw @s [{"text": "Custom Magic Trees: ", "color": "white", "bold":true},{"text":"[Disabled]","color":"red", "bold": false}]
 
 # [Setting Description]:
 tellraw @s [{"text": "Removes mmo world generation magic such as, ['custom trees']", "color": "gray"}]
 
 # [Bonus EXP Toggle]:
-execute as @s if score disable_magic_ability mmo_gamerules matches 0 run tellraw @s [{"text": "- "},{"text":"[Disable Custom Magic Trees]","color":"red","clickEvent":{"action":"run_command","value":"/scoreboard players set disable_magic_ability mmo_gamerules 1"}}]
-execute as @s if score disable_magic_ability mmo_gamerules matches 1 run tellraw @s [{"text": "- "},{"text":"[Enable Custom Magic Trees]","color":"green","clickEvent":{"action":"run_command","value":"/scoreboard players set disable_magic_ability mmo_gamerules 0"}}]
+execute if score disable_magic_ability mmo_gamerules matches 0 run tellraw @s [{"text": "- "},{"text":"[Disable Custom Magic Trees]","color":"red","clickEvent":{"action":"run_command","value":"/scoreboard players set disable_magic_ability mmo_gamerules 1"}}]
+execute if score disable_magic_ability mmo_gamerules matches 1 run tellraw @s [{"text": "- "},{"text":"[Enable Custom Magic Trees]","color":"green","clickEvent":{"action":"run_command","value":"/scoreboard players set disable_magic_ability mmo_gamerules 0"}}]
 tellraw @s [{"text": ""}]
 
 

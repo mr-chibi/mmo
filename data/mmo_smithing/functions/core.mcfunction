@@ -12,9 +12,9 @@ execute if score @s smithing_exp >= @s smithing_lvlup run scoreboard players set
 ############################################################################################
 	# Sound GUI #
 ############################################################################################
-execute as @s[scores={level_up=12,sound_settings=0}] run function mmo:sounds/level_up
+execute if score @s[scores={sound_settings=0}] level_up matches 12 run function mmo:sounds/level_up
 
 ############################################################################################
-	# smithing Level up Incriment #
+	# Smithing Level up Incriment #
 ############################################################################################
-execute as @s[scores={level_up=12}] run function mmo_smithing:scoreboards/level_up
+execute if score @s level_up matches 12 run function mmo_smithing:scoreboards/level_up

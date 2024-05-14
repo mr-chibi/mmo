@@ -8,7 +8,6 @@ tag @s[nbt={SelectedItem:{id:"minecraft:golden_sword"}}] add mmo_holdingHunterSw
 tag @s[nbt={SelectedItem:{id:"minecraft:diamond_sword"}}] add mmo_holdingHunterSword
 tag @s[nbt={SelectedItem:{id:"minecraft:netherite_sword"}}] add mmo_holdingHunterSword
 
-
 ############################################################################################
 	# Hunter Tools: [Disabled] #
 ############################################################################################

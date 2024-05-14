@@ -1,4 +1,4 @@
 #############################################################################################################
 # Randomization:
 #############################################################################################################
-execute as @s[scores={slain_witch=1}] run function mmo_worldgen:hunter/random
+execute if score @s slain_witch matches 1 run function mmo_worldgen:hunter/random

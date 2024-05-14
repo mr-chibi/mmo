@@ -17,10 +17,9 @@ execute if score @s defense_exp >= @s defense_lvlup run scoreboard players set @
 ############################################################################################
 	# Sound GUI #
 ############################################################################################
-execute as @s[scores={level_up=2,sound_settings=0}] run function mmo:sounds/level_up
-
+execute if score @s[scores={sound_settings=0}] level_up matches 2 run function mmo:sounds/level_up
 
 ############################################################################################
-	# Defense Level Up Incriment #
+	# Defense Level up Incriment #
 ############################################################################################
-execute as @s[scores={level_up=2}] run function mmo_defense:scoreboards/level_up
+execute if score @s level_up matches 2 run function mmo_defense:scoreboards/level_up

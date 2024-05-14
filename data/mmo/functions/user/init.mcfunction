@@ -6,16 +6,16 @@ function #mmo:user/skills
 ############################################################################################
 	# User Settings: #
 ############################################################################################
-execute as @s[scores={exp_settings=0}] run function mmo:user/gui
-execute as @s[scores={sound_settings=0}] run function #mmo:user/sounds
-execute as @s[scores={music_settings=1}] run function mmo:music/playsound
+execute if score @s exp_settings matches 0 run function mmo:user/gui
+execute if score @s sound_settings matches 0 run function #mmo:user/sounds
+execute if score @s music_settings matches 1 run function mmo:music/playsound
 
 ############################################################################################
 	# Player Commands: #
 ############################################################################################
-execute as @s[scores={mmo_menu=1}] run function mmo:commands/menu
-execute as @s[scores={mmo_help=1}] run function mmo:commands/help
-execute as @s[scores={mmo_user_setting=1..}] run function mmo:commands/user_settings
+execute if score @s mmo_menu matches 1 run function mmo:commands/menu
+execute if score @s mmo_help matches 1 run function mmo:commands/help
+execute if score @s mmo_user_setting matches 1.. run function mmo:commands/user_settings
 
 ############################################################################################
 	# Player Reset Default User Settings: #
@@ -25,6 +25,6 @@ function mmo:commands/reset/settings
 ############################################################################################
 	# Player Statistics Commands: #
 ############################################################################################
-execute as @s[scores={mmo_stats=1}] run function mmo:commands/stats/1
-execute as @s[scores={mmo_stats=2}] run function mmo:commands/stats/2
-execute as @s[scores={mmo_stats=3}] run function mmo:commands/stats/3
+execute if score @s mmo_stats matches 1 run function mmo:commands/stats/1
+execute if score @s mmo_stats matches 2 run function mmo:commands/stats/2
+execute if score @s mmo_stats matches 3 run function mmo:commands/stats/3

@@ -111,13 +111,13 @@ execute store result score @s[scores={cut_stripped_cherry_log=1..}] wc_vein_coun
 ############################################################################################
 	# Woodcutting TreeFaller Muliply logs chopped: #
 ############################################################################################
-execute as @s[scores={wc_vein_count=5..,cut_stripped_oak_log=1..}] run scoreboard players operation @s wc_vein_count *= cut_stripped_oak_log stats_experience
-execute as @s[scores={wc_vein_count=5..,cut_stripped_spruce_log=1..}] run scoreboard players operation @s wc_vein_count *= cut_stripped_spruce_log stats_experience
-execute as @s[scores={wc_vein_count=5..,cut_stripped_birch_log=1..}] run scoreboard players operation @s wc_vein_count *= cut_stripped_birch_log stats_experience
-execute as @s[scores={wc_vein_count=5..,cut_stripped_jungle_log=1..}] run scoreboard players operation @s wc_vein_count *= cut_stripped_jungle_log stats_experience
-execute as @s[scores={wc_vein_count=5..,cut_stripped_acacia_log=1..}] run scoreboard players operation @s wc_vein_count *= cut_stripped_acacia_log stats_experience
-execute as @s[scores={wc_vein_count=5..,cut_stripped_dark_oak_log=1..}] run scoreboard players operation @s wc_vein_count *= cut_stripped_dark_oak_log stats_experience
-execute as @s[scores={wc_vein_count=5..,cut_stripped_crimson_stem=1..}] run scoreboard players operation @s wc_vein_count *= cut_stripped_crimson_stem stats_experience
-execute as @s[scores={wc_vein_count=5..,cut_stripped_warped_stem=1..}] run scoreboard players operation @s wc_vein_count *= cut_stripped_warped_stem stats_experience
-execute as @s[scores={wc_vein_count=5..,cut_stripped_mangrove_log=1..}] run scoreboard players operation @s wc_vein_count *= cut_stripped_mangrove_log stats_experience
-execute as @s[scores={wc_vein_count=5..,cut_stripped_cherry_log=1..}] run scoreboard players operation @s wc_vein_count *= cut_stripped_cherry_log stats_experience
+execute if score @s[scores={wc_vein_count=5..}] cut_stripped_oak_log matches 1.. run scoreboard players operation @s wc_vein_count *= cut_stripped_oak_log stats_experience
+execute if score @s[scores={wc_vein_count=5..}] cut_stripped_spruce_log matches 1.. run scoreboard players operation @s wc_vein_count *= cut_stripped_spruce_log stats_experience
+execute if score @s[scores={wc_vein_count=5..}] cut_stripped_birch_log matches 1.. run scoreboard players operation @s wc_vein_count *= cut_stripped_birch_log stats_experience
+execute if score @s[scores={wc_vein_count=5..}] cut_stripped_jungle_log matches 1.. run scoreboard players operation @s wc_vein_count *= cut_stripped_jungle_log stats_experience
+execute if score @s[scores={wc_vein_count=5..}] cut_stripped_acacia_log matches 1.. run scoreboard players operation @s wc_vein_count *= cut_stripped_acacia_log stats_experience
+execute if score @s[scores={wc_vein_count=5..}] cut_stripped_dark_oak_log matches 1.. run scoreboard players operation @s wc_vein_count *= cut_stripped_dark_oak_log stats_experience
+execute if score @s[scores={wc_vein_count=5..}] cut_stripped_crimson_stem matches 1.. run scoreboard players operation @s wc_vein_count *= cut_stripped_crimson_stem stats_experience
+execute if score @s[scores={wc_vein_count=5..}] cut_stripped_warped_stem matches 1.. run scoreboard players operation @s wc_vein_count *= cut_stripped_warped_stem stats_experience
+execute if score @s[scores={wc_vein_count=5..}] cut_stripped_mangrove_log matches 1.. run scoreboard players operation @s wc_vein_count *= cut_stripped_mangrove_log stats_experience
+execute if score @s[scores={wc_vein_count=5..}] cut_stripped_cherry_log matches 1.. run scoreboard players operation @s wc_vein_count *= cut_stripped_cherry_log stats_experience

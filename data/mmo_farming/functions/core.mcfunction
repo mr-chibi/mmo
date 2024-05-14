@@ -2,6 +2,7 @@
 	# Farming Tags #
 ############################################################################################
 function mmo_farming:tags/holdinghoe
+function mmo_farming:tags/holding_crystalhoe
 function mmo_farming:tags/holdingcrop
 
 ############################################################################################
@@ -29,9 +30,9 @@ execute if score @s farming_exp >= @s farming_lvlup run scoreboard players set @
 ############################################################################################
 	# Sound GUI #
 ############################################################################################
-execute as @s[scores={level_up=4,sound_settings=0}] run function mmo:sounds/level_up
+execute if score @s[scores={sound_settings=0}] level_up matches 4 run function mmo:sounds/level_up
 
 ############################################################################################
-	# Incriment Farming Level Up & EXP #
+	# Farming Level up Incriment #
 ############################################################################################
-execute as @s[scores={level_up=4}] run function mmo_farming:scoreboards/level_up
+execute if score @s level_up matches 4 run function mmo_farming:scoreboards/level_up

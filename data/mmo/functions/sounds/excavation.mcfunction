@@ -1,9 +1,0 @@
-execute as @s[scores={shovel_grass_blc=1..}] run playsound minecraft:item.shovel.flatten master @s ~ ~ ~ 0.65 0.5
-execute as @s[scores={shovel_podzol=1..}] run playsound minecraft:item.shovel.flatten master @s ~ ~ ~ 0.65 0.5
-execute as @s[scores={shovel_mycelium=1..}] run playsound minecraft:item.shovel.flatten master @s ~ ~ ~ 0.65 0.5
-execute as @s[scores={shovel_dirt=1..}] run playsound minecraft:item.shovel.flatten master @s ~ ~ ~ 0.65 0.5
-execute as @s[scores={shovel_coar_dirt=1..}] run playsound minecraft:item.shovel.flatten master @s ~ ~ ~ 0.65 0.5
-execute as @s[scores={shovel_gravel=1..}] run playsound minecraft:item.shovel.flatten master @s ~ ~ ~ 0.65 0.5
-execute as @s[scores={shovel_sand=1..}] run playsound minecraft:item.shovel.flatten master @s ~ ~ ~ 0.65 0.5
-execute as @s[scores={shovel_red_sand=1..}] run playsound minecraft:item.shovel.flatten master @s ~ ~ ~ 0.65 0.5
-execute as @s[scores={shovel_soul_sand=1..}] run playsound minecraft:item.shovel.flatten master @s ~ ~ ~ 0.65 0.5

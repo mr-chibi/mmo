@@ -1,7 +1,6 @@
 {
 	"values": [
 		"mmo:sounds/mining",
-		"mmo:sounds/woodcutting",
-		"mmo:sounds/excavation"
+		"mmo:sounds/woodcutting"
 	]
 }

@@ -10,7 +10,6 @@ function mmo_fishing:tags/caught_fish
 function mmo_fishing:scoreboards/gained_exp
 function mmo_fishing:scoreboards/reset_exp
 
-
 ############################################################################################
 	# Fishing Level Up #
 ############################################################################################
@@ -19,9 +18,9 @@ execute if score @s fishing_exp >= @s fishing_lvlup run scoreboard players set @
 ############################################################################################
 	# Sound GUI #
 ############################################################################################
-execute as @s[scores={level_up=5,sound_settings=0}] run function mmo:sounds/level_up
+execute if score @s[scores={sound_settings=0}] level_up matches 5 run function mmo:sounds/level_up
 
 ############################################################################################
 	# Fishing Level up Incriment #
 ############################################################################################
-execute as @s[scores={level_up=5}] run function mmo_fishing:scoreboards/level_up
+execute if score @s level_up matches 5 run function mmo_fishing:scoreboards/level_up

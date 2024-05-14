@@ -1,16 +1,15 @@
 ############################################################################################
 	# Fishing EXP Reset #
 ############################################################################################
-execute as @s[tag=caught_cod] run scoreboard players set @s[scores={fish_caught=1..}] fish_caught 0
-execute as @s[tag=caught_salmon] run scoreboard players set @s[scores={fish_caught=1..}] fish_caught 0
-execute as @s[tag=caught_tropical_fish] run scoreboard players set @s[scores={fish_caught=1..}] fish_caught 0
-execute as @s[tag=caught_pufferfish] run scoreboard players set @s[scores={fish_caught=1..}] fish_caught 0
-
+scoreboard players set @s[tag=caught_cod,scores={fish_caught=1..}] fish_caught 0
+scoreboard players set @s[tag=caught_salmon,scores={fish_caught=1..}] fish_caught 0
+scoreboard players set @s[tag=caught_tropical_fish,scores={fish_caught=1..}] fish_caught 0
+scoreboard players set @s[tag=caught_pufferfish,scores={fish_caught=1..}] fish_caught 0
 
 ############################################################################################
 	# Fishing Tag Reset #
 ############################################################################################
-execute as @s[tag=caught_cod] run tag @s remove caught_cod
-execute as @s[tag=caught_salmon] run tag @s remove caught_salmon
-execute as @s[tag=caught_tropical_fish] run tag @s remove caught_tropical_fish
-execute as @s[tag=caught_pufferfish] run tag @s remove caught_pufferfish
+tag @s[tag=caught_cod] remove caught_cod
+tag @s[tag=caught_salmon] remove caught_salmon
+tag @s[tag=caught_tropical_fish] remove caught_tropical_fish
+tag @s[tag=caught_pufferfish] remove caught_pufferfish

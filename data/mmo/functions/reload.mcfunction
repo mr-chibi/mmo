@@ -25,8 +25,6 @@ execute if score mmo mmo_addons matches 1 if score mmo_loot mmo_addons matches 0
 #############################################################################
 execute if score mmo mmo_addons matches 1 if score mmo_loot mmo_addons matches 2 if score mmo_mobs mmo_addons matches 2 run tellraw @a [{"text": "\nAdditonal Datapacks Enabled: \n", "color": "yellow"}, {"text": "[Mr_Chibi'sMMO Loot]", "color": "green"}, {"text": ", ", "color": "white"}, {"text": "[Mr_Chibi'sMMO Mobs]", "color": "green"}]
 
-
-
 #############################################################################
 # [Disabled Addons]:
 #############################################################################
