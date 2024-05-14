@@ -22,12 +22,12 @@ execute as @e[type=minecraft:armor_stand,tag=block_rng,tag=selected,team=!rng_bl
 #############################################################################################################
 # Selected Armorstand functionallity:
 #############################################################################################################
-execute as @e[type=minecraft:armor_stand,tag=block_rng,tag=selected,team=rng_blue,sort=nearest] at @s run say hi
+# execute as @e[type=minecraft:armor_stand,tag=block_rng,tag=selected,team=rng_blue,sort=nearest] at @s run say hi
 
 #############################################################################################################
 # World generation Mob Drops:
 #############################################################################################################
-execute if score @s slain_witch matches 1.. run function mmo_worldgen:hunter/loot/witch
+# execute if score @s slain_witch matches 1.. run function mmo_worldgen:hunter/loot/witch
 
 #############################################################################################################
 # Selected Armorstand remove entity:
