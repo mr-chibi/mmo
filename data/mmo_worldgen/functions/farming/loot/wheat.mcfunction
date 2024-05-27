@@ -3,11 +3,11 @@
 ############################################################################################
 execute as @e[type=minecraft:armor_stand,tag=block_rng,tag=1,tag=selected,team=rng_blue,sort=nearest] at @s run tellraw @p [{"text": "From this harvest you've got (3) extra wheats!", "color": "aqua"}]
 execute as @e[type=minecraft:armor_stand,tag=block_rng,tag=1,tag=selected,team=rng_blue,sort=nearest] at @s run playsound minecraft:entity.player.levelup master @p[scores={sound_settings=0}] ~ ~ ~ 2 0.89
-execute as @e[type=minecraft:armor_stand,tag=block_rng,tag=1,tag=selected,team=rng_blue,sort=nearest] at @s run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:wheat", Count:3b}}
+execute as @e[type=minecraft:armor_stand,tag=block_rng,tag=1,tag=selected,team=rng_blue,sort=nearest] at @s run give @p minecraft:wheat 3
 
 ############################################################################################
 	# Grant player (4) Carrots if their RNG, matches 19:
 ############################################################################################
 execute as @e[type=minecraft:armor_stand,tag=block_rng,tag=19,tag=selected,team=rng_blue,sort=nearest] at @s run tellraw @p [{"text": "From this harvest you've got (4) extra wheats!", "color": "aqua"}]
 execute as @e[type=minecraft:armor_stand,tag=block_rng,tag=19,tag=selected,team=rng_blue,sort=nearest] at @s run playsound minecraft:entity.player.levelup master @p[scores={sound_settings=0}] ~ ~ ~ 2 0.89
-execute as @e[type=minecraft:armor_stand,tag=block_rng,tag=19,tag=selected,team=rng_blue,sort=nearest] at @s run summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:wheat", Count:4b}}
+execute as @e[type=minecraft:armor_stand,tag=block_rng,tag=19,tag=selected,team=rng_blue,sort=nearest] at @s run give @p minecraft:wheat 4

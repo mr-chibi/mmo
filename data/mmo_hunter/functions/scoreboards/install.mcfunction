@@ -10,6 +10,7 @@ scoreboard objectives add hunter_stat dummy
 ########################################################################
 # 
 ########################################################################
+scoreboard objectives add slain_mob dummy
 scoreboard objectives add slain_player minecraft.killed:minecraft.player
 scoreboard objectives add slain_creeper minecraft.killed:minecraft.creeper
 
@@ -41,6 +42,9 @@ scoreboard objectives add slain_vindicator minecraft.killed:minecraft.vindicator
 scoreboard objectives add slain_witch minecraft.killed:minecraft.witch
 
 #
+scoreboard objectives add slain_hoglin minecraft.killed:minecraft.hoglin
+scoreboard objectives add slain_piglin minecraft.killed:minecraft.piglin
+scoreboard objectives add slain_piglin_brute minecraft.killed:minecraft.piglin_brute
 scoreboard objectives add slain_zom_piglin minecraft.killed:minecraft.zombified_piglin
 scoreboard objectives add slain_ghast minecraft.killed:minecraft.ghast
 scoreboard objectives add slain_wither_ske minecraft.killed:minecraft.wither_skeleton

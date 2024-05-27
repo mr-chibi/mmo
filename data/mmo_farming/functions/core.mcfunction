@@ -8,7 +8,8 @@ function mmo_farming:tags/holdingcrop
 ############################################################################################
 	# Farming Perks #
 ############################################################################################
-function #mmo_farming:auto_planting
+execute if block ~ ~ ~ minecraft:farmland unless block ~ ~1 ~ #mmo_farming:overworld_crops run function #mmo_farming:auto_planting
+execute if block ~ ~ ~ minecraft:soul_sand unless block ~ ~1 ~ #mmo_farming:nether_crops run function #mmo_farming:auto_planting
 function mmo_farming:perks/farming_growth
 
 ############################################################################################

@@ -32,6 +32,9 @@ scoreboard players set @s[scores={slain_vindicator=1..}] slain_vindicator 0
 scoreboard players set @s[scores={slain_witch=1..}] slain_witch 0
 
 # The Nether
+scoreboard players set @s[scores={slain_hoglin=1..}] slain_hoglin 0
+scoreboard players set @s[scores={slain_piglin=1..}] slain_piglin 0
+scoreboard players set @s[scores={slain_piglin_brute=1..}] slain_piglin_brute 0
 scoreboard players set @s[scores={slain_zom_piglin=1..}] slain_zom_piglin 0
 scoreboard players set @s[scores={slain_ghast=1..}] slain_ghast 0
 scoreboard players set @s[scores={slain_wither_ske=1..}] slain_wither_ske 0

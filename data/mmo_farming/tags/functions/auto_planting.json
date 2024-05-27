@@ -1,0 +1,13 @@
+{
+	"values": [
+		"mmo_farming:perks/auto_planting/wheat",
+		"mmo_farming:perks/auto_planting/carrot",
+		"mmo_farming:perks/auto_planting/potato",
+		"mmo_farming:perks/auto_planting/pumpkin",
+		"mmo_farming:perks/auto_planting/melon",
+		"mmo_farming:perks/auto_planting/beetroot",
+		"mmo_farming:perks/auto_planting/sweet_berries",
+		"mmo_farming:perks/auto_planting/torchflower",
+		"mmo_farming:perks/auto_planting/nether_wart"
+	]
+}

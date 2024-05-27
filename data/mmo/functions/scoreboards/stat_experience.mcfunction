@@ -98,7 +98,10 @@ scoreboard players set slain_vindicator stats_experience 35
 scoreboard players set slain_witch stats_experience 40
 
 # The Nether
-scoreboard players set slain_pigman stats_experience 35
+scoreboard players set slain_hoglin stats_experience 35
+scoreboard players set slain_piglin stats_experience 35
+scoreboard players set slain_piglin_brute stats_experience 35
+scoreboard players set slain_zom_piglin stats_experience 35
 scoreboard players set slain_ghast stats_experience 30
 scoreboard players set slain_wither_ske stats_experience 40
 scoreboard players set slain_blaze stats_experience 30

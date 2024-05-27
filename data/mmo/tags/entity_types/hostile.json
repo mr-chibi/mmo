@@ -10,7 +10,6 @@
 		"minecraft:spider",
 		"minecraft:cave_spider",
 		"minecraft:slime",
-		"minecraft:phantom",
 		"minecraft:guardian",
 		"minecraft:elder_guardian",
 		"minecraft:ravager",
@@ -18,12 +17,15 @@
 		"minecraft:evoker",
 		"minecraft:vindicator",
 		"minecraft:witch",
-		"minecraft:zombified_piglin",
 		"minecraft:ghast",
 		"minecraft:wither_skeleton",
 		"minecraft:blaze",
 		"minecraft:magma_cube",
 		"minecraft:enderman",
-		"minecraft:shulker"
+		"minecraft:piglin",
+		"minecraft:piglin_brute",
+		"minecraft:zombified_piglin",
+		"minecraft:shulker",
+		"minecraft:hoglin"
 	]
 }

@@ -1,4 +1,7 @@
 #
+scoreboard objectives remove mmo_axis_y
+
+#
 scoreboard objectives remove stats_scoreboard
 scoreboard objectives remove stats_experience
 scoreboard objectives remove level_up
@@ -40,7 +43,6 @@ scoreboard objectives remove agility_settings
 scoreboard objectives remove exp_settings
 
 #
-scoreboard objectives remove mmo_health
 scoreboard objectives remove mmo_durabliity
 
 
@@ -49,6 +51,7 @@ scoreboard objectives remove mmo_durabliity
 ############################################################################################
 scoreboard objectives remove mob_health_min
 scoreboard objectives remove mob_health_max
+scoreboard objectives remove mob_total_count
 
 #
 execute as @a at @s run effect clear @s

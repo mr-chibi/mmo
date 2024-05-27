@@ -8,7 +8,13 @@ function #mmo:user/skills
 ############################################################################################
 execute if score @s exp_settings matches 0 run function mmo:user/gui
 execute if score @s sound_settings matches 0 run function #mmo:user/sounds
-execute if score @s music_settings matches 1 run function mmo:music/playsound
+execute if score @s[tag=!mmo_debug] music_settings matches 1 run function mmo:music/playsound
+execute if score @s[tag=mmo_debug] music_settings matches 1 run function mmo:music/themes/debug/init
+
+############################################################################################
+	# Mob HealthBar REQUIRED: #
+############################################################################################
+execute if score @s attack_stat matches 1.. run function mmo:user/healthbar/init
 
 ############################################################################################
 	# Player Commands: #

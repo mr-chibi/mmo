@@ -12,6 +12,7 @@ scoreboard objectives remove hunter_lvlup
 scoreboard objectives remove hunter_stat
 
 # "Overworld"
+scoreboard objectives remove slain_mob
 scoreboard objectives remove slain_player
 scoreboard objectives remove slain_creeper
 scoreboard objectives remove slain_skeleton
@@ -33,6 +34,9 @@ scoreboard objectives remove slain_vindicator
 scoreboard objectives remove slain_witch
 
 # "Nether"
+scoreboard objectives remove slain_hoglin
+scoreboard objectives remove slain_piglin
+scoreboard objectives remove slain_piglin_brute
 scoreboard objectives remove slain_zom_piglin
 scoreboard objectives remove slain_ghast
 scoreboard objectives remove slain_wither_ske

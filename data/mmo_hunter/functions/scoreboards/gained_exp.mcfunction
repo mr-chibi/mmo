@@ -32,6 +32,9 @@ scoreboard players operation @s[scores={slain_vindicator=1..}] hunter_exp += sla
 scoreboard players operation @s[scores={slain_witch=1..}] hunter_exp += slain_witch stats_experience
 
 # The Nether
+scoreboard players operation @s[scores={slain_hoglin=1..}] hunter_exp += slain_hoglin stats_experience
+scoreboard players operation @s[scores={slain_piglin=1..}] hunter_exp += slain_piglin stats_experience
+scoreboard players operation @s[scores={slain_piglin_brute=1..}] hunter_exp += slain_piglin_brute stats_experience
 scoreboard players operation @s[scores={slain_zom_piglin=1..}] hunter_exp += slain_zom_piglin stats_experience
 scoreboard players operation @s[scores={slain_ghast=1..}] hunter_exp += slain_ghast stats_experience
 scoreboard players operation @s[scores={slain_wither_ske=1..}] hunter_exp += slain_wither_ske stats_experience

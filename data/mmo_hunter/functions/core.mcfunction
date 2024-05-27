@@ -10,11 +10,6 @@ execute if score disable_hunter_loot mmo_gamerules matches 0 run function mmo_wo
 execute if score disable_hunter_loot mmo_gamerules matches 0 run function mmo_hunter:loot_tables/tools
 
 ############################################################################################
-	# MMO Addon: #
-############################################################################################
-execute if score mmo mmo_addons matches 3 if score mmo_mobs mmo_addons matches 2.. run function mmo_mobs:init
-
-############################################################################################
 	# Hunter EXP #
 ############################################################################################
 function mmo_hunter:scoreboards/gained_exp
