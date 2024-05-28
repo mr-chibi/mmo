@@ -4,9 +4,6 @@ data modify entity @s NoAI set value 1b
 # Place sign:
 setblock ~ ~ ~ minecraft:oak_sign
 
-# Reset Hp bar:
-execute if block ~1 ~ ~ minecraft:oak_sign run data modify block ~ ~ ~ front_text.messages set value ['""', '""', '""', '""']
-
 # Reset CustomName:
 execute if block ~ ~ ~ minecraft:oak_sign run data modify entity @s CustomName set value ""
 
