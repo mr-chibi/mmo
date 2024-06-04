@@ -6,7 +6,7 @@ scoreboard objectives add mmo_music_loop dummy
 
 #
 scoreboard players set battle mmo_music_loop 2
-scoreboard players set mining mmo_music_loop 3
+scoreboard players set mining mmo_music_loop 4
 scoreboard players set overworld mmo_music_loop 4
 scoreboard players set dungeon mmo_music_loop 5
 scoreboard players set lost mmo_music_loop 4

@@ -1,6 +1,11 @@
-# [Mob] Themes:
-execute if entity @e[type=#mmo:hostile,distance=..5,limit=1] run tag @s add battle_theme
-execute if entity @e[type=minecraft:villager,distance=..5,limit=1] run tag @s add overworld_theme
+# Villagers [Peaceful]:
+execute if entity @e[type=minecraft:villager,distance=..9,limit=1] run tag @s[tag=!villager_mob,tag=!hostile_mob] add villager_mob
+execute if entity @e[type=minecraft:villager,distance=..9,limit=1] run tag @s[tag=!overworld_theme,tag=villager_mob] add overworld_theme
+execute unless entity @e[type=minecraft:villager,distance=..9,limit=1] run tag @s[tag=villager_mob] remove overworld_theme
+execute unless entity @e[type=minecraft:villager,distance=..9,limit=1] run tag @s[tag=villager_mob] remove villager_mob
 
-# [Reset Themes]:
-execute unless entity @e[type=minecraft:villager,distance=..6,sort=nearest,limit=1] unless entity @e[type=#mmo:hostile,distance=..6,sort=nearest,limit=1] run function mmo:music/tags/reset_themes
+# Mobs [Hostile]:
+execute if entity @e[type=#mmo:hostile,distance=..9,limit=1] run tag @s[tag=!villager_mob,tag=!hostile_mob] add hostile_mob
+execute if entity @e[type=#mmo:hostile,distance=..9,limit=1] run tag @s[tag=!battle_theme,tag=hostile_mob] add battle_theme
+execute unless entity @e[type=#mmo:hostile,distance=..9,limit=1] run tag @s[tag=hostile_mob] remove battle_theme
+execute unless entity @e[type=#mmo:hostile,distance=..9,limit=1] run tag @s[tag=hostile_mob] remove hostile_mob
