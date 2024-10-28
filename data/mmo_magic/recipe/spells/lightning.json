@@ -5,18 +5,10 @@
     "yxz"
   ],
   "key": {
-    "w": {
-      "item": "minecraft:explorer_pottery_sherd"
-    },
-    "x": {
-      "item": "minecraft:book"
-    },
-    "y": {
-      "item": "minecraft:burn_pottery_sherd"
-    },
-    "z": {
-      "item": "minecraft:brewer_pottery_sherd"
-    }
+    "w": "minecraft:explorer_pottery_sherd",
+    "x": "minecraft:book",
+    "y": "minecraft:burn_pottery_sherd",
+    "z": "minecraft:brewer_pottery_sherd"
   },
   "result": {
     "id": "minecraft:book",

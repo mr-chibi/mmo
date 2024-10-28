@@ -6,12 +6,8 @@
     " x "
   ],
   "key": {
-    "x": {
-      "item": "minecraft:redstone"
-    },
-    "z": {
-      "item": "minecraft:compass"
-    }
+    "x": "minecraft:redstone",
+    "z": "minecraft:compass"
   },
   "result": {
     "id": "minecraft:compass",

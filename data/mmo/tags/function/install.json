@@ -19,6 +19,7 @@
 		"mmo_hitpoints:scoreboards/install",
 		"mmo_agility:scoreboards/install",
 		"mmo_smithing:scoreboards/install",
-		"mmo_magic:scoreboards/install"
+		"mmo_magic:scoreboards/install",
+		"mmo_upgrades:scoreboards/install"
 	]
 }

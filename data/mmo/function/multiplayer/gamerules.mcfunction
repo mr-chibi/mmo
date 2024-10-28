@@ -6,7 +6,7 @@ execute if score attack_skill mmo_gamerule matches 1 run effect clear @s minecra
 execute if score defense_skill mmo_gamerule matches 1 run effect clear @s minecraft:resistance
 execute if score excavation_skill mmo_gamerule matches 1 run effect clear @s minecraft:haste
 execute if score fishing_skill mmo_gamerule matches 1 run effect clear @s minecraft:luck
-execute if score hitpoints_skill mmo_gamerule matches 1 run attribute @s minecraft:generic.max_health base set 20
+execute if score hitpoints_skill mmo_gamerule matches 1 run attribute @s minecraft:max_health base set 20
 execute if score hunter_skill mmo_gamerule matches 1 run effect clear @e[type=!minecraft:player] minecraft:glowing
 execute if score mining_skill mmo_gamerule matches 1 run effect clear @s minecraft:haste
 execute if score woodcutting_skill mmo_gamerule matches 1 run effect clear @s minecraft:haste

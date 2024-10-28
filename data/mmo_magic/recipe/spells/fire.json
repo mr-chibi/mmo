@@ -5,12 +5,8 @@
     " z"
   ],
   "key": {
-    "x": {
-      "item": "minecraft:burn_pottery_sherd"
-    },
-    "z": {
-      "item": "minecraft:book"
-    }
+    "x": "minecraft:burn_pottery_sherd",
+    "z": "minecraft:book"
   },
   "result": {
     "id": "minecraft:book",

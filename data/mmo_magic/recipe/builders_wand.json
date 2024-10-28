@@ -6,15 +6,9 @@
     "yxy"
   ],
   "key": {
-    "x": {
-      "item": "minecraft:amethyst_shard"
-    },
-    "z": {
-      "item": "minecraft:brush"
-    },
-    "y": {
-      "item": "minecraft:diamond"
-    }
+    "x": "minecraft:amethyst_shard",
+    "z": "minecraft:brush",
+    "y": "minecraft:diamond"
   },
   "result": {
     "id": "minecraft:brush",

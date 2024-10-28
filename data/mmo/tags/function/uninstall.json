@@ -13,6 +13,7 @@
 		"mmo_hitpoints:scoreboards/uninstall",
 		"mmo_agility:scoreboards/uninstall",
 		"mmo_smithing:scoreboards/uninstall",
-		"mmo_magic:scoreboards/uninstall"
+		"mmo_magic:scoreboards/uninstall",
+		"mmo_upgrades:scoreboards/uninstall"
 	]
 }

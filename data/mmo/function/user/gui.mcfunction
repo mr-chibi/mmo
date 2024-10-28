@@ -1,7 +1,7 @@
 ############################################################################################
 	# UPDATE mob EXPERIENCE BAR: #
 ############################################################################################
-execute as @e[type=#mmo:hostile,distance=..5,sort=nearest] at @s store result score @s mob_health_max run attribute @s minecraft:generic.max_health get
+execute as @e[type=#mmo:hostile,distance=..5,sort=nearest] at @s store result score @s mob_health_max run attribute @s minecraft:max_health get
 execute as @e[type=#mmo:hostile,distance=..5,sort=nearest] at @s store result score @s mob_health_min run data get entity @s Health
 
 ############################################################################################

@@ -10,4 +10,4 @@ scoreboard objectives remove hitpoints_dmg
 
 #
 tag @a remove mmo_hitpoints
-execute as @a at @s run attribute @s minecraft:generic.max_health base set 20
+execute as @a at @s run attribute @s minecraft:max_health base set 20
