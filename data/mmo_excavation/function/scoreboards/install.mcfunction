@@ -10,12 +10,6 @@ scoreboard objectives add excavation_bonus dummy
 scoreboard players set lvl_10 excavation_lvl 10
 scoreboard players set lvl_20 excavation_lvl 20
 
-##################################################
-# New Excavation System:
-##################################################
-team add rng_green
-team modify rng_green color green
-
 ############################################################################################
 	# Excavation Scoreboards: #
 ############################################################################################

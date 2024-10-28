@@ -4,12 +4,6 @@ scoreboard objectives remove mining_exp
 scoreboard objectives remove mining_lvlup
 
 ##################################################
-# New Mining System:
-##################################################
-scoreboard objectives remove countEntities
-team remove rng_blue
-
-##################################################
 # Mining Objectives:
 ##################################################
 scoreboard objectives remove vein_mining_cnt

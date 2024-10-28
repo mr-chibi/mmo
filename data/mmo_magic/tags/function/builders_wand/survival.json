@@ -1,0 +1,9 @@
+{
+	"values": [
+		"mmo_magic:builder_wand/survival/x",
+		"mmo_magic:builder_wand/survival/y",
+		"mmo_magic:builder_wand/survival/z",
+		"mmo_magic:builder_wand/data/store",
+		"mmo_magic:builder_wand/data/marker"
+	]
+}

@@ -6,11 +6,9 @@ scoreboard objectives add hunter_exp dummy
 scoreboard objectives add hunter_lvlup dummy
 scoreboard objectives add hunter_stat dummy
 
-
 ########################################################################
 # 
 ########################################################################
-scoreboard objectives add slain_mob dummy
 scoreboard objectives add slain_player minecraft.killed:minecraft.player
 scoreboard objectives add slain_creeper minecraft.killed:minecraft.creeper
 
@@ -58,3 +56,4 @@ scoreboard objectives add slain_shulker minecraft.killed:minecraft.shulker
 # Bosses:
 scoreboard objectives add slain_enderdrag minecraft.killed:minecraft.ender_dragon
 scoreboard objectives add slain_wither minecraft.killed:minecraft.wither
+scoreboard objectives add slain_warden minecraft.killed:minecraft.warden

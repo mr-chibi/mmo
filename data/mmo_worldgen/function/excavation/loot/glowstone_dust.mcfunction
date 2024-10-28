@@ -1,1 +1,0 @@
-summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:glowstone_dust", Count:1b}}

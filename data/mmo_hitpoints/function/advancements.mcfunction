@@ -1,185 +1,82 @@
-############################################################################################
-	# Hitpoints Level Up Message: #
-############################################################################################
-tellraw @s [{"text": "Hitpoints ", "color": "red"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"hitpoints_lvl"}, "color": "green", "bold": true}]
-tellraw @s [{"text": "Next level will be in ", "color": "blue"},{"score":{"name":"@s","objective":"hitpoints_lvlup"}, "color":"dark_green", "bold": true},{"text": " Exp", "color": "green", "bold": true}]
-
-############################################################################################
-	# Automate Leveling Up (5)
-############################################################################################
-execute if score @s hitpoints_lvl < lvl_5 hitpoints_lvl run scoreboard players operation @s next_lvl = lvl_5 hitpoints_lvl
-execute if score @s hitpoints_lvl < lvl_5 hitpoints_lvl run scoreboard players operation @s next_lvl -= @s hitpoints_lvl
+#
+tellraw @s[scores={hitpoints_lvl=..5}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"hitpoints_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 5]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 10]","color":"#a3a3a3"}]
+tellraw @s[scores={hitpoints_lvl=..5}] [{"text": "Next Perk Unlock at level 5, Unlocked Heart Container!", "color": "#6E6E6E"}]
 
 #
-execute if score @s hitpoints_lvl < lvl_5 hitpoints_lvl run tellraw @s [{"text": "Unlocking another heart will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s hitpoints_lvl = lvl_5 hitpoints_lvl run tellraw @s [{"text": "Unlocked Heart Container!", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (10)
-############################################################################################
-execute if score @s hitpoints_lvl >= lvl_5 hitpoints_lvl if score @s hitpoints_lvl < lvl_10 hitpoints_lvl run scoreboard players operation @s next_lvl = lvl_10 hitpoints_lvl
-execute if score @s hitpoints_lvl >= lvl_5 hitpoints_lvl if score @s hitpoints_lvl < lvl_10 hitpoints_lvl run scoreboard players operation @s next_lvl -= @s hitpoints_lvl
+tellraw @s[scores={hitpoints_lvl=6..9}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"hitpoints_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 10]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 15]","color":"#a3a3a3"}]
+tellraw @s[scores={hitpoints_lvl=6..9}] [{"text": "Next Perk Unlock at level 10, Unlocked Heart Container!", "color": "#6E6E6E"}]
 
 #
-execute if score @s hitpoints_lvl >= lvl_5 hitpoints_lvl if score @s hitpoints_lvl < lvl_10 hitpoints_lvl run tellraw @s [{"text": "Unlocking another heart will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s hitpoints_lvl = lvl_10 hitpoints_lvl run tellraw @s [{"text": "Unlocked Heart Container!", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (15)
-############################################################################################
-execute if score @s hitpoints_lvl >= lvl_10 hitpoints_lvl if score @s hitpoints_lvl < lvl_15 hitpoints_lvl run scoreboard players operation @s next_lvl = lvl_15 hitpoints_lvl
-execute if score @s hitpoints_lvl >= lvl_10 hitpoints_lvl if score @s hitpoints_lvl < lvl_15 hitpoints_lvl run scoreboard players operation @s next_lvl -= @s hitpoints_lvl
+tellraw @s[scores={hitpoints_lvl=10..14}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"hitpoints_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 15]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 20]","color":"#a3a3a3"}]
+tellraw @s[scores={hitpoints_lvl=10..14}] [{"text": "Next Perk Unlock at level 15, Unlocked Heart Container!", "color": "#6E6E6E"}]
 
 #
-execute if score @s hitpoints_lvl >= lvl_10 hitpoints_lvl if score @s hitpoints_lvl < lvl_15 hitpoints_lvl run tellraw @s [{"text": "Unlocking another heart will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s hitpoints_lvl = lvl_15 hitpoints_lvl run tellraw @s [{"text": "Unlocked Heart Container!", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (20)
-############################################################################################
-execute if score @s hitpoints_lvl >= lvl_15 hitpoints_lvl if score @s hitpoints_lvl < lvl_20 hitpoints_lvl run scoreboard players operation @s next_lvl = lvl_20 hitpoints_lvl
-execute if score @s hitpoints_lvl >= lvl_15 hitpoints_lvl if score @s hitpoints_lvl < lvl_20 hitpoints_lvl run scoreboard players operation @s next_lvl -= @s hitpoints_lvl
+tellraw @s[scores={hitpoints_lvl=15..19}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"hitpoints_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 20]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 25]","color":"#a3a3a3"}]
+tellraw @s[scores={hitpoints_lvl=15..19}] [{"text": "Next Perk Unlock at level 20, Unlocked Heart Container!", "color": "#6E6E6E"}]
 
 #
-execute if score @s hitpoints_lvl >= lvl_15 hitpoints_lvl if score @s hitpoints_lvl < lvl_20 hitpoints_lvl run tellraw @s [{"text": "Unlocking another heart will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s hitpoints_lvl = lvl_20 hitpoints_lvl run tellraw @s [{"text": "Unlocked Heart Container!", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (25)
-############################################################################################
-execute if score @s hitpoints_lvl >= lvl_20 hitpoints_lvl if score @s hitpoints_lvl < lvl_25 hitpoints_lvl run scoreboard players operation @s next_lvl = lvl_25 hitpoints_lvl
-execute if score @s hitpoints_lvl >= lvl_20 hitpoints_lvl if score @s hitpoints_lvl < lvl_25 hitpoints_lvl run scoreboard players operation @s next_lvl -= @s hitpoints_lvl
+tellraw @s[scores={hitpoints_lvl=20..24}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"hitpoints_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 25]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 30]","color":"#a3a3a3"}]
+tellraw @s[scores={hitpoints_lvl=20..24}] [{"text": "Next Perk Unlock at level 25, Unlocked Heart Container!", "color": "#6E6E6E"}]
 
 #
-execute if score @s hitpoints_lvl >= lvl_20 hitpoints_lvl if score @s hitpoints_lvl < lvl_25 hitpoints_lvl run tellraw @s [{"text": "Unlocking another heart will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s hitpoints_lvl = lvl_25 hitpoints_lvl run tellraw @s [{"text": "Unlocked Heart Container!", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (30)
-############################################################################################
-execute if score @s hitpoints_lvl >= lvl_25 hitpoints_lvl if score @s hitpoints_lvl < lvl_30 hitpoints_lvl run scoreboard players operation @s next_lvl = lvl_30 hitpoints_lvl
-execute if score @s hitpoints_lvl >= lvl_25 hitpoints_lvl if score @s hitpoints_lvl < lvl_30 hitpoints_lvl run scoreboard players operation @s next_lvl -= @s hitpoints_lvl
+tellraw @s[scores={hitpoints_lvl=25..29}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"hitpoints_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 30]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 35]","color":"#a3a3a3"}]
+tellraw @s[scores={hitpoints_lvl=25..29}] [{"text": "Next Perk Unlock at level 30, Unlocked Heart Container!", "color": "#6E6E6E"}]
 
 #
-execute if score @s hitpoints_lvl >= lvl_25 hitpoints_lvl if score @s hitpoints_lvl < lvl_30 hitpoints_lvl run tellraw @s [{"text": "Unlocking another heart will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s hitpoints_lvl = lvl_30 hitpoints_lvl run tellraw @s [{"text": "Unlocked Heart Container!", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (35)
-############################################################################################
-execute if score @s hitpoints_lvl >= lvl_30 hitpoints_lvl if score @s hitpoints_lvl < lvl_35 hitpoints_lvl run scoreboard players operation @s next_lvl = lvl_35 hitpoints_lvl
-execute if score @s hitpoints_lvl >= lvl_30 hitpoints_lvl if score @s hitpoints_lvl < lvl_35 hitpoints_lvl run scoreboard players operation @s next_lvl -= @s hitpoints_lvl
+tellraw @s[scores={hitpoints_lvl=30..34}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"hitpoints_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 35]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 40]","color":"#a3a3a3"}]
+tellraw @s[scores={hitpoints_lvl=30..34}] [{"text": "Next Perk Unlock at level 35, Unlocked Heart Container!", "color": "#6E6E6E"}]
 
 #
-execute if score @s hitpoints_lvl >= lvl_30 hitpoints_lvl if score @s hitpoints_lvl < lvl_35 hitpoints_lvl run tellraw @s [{"text": "Unlocking another heart will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s hitpoints_lvl = lvl_35 hitpoints_lvl run tellraw @s [{"text": "Unlocked Heart Container!", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (40)
-############################################################################################
-execute if score @s hitpoints_lvl >= lvl_35 hitpoints_lvl if score @s hitpoints_lvl < lvl_40 hitpoints_lvl run scoreboard players operation @s next_lvl = lvl_40 hitpoints_lvl
-execute if score @s hitpoints_lvl >= lvl_35 hitpoints_lvl if score @s hitpoints_lvl < lvl_40 hitpoints_lvl run scoreboard players operation @s next_lvl -= @s hitpoints_lvl
+tellraw @s[scores={hitpoints_lvl=35..39}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"hitpoints_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 40]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 45]","color":"#a3a3a3"}]
+tellraw @s[scores={hitpoints_lvl=35..39}] [{"text": "Next Perk Unlock at level 40, Unlocked Heart Container!", "color": "#6E6E6E"}]
 
 #
-execute if score @s hitpoints_lvl >= lvl_35 hitpoints_lvl if score @s hitpoints_lvl < lvl_40 hitpoints_lvl run tellraw @s [{"text": "Unlocking another heart will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s hitpoints_lvl = lvl_40 hitpoints_lvl run tellraw @s [{"text": "Unlocked Heart Container!", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (45)
-############################################################################################
-execute if score @s hitpoints_lvl >= lvl_40 hitpoints_lvl if score @s hitpoints_lvl < lvl_45 hitpoints_lvl run scoreboard players operation @s next_lvl = lvl_45 hitpoints_lvl
-execute if score @s hitpoints_lvl >= lvl_40 hitpoints_lvl if score @s hitpoints_lvl < lvl_45 hitpoints_lvl run scoreboard players operation @s next_lvl -= @s hitpoints_lvl
+tellraw @s[scores={hitpoints_lvl=40..44}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"hitpoints_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 45]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 50]","color":"#a3a3a3"}]
+tellraw @s[scores={hitpoints_lvl=40..44}] [{"text": "Next Perk Unlock at level 45, Unlocked Heart Container!", "color": "#6E6E6E"}]
 
 #
-execute if score @s hitpoints_lvl >= lvl_40 hitpoints_lvl if score @s hitpoints_lvl < lvl_45 hitpoints_lvl run tellraw @s [{"text": "Unlocking another heart will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s hitpoints_lvl = lvl_45 hitpoints_lvl run tellraw @s [{"text": "Unlocked Heart Container!", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (50)
-############################################################################################
-execute if score @s hitpoints_lvl >= lvl_45 hitpoints_lvl if score @s hitpoints_lvl < lvl_50 hitpoints_lvl run scoreboard players operation @s next_lvl = lvl_50 hitpoints_lvl
-execute if score @s hitpoints_lvl >= lvl_45 hitpoints_lvl if score @s hitpoints_lvl < lvl_50 hitpoints_lvl run scoreboard players operation @s next_lvl -= @s hitpoints_lvl
+tellraw @s[scores={hitpoints_lvl=45..49}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"hitpoints_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 50]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 55]","color":"#a3a3a3"}]
+tellraw @s[scores={hitpoints_lvl=45..49}] [{"text": "Next, Master Skill at level 50, Unlocked Heart Container!", "color": "#6E6E6E"}]
 
 #
-execute if score @s hitpoints_lvl >= lvl_45 hitpoints_lvl if score @s hitpoints_lvl < lvl_50 hitpoints_lvl run tellraw @s [{"text": "Unlocking another heart will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s hitpoints_lvl = lvl_50 hitpoints_lvl run tellraw @s [{"text": "Unlocked Heart Container!", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (55)
-############################################################################################
-execute if score @s hitpoints_lvl >= lvl_50 hitpoints_lvl if score @s hitpoints_lvl < lvl_55 hitpoints_lvl run scoreboard players operation @s next_lvl = lvl_55 hitpoints_lvl
-execute if score @s hitpoints_lvl >= lvl_50 hitpoints_lvl if score @s hitpoints_lvl < lvl_55 hitpoints_lvl run scoreboard players operation @s next_lvl -= @s hitpoints_lvl
+tellraw @s[scores={hitpoints_lvl=50..54}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"hitpoints_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 55]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 60]","color":"#a3a3a3"}]
+tellraw @s[scores={hitpoints_lvl=50..54}] [{"text": "Next Perk Unlock at level 55, Unlocked Heart Container!", "color": "#6E6E6E"}]
 
 #
-execute if score @s hitpoints_lvl >= lvl_50 hitpoints_lvl if score @s hitpoints_lvl < lvl_55 hitpoints_lvl run tellraw @s [{"text": "Unlocking another heart will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s hitpoints_lvl = lvl_55 hitpoints_lvl run tellraw @s [{"text": "Unlocked Heart Container!", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (60)
-############################################################################################
-execute if score @s hitpoints_lvl >= lvl_55 hitpoints_lvl if score @s hitpoints_lvl < lvl_60 hitpoints_lvl run scoreboard players operation @s next_lvl = lvl_60 hitpoints_lvl
-execute if score @s hitpoints_lvl >= lvl_55 hitpoints_lvl if score @s hitpoints_lvl < lvl_60 hitpoints_lvl run scoreboard players operation @s next_lvl -= @s hitpoints_lvl
+tellraw @s[scores={hitpoints_lvl=55..59}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"hitpoints_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 60]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 65]","color":"#a3a3a3"}]
+tellraw @s[scores={hitpoints_lvl=55..59}] [{"text": "Next Perk Unlock at level 60, Unlocked Heart Container!", "color": "#6E6E6E"}]
 
 #
-execute if score @s hitpoints_lvl >= lvl_55 hitpoints_lvl if score @s hitpoints_lvl < lvl_60 hitpoints_lvl run tellraw @s [{"text": "Unlocking another heart will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s hitpoints_lvl = lvl_60 hitpoints_lvl run tellraw @s [{"text": "Unlocked Heart Container!", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (65)
-############################################################################################
-execute if score @s hitpoints_lvl >= lvl_60 hitpoints_lvl if score @s hitpoints_lvl < lvl_65 hitpoints_lvl run scoreboard players operation @s next_lvl = lvl_65 hitpoints_lvl
-execute if score @s hitpoints_lvl >= lvl_60 hitpoints_lvl if score @s hitpoints_lvl < lvl_65 hitpoints_lvl run scoreboard players operation @s next_lvl -= @s hitpoints_lvl
+tellraw @s[scores={hitpoints_lvl=60..64}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"hitpoints_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 65]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 70]","color":"#a3a3a3"}]
+tellraw @s[scores={hitpoints_lvl=60..64}] [{"text": "Next Perk Unlock at level 65, Unlocked Heart Container!", "color": "#6E6E6E"}]
 
 #
-execute if score @s hitpoints_lvl >= lvl_60 hitpoints_lvl if score @s hitpoints_lvl < lvl_65 hitpoints_lvl run tellraw @s [{"text": "Unlocking another heart will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s hitpoints_lvl = lvl_65 hitpoints_lvl run tellraw @s [{"text": "Unlocked Heart Container!", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (70)
-############################################################################################
-execute if score @s hitpoints_lvl >= lvl_65 hitpoints_lvl if score @s hitpoints_lvl < lvl_70 hitpoints_lvl run scoreboard players operation @s next_lvl = lvl_70 hitpoints_lvl
-execute if score @s hitpoints_lvl >= lvl_65 hitpoints_lvl if score @s hitpoints_lvl < lvl_70 hitpoints_lvl run scoreboard players operation @s next_lvl -= @s hitpoints_lvl
+tellraw @s[scores={hitpoints_lvl=65..69}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"hitpoints_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 70]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 75]","color":"#a3a3a3"}]
+tellraw @s[scores={hitpoints_lvl=65..69}] [{"text": "Next Perk Unlock at level 70, Unlocked Heart Container!", "color": "#6E6E6E"}]
 
 #
-execute if score @s hitpoints_lvl >= lvl_65 hitpoints_lvl if score @s hitpoints_lvl < lvl_70 hitpoints_lvl run tellraw @s [{"text": "Unlocking another heart will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s hitpoints_lvl = lvl_70 hitpoints_lvl run tellraw @s [{"text": "Unlocked Heart Container!", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (75)
-############################################################################################
-execute if score @s hitpoints_lvl >= lvl_70 hitpoints_lvl if score @s hitpoints_lvl < lvl_75 hitpoints_lvl run scoreboard players operation @s next_lvl = lvl_75 hitpoints_lvl
-execute if score @s hitpoints_lvl >= lvl_70 hitpoints_lvl if score @s hitpoints_lvl < lvl_75 hitpoints_lvl run scoreboard players operation @s next_lvl -= @s hitpoints_lvl
+tellraw @s[scores={hitpoints_lvl=70..74}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"hitpoints_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 75]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 80]","color":"#a3a3a3"}]
+tellraw @s[scores={hitpoints_lvl=70..74}] [{"text": "Next Perk Unlock at level 75, Unlocked Heart Container!", "color": "#6E6E6E"}]
 
 #
-execute if score @s hitpoints_lvl >= lvl_70 hitpoints_lvl if score @s hitpoints_lvl < lvl_75 hitpoints_lvl run tellraw @s [{"text": "Unlocking another heart will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s hitpoints_lvl = lvl_75 hitpoints_lvl run tellraw @s [{"text": "Unlocked Heart Container!", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (80)
-############################################################################################
-execute if score @s hitpoints_lvl >= lvl_75 hitpoints_lvl if score @s hitpoints_lvl < lvl_80 hitpoints_lvl run scoreboard players operation @s next_lvl = lvl_80 hitpoints_lvl
-execute if score @s hitpoints_lvl >= lvl_75 hitpoints_lvl if score @s hitpoints_lvl < lvl_80 hitpoints_lvl run scoreboard players operation @s next_lvl -= @s hitpoints_lvl
+tellraw @s[scores={hitpoints_lvl=75..79}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"hitpoints_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 80]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 85]","color":"#a3a3a3"}]
+tellraw @s[scores={hitpoints_lvl=75..79}] [{"text": "Next, Master Skill at level 80, Unlocked Heart Container!", "color": "#6E6E6E"}]
 
 #
-execute if score @s hitpoints_lvl >= lvl_75 hitpoints_lvl if score @s hitpoints_lvl < lvl_80 hitpoints_lvl run tellraw @s [{"text": "Unlocking another heart will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s hitpoints_lvl = lvl_80 hitpoints_lvl run tellraw @s [{"text": "Unlocked Heart Container!", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (85)
-############################################################################################
-execute if score @s hitpoints_lvl >= lvl_80 hitpoints_lvl if score @s hitpoints_lvl < lvl_85 hitpoints_lvl run scoreboard players operation @s next_lvl = lvl_85 hitpoints_lvl
-execute if score @s hitpoints_lvl >= lvl_80 hitpoints_lvl if score @s hitpoints_lvl < lvl_85 hitpoints_lvl run scoreboard players operation @s next_lvl -= @s hitpoints_lvl
+tellraw @s[scores={hitpoints_lvl=80..84}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"hitpoints_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 85]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 90]","color":"#a3a3a3"}]
+tellraw @s[scores={hitpoints_lvl=80..84}] [{"text": "Next, Master Skill at level 85, Unlocked Heart Container!", "color": "#6E6E6E"}]
 
 #
-execute if score @s hitpoints_lvl >= lvl_80 hitpoints_lvl if score @s hitpoints_lvl < lvl_85 hitpoints_lvl run tellraw @s [{"text": "Unlocking another heart will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s hitpoints_lvl = lvl_85 hitpoints_lvl run tellraw @s [{"text": "Unlocked Heart Container!", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (86)
-############################################################################################
-execute if score @s hitpoints_lvl >= lvl_85 hitpoints_lvl if score @s hitpoints_lvl < lvl_86 hitpoints_lvl run scoreboard players operation @s next_lvl = lvl_86 hitpoints_lvl
-execute if score @s hitpoints_lvl >= lvl_85 hitpoints_lvl if score @s hitpoints_lvl < lvl_86 hitpoints_lvl run scoreboard players operation @s next_lvl -= @s hitpoints_lvl
+tellraw @s[scores={hitpoints_lvl=85..89}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"hitpoints_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 90]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 95]","color":"#a3a3a3"}]
+tellraw @s[scores={hitpoints_lvl=85..89}] [{"text": "Next, Master Skill at level 90, Unlocked Heart Container!", "color": "#6E6E6E"}]
 
 #
-execute if score @s hitpoints_lvl >= lvl_85 hitpoints_lvl if score @s hitpoints_lvl < lvl_86 hitpoints_lvl run tellraw @s [{"text": "Unlocking another heart will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s hitpoints_lvl = lvl_86 hitpoints_lvl run tellraw @s [{"text": "Unlocked Heart Container!", "color": "yellow"}]
+tellraw @s[scores={hitpoints_lvl=90..94}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"hitpoints_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 95]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 99]","color":"#a3a3a3"}]
+tellraw @s[scores={hitpoints_lvl=90..94}] [{"text": "Next, Master Skill at level 95, Unlocked Heart Container!", "color": "#6E6E6E"}]
+
+#
+tellraw @s[scores={hitpoints_lvl=95..98}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"hitpoints_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 99]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[Mastery]","color":"#a3a3a3"}]
+tellraw @s[scores={hitpoints_lvl=95..98}] [{"text": "Next, Master Skill at level 99, Unlocked Heart Container!", "color": "#6E6E6E"}]
+
+#
+tellraw @s[scores={hitpoints_lvl=99..}] [{"text": "[", "color": "#ffffff"}, {"text":"Hitpoints, Skill Mastered! Unlocked Final Heart Container!", "color": "green"}, {"text": "]", "color": "#ffffff"}]

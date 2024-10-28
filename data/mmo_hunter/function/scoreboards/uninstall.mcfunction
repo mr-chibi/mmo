@@ -12,7 +12,6 @@ scoreboard objectives remove hunter_lvlup
 scoreboard objectives remove hunter_stat
 
 # "Overworld"
-scoreboard objectives remove slain_mob
 scoreboard objectives remove slain_player
 scoreboard objectives remove slain_creeper
 scoreboard objectives remove slain_skeleton
@@ -50,3 +49,4 @@ scoreboard objectives remove slain_shulker
 # "Bosses":
 scoreboard objectives remove slain_enderdrag
 scoreboard objectives remove slain_wither
+scoreboard objectives remove slain_warden

@@ -1,21 +1,11 @@
 ############################################################################################
-	# Farming Tags #
-############################################################################################
-function mmo_farming:tags/holdinghoe
-function mmo_farming:tags/holding_crystalhoe
-function mmo_farming:tags/holdingcrop
-
-############################################################################################
 	# Farming Perks #
 ############################################################################################
 execute if block ~ ~ ~ minecraft:farmland unless block ~ ~1 ~ #mmo_farming:overworld_crops run function #mmo_farming:auto_planting
 execute if block ~ ~ ~ minecraft:soul_sand unless block ~ ~1 ~ #mmo_farming:nether_crops run function #mmo_farming:auto_planting
-function mmo_farming:perks/farming_growth
 
-############################################################################################
-	# "New" Farming Functionallity w/ Loot Gamerule: #
-############################################################################################
-execute if score disable_farming_ability mmo_gamerules matches 0 run function mmo_worldgen:farming/init
+#
+execute if entity @s[tag=mmo_crystalHoe] run function mmo_farming:perks/farming_growth
 
 ############################################################################################
 	# Farming Gained EXP #

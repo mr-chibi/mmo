@@ -8,8 +8,10 @@ execute if score @s mmo_music_note >= lost mmo_music_note run scoreboard players
 # Reset Loop:
 execute if score @s mmo_music_loop >= lost mmo_music_loop run scoreboard players set @s mmo_music_loop 0
 
-#
-title @s[tag=mmo_debug] actionbar [{"text": "Music Note Tick: "}, {"score":{"name":"@s","objective":"mmo_music_note"},"color":"yellow"}, {"text": " | Loop: "}, {"score":{"name":"@s","objective":"mmo_music_loop"},"color":"green"}]
+# Bossbar:
+bossbar set minecraft:music_lost players @s
+execute store result bossbar minecraft:music_lost max run scoreboard players get lost mmo_music_note
+execute store result bossbar minecraft:music_lost value run scoreboard players get @s mmo_music_note
 
 #
 execute if score @s mmo_music_loop matches 0 if score @s mmo_music_note matches 100..130 run function mmo:music/themes/lost/layers/amethyst

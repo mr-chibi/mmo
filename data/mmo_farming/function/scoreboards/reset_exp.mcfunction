@@ -8,7 +8,6 @@ tag @s[tag=mmo_berry_harvest,scores={harvest_berries=1..}] remove mmo_berry_harv
 tag @s[tag=mmo_beetroot_harvest,scores={harvest_beetroot=1..}] remove mmo_beetroot_harvest
 tag @s[tag=mmo_wart_harvest,scores={harvest_warts=1..}] remove mmo_wart_harvest
 
-
 ############################################################################################
 	# Reset EXP #
 ############################################################################################

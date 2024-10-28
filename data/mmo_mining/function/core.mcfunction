@@ -1,25 +1,4 @@
 ############################################################################################
-	# Mining Tags #
-############################################################################################
-function mmo_mining:tags/holdingpickaxe
-function mmo_mining:tags/holdingcrystalpickaxe
-
-############################################################################################
-	# Mining Perks: #
-############################################################################################
-function mmo_mining:perks/crystal_pickaxe
-
-############################################################################################
-	# "New" Mining Functionallity w/ Loot Gamerule #
-############################################################################################
-execute if score disable_mining_loot mmo_gamerules matches 0 run function mmo_worldgen:mining/init
-
-############################################################################################
-	# Mining Vein Miner EXP Gained: #
-############################################################################################
-execute if score @s[tag=mmo_holdingPickaxe,scores={vein_settings=1}] mining_lvl matches 50.. run function mmo_mining:scoreboards/vein_exp
-
-############################################################################################
 	# Mining Gained EXP #
 ############################################################################################
 function mmo_mining:scoreboards/gained_exp

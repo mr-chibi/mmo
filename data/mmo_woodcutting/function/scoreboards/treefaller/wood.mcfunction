@@ -8,7 +8,6 @@ execute store result score @s[scores={cut_oak_wood=1..}] wc_vein_count positione
 execute store result score @s[scores={cut_oak_wood=1..}] wc_vein_count positioned ~1 ~ ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:oak_wood"}},sort=nearest,distance=0..10]
 execute store result score @s[scores={cut_oak_wood=1..}] wc_vein_count positioned ~-1 ~ ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:oak_wood"}},sort=nearest,distance=0..10]
 
-
 ############################################################################################
 	# Woodcutting:spruce_wood #
 ############################################################################################
@@ -18,7 +17,6 @@ execute store result score @s[scores={cut_spruce_wood=1..}] wc_vein_count positi
 execute store result score @s[scores={cut_spruce_wood=1..}] wc_vein_count positioned ~ ~-1 ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:spruce_wood"}},sort=nearest,distance=0..10]
 execute store result score @s[scores={cut_spruce_wood=1..}] wc_vein_count positioned ~1 ~ ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:spruce_wood"}},sort=nearest,distance=0..10]
 execute store result score @s[scores={cut_spruce_wood=1..}] wc_vein_count positioned ~-1 ~ ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:spruce_wood"}},sort=nearest,distance=0..10]
-
 
 ############################################################################################
 	# Woodcutting:birch_wood #
@@ -30,7 +28,6 @@ execute store result score @s[scores={cut_birch_wood=1..}] wc_vein_count positio
 execute store result score @s[scores={cut_birch_wood=1..}] wc_vein_count positioned ~1 ~ ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:birch_wood"}},sort=nearest,distance=0..10]
 execute store result score @s[scores={cut_birch_wood=1..}] wc_vein_count positioned ~-1 ~ ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:birch_wood"}},sort=nearest,distance=0..10]
 
-
 ############################################################################################
 	# Woodcutting:jungle_wood #
 ############################################################################################
@@ -40,7 +37,6 @@ execute store result score @s[scores={cut_jungle_wood=1..}] wc_vein_count positi
 execute store result score @s[scores={cut_jungle_wood=1..}] wc_vein_count positioned ~ ~-1 ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:jungle_wood"}},sort=nearest,distance=0..10]
 execute store result score @s[scores={cut_jungle_wood=1..}] wc_vein_count positioned ~1 ~ ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:jungle_wood"}},sort=nearest,distance=0..10]
 execute store result score @s[scores={cut_jungle_wood=1..}] wc_vein_count positioned ~-1 ~ ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:jungle_wood"}},sort=nearest,distance=0..10]
-
 
 ############################################################################################
 	# Woodcutting:acacia_wood #
@@ -52,7 +48,6 @@ execute store result score @s[scores={cut_acacia_wood=1..}] wc_vein_count positi
 execute store result score @s[scores={cut_acacia_wood=1..}] wc_vein_count positioned ~1 ~ ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:acacia_wood"}},sort=nearest,distance=0..10]
 execute store result score @s[scores={cut_acacia_wood=1..}] wc_vein_count positioned ~-1 ~ ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:acacia_wood"}},sort=nearest,distance=0..10]
 
-
 ############################################################################################
 	# Woodcutting:dark_oak_wood #
 ############################################################################################
@@ -62,7 +57,6 @@ execute store result score @s[scores={cut_dark_oak_wood=1..}] wc_vein_count posi
 execute store result score @s[scores={cut_dark_oak_wood=1..}] wc_vein_count positioned ~ ~-1 ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:dark_oak_wood"}},sort=nearest,distance=0..10]
 execute store result score @s[scores={cut_dark_oak_wood=1..}] wc_vein_count positioned ~1 ~ ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:dark_oak_wood"}},sort=nearest,distance=0..10]
 execute store result score @s[scores={cut_dark_oak_wood=1..}] wc_vein_count positioned ~-1 ~ ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:dark_oak_wood"}},sort=nearest,distance=0..10]
-
 
 ############################################################################################
 	# Woodcutting:warped_hyphae #
@@ -74,7 +68,6 @@ execute store result score @s[scores={cut_crimson_hyphae=1..}] wc_vein_count pos
 execute store result score @s[scores={cut_crimson_hyphae=1..}] wc_vein_count positioned ~1 ~ ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:warped_hyphae"}},sort=nearest,distance=0..10]
 execute store result score @s[scores={cut_crimson_hyphae=1..}] wc_vein_count positioned ~-1 ~ ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:warped_hyphae"}},sort=nearest,distance=0..10]
 
-
 ############################################################################################
 	# Woodcutting:crismon_hyphae #
 ############################################################################################
@@ -84,7 +77,6 @@ execute store result score @s[scores={cut_warped_hyphae=1..}] wc_vein_count posi
 execute store result score @s[scores={cut_warped_hyphae=1..}] wc_vein_count positioned ~ ~-1 ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:crimson_hyphae"}},sort=nearest,distance=0..10]
 execute store result score @s[scores={cut_warped_hyphae=1..}] wc_vein_count positioned ~1 ~ ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:crimson_hyphae"}},sort=nearest,distance=0..10]
 execute store result score @s[scores={cut_warped_hyphae=1..}] wc_vein_count positioned ~-1 ~ ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:crimson_hyphae"}},sort=nearest,distance=0..10]
-
 
 ############################################################################################
 	# Woodcutting:mangrove_wood #
@@ -96,7 +88,6 @@ execute store result score @s[scores={cut_mangrove_wood=1..}] wc_vein_count posi
 execute store result score @s[scores={cut_mangrove_wood=1..}] wc_vein_count positioned ~1 ~ ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:mangrove_wood"}},sort=nearest,distance=0..10]
 execute store result score @s[scores={cut_mangrove_wood=1..}] wc_vein_count positioned ~-1 ~ ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:mangrove_wood"}},sort=nearest,distance=0..10]
 
-
 ############################################################################################
 	# Woodcutting:cherry_wood #
 ############################################################################################
@@ -106,7 +97,6 @@ execute store result score @s[scores={cut_cherry_wood=1..}] wc_vein_count positi
 execute store result score @s[scores={cut_cherry_wood=1..}] wc_vein_count positioned ~ ~-1 ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:cherry_wood"}},sort=nearest,distance=0..10]
 execute store result score @s[scores={cut_cherry_wood=1..}] wc_vein_count positioned ~1 ~ ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:cherry_wood"}},sort=nearest,distance=0..10]
 execute store result score @s[scores={cut_cherry_wood=1..}] wc_vein_count positioned ~-1 ~ ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:cherry_wood"}},sort=nearest,distance=0..10]
-
 
 ############################################################################################
 	# Woodcutting TreeFaller Muliply woods chopped: #

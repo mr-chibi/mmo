@@ -4,10 +4,15 @@
 function mmo:scoreboards/user/player_stats
 
 ############################################################################################
+	# Datapack [Addons / Gamerules]: #
+############################################################################################
+function mmo:multiplayer/addons
+function mmo:multiplayer/gamerules
+
+############################################################################################
 	# Datapack Single Player / Multiplayer [Commands]: #
 ############################################################################################
-function mmo:multiplayer/gamerules
-function mmo:multiplayer/addons
+function mmo:scoreboards/commands/disable
 function mmo:scoreboards/commands/enable
 
 ############################################################################################
@@ -16,6 +21,8 @@ function mmo:scoreboards/commands/enable
 function mmo:user/init
 
 ############################################################################################
-	# Skill Tree Setup: #
-############################################################################################
-function #mmo:setup
+	# [WorldGeneration] & [Skills] + [Interactions]: #
+###########################################################################################
+execute if score worldgen_gamerule mmo_gamerule matches 0 run function mmo:worldgen
+execute if score upgrades_gamerule mmo_gamerule matches 0 run function mmo_upgrades:core with storage minecraft:mmo_tools items
+execute if score skills_gamerule mmo_gamerule matches 0 run function mmo:skills_and_interactions

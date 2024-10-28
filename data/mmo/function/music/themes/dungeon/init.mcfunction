@@ -8,6 +8,11 @@ execute if score @s mmo_music_note >= dungeon mmo_music_note run scoreboard play
 # Reset Loop:
 execute if score @s mmo_music_loop >= dungeon mmo_music_loop run scoreboard players set @s mmo_music_loop 0
 
+# Bossbar:
+bossbar set minecraft:music_dungeon players @s
+execute store result bossbar minecraft:music_dungeon max run scoreboard players get dungeon mmo_music_note
+execute store result bossbar minecraft:music_dungeon value run scoreboard players get @s mmo_music_note
+
 #
 execute if score @s mmo_music_loop matches 0 run function mmo:music/themes/dungeon/layers/1
 execute if score @s mmo_music_loop matches 0 run function mmo:music/themes/dungeon/layers/2

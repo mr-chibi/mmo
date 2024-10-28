@@ -1,4 +1,32 @@
 #############################################################################################################
+# Block Loot Tables:
+#############################################################################################################
+execute anchored eyes positioned ^ ^ ^1 align xyz if block ~ ~ ~ minecraft:composter if score @s plant_wheat matches 1.. run function mmo_worldgen:farming/block/composter
+execute anchored eyes positioned ^ ^ ^1 align xyz if block ~ ~ ~ minecraft:composter if score @s plant_carrot matches 1.. run function mmo_worldgen:farming/block/composter
+execute anchored eyes positioned ^ ^ ^1 align xyz if block ~ ~ ~ minecraft:composter if score @s plant_potato matches 1.. run function mmo_worldgen:farming/block/composter
+execute anchored eyes positioned ^ ^ ^1 align xyz if block ~ ~ ~ minecraft:composter if score @s plant_berries matches 1.. run function mmo_worldgen:farming/block/composter
+execute anchored eyes positioned ^ ^ ^1 align xyz if block ~ ~ ~ minecraft:composter if score @s plant_pumpkin matches 1.. run function mmo_worldgen:farming/block/composter
+execute anchored eyes positioned ^ ^ ^1 align xyz if block ~ ~ ~ minecraft:composter if score @s plant_melon matches 1.. run function mmo_worldgen:farming/block/composter
+execute anchored eyes positioned ^ ^ ^1 align xyz if block ~ ~ ~ minecraft:composter if score @s plant_beetroot matches 1.. run function mmo_worldgen:farming/block/composter
+execute anchored eyes positioned ^ ^ ^1 align xyz if block ~ ~ ~ minecraft:composter if score @s plant_sugarcane matches 1.. run function mmo_worldgen:farming/block/composter
+execute anchored eyes positioned ^ ^ ^1 align xyz if block ~ ~ ~ minecraft:composter if score @s plant_warts matches 1.. run function mmo_worldgen:farming/block/composter
+execute anchored eyes positioned ^ ^ ^1 align xyz if block ~ ~ ~ minecraft:composter if score @s plant_torchflower matches 1.. run function mmo_worldgen:farming/block/composter
+
+#############################################################################################################
+# Block Loot Tables:
+#############################################################################################################
+execute anchored eyes positioned ^ ^ ^2 align xyz if block ~ ~ ~ minecraft:composter if score @s plant_wheat matches 1.. run function mmo_worldgen:farming/block/composter
+execute anchored eyes positioned ^ ^ ^2 align xyz if block ~ ~ ~ minecraft:composter if score @s plant_carrot matches 1.. run function mmo_worldgen:farming/block/composter
+execute anchored eyes positioned ^ ^ ^2 align xyz if block ~ ~ ~ minecraft:composter if score @s plant_potato matches 1.. run function mmo_worldgen:farming/block/composter
+execute anchored eyes positioned ^ ^ ^2 align xyz if block ~ ~ ~ minecraft:composter if score @s plant_berries matches 1.. run function mmo_worldgen:farming/block/composter
+execute anchored eyes positioned ^ ^ ^2 align xyz if block ~ ~ ~ minecraft:composter if score @s plant_pumpkin matches 1.. run function mmo_worldgen:farming/block/composter
+execute anchored eyes positioned ^ ^ ^2 align xyz if block ~ ~ ~ minecraft:composter if score @s plant_melon matches 1.. run function mmo_worldgen:farming/block/composter
+execute anchored eyes positioned ^ ^ ^2 align xyz if block ~ ~ ~ minecraft:composter if score @s plant_beetroot matches 1.. run function mmo_worldgen:farming/block/composter
+execute anchored eyes positioned ^ ^ ^2 align xyz if block ~ ~ ~ minecraft:composter if score @s plant_sugarcane matches 1.. run function mmo_worldgen:farming/block/composter
+execute anchored eyes positioned ^ ^ ^2 align xyz if block ~ ~ ~ minecraft:composter if score @s plant_warts matches 1.. run function mmo_worldgen:farming/block/composter
+execute anchored eyes positioned ^ ^ ^2 align xyz if block ~ ~ ~ minecraft:composter if score @s plant_torchflower matches 1.. run function mmo_worldgen:farming/block/composter
+
+#############################################################################################################
 # 
 #############################################################################################################
 execute anchored eyes positioned ^ ^0.75 ^ align xyz if block ~0.50 ~ ~0.50 minecraft:beetroots[age=3] if score @s harvest_beetroot matches 1.. run function mmo_worldgen:farming/random

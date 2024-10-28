@@ -17,6 +17,7 @@ scoreboard objectives remove plant_melon
 scoreboard objectives remove plant_beetroot
 scoreboard objectives remove plant_sugarcane
 scoreboard objectives remove plant_warts
+scoreboard objectives remove plant_torchflower
 
 #
 scoreboard objectives remove harvest_wheat
@@ -27,3 +28,4 @@ scoreboard objectives remove harvest_pumpkin
 scoreboard objectives remove harvest_melon
 scoreboard objectives remove harvest_beetroot
 scoreboard objectives remove harvest_warts
+scoreboard objectives remove harvest_torchflower

@@ -13,6 +13,4 @@ function mmo_worldgen:magic/error/missing_glyphs
 	# Spawning Mechanics:
 ############################################################################################
 execute if score @s mmo_error matches 0 run function mmo_worldgen:magic/trees/birch/spawn
-
-
 execute if score @s mmo_error matches 0 run function mmo_worldgen:magic/trees/birch/reset

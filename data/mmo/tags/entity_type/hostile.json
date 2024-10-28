@@ -26,6 +26,11 @@
 		"minecraft:piglin_brute",
 		"minecraft:zombified_piglin",
 		"minecraft:shulker",
-		"minecraft:hoglin"
+		"minecraft:hoglin",
+
+		// Bosses:
+		"minecraft:wither",
+		"minecraft:warden",
+		"minecraft:ender_dragon"
 	]
 }

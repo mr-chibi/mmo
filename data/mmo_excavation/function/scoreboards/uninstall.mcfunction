@@ -6,11 +6,6 @@ scoreboard objectives remove excavation_exp
 scoreboard objectives remove excavation_lvlup
 scoreboard objectives remove excavation_bonus
 
-##################################################
-# New Excavation System:
-##################################################
-team remove rng_green
-
 ############################################################################################
 	# Excavation Scoreboards: #
 ############################################################################################

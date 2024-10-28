@@ -39,6 +39,9 @@ scoreboard players set shovel_soul_sand stats_experience 7
 ############################################################################################
 	# Farming EXP #
 ############################################################################################
+scoreboard players set sifting_composter stats_experience 3
+
+#
 scoreboard players set plant_wheat stats_experience 7
 scoreboard players set plant_carrot stats_experience 7
 scoreboard players set plant_potato stats_experience 7
@@ -114,6 +117,7 @@ scoreboard players set slain_shulker stats_experience 50
 # Bosses
 scoreboard players set slain_enderdrag stats_experience 800
 scoreboard players set slain_wither stats_experience 400
+scoreboard players set slain_warden stats_experience 600
 
 
 ############################################################################################
@@ -289,4 +293,10 @@ scoreboard players set smith_diam_boots stats_experience 100
 ############################################################################################
 	# Magic EXP: #
 ############################################################################################
+scoreboard players set magic_tree_growth stats_experience 25
 scoreboard players set magic_auto_growth stats_experience 25
+scoreboard players set magic_flame_glyph stats_experience 5
+scoreboard players set magic_wind_glyph stats_experience 15
+scoreboard players set magic_lightning_glyph stats_experience 15
+scoreboard players set magic_healing_glyph stats_experience 10
+scoreboard players set builders_wand stats_experience 3

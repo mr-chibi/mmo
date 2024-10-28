@@ -1,1 +1,0 @@
-tellraw @s [{"text": "Magic Full Growth, can't be toggled. You require \"5\" or more nature glyphs.", "color": "red"}]

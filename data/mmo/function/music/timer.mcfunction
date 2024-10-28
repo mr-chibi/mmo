@@ -1,3 +1,6 @@
+# Add Music:
+scoreboard players add @s mmo_music_note 0
+
 # Loop:
 scoreboard players add @s mmo_music_timer 1
 

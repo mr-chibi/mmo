@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " w ",
+    "yxz"
+  ],
+  "key": {
+    "w": {
+      "item": "minecraft:explorer_pottery_sherd"
+    },
+    "x": {
+      "item": "minecraft:book"
+    },
+    "y": {
+      "item": "minecraft:burn_pottery_sherd"
+    },
+    "z": {
+      "item": "minecraft:brewer_pottery_sherd"
+    }
+  },
+  "result": {
+    "id": "minecraft:book",
+    "count": 1,
+    "components": {"minecraft:item_name":"{\"text\": \"Lightning Spell\", \"color\": \"yellow\"}", "minecraft:lore":["[{\"text\": \"Mr_Chibi'sMMO Magic\", \"color\": \"blue\", \"italic\":false}]"], "minecraft:custom_data":{"Tags":["mmo_magic", "lightning_spell"]}, "minecraft:enchantment_glint_override":true}
+  }
+}

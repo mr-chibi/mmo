@@ -1,105 +1,42 @@
-############################################################################################
-	# Fishing Level up Text #
-############################################################################################
-tellraw @s [{"text": "Fishing ", "color": "blue"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"fishing_lvl"}, "color": "green", "bold": true}]
-tellraw @s [{"text": "Next level will be in ", "color": "blue"},{"score":{"name":"@s","objective":"fishing_lvlup"}, "color":"dark_green", "bold": true},{"text": " Exp", "color": "green", "bold": true}]
-
-############################################################################################
-	# Automate Leveling Up (10)
-############################################################################################
-execute if score @s fishing_lvl < lvl_10 fishing_lvl run scoreboard players operation @s next_lvl = lvl_10 fishing_lvl
-execute if score @s fishing_lvl < lvl_10 fishing_lvl run scoreboard players operation @s next_lvl -= @s fishing_lvl
+#
+tellraw @s[scores={fishing_lvl=..9}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"fishing_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 10]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 20]","color":"#a3a3a3"}]
+tellraw @s[scores={fishing_lvl=..9}] [{"text": "Next Perk Unlock at level 10, Luck I!", "color": "#6E6E6E"}]
 
 #
-execute if score @s fishing_lvl < lvl_10 fishing_lvl run tellraw @s [{"text": "Unlocking Luck I will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s fishing_lvl = lvl_10 fishing_lvl run tellraw @s [{"text": "Unlocked Luck I", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (20)
-############################################################################################
-execute if score @s fishing_lvl >= lvl_10 fishing_lvl if score @s fishing_lvl < lvl_20 fishing_lvl run scoreboard players operation @s next_lvl = lvl_20 fishing_lvl
-execute if score @s fishing_lvl >= lvl_10 fishing_lvl if score @s fishing_lvl < lvl_20 fishing_lvl run scoreboard players operation @s next_lvl -= @s fishing_lvl
+tellraw @s[scores={fishing_lvl=10..19}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"fishing_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 20]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 30]","color":"#a3a3a3"}]
+tellraw @s[scores={fishing_lvl=10..19}] [{"text": "Next Perk Unlock at level 20, Luck II!", "color": "#6E6E6E"}]
 
 #
-execute if score @s fishing_lvl >= lvl_10 fishing_lvl if score @s fishing_lvl < lvl_20 fishing_lvl run tellraw @s [{"text": "Unlocking Luck II will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s fishing_lvl = lvl_20 fishing_lvl run tellraw @s [{"text": "Unlocked Luck II", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (30)
-############################################################################################
-execute if score @s fishing_lvl >= lvl_20 fishing_lvl if score @s fishing_lvl < lvl_30 fishing_lvl run scoreboard players operation @s next_lvl = lvl_30 fishing_lvl
-execute if score @s fishing_lvl >= lvl_20 fishing_lvl if score @s fishing_lvl < lvl_30 fishing_lvl run scoreboard players operation @s next_lvl -= @s fishing_lvl
+tellraw @s[scores={fishing_lvl=20..29}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"fishing_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 30]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 40]","color":"#a3a3a3"}]
+tellraw @s[scores={fishing_lvl=20..29}] [{"text": "Next Perk Unlock at level 30, Luck III!", "color": "#6E6E6E"}]
 
 #
-execute if score @s fishing_lvl >= lvl_20 fishing_lvl if score @s fishing_lvl < lvl_30 fishing_lvl run tellraw @s [{"text": "Unlocking Luck III will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s fishing_lvl = lvl_30 fishing_lvl run tellraw @s [{"text": "Unlocked Luck III", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (40)
-############################################################################################
-execute if score @s fishing_lvl >= lvl_30 fishing_lvl if score @s fishing_lvl < lvl_40 fishing_lvl run scoreboard players operation @s next_lvl = lvl_40 fishing_lvl
-execute if score @s fishing_lvl >= lvl_30 fishing_lvl if score @s fishing_lvl < lvl_40 fishing_lvl run scoreboard players operation @s next_lvl -= @s fishing_lvl
+tellraw @s[scores={fishing_lvl=30..39}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"fishing_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 40]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 50]","color":"#a3a3a3"}]
+tellraw @s[scores={fishing_lvl=30..39}] [{"text": "Next Perk Unlock at level 40, Luck IV!", "color": "#6E6E6E"}]
 
 #
-execute if score @s fishing_lvl >= lvl_30 fishing_lvl if score @s fishing_lvl < lvl_40 fishing_lvl run tellraw @s [{"text": "Unlocking Luck IV will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s fishing_lvl = lvl_40 fishing_lvl run tellraw @s [{"text": "Unlocked Luck IV", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (50)
-############################################################################################
-execute if score @s fishing_lvl >= lvl_40 fishing_lvl if score @s fishing_lvl < lvl_50 fishing_lvl run scoreboard players operation @s next_lvl = lvl_50 fishing_lvl
-execute if score @s fishing_lvl >= lvl_40 fishing_lvl if score @s fishing_lvl < lvl_50 fishing_lvl run scoreboard players operation @s next_lvl -= @s fishing_lvl
+tellraw @s[scores={fishing_lvl=40..49}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"fishing_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 50]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 60]","color":"#a3a3a3"}]
+tellraw @s[scores={fishing_lvl=40..49}] [{"text": "Next Perk Unlock at level 50, Luck V!", "color": "#6E6E6E"}]
 
 #
-execute if score @s fishing_lvl >= lvl_40 fishing_lvl if score @s fishing_lvl < lvl_50 fishing_lvl run tellraw @s [{"text": "Unlocking Luck V will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s fishing_lvl = lvl_50 fishing_lvl run tellraw @s [{"text": "Unlocked Luck V", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (60)
-############################################################################################
-execute if score @s fishing_lvl >= lvl_50 fishing_lvl if score @s fishing_lvl < lvl_60 fishing_lvl run scoreboard players operation @s next_lvl = lvl_60 fishing_lvl
-execute if score @s fishing_lvl >= lvl_50 fishing_lvl if score @s fishing_lvl < lvl_60 fishing_lvl run scoreboard players operation @s next_lvl -= @s fishing_lvl
+tellraw @s[scores={fishing_lvl=50..59}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"fishing_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 60]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 70]","color":"#a3a3a3"}]
+tellraw @s[scores={fishing_lvl=50..59}] [{"text": "Next Perk Unlock at level 60, Luck VI!", "color": "#6E6E6E"}]
 
 #
-execute if score @s fishing_lvl >= lvl_50 fishing_lvl if score @s fishing_lvl < lvl_60 fishing_lvl run tellraw @s [{"text": "Unlocking Luck VI will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s fishing_lvl = lvl_60 fishing_lvl run tellraw @s [{"text": "Unlocked Luck VI", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (70)
-############################################################################################
-execute if score @s fishing_lvl >= lvl_60 fishing_lvl if score @s fishing_lvl < lvl_70 fishing_lvl run scoreboard players operation @s next_lvl = lvl_70 fishing_lvl
-execute if score @s fishing_lvl >= lvl_60 fishing_lvl if score @s fishing_lvl < lvl_70 fishing_lvl run scoreboard players operation @s next_lvl -= @s fishing_lvl
+tellraw @s[scores={fishing_lvl=60..69}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"fishing_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 70]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 80]","color":"#a3a3a3"}]
+tellraw @s[scores={fishing_lvl=60..69}] [{"text": "Next Perk Unlock at level 70, Luck VII!", "color": "#6E6E6E"}]
 
 #
-execute if score @s fishing_lvl >= lvl_60 fishing_lvl if score @s fishing_lvl < lvl_70 fishing_lvl run tellraw @s [{"text": "Unlocking Luck VII will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s fishing_lvl = lvl_70 fishing_lvl run tellraw @s [{"text": "Unlocked Luck VII", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (80)
-############################################################################################
-execute if score @s fishing_lvl >= lvl_70 fishing_lvl if score @s fishing_lvl < lvl_80 fishing_lvl run scoreboard players operation @s next_lvl = lvl_80 fishing_lvl
-execute if score @s fishing_lvl >= lvl_70 fishing_lvl if score @s fishing_lvl < lvl_80 fishing_lvl run scoreboard players operation @s next_lvl -= @s fishing_lvl
+tellraw @s[scores={fishing_lvl=70..79}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"fishing_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 80]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 90]","color":"#a3a3a3"}]
+tellraw @s[scores={fishing_lvl=70..79}] [{"text": "Next Perk Unlock at level 80, Luck VIII!", "color": "#6E6E6E"}]
 
 #
-execute if score @s fishing_lvl >= lvl_70 fishing_lvl if score @s fishing_lvl < lvl_80 fishing_lvl run tellraw @s [{"text": "Unlocking Luck VIII will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s fishing_lvl = lvl_80 fishing_lvl run tellraw @s [{"text": "Unlocked Luck VIII", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (90)
-############################################################################################
-execute if score @s fishing_lvl >= lvl_80 fishing_lvl if score @s fishing_lvl < lvl_90 fishing_lvl run scoreboard players operation @s next_lvl = lvl_90 fishing_lvl
-execute if score @s fishing_lvl >= lvl_80 fishing_lvl if score @s fishing_lvl < lvl_90 fishing_lvl run scoreboard players operation @s next_lvl -= @s fishing_lvl
+tellraw @s[scores={fishing_lvl=80..89}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"fishing_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 90]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 99]","color":"#a3a3a3"}]
+tellraw @s[scores={fishing_lvl=80..89}] [{"text": "Next Perk Unlock at level 90, Luck IX!", "color": "#6E6E6E"}]
 
 #
-execute if score @s fishing_lvl >= lvl_80 fishing_lvl if score @s fishing_lvl < lvl_90 fishing_lvl run tellraw @s [{"text": "Unlocking Luck IX will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s fishing_lvl = lvl_90 fishing_lvl run tellraw @s [{"text": "Unlocked Luck IX", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (99..)
-############################################################################################
-execute if score @s fishing_lvl >= lvl_90 fishing_lvl if score @s fishing_lvl < lvl_99 fishing_lvl run scoreboard players operation @s next_lvl = lvl_99 fishing_lvl
-execute if score @s fishing_lvl >= lvl_90 fishing_lvl if score @s fishing_lvl < lvl_99 fishing_lvl run scoreboard players operation @s next_lvl -= @s fishing_lvl
+tellraw @s[scores={fishing_lvl=90..98}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"fishing_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 99]","color":"#c3c3c3"}]
+tellraw @s[scores={fishing_lvl=90..98}] [{"text": "Next, Master Skill at level 99, Luck X!", "color": "#6E6E6E"}]
 
 #
-execute if score @s fishing_lvl >= lvl_90 fishing_lvl if score @s fishing_lvl < lvl_99 fishing_lvl run tellraw @s [{"text": "Unlocking Luck X will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s fishing_lvl = lvl_99 fishing_lvl run tellraw @s [{"text": "Unlocked Luck X", "color": "yellow"}]
+tellraw @s[scores={fishing_lvl=99..}] [{"text": "[", "color": "#ffffff"}, {"text":"Fishing, Skill Mastered", "color": "green"}, {"text": "]", "color": "#ffffff"}]

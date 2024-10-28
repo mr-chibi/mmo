@@ -1,18 +1,7 @@
 ############################################################################################
-	# Woodcutting Tags #
-############################################################################################
-function mmo_woodcutting:tags/holdingaxe
-function mmo_woodcutting:tags/holdingcrystalaxe
-
-############################################################################################
-	# Woodcutting Perks: #
-############################################################################################
-function mmo_woodcutting:perks/charcoal_smelt
-
-############################################################################################
 	# Woodcutting TreeFaller EXP Gained: #
 ############################################################################################
-execute if score @s[tag=mmo_holdingAxe,scores={treeFaller_settings=1}] woodcutting_lvl matches 30.. run function mmo_woodcutting:scoreboards/treefaller_exp
+execute if score @s[scores={treeFaller_settings=1}] woodcutting_lvl matches 30.. run function mmo_woodcutting:scoreboards/treefaller_exp
 
 ############################################################################################
 	# Woodcutting EXP Gained: #

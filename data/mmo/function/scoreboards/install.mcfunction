@@ -1,4 +1,18 @@
 ############################################################################################
+	# MMO Admin Perms: #
+############################################################################################
+team add mmo_admin
+
+# Display "Name":
+team modify mmo_admin displayName "MMO Admin"
+
+# "Name" Colors:
+team modify mmo_admin color gray
+
+# Update prefix:
+team modify mmo_admin prefix [{"text": "[", "color": "white"}, {"text": "MMO Admin", "color": "#4F7DFF"}, {"text": "] ", "color": "white"}]
+
+############################################################################################
 	# Player Axis #
 ############################################################################################
 scoreboard objectives add mmo_axis_y dummy
@@ -9,8 +23,8 @@ scoreboard objectives add mmo_axis_y dummy
 scoreboard objectives add stats_scoreboard dummy
 scoreboard objectives add level_up dummy
 scoreboard objectives add level_up_sound dummy
-scoreboard objectives add mmo_gamerules dummy
 scoreboard objectives add mmo_toggle_skill dummy
+scoreboard objectives add mmo_rng dummy
 
 ############################################################################################
 	# Stats Scoreboard Next Level Up: #

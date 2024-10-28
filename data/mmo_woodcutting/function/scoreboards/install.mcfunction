@@ -12,7 +12,6 @@ scoreboard players set lvl_20 woodcutting_lvl 30
 scoreboard objectives add wc_vein_count dummy
 scoreboard players set spruce wc_vein_count 35
 
-
 #
 scoreboard objectives add cut_oak minecraft.mined:minecraft.oak_log
 scoreboard objectives add cut_spruce minecraft.mined:minecraft.spruce_log

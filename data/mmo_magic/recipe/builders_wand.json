@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "yxy",
+    "xzx",
+    "yxy"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "z": {
+      "item": "minecraft:brush"
+    },
+    "y": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "id": "minecraft:brush",
+    "components": {"minecraft:custom_name":"{\"text\": \"Builders Wand\", \"color\": \"#ffffff\", \"italic\": false}","minecraft:lore":["[{\"text\": \"Mr_Chibi's Datapack\", \"color\": \"#A496F4\", \"italic\":false}]"],"minecraft:custom_data":{"Tags":["mmo_builders_wand"]}}
+  }
+}

@@ -4,13 +4,6 @@ scoreboard objectives add mining_exp dummy
 scoreboard objectives add mining_lvlup dummy
 
 #
-scoreboard objectives add countEntities dummy
-
-#
-team add rng_blue
-team modify rng_blue color blue
-
-#
 scoreboard players set lvl_10 mining_lvl 10
 scoreboard players set lvl_20 mining_lvl 20
 scoreboard players set lvl_30 mining_lvl 30

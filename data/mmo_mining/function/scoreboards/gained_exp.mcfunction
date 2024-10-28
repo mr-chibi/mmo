@@ -9,7 +9,6 @@ scoreboard players operation @s[scores={mined_granite=1..}] mining_exp += mined_
 scoreboard players operation @s[scores={mined_diorite=1..}] mining_exp += mined_diorite stats_experience
 scoreboard players operation @s[scores={mined_obsidian=1..}] mining_exp += mined_obsidian stats_experience
 
-
 ############################################################################################
 	# Cave Update Stones Experience #
 ############################################################################################
@@ -19,7 +18,6 @@ scoreboard players operation @s[scores={mined_calcite=1..}] mining_exp += mined_
 scoreboard players operation @s[scores={mined_tuff=1..}] mining_exp += mined_tuff stats_experience
 scoreboard players operation @s[scores={mined_smo_basalt=1..}] mining_exp += mined_smo_basalt stats_experience
 scoreboard players operation @s[scores={mined_amethyst=1..}] mining_exp += mined_amethyst stats_experience
-
 
 ############################################################################################
 	# Mining Ores Experience #
@@ -33,7 +31,6 @@ scoreboard players operation @s[scores={mined_emerald=1..}] mining_exp += mined_
 scoreboard players operation @s[scores={mined_redstone=1..}] mining_exp += mined_redstone stats_experience
 scoreboard players operation @s[scores={mined_diamond=1..}] mining_exp += mined_diamond stats_experience
 
-
 ############################################################################################
 	# Mining Deepslate Ores Experience #
 ############################################################################################
@@ -45,8 +42,6 @@ scoreboard players operation @s[scores={mined_deep_lapis=1..}] mining_exp += min
 scoreboard players operation @s[scores={mined_deep_emer=1..}] mining_exp += mined_deep_emer stats_experience
 scoreboard players operation @s[scores={mined_deep_redst=1..}] mining_exp += mined_deep_redst stats_experience
 scoreboard players operation @s[scores={mined_deep_diam=1..}] mining_exp += mined_deep_diam stats_experience
-
-
 
 ############################################################################################
 	# Mining Terracotta Experience #
@@ -69,13 +64,11 @@ scoreboard players operation @s[scores={mined_green_terr=1..}] mining_exp += min
 scoreboard players operation @s[scores={mined_red_terr=1..}] mining_exp += mined_red_terr stats_experience
 scoreboard players operation @s[scores={mined_black_terr=1..}] mining_exp += mined_black_terr stats_experience
 
-
 ############################################################################################
 	# Mining Sandstone Experience #
 ############################################################################################
 scoreboard players operation @s[scores={mined_sandstone=1..}] mining_exp += mined_sandstone stats_experience
 scoreboard players operation @s[scores={mined_red_sandst=1..}] mining_exp += mined_red_sandst stats_experience
-
 
 ############################################################################################
 	# Mining "The Nether" Experience #
@@ -86,7 +79,6 @@ scoreboard players operation @s[scores={mined_nether_qua=1..}] mining_exp += min
 scoreboard players operation @s[scores={mined_netherbric=1..}] mining_exp += mined_netherbric stats_experience
 scoreboard players operation @s[scores={mined_magma_bloc=1..}] mining_exp += mined_magma_bloc stats_experience
 
-
 ############################################################################################
 	# Mining "The Nether" NEW BIOMES: #
 ############################################################################################
@@ -96,7 +88,6 @@ scoreboard players operation @s[scores={mined_neth_gold=1..}] mining_exp += mine
 scoreboard players operation @s[scores={mined_blackstone=1..}] mining_exp += mined_blackstone stats_experience
 scoreboard players operation @s[scores={mined_gilded=1..}] mining_exp += mined_gilded stats_experience
 scoreboard players operation @s[scores={mined_anc_debris=1..}] mining_exp += mined_anc_debris stats_experience
-
 
 ############################################################################################
 	# Mining "The End" NEW BIOMES: #

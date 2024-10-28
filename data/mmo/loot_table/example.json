@@ -1,0 +1,35 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_pickaxe",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_damage": 500,
+                "minecraft:rarity": "rare",
+                "minecraft:tool": {
+                  "default_mining_speed": 1.2,
+                  "damage_per_block": 1,
+                  "rules": [
+                    {
+                      "blocks": "#mineable/needs_iron_tool",
+                      "correct_for_drops":true
+                    }
+                  ]
+                },
+                "minecraft:lore": [
+                  "{\"color\":\"gray\",\"text\":\"reinforced\"}"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

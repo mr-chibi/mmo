@@ -1,76 +1,34 @@
-############################################################################################
-	# Level Up Text #
-############################################################################################
-tellraw @s [{"text": "Farming ", "color": "green"},{"text": "has reached ", "color": "white"}, {"score":{"name":"@s","objective":"farming_lvl"}, "color": "green", "bold": true}]
-tellraw @s [{"text": "Next level will be in ", "color": "blue"},{"score":{"name":"@s","objective":"farming_lvlup"}, "color":"dark_green", "bold": true},{"text": " Exp", "color": "green", "bold": true}]
-
-############################################################################################
-	# Automate Leveling Up (5)
-############################################################################################
-execute if score @s farming_lvl < lvl_5 farming_lvl run scoreboard players operation @s next_lvl = lvl_5 farming_lvl
-execute if score @s farming_lvl < lvl_5 farming_lvl run scoreboard players operation @s next_lvl -= @s farming_lvl
+#
+tellraw @s[scores={farming_lvl=..4}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"farming_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 5]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 10]","color":"#a3a3a3"}]
+tellraw @s[scores={farming_lvl=..4}] [{"text": "Next Perk Unlock at level 5, Unlocking double wheat harvesting!", "color": "#6E6E6E"}]
 
 #
-execute if score @s farming_lvl < lvl_5 farming_lvl run tellraw @s [{"text": "Unlocking double wheat harvesting will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s farming_lvl = lvl_5 farming_lvl run tellraw @s [{"text": "Unlocked Loot table double wheat farming", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (10)
-############################################################################################
-execute if score @s farming_lvl >= lvl_5 farming_lvl if score @s farming_lvl < lvl_10 farming_lvl run scoreboard players operation @s next_lvl = lvl_10 farming_lvl
-execute if score @s farming_lvl >= lvl_5 farming_lvl if score @s farming_lvl < lvl_10 farming_lvl run scoreboard players operation @s next_lvl -= @s farming_lvl
+tellraw @s[scores={farming_lvl=5..9}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"farming_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 10]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 15]","color":"#a3a3a3"}]
+tellraw @s[scores={farming_lvl=5..9}] [{"text": "Next Perk Unlock at level 10, Unlocking double carrot,melon,pumkpkin harvesting!", "color": "#6E6E6E"}]
 
 #
-execute if score @s farming_lvl >= lvl_5 farming_lvl if score @s farming_lvl < lvl_10 farming_lvl run tellraw @s [{"text": "Unlocking double carrot,melon,pumkpkin harvesting will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s farming_lvl = lvl_10 farming_lvl run tellraw @s [{"text": "Unlocked Loot table double carrot,melon,pumkpkin", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (15)
-############################################################################################
-execute if score @s farming_lvl >= lvl_10 farming_lvl if score @s farming_lvl < lvl_15 farming_lvl run scoreboard players operation @s next_lvl = lvl_15 farming_lvl
-execute if score @s farming_lvl >= lvl_10 farming_lvl if score @s farming_lvl < lvl_15 farming_lvl run scoreboard players operation @s next_lvl -= @s farming_lvl
+tellraw @s[scores={farming_lvl=10..14}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"farming_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 15]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 20]","color":"#a3a3a3"}]
+tellraw @s[scores={farming_lvl=10..14}] [{"text": "Next Perk Unlock at level 15, Unlocking double potato harvesting!", "color": "#6E6E6E"}]
 
 #
-execute if score @s farming_lvl >= lvl_10 farming_lvl if score @s farming_lvl < lvl_15 farming_lvl run tellraw @s [{"text": "Unlocking double potato harvesting will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s farming_lvl = lvl_15 farming_lvl run tellraw @s [{"text": "Unlocked Loot table double potato", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (20)
-############################################################################################
-execute if score @s farming_lvl >= lvl_15 farming_lvl if score @s farming_lvl < lvl_20 farming_lvl run scoreboard players operation @s next_lvl = lvl_20 farming_lvl
-execute if score @s farming_lvl >= lvl_15 farming_lvl if score @s farming_lvl < lvl_20 farming_lvl run scoreboard players operation @s next_lvl -= @s farming_lvl
+tellraw @s[scores={farming_lvl=15..19}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"farming_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 20]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 25]","color":"#a3a3a3"}]
+tellraw @s[scores={farming_lvl=15..19}] [{"text": "Next Perk Unlock at level 20, Unlocking double berries harvesting!", "color": "#6E6E6E"}]
 
 #
-execute if score @s farming_lvl >= lvl_15 farming_lvl if score @s farming_lvl < lvl_20 farming_lvl run tellraw @s [{"text": "Unlocking double berries harvesting will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s farming_lvl = lvl_20 farming_lvl run tellraw @s [{"text": "Unlocked Loot table double berries", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (25)
-############################################################################################
-execute if score @s farming_lvl >= lvl_20 farming_lvl if score @s farming_lvl < lvl_25 farming_lvl run scoreboard players operation @s next_lvl = lvl_25 farming_lvl
-execute if score @s farming_lvl >= lvl_20 farming_lvl if score @s farming_lvl < lvl_25 farming_lvl run scoreboard players operation @s next_lvl -= @s farming_lvl
+tellraw @s[scores={farming_lvl=20..24}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"farming_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 25]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 30]","color":"#a3a3a3"}]
+tellraw @s[scores={farming_lvl=20..24}] [{"text": "Next Perk Unlock at level 25, Unlocking double beetroot harvesting!", "color": "#6E6E6E"}]
 
 #
-execute if score @s farming_lvl >= lvl_20 farming_lvl if score @s farming_lvl < lvl_25 farming_lvl run tellraw @s [{"text": "Unlocking double beetroot harvesting will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s farming_lvl = lvl_25 farming_lvl run tellraw @s [{"text": "Unlocked Loot table double beetroot", "color": "yellow"}]
-
-############################################################################################
-	# Automate Leveling Up (30)
-############################################################################################
-execute if score @s farming_lvl >= lvl_25 farming_lvl if score @s farming_lvl < lvl_30 farming_lvl run scoreboard players operation @s next_lvl = lvl_30 farming_lvl
-execute if score @s farming_lvl >= lvl_25 farming_lvl if score @s farming_lvl < lvl_30 farming_lvl run scoreboard players operation @s next_lvl -= @s farming_lvl
+tellraw @s[scores={farming_lvl=25..29}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"farming_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 30]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 35]","color":"#a3a3a3"}]
+tellraw @s[scores={farming_lvl=25..29}] [{"text": "Next Perk Unlock at level 30, Unlocking double nether_warts harvesting!", "color": "#6E6E6E"}]
 
 #
-execute if score @s farming_lvl >= lvl_25 farming_lvl if score @s farming_lvl < lvl_30 farming_lvl run tellraw @s [{"text": "Unlocking double nether_warts harvesting will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s farming_lvl = lvl_30 farming_lvl run tellraw @s [{"text": "Unlocked Loot table double nether_warts", "color": "yellow"}]
-
-
-############################################################################################
-	# Automate Leveling Up (35)
-############################################################################################
-execute if score @s farming_lvl >= lvl_30 farming_lvl if score @s farming_lvl < lvl_35 farming_lvl run scoreboard players operation @s next_lvl = lvl_35 farming_lvl
-execute if score @s farming_lvl >= lvl_30 farming_lvl if score @s farming_lvl < lvl_35 farming_lvl run scoreboard players operation @s next_lvl -= @s farming_lvl
+tellraw @s[scores={farming_lvl=30..34}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"farming_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 35]","color":"#c3c3c3"}, {"text": " -> ", "color": "#dedede", "bold":true}, {"text":"[lvl 99]","color":"#a3a3a3"}]
+tellraw @s[scores={farming_lvl=30..34}] [{"text": "Next Perk Unlock at level 35, Unlocking double torchflower harvesting!", "color": "#6E6E6E"}]
 
 #
-execute if score @s farming_lvl >= lvl_30 farming_lvl if score @s farming_lvl < lvl_35 farming_lvl run tellraw @s [{"text": "Unlocking double torchflower harvesting will be the next... ", "color": "gold"},{"score":{"name":"@s","objective":"next_lvl"}, "color":"dark_green", "bold": true},{"text": " lvls", "color": "green", "bold": true}]
-execute if score @s farming_lvl = lvl_35 farming_lvl run tellraw @s [{"text": "Unlocked Loot table double torchflower", "color": "yellow"}]
+tellraw @s[scores={farming_lvl=35..98}] [{"text": "[", "color": "#ffffff"}, {"text": "lvl ", "color": "green"}, {"score":{"name":"@s","objective":"farming_lvl"}, "color": "green"}, {"text": "]", "color": "#ffffff"}, {"text": " -> ", "color": "#ffffff"}, {"text":"[lvl 99]","color":"#c3c3c3"}]
+tellraw @s[scores={farming_lvl=35..98}] [{"text": "Next, Master Skill at level 99, !", "color": "#6E6E6E"}]
+
+#
+tellraw @s[scores={farming_lvl=99..}] [{"text": "[", "color": "#ffffff"}, {"text":"Farming, Skill Mastered", "color": "green"}, {"text": "]", "color": "#ffffff"}]

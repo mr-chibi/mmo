@@ -1,0 +1,8 @@
+{
+	"values": [
+		"mmo_magic:spells/nature/gained_exp",
+		"mmo_magic:spells/nature/remove_exp",
+		"mmo_magic:spells/nature/nbt",
+		"mmo_magic:spells/nature/clear"
+	]
+}

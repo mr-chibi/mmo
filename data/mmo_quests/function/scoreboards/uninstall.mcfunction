@@ -1,8 +1,0 @@
-#
-scoreboard objectives remove mmo_quest_villager_interact
-scoreboard objectives remove mmo_quest_villager_category
-
-#
-scoreboard objectives remove mmo_quest_requirement_1
-scoreboard objectives remove mmo_quest_requirement_2
-scoreboard objectives remove mmo_quest_requirement_3

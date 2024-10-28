@@ -1,7 +1,6 @@
 {
 	"values": [
 		"mmo:scoreboards/uninstall",
-		"mmo_quests:scoreboards/uninstall",
 		"mmo_attack:scoreboards/uninstall",
 		"mmo_defense:scoreboards/uninstall",
 		"mmo_cooking:scoreboards/uninstall",

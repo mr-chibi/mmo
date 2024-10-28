@@ -48,3 +48,4 @@ scoreboard players operation @s[scores={slain_shulker=1..}] hunter_exp += slain_
 # Bosses:
 scoreboard players operation @s[scores={slain_enderdrag=1..}] hunter_exp += slain_enderdrag stats_experience
 scoreboard players operation @s[scores={slain_wither=1..}] hunter_exp += slain_wither stats_experience
+scoreboard players operation @s[scores={slain_warden=1..}] hunter_exp += slain_warden stats_experience

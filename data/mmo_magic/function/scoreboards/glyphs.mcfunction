@@ -4,3 +4,4 @@ execute store result score @s flame_glyph run clear @s[nbt={Inventory:[{id:"mine
 execute store result score @s water_glyph run clear @s[nbt={Inventory:[{id:"minecraft:brewer_pottery_sherd",components:{"minecraft:custom_data":{Tags:["mmo_magic", "water_glyph"]}}}]}] minecraft:brewer_pottery_sherd 0
 execute store result score @s wind_glyph run clear @s[nbt={Inventory:[{id:"minecraft:explorer_pottery_sherd",components:{"minecraft:custom_data":{Tags:["mmo_magic", "wind_glyph"]}}}]}] minecraft:explorer_pottery_sherd 0
 execute store result score @s time_glyph run clear @s[nbt={Inventory:[{id:"minecraft:snort_pottery_sherd",components:{"minecraft:custom_data":{Tags:["mmo_magic", "time_glyph"]}}}]}] minecraft:snort_pottery_sherd 0
+execute store result score @s healing_glyph run clear @s[nbt={Inventory:[{id:"minecraft:heart_pottery_sherd",components:{"minecraft:custom_data":{Tags:["mmo_magic", "healing_glyph"]}}}]}] minecraft:heart_pottery_sherd 0

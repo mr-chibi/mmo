@@ -48,3 +48,4 @@ scoreboard players set @s[scores={slain_shulker=1..}] slain_shulker 0
 # Bosses:
 scoreboard players set @s[scores={slain_enderdrag=1..}] slain_enderdrag 0
 scoreboard players set @s[scores={slain_wither=1..}] slain_wither 0
+scoreboard players set @s[scores={slain_warden=1..}] slain_warden 0

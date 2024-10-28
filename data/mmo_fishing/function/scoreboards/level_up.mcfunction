@@ -8,6 +8,10 @@ scoreboard players operation @s fishing_lvlup *= @s fishing_lvl
 ############################################################################################
 	# Display information when player levels up to next perk:
 ############################################################################################
+tellraw @s [{"text": "Fishing ", "color": "blue"},{"text": "has reached ", "color": "#a3a3a3"}, {"score":{"name":"@s","objective":"fishing_lvl"}, "color": "green", "bold": true}]
+tellraw @s [{"text": "Next level will be in ", "color": "#a3a3a3"},{"score":{"name":"@s","objective":"fishing_lvlup"}, "color":"dark_green", "bold": true},{"text": " Exp\n", "color": "green", "bold": true}]
+
+#
 function mmo_fishing:advancements
 
 ############################################################################################

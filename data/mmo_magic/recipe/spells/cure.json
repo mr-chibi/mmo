@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " x",
+    " z"
+  ],
+  "key": {
+    "x": {
+      "item": "minecraft:heart_pottery_sherd"
+    },
+    "z": {
+      "item": "minecraft:book"
+    }
+  },
+  "result": {
+    "id": "minecraft:book",
+    "count": 1,
+    "components": {"minecraft:item_name":"{\"text\": \"Cure Spell\", \"color\": \"green\"}", "minecraft:lore":["[{\"text\": \"Mr_Chibi'sMMO Magic\", \"color\": \"blue\", \"italic\":false}]"], "minecraft:custom_data":{"Tags":["mmo_magic", "cure_spell"]}, "minecraft:enchantment_glint_override":true}
+  }
+}

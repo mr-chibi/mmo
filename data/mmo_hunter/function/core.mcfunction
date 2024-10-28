@@ -1,15 +1,4 @@
 ############################################################################################
-	# Hunter Tags #
-############################################################################################
-function mmo_hunter:tags/holdingsword
-
-############################################################################################
-	# Hunter Loot #
-############################################################################################
-execute if score disable_hunter_loot mmo_gamerules matches 0 run function mmo_worldgen:hunter/init
-execute if score disable_hunter_loot mmo_gamerules matches 0 run function mmo_hunter:loot_tables/tools
-
-############################################################################################
 	# Hunter EXP #
 ############################################################################################
 function mmo_hunter:scoreboards/gained_exp
