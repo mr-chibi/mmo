@@ -12,6 +12,6 @@
   },
   "result": {
     "id": "minecraft:brush",
-    "components": {"minecraft:custom_name":"{\"text\": \"Builders Wand\", \"color\": \"#ffffff\", \"italic\": false}","minecraft:lore":["[{\"text\": \"Mr_Chibi's Datapack\", \"color\": \"#A496F4\", \"italic\":false}]"],"minecraft:custom_data":{"Tags":["mmo_builders_wand"]}}
+    "components": {"minecraft:custom_name":"{\"text\": \"Builders Wand\", \"color\": \"#ffffff\", \"italic\": false}","minecraft:lore":["[{\"text\": \"Mr_Chibi'sMMO Datapack\", \"color\": \"#A496F4\", \"italic\":false}]"],"minecraft:custom_data":{"Tags":["mmo_builders_wand"]}}
   }
 }

@@ -19,7 +19,8 @@ scoreboard players operation @s[tag=create_block] magic_exp += @s magic_stat
 scoreboard players reset @s[tag=create_block] magic_stat
 
 # Fill Blocks:
-$execute as @s[tag=create_block] run fill $(x) $(y) $(z) $(x2) $(y2) $(z2) $(block) destroy
+$execute if score @s[tag=create_block] wand_y = @s wand_y2 run fill $(x) $(y) $(z) $(x2) $(y2) $(z2) $(block) destroy
+$execute unless score @s[tag=create_block] wand_y = @s wand_y2 run fill $(x) $(y) $(z) $(x2) $(y2) $(z2) $(block) replace minecraft:air
 
 # Remove Tags:
 tag @s remove create_block
