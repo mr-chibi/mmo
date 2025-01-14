@@ -14,23 +14,26 @@
           "functions": [
             {
               "function": "minecraft:set_components",
-              "components": { 
-                "minecraft:custom_data": {"crystal_tool:":1},
-                "minecraft:custom_name":"{\"text\": \"Crystal Pickaxe\", \"color\": \"#C088E9\"}",
-                "minecraft:enchantments": {"minecraft:unbreaking": 3, "minecraft:efficiency": 1},
-                "minecraft:damage": 120,
-                "minecraft:custom_model_data": 1
+              "components": {
+                "minecraft:custom_data": {
+                  "crystal_tool:": 1
+                },
+                "minecraft:custom_name": "{\"text\": \"Crystal Pickaxe\", \"color\": \"#C088E9\"}",
+                "minecraft:enchantments": {
+                  "minecraft:unbreaking": 3,
+                  "minecraft:efficiency": 1
+                },
+                "minecraft:damage": 120
               }
             }
           ],
           "conditions": [
             {
               "condition": "minecraft:random_chance",
-              "chance": 1.0
+              "chance": 1
             }
           ]
         },
-
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_sword",
@@ -38,23 +41,26 @@
           "functions": [
             {
               "function": "minecraft:set_components",
-              "components": { 
-                "minecraft:custom_data": {"crystal_tool:":1},
-                "minecraft:custom_name":"{\"text\": \"Crystal Sword\", \"color\": \"#C088E9\"}",
-                "minecraft:enchantments": {"minecraft:unbreaking": 3, "minecraft:sharpness": 2},
-                "minecraft:damage": 100,
-                "minecraft:custom_model_data": 1
+              "components": {
+                "minecraft:custom_data": {
+                  "crystal_tool:": 1
+                },
+                "minecraft:custom_name": "{\"text\": \"Crystal Sword\", \"color\": \"#C088E9\"}",
+                "minecraft:enchantments": {
+                  "minecraft:unbreaking": 3,
+                  "minecraft:sharpness": 2
+                },
+                "minecraft:damage": 100
               }
             }
           ],
           "conditions": [
             {
               "condition": "minecraft:random_chance",
-              "chance": 1.0
+              "chance": 1
             }
           ]
         },
-
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_shovel",
@@ -62,23 +68,26 @@
           "functions": [
             {
               "function": "minecraft:set_components",
-              "components": { 
-                "minecraft:custom_data": {"crystal_tool:":1},
-                "minecraft:custom_name":"{\"text\": \"Crystal Shovel\", \"color\": \"#C088E9\"}",
-                "minecraft:enchantments": {"minecraft:unbreaking": 3, "minecraft:efficiency": 1},
-                "minecraft:damage": 100,
-                "minecraft:custom_model_data": 1
+              "components": {
+                "minecraft:custom_data": {
+                  "crystal_tool:": 1
+                },
+                "minecraft:custom_name": "{\"text\": \"Crystal Shovel\", \"color\": \"#C088E9\"}",
+                "minecraft:enchantments": {
+                  "minecraft:unbreaking": 3,
+                  "minecraft:efficiency": 1
+                },
+                "minecraft:damage": 100
               }
             }
           ],
           "conditions": [
             {
               "condition": "minecraft:random_chance",
-              "chance": 1.0
+              "chance": 1
             }
           ]
         },
-
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_hoe",
@@ -86,23 +95,25 @@
           "functions": [
             {
               "function": "minecraft:set_components",
-              "components": { 
-                "minecraft:custom_data": {"crystal_tool:":1},
+              "components": {
+                "minecraft:custom_data": {
+                  "crystal_tool:": 1
+                },
                 "minecraft:custom_name": "{\"text\": \"Crystal Hoe\", \"color\": \"#C088E9\"}",
-                "minecraft:enchantments": {"minecraft:unbreaking": 3},
-                "minecraft:damage": 100,
-                "minecraft:custom_model_data": 1
+                "minecraft:enchantments": {
+                  "minecraft:unbreaking": 3
+                },
+                "minecraft:damage": 100
               }
             }
           ],
           "conditions": [
             {
               "condition": "minecraft:random_chance",
-              "chance": 1.0
+              "chance": 1
             }
           ]
         },
-
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_axe",
@@ -110,19 +121,23 @@
           "functions": [
             {
               "function": "minecraft:set_components",
-              "components": { 
-                "minecraft:custom_data": {"crystal_tool:":1},
-                "minecraft:custom_name":"{\"text\": \"Crystal Axe\", \"color\": \"#C088E9\"}",
-                "minecraft:enchantments": {"minecraft:unbreaking": 3, "minecraft:efficiency": 1},
-                "minecraft:damage": 100,
-                "minecraft:custom_model_data": 1
+              "components": {
+                "minecraft:custom_data": {
+                  "crystal_tool:": 1
+                },
+                "minecraft:custom_name": "{\"text\": \"Crystal Axe\", \"color\": \"#C088E9\"}",
+                "minecraft:enchantments": {
+                  "minecraft:unbreaking": 3,
+                  "minecraft:efficiency": 1
+                },
+                "minecraft:damage": 100
               }
             }
           ],
           "conditions": [
             {
               "condition": "minecraft:random_chance",
-              "chance": 1.0
+              "chance": 1
             }
           ]
         }

@@ -36,5 +36,5 @@ execute anchored eyes positioned ^ ^ ^2 if block ~ ~ ~ minecraft:wheat[age=6] ru
 
 #
 tellraw @s[scores={instant_growth=200}] [{"text": "Your hoe has vanished and reached its maxiumum use."}]
-clear @s[scores={instant_growth=200}] minecraft:iron_hoe[minecraft:custom_model_data=1,minecraft:custom_data={"crystal_tool:":1b}] 1
+clear @s[scores={instant_growth=200}] minecraft:iron_hoe[minecraft:custom_model_data={"components":{"minecraft:custom_data":1}},minecraft:custom_data={"crystal_tool:":1b}] 1
 scoreboard players set @s[scores={instant_growth=200}] instant_growth 0
