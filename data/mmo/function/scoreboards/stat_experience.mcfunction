@@ -219,6 +219,7 @@ scoreboard players set cut_crimson_stem stats_experience 10
 scoreboard players set cut_warped_stem stats_experience 10
 scoreboard players set cut_mangrove stats_experience 10
 scoreboard players set cut_cherry stats_experience 10
+scoreboard players set cut_pale_oak_log stats_experience 10
 
 ############################################################################################
 	# Woodcutting EXP (Wood) #
@@ -233,6 +234,7 @@ scoreboard players set cut_crimson_hyphae stats_experience 10
 scoreboard players set cut_warped_hyphae stats_experience 10
 scoreboard players set cut_mangrove_wood stats_experience 10
 scoreboard players set cut_cherry_wood stats_experience 10
+scoreboard players set cut_pale_oak_wood stats_experience 10
 
 ############################################################################################
 	# logcutting EXP (Stripped Log) #
@@ -247,6 +249,7 @@ scoreboard players set cut_stripped_crimson_stem stats_experience 10
 scoreboard players set cut_stripped_warped_stem stats_experience 10
 scoreboard players set cut_stripped_mangrove_log stats_experience 10
 scoreboard players set cut_stripped_cherry_log stats_experience 10
+scoreboard players set cut_stripped_pale_oak_log stats_experience 10
 
 ############################################################################################
 	# Woodcutting EXP (Stripped Wood) #
@@ -261,6 +264,7 @@ scoreboard players set cut_stripped_crimson_hyphae stats_experience 10
 scoreboard players set cut_stripped_warped_hyphae stats_experience 10
 scoreboard players set cut_stripped_mangrove_wood stats_experience 10
 scoreboard players set cut_stripped_cherry_wood stats_experience 10
+scoreboard players set cut_stripped_pale_oak_wood stats_experience 10
 
 ############################################################################################
 	# Smithing EXP #

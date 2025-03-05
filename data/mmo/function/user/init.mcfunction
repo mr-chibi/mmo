@@ -8,7 +8,6 @@ function mmo:user/skills
 	# User Settings: #
 ############################################################################################
 execute if score @s exp_settings matches 0 run function mmo:user/gui
-execute if score @s sound_settings matches 0 run function #mmo:user/sounds
 
 ############################################################################################
 	# Admin Commands Data #

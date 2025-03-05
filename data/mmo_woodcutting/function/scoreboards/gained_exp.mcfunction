@@ -11,6 +11,7 @@ scoreboard players operation @s[scores={cut_crimson_stem=1..}] woodcutting_exp +
 scoreboard players operation @s[scores={cut_warped_stem=1..}] woodcutting_exp += cut_warped_stem stats_experience
 scoreboard players operation @s[scores={cut_mangrove=1..}] woodcutting_exp += cut_mangrove stats_experience
 scoreboard players operation @s[scores={cut_cherry=1..}] woodcutting_exp += cut_cherry stats_experience
+scoreboard players operation @s[scores={cut_pale_oak_log=1..}] woodcutting_exp += cut_pale_oak_log stats_experience
 
 ############################################################################################
 	# Add Woodcutting EXP (Wood) #
@@ -25,6 +26,7 @@ scoreboard players operation @s[scores={cut_crimson_hyphae=1..}] woodcutting_exp
 scoreboard players operation @s[scores={cut_warped_hyphae=1..}] woodcutting_exp += cut_warped_hyphae stats_experience
 scoreboard players operation @s[scores={cut_mangrove_wood=1..}] woodcutting_exp += cut_mangrove_wood stats_experience
 scoreboard players operation @s[scores={cut_cherry_wood=1..}] woodcutting_exp += cut_cherry_wood stats_experience
+scoreboard players operation @s[scores={cut_pale_oak_wood=1..}] woodcutting_exp += cut_pale_oak_wood stats_experience
 
 ############################################################################################
 	# Add Woodcutting EXP (Stripped Logs) #
@@ -39,6 +41,7 @@ scoreboard players operation @s[scores={cut_stripped_crimson_stem=1..}] woodcutt
 scoreboard players operation @s[scores={cut_stripped_warped_stem=1..}] woodcutting_exp += cut_stripped_warped_stem stats_experience
 scoreboard players operation @s[scores={cut_stripped_mangrove_log=1..}] woodcutting_exp += cut_stripped_mangrove_log stats_experience
 scoreboard players operation @s[scores={cut_stripped_cherry_log=1..}] woodcutting_exp += cut_stripped_cherry_log stats_experience
+scoreboard players operation @s[scores={cut_stripped_pale_oak_log=1..}] woodcutting_exp += cut_stripped_pale_oak_log stats_experience
 
 ############################################################################################
 	# Add Woodcutting EXP (Stripped Wood) #
@@ -53,3 +56,4 @@ scoreboard players operation @s[scores={cut_stripped_crimson_hyphae=1..}] woodcu
 scoreboard players operation @s[scores={cut_stripped_warped_hyphae=1..}] woodcutting_exp += cut_stripped_warped_hyphae stats_experience
 scoreboard players operation @s[scores={cut_stripped_mangrove_wood=1..}] woodcutting_exp += cut_stripped_mangrove_wood stats_experience
 scoreboard players operation @s[scores={cut_stripped_cherry_wood=1..}] woodcutting_exp += cut_stripped_cherry_wood stats_experience
+scoreboard players operation @s[scores={cut_stripped_pale_oak_wood=1..}] woodcutting_exp += cut_stripped_pale_oak_wood stats_experience

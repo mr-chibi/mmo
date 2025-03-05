@@ -99,6 +99,16 @@ execute store result score @s[scores={cut_cherry_wood=1..}] wc_vein_count positi
 execute store result score @s[scores={cut_cherry_wood=1..}] wc_vein_count positioned ~-1 ~ ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:cherry_wood"}},sort=nearest,distance=0..10]
 
 ############################################################################################
+	# Woodcutting:pale_oak_wood #
+############################################################################################
+execute store result score @s[scores={cut_pale_oak_wood=1..}] wc_vein_count positioned ~ ~ ~1 store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:pale_oak_wood"}},sort=nearest,distance=0..10]
+execute store result score @s[scores={cut_pale_oak_wood=1..}] wc_vein_count positioned ~ ~ ~-1 store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:pale_oak_wood"}},sort=nearest,distance=0..10]
+execute store result score @s[scores={cut_pale_oak_wood=1..}] wc_vein_count positioned ~ ~1 ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:pale_oak_wood"}},sort=nearest,distance=0..10]
+execute store result score @s[scores={cut_pale_oak_wood=1..}] wc_vein_count positioned ~ ~-1 ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:pale_oak_wood"}},sort=nearest,distance=0..10]
+execute store result score @s[scores={cut_pale_oak_wood=1..}] wc_vein_count positioned ~1 ~ ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:pale_oak_wood"}},sort=nearest,distance=0..10]
+execute store result score @s[scores={cut_pale_oak_wood=1..}] wc_vein_count positioned ~-1 ~ ~ store result score @s wc_vein_count if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:pale_oak_wood"}},sort=nearest,distance=0..10]
+
+############################################################################################
 	# Woodcutting TreeFaller Muliply woods chopped: #
 ############################################################################################
 execute if score @s[scores={wc_vein_count=5..}] cut_oak_wood matches 1.. run scoreboard players operation @s wc_vein_count *= cut_oak_wood stats_experience
@@ -111,3 +121,4 @@ execute if score @s[scores={wc_vein_count=5..}] cut_crimson_hyphae matches 1.. r
 execute if score @s[scores={wc_vein_count=5..}] cut_warped_hyphae matches 1.. run scoreboard players operation @s wc_vein_count *= cut_warped_hyphae stats_experience
 execute if score @s[scores={wc_vein_count=5..}] cut_mangrove_wood matches 1.. run scoreboard players operation @s wc_vein_count *= cut_mangrove_wood stats_experience
 execute if score @s[scores={wc_vein_count=5..}] cut_cherry_wood matches 1.. run scoreboard players operation @s wc_vein_count *= cut_cherry_wood stats_experience
+execute if score @s[scores={wc_vein_count=5..}] cut_pale_oak_wood matches 1.. run scoreboard players operation @s wc_vein_count *= cut_pale_oak_wood stats_experience

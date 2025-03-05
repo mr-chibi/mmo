@@ -21,6 +21,11 @@ function mmo:scoreboards/commands/enable
 function mmo:user/init
 
 ############################################################################################
+	# MMO User Settings -> [Sounds] #
+############################################################################################
+execute if score @s sound_settings matches 0 run function mmo:user/sounds
+
+############################################################################################
 	# [WorldGeneration] & [Skills] + [Interactions]: #
 ###########################################################################################
 execute if score worldgen_gamerule mmo_gamerule matches 0 run function mmo:worldgen

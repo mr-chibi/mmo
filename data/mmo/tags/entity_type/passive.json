@@ -1,0 +1,57 @@
+{
+	"values": [
+		
+		// Pets:
+		"minecraft:cat",
+		"minecraft:wolf",
+		"minecraft:parrot",
+			
+		// Wild Animals:
+		"minecraft:axolotl",
+		"minecraft:armadillo",
+		"minecraft:bat",
+		"minecraft:camel",
+		"minecraft:ocelot",
+		"minecraft:fox",
+
+		// Farm Animals:
+		"minecraft:bee",
+		"minecraft:cow",
+		"minecraft:mooshroom",
+		"minecraft:chicken",
+		"minecraft:pig",
+		"minecraft:sheep",
+		"minecraft:rabbit",
+		"minecraft:horse",
+		"minecraft:donkey",
+		"minecraft:mule",
+
+		// Aquatic:
+		"minecraft:tadpole",
+		"minecraft:frog",
+		"minecraft:cod",
+		"minecraft:salmon",
+		"minecraft:pufferfish",
+		"minecraft:tropical_fish",
+		"minecraft:turtle",
+		"minecraft:squid",
+		"minecraft:glow_squid",
+
+		// The Nether:
+		"minecraft:strider",
+		
+		// NPCS:
+		"minecraft:villager",
+		"minecraft:wandering_trader",
+
+		// Misc:
+		"minecraft:allay",
+		"minecraft:iron_golem",
+		"minecraft:snow_golem",
+		"minecraft:sniffer",
+		
+		// Undead Horses:
+		"minecraft:skeleton_horse",
+		"minecraft:zombie_horse"
+	]
+}

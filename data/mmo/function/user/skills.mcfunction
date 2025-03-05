@@ -3,7 +3,7 @@ execute if score attack_skill mmo_gamerule matches 0 if entity @s[tag=mmo_holdin
 execute if score defense_skill mmo_gamerule matches 0 if entity @s[tag=mmo_holdingShield] run function mmo_defense:skills
 execute if score excavation_skill mmo_gamerule matches 0 if entity @s[tag=mmo_holdingShovel] run function mmo_excavation:skills
 execute if score fishing_skill mmo_gamerule matches 0 if entity @s[tag=mmo_holdingFishingRod] run function mmo_fishing:skills
-execute if score hunter_skill mmo_gamerule matches 0 if entity @s[tag=mmo_holdingSword] run function mmo_hunter:skills
+execute if score hunter_skill mmo_gamerule matches 0 if entity @s[tag=mmo_holdingSword,scores={hunter_settings=1}] run function mmo_hunter:skills
 execute if score magic_skill mmo_gamerule matches 0 if entity @s[tag=mmo_magic_brush] run function mmo_magic:skills
 
 # Skills that require [Interaction]:

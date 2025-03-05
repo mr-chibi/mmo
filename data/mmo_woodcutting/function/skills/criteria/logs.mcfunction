@@ -11,3 +11,4 @@ execute if score @s cut_crimson_stem matches 1.. run function mmo_woodcutting:sk
 execute if score @s cut_warped_stem matches 1.. run function mmo_woodcutting:skills/tree_faller
 execute if score @s cut_mangrove matches 1.. run function mmo_woodcutting:skills/tree_faller
 execute if score @s cut_cherry matches 1.. run function mmo_woodcutting:skills/tree_faller
+execute if score @s cut_pale_oak_log matches 1.. run function mmo_woodcutting:skills/tree_faller

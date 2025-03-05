@@ -11,6 +11,7 @@ scoreboard players reset @s[scores={cut_crimson_stem=1..}] cut_crimson_stem
 scoreboard players reset @s[scores={cut_warped_stem=1..}] cut_warped_stem
 scoreboard players reset @s[scores={cut_mangrove=1..}] cut_mangrove
 scoreboard players reset @s[scores={cut_cherry=1..}] cut_cherry
+scoreboard players reset @s[scores={cut_pale_oak_log=1..}] cut_pale_oak_log
 
 ############################################################################################
 	# Reset Woodcutting EXP (Stripped Wood) #
@@ -25,6 +26,7 @@ scoreboard players reset @s[scores={cut_crimson_hyphae=1..}] cut_crimson_hyphae
 scoreboard players reset @s[scores={cut_warped_hyphae=1..}] cut_warped_hyphae
 scoreboard players reset @s[scores={cut_mangrove_wood=1..}] cut_mangrove_wood
 scoreboard players reset @s[scores={cut_cherry_wood=1..}] cut_cherry_wood
+scoreboard players reset @s[scores={cut_pale_oak_wood=1..}] cut_pale_oak_wood
 
 ############################################################################################
 	# Reset Woodcutting EXP (Stripped Log) #
@@ -39,6 +41,7 @@ scoreboard players reset @s[scores={cut_stripped_crimson_stem=1..}] cut_stripped
 scoreboard players reset @s[scores={cut_stripped_warped_stem=1..}] cut_stripped_warped_stem
 scoreboard players reset @s[scores={cut_stripped_mangrove_log=1..}] cut_stripped_mangrove_log
 scoreboard players reset @s[scores={cut_stripped_cherry_log=1..}] cut_stripped_cherry_log
+scoreboard players reset @s[scores={cut_stripped_pale_oak_log=1..}] cut_stripped_pale_oak_log
 
 ############################################################################################
 	# Reset Woodcutting EXP (Stripped Wood) #
@@ -53,3 +56,4 @@ scoreboard players reset @s[scores={cut_stripped_crimson_hyphae=1..}] cut_stripp
 scoreboard players reset @s[scores={cut_stripped_warped_hyphae=1..}] cut_stripped_warped_hyphae
 scoreboard players reset @s[scores={cut_stripped_mangrove_wood=1..}] cut_stripped_mangrove_wood
 scoreboard players reset @s[scores={cut_stripped_cherry_wood=1..}] cut_stripped_cherry_wood
+scoreboard players reset @s[scores={cut_stripped_pale_oak_wood=1..}] cut_stripped_pale_oak_wood

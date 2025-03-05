@@ -8,6 +8,8 @@ scoreboard objectives add mmo_durabliity dummy
 ############################################################################################
 scoreboard objectives add mob_health_min dummy
 scoreboard objectives add mob_health_max dummy
+scoreboard objectives add mob_armor_min dummy
+scoreboard objectives add mob_atk_dmg dummy
 scoreboard objectives add mmo_count_entities dummy
 
 ############################################################################################

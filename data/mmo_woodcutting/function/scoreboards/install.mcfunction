@@ -23,6 +23,7 @@ scoreboard objectives add cut_crimson_stem minecraft.mined:minecraft.crimson_ste
 scoreboard objectives add cut_warped_stem minecraft.mined:minecraft.warped_stem
 scoreboard objectives add cut_mangrove minecraft.mined:minecraft.mangrove_log
 scoreboard objectives add cut_cherry minecraft.mined:minecraft.cherry_log
+scoreboard objectives add cut_pale_oak_log minecraft.mined:minecraft.pale_oak_log
 
 #
 scoreboard objectives add cut_oak_wood minecraft.mined:minecraft.oak_wood
@@ -35,6 +36,7 @@ scoreboard objectives add cut_crimson_hyphae minecraft.mined:minecraft.crimson_h
 scoreboard objectives add cut_warped_hyphae minecraft.mined:minecraft.warped_hyphae
 scoreboard objectives add cut_mangrove_wood minecraft.mined:minecraft.mangrove_wood
 scoreboard objectives add cut_cherry_wood minecraft.mined:minecraft.cherry_wood
+scoreboard objectives add cut_pale_oak_wood minecraft.mined:minecraft.pale_oak_wood
 
 #
 scoreboard objectives add cut_stripped_oak_log minecraft.mined:minecraft.stripped_oak_log
@@ -47,6 +49,7 @@ scoreboard objectives add cut_stripped_crimson_stem minecraft.mined:minecraft.st
 scoreboard objectives add cut_stripped_warped_stem minecraft.mined:minecraft.stripped_warped_stem
 scoreboard objectives add cut_stripped_mangrove_log minecraft.mined:minecraft.stripped_mangrove_log
 scoreboard objectives add cut_stripped_cherry_log minecraft.mined:minecraft.stripped_cherry_log
+scoreboard objectives add cut_stripped_pale_oak_log minecraft.mined:minecraft.stripped_pale_oak_log
 
 #
 scoreboard objectives add cut_stripped_oak_wood minecraft.mined:minecraft.stripped_oak_wood
@@ -59,3 +62,4 @@ scoreboard objectives add cut_stripped_crimson_hyphae minecraft.mined:minecraft.
 scoreboard objectives add cut_stripped_warped_hyphae minecraft.mined:minecraft.stripped_warped_hyphae
 scoreboard objectives add cut_stripped_mangrove_wood minecraft.mined:minecraft.stripped_mangrove_wood
 scoreboard objectives add cut_stripped_cherry_wood minecraft.mined:minecraft.stripped_cherry_wood
+scoreboard objectives add cut_stripped_pale_oak_wood minecraft.mined:minecraft.stripped_pale_oak_wood

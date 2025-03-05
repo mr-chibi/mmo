@@ -9,6 +9,7 @@ execute if score @s cut_warped_stem matches 1.. run kill @e[type=item,nbt={Item:
 execute if score @s cut_crimson_stem matches 1.. run kill @e[type=item,nbt={Item:{id:"minecraft:crimson_stem"}},distance=0..15]
 execute if score @s cut_mangrove matches 1.. run kill @e[type=item,nbt={Item:{id:"minecraft:mangrove_log"}},distance=0..15]
 execute if score @s cut_cherry matches 1.. run kill @e[type=item,nbt={Item:{id:"minecraft:cherry_log"}},distance=0..15]
+execute if score @s cut_pale_oak_log matches 1.. run kill @e[type=item,nbt={Item:{id:"minecraft:pale_oak_log"}},distance=0..15]
 
 # Particle Player
 execute if score @s cut_oak matches 1.. run particle minecraft:flame ~ ~ ~ 0.25 0.75 0.25 0 100
@@ -21,6 +22,7 @@ execute if score @s cut_warped_stem matches 1.. run particle minecraft:flame ~ ~
 execute if score @s cut_crimson_stem matches 1.. run particle minecraft:flame ~ ~ ~ 0.25 0.75 0.25 0 100
 execute if score @s cut_mangrove matches 1.. run particle minecraft:flame ~ ~ ~ 0.25 0.75 0.25 0 100
 execute if score @s cut_cherry matches 1.. run particle minecraft:flame ~ ~ ~ 0.25 0.75 0.25 0 100
+execute if score @s cut_pale_oak_log matches 1.. run particle minecraft:flame ~ ~ ~ 0.25 0.75 0.25 0 100
 
 # Give Player Charcoal
 execute if score @s cut_oak matches 1.. run give @s minecraft:charcoal 1
@@ -33,3 +35,4 @@ execute if score @s cut_warped_stem matches 1.. run give @s minecraft:charcoal 1
 execute if score @s cut_crimson_stem matches 1.. run give @s minecraft:charcoal 1
 execute if score @s cut_mangrove matches 1.. run give @s minecraft:charcoal 1
 execute if score @s cut_cherry matches 1.. run give @s minecraft:charcoal 1
+execute if score @s cut_pale_oak_log matches 1.. run give @s minecraft:charcoal 1

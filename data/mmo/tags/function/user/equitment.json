@@ -13,11 +13,6 @@
 		// Player Holding Crops:
 		"mmo:user/equitment/farming/crops",
 
-		// Player Holding Crystal Tools:
-		"mmo:user/equitment/farming/crystal_hoe",
-		"mmo:user/equitment/mining/crystal_pickaxe",
-		"mmo:user/equitment/woodcutting/crystal_axe",
-
 		// Player Holding Spell Books:
 		"mmo:user/equitment/magic/spells",
 

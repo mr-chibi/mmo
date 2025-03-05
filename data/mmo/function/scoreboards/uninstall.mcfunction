@@ -100,6 +100,8 @@ scoreboard objectives remove mmo_durabliity
 ############################################################################################
 scoreboard objectives remove mob_health_min
 scoreboard objectives remove mob_health_max
+scoreboard objectives remove mob_armor_min
+scoreboard objectives remove mob_atk_dmg
 scoreboard objectives remove mmo_count_entities
 
 #

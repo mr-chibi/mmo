@@ -17,6 +17,7 @@ scoreboard objectives remove cut_crimson_stem
 scoreboard objectives remove cut_warped_stem
 scoreboard objectives remove cut_mangrove
 scoreboard objectives remove cut_cherry
+scoreboard objectives remove cut_pale_oak_log
 
 #
 scoreboard objectives remove cut_oak_wood
@@ -29,6 +30,7 @@ scoreboard objectives remove cut_crimson_hyphae
 scoreboard objectives remove cut_warped_hyphae
 scoreboard objectives remove cut_mangrove_wood
 scoreboard objectives remove cut_cherry_wood
+scoreboard objectives remove cut_pale_oak_wood
 
 #
 scoreboard objectives remove cut_stripped_oak_log
@@ -41,6 +43,7 @@ scoreboard objectives remove cut_stripped_crimson_stem
 scoreboard objectives remove cut_stripped_warped_stem
 scoreboard objectives remove cut_stripped_mangrove_log
 scoreboard objectives remove cut_stripped_cherry_log
+scoreboard objectives remove cut_stripped_pale_oak_log
 
 #
 scoreboard objectives remove cut_stripped_oak_wood
@@ -53,3 +56,4 @@ scoreboard objectives remove cut_stripped_crimson_hyphae
 scoreboard objectives remove cut_stripped_warped_hyphae
 scoreboard objectives remove cut_stripped_mangrove_wood
 scoreboard objectives remove cut_stripped_cherry_wood
+scoreboard objectives remove cut_stripped_pale_oak_wood
