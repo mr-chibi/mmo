@@ -2,6 +2,12 @@
 scoreboard objectives add stats_experience dummy
 
 ############################################################################################
+	# BOW EXP #
+############################################################################################
+scoreboard players set bow_hit stats_experience 15
+scoreboard players set bow_hit_tnt stats_experience 45
+
+############################################################################################
 	# Cooking EXP #
 ############################################################################################
 scoreboard players set cooked_beef stats_experience 10
@@ -52,7 +58,20 @@ scoreboard players set plant_beetroot stats_experience 7
 scoreboard players set plant_sugarcane stats_experience 7
 scoreboard players set plant_warts stats_experience 8
 scoreboard players set plant_torchflower stats_experience 8
+scoreboard players set plant_pitcher_pod stats_experience 8
 
+############################################################################################
+	# Farming Harvesting EXP #
+############################################################################################
+scoreboard players set compost_beetroot stats_experience 14
+scoreboard players set compost_pumpkin stats_experience 14
+scoreboard players set compost_carved_pumpkin stats_experience 14
+scoreboard players set compost_melon stats_experience 14
+scoreboard players set compost_melon_slice stats_experience 14
+scoreboard players set compost_cocoa_beans stats_experience 14
+scoreboard players set compost_wheat stats_experience 14
+scoreboard players set compost_torchflower_seeds stats_experience 16
+scoreboard players set compost_pitcher_plant stats_experience 16
 
 ############################################################################################
 	# Farming Harvesting EXP #

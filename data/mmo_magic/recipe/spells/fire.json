@@ -11,6 +11,6 @@
   "result": {
     "id": "minecraft:book",
     "count": 1,
-    "components": {"minecraft:item_name":"{\"text\": \"Fire Spell\", \"color\": \"red\"}", "minecraft:lore":["[{\"text\": \"Mr_Chibi'sMMO Magic\", \"color\": \"blue\", \"italic\":false}]"], "minecraft:custom_data":{"Tags":["mmo_magic", "fire_spell"]}, "minecraft:enchantment_glint_override":true}
+    "components": {"minecraft:item_name":{"text": "Fire Spell", "color": "red"},  "minecraft:lore":[{"text": "Mr_Chibi'sMMO Magic", "color": "blue", "italic":false}], "minecraft:custom_data":{"Tags":["mmo_magic", "fire_spell"]}, "minecraft:enchantment_glint_override":true}
   }
 }

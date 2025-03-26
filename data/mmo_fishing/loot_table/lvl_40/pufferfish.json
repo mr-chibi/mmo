@@ -12,7 +12,7 @@
                         {
                            "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:custom_data": {"minecraft:custom_name":"{\"text\": \"Common Pufferfish Loot\", \"color\": \"gold\"}"},
+                                "minecraft:custom_data": {"minecraft:custom_name":{"text": "Common Pufferfish Loot", "color": "gold"}},
                                 "minecraft:container": [{"item":{"count":1,"id":"minecraft:pufferfish","components":{"minecraft:custom_data":{"fishing_mmo":1}}},"slot":3}]
                             }
                         }
@@ -36,7 +36,7 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:custom_data": {"minecraft:custom_name":"{\"text\": \"Common Pufferfish Treasure Chest\", \"color\": \"gold\"}"},
+                                "minecraft:custom_data": {"minecraft:custom_name":{"text": "Common Pufferfish Treasure Chest", "color": "gold"}},
                                 "minecraft:container": [{"item":{"count":1,"id":"minecraft:pufferfish","components":{"minecraft:custom_data":{"fishing_mmo":1}}},"slot":3},{"item":{"count":2,"id":"minecraft:pufferfish"},"slot":25}]
                             }
                         }
@@ -60,7 +60,7 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:custom_data": {"minecraft:custom_name":"{\"text\": \"Uncommon Pufferfish Treasure Chest\", \"color\": \"gold\"}"},
+                                "minecraft:custom_data": {"minecraft:custom_name":{"text": "Uncommon Pufferfish Treasure Chest", "color": "gold"}},
                                 "minecraft:container": [{"item":{"count":1,"id":"minecraft:pufferfish","components":{"minecraft:custom_data":{"fishing_mmo":1}}},"slot":0},{"item":{"count":1,"id":"minecraft:seagrass"},"slot":3},{"item":{"count":1,"id":"minecraft:gold_ingot"},"slot":17},{"item":{"count":1,"id":"minecraft:tube_coral_block"},"slot":19},{"item":{"count":1,"id":"minecraft:seagrass"},"slot":20},{"item":{"count":1,"id":"minecraft:tube_coral_block"},"slot":22},{"item":{"count":1,"id":"minecraft:gold_ingot"},"slot":24},{"item":{"count":3,"id":"minecraft:pufferfish"},"slot":25}]
                             }
                         }

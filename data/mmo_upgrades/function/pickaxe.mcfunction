@@ -11,7 +11,7 @@ execute if entity @e[type=minecraft:item,nbt={Item:{id:"minecraft:amethyst_shard
 	# Store Tool Data: #
 ############################################################################################
 execute store result score @s test run data get entity @s Item.components.minecraft:tool.rules[0].speed
-execute store result score @s test2 run data get entity @s Item.components.minecraft:enchantments.levels.minecraft:unbreaking
+execute store result score @s test2 run data get entity @s Item.components.minecraft:enchantments.minecraft:unbreaking
 
 ############################################################################################
 	# Modify Tool Data: #
@@ -28,4 +28,4 @@ function mmo_upgrades:fetch/amethyst_shard
 	# Update Tool [Desc]: #
 ############################################################################################
 execute if score @s test matches 1.. run function mmo_upgrades:lore/mining_speed with entity @s Item.components.minecraft:tool.rules[0]
-execute if score @s test2 matches 1.. run function mmo_upgrades:enchantments/unbreaking with entity @s Item.components.minecraft:enchantments.levels
+execute if score @s test2 matches 1.. run function mmo_upgrades:enchantments/unbreaking with entity @s Item.components.minecraft:enchantments

@@ -33,7 +33,7 @@ function mmo:commands/settings/data
 ############################################################################################
 	# Player Commands: #
 ############################################################################################
-execute if score @s mmo_menu matches 1 run function mmo:commands/menu
+execute if score @s mmo_menu matches 1.. run function mmo:commands/menu
 execute if score @s mmo_help matches 1.. run function mmo:commands/help/init
 execute if score @s mmo_stats matches 1.. run function mmo:commands/stats/init
 execute if score @s mmo_skills matches 1.. run function mmo:commands/skill_tree/init

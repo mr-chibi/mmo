@@ -4,6 +4,10 @@ scoreboard objectives add attack_exp dummy
 scoreboard objectives add attack_lvlup dummy
 
 #
+scoreboard objectives add mmo_bow_target minecraft.used:minecraft.bow
+scoreboard objectives add mmo_bow_damage dummy
+
+#
 scoreboard objectives add attack_stat minecraft.custom:minecraft.damage_dealt
 
 #

@@ -1,0 +1,9 @@
+{
+	"values":
+	[
+		"mmo_farming:auto_plant/overworld/add_exp",
+		"mmo_farming:auto_plant/overworld/display_exp",
+		"mmo_farming:auto_plant/overworld/setblock",
+		"mmo_farming:auto_plant/overworld/clear"
+	]
+}

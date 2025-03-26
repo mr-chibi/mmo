@@ -5,6 +5,9 @@ scoreboard objectives add farming_lvlup dummy
 scoreboard objectives add farming_stat dummy
 
 #
+scoreboard players set 2x farming_exp 2
+
+#
 scoreboard objectives add instant_growth dummy
 scoreboard players set growth_limit instant_growth 200
 
@@ -28,6 +31,18 @@ scoreboard objectives add plant_beetroot minecraft.used:minecraft.beetroot_seeds
 scoreboard objectives add plant_sugarcane minecraft.used:minecraft.sugar_cane
 scoreboard objectives add plant_warts minecraft.used:minecraft.nether_wart
 scoreboard objectives add plant_torchflower minecraft.used:minecraft.torchflower_seeds
+scoreboard objectives add plant_pitcher_pod minecraft.used:minecraft.pitcher_pod
+
+#
+scoreboard objectives add compost_beetroot minecraft.used:minecraft.beetroot
+scoreboard objectives add compost_pumpkin minecraft.used:minecraft.pumpkin
+scoreboard objectives add compost_carved_pumpkin minecraft.used:minecraft.carved_pumpkin
+scoreboard objectives add compost_melon minecraft.used:minecraft.melon
+scoreboard objectives add compost_melon_slice minecraft.used:minecraft.melon_slice
+scoreboard objectives add compost_cocoa_beans minecraft.used:minecraft.cocoa_beans
+scoreboard objectives add compost_wheat minecraft.used:minecraft.wheat
+scoreboard objectives add compost_torchflower_seeds minecraft.used:minecraft.torchflower_seeds
+scoreboard objectives add compost_pitcher_plant minecraft.used:minecraft.pitcher_plant
 
 #
 scoreboard objectives add harvest_wheat minecraft.mined:minecraft.wheat

@@ -18,7 +18,7 @@
                 "minecraft:custom_data": {
                   "crystal_tool:": 1
                 },
-                "minecraft:custom_name": "{\"text\": \"Crystal Pickaxe\", \"color\": \"#C088E9\"}",
+                "minecraft:custom_name": {"text": "Crystal Pickaxe", "color": "#C088E9"},
                 "minecraft:enchantments": {
                   "minecraft:unbreaking": 3,
                   "minecraft:efficiency": 1
@@ -45,7 +45,7 @@
                 "minecraft:custom_data": {
                   "crystal_tool:": 1
                 },
-                "minecraft:custom_name": "{\"text\": \"Crystal Sword\", \"color\": \"#C088E9\"}",
+                "minecraft:custom_name": {"text": "Crystal Sword", "color": "#C088E9"},
                 "minecraft:enchantments": {
                   "minecraft:unbreaking": 3,
                   "minecraft:sharpness": 2
@@ -72,7 +72,7 @@
                 "minecraft:custom_data": {
                   "crystal_tool:": 1
                 },
-                "minecraft:custom_name": "{\"text\": \"Crystal Shovel\", \"color\": \"#C088E9\"}",
+                "minecraft:custom_name": {"text": "Crystal Shovel", "color": "#C088E9"},
                 "minecraft:enchantments": {
                   "minecraft:unbreaking": 3,
                   "minecraft:efficiency": 1
@@ -99,7 +99,7 @@
                 "minecraft:custom_data": {
                   "crystal_tool:": 1
                 },
-                "minecraft:custom_name": "{\"text\": \"Crystal Hoe\", \"color\": \"#C088E9\"}",
+                "minecraft:custom_name": {"text": "Crystal Hoe", "color": "#C088E9"},
                 "minecraft:enchantments": {
                   "minecraft:unbreaking": 3
                 },
@@ -125,7 +125,7 @@
                 "minecraft:custom_data": {
                   "crystal_tool:": 1
                 },
-                "minecraft:custom_name": "{\"text\": \"Crystal Axe\", \"color\": \"#C088E9\"}",
+                "minecraft:custom_name": {"text": "Crystal Axe", "color": "#C088E9"},
                 "minecraft:enchantments": {
                   "minecraft:unbreaking": 3,
                   "minecraft:efficiency": 1

@@ -2,6 +2,7 @@
 	# Skills Detect [Equitment]: #
 ############################################################################################
 execute if score hitpoints_skilltree mmo_gamerule matches 0 if entity @s[tag=mmo_holdingSword] run function mmo_hitpoints:core
+execute if score attack_skilltree mmo_gamerule matches 0 if entity @s[tag=mmo_holdingBow] run function mmo_attack:core
 execute if score attack_skilltree mmo_gamerule matches 0 if entity @s[tag=mmo_holdingSword] run function mmo_attack:core
 execute if score defense_skilltree mmo_gamerule matches 0 if entity @s[tag=mmo_holdingShield] run function mmo_defense:core
 execute if score excavation_skilltree mmo_gamerule matches 0 if entity @s[tag=mmo_holdingShovel] run function mmo_excavation:core
@@ -15,15 +16,7 @@ execute if score magic_skilltree mmo_gamerule matches 0 if entity @s[tag=mmo_mag
 ############################################################################################
 	# Skill Detect Farming [Tools/Crops]: #
 ############################################################################################
-execute if score farming_skilltree mmo_gamerule matches 0 if entity @s[tag=mmo_auto_plant_beetroot] run function mmo_farming:core
-execute if score farming_skilltree mmo_gamerule matches 0 if entity @s[tag=mmo_auto_plant_carrot] run function mmo_farming:core
-execute if score farming_skilltree mmo_gamerule matches 0 if entity @s[tag=mmo_auto_plant_melon] run function mmo_farming:core
-execute if score farming_skilltree mmo_gamerule matches 0 if entity @s[tag=mmo_auto_plant_nether_wart] run function mmo_farming:core
-execute if score farming_skilltree mmo_gamerule matches 0 if entity @s[tag=mmo_auto_plant_potato] run function mmo_farming:core
-execute if score farming_skilltree mmo_gamerule matches 0 if entity @s[tag=mmo_auto_plant_pumpkin] run function mmo_farming:core
-execute if score farming_skilltree mmo_gamerule matches 0 if entity @s[tag=mmo_auto_plant_sweet_berries] run function mmo_farming:core
-execute if score farming_skilltree mmo_gamerule matches 0 if entity @s[tag=mmo_auto_plant_torchflower] run function mmo_farming:core
-execute if score farming_skilltree mmo_gamerule matches 0 if entity @s[tag=mmo_auto_plant_wheat] run function mmo_farming:core
+execute if score farming_skilltree mmo_gamerule matches 0 if items entity @s weapon.mainhand #mmo:farming/crops run function mmo_farming:core
 
 ############################################################################################
 	# Skill Detect [Crystal Tools]: #

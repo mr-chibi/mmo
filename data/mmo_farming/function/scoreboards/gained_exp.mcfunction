@@ -10,7 +10,7 @@ scoreboard players operation @s plant_melon *= plant_melon stats_experience
 scoreboard players operation @s plant_beetroot *= plant_beetroot stats_experience
 scoreboard players operation @s plant_sugarcane *= plant_sugarcane stats_experience
 scoreboard players operation @s plant_warts *= plant_warts stats_experience
-
+scoreboard players operation @s plant_pitcher_pod *= plant_pitcher_pod stats_experience
 
 ############################################################################################
 	# Farming Verifying if user matched criteria:  #
@@ -37,6 +37,7 @@ scoreboard players operation @s farming_stat += @s plant_melon
 scoreboard players operation @s farming_stat += @s plant_beetroot
 scoreboard players operation @s farming_stat += @s plant_sugarcane
 scoreboard players operation @s farming_stat += @s plant_warts
+scoreboard players operation @s farming_stat += @s plant_pitcher_pod
 
 ############################################################################################
 	# Add Farm Items to Farming Stat # (Harvest)

@@ -1,6 +1,7 @@
 {
 	"values": [
 		"mmo:user/gui/sword",
+		"mmo:user/gui/bow",
 		"mmo:user/gui/axe",
 		"mmo:user/gui/pickaxe",
 		"mmo:user/gui/shovel",

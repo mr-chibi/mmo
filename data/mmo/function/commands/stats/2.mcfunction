@@ -17,4 +17,4 @@ tellraw @s [{"text": "Experience: "}, {"score":{"name": "@s", "objective":"hunte
 ############################################################################################
 	# Page Navigation #
 ############################################################################################
-tellraw @s [{"text":"\n[1]", "color":"white", "bold":false, "clickEvent":{"action":"run_command","value":"/trigger mmo_stats set 1"}}, {"text": " | ", "color": "#a9a9a9", "bold":false}, {"text":"[2]", "color":"yellow", "bold":true}, {"text": " | ", "color": "#a9a9a9", "bold":false}, {"text":"[3]", "color":"white", "bold":false, "clickEvent":{"action":"run_command","value":"/trigger mmo_stats set 3"}}]
+tellraw @s [{"text":"\n[1]", "color":"white", "bold":false, "click_event":{"action":"run_command","command":"/trigger mmo_stats set 1"}}, {"text": " | ", "color": "#a9a9a9", "bold":false}, {"text":"[2]", "color":"yellow", "bold":true}, {"text": " | ", "color": "#a9a9a9", "bold":false}, {"text":"[3]", "color":"white", "bold":false, "click_event":{"action":"run_command","command":"/trigger mmo_stats set 3"}}]

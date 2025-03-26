@@ -2,8 +2,8 @@
 function mmo_magic:builder_wand/tags/brush
 
 # Detect:
-execute unless data entity @s[scores={mmo_builders_wand=1..},tag=mmo_builders_wand] {Inventory:[{Slot:-106b}]} run tellraw @s [{"text": "Error, place a block in your offhand, then right click with the wand!", "color": "red"}]
-execute unless data entity @s[scores={mmo_builders_wand=1..},tag=mmo_builders_wand] {Inventory:[{Slot:-106b}]} run scoreboard players set @s mmo_builders_wand 0
+execute unless data entity @s[scores={mmo_builders_wand=1..},tag=mmo_builders_wand] equipment.offhand.id run tellraw @s [{"text": "Error, place a block in your offhand, then right click with the wand!", "color": "red"}]
+execute unless data entity @s[scores={mmo_builders_wand=1..},tag=mmo_builders_wand] equipment.offhand.id run scoreboard players set @s mmo_builders_wand 0
 
 # Right Click:
 execute if score @s[tag=mmo_builders_wand] mmo_builders_wand matches 1 run function mmo_magic:builder_wand/rclick_1

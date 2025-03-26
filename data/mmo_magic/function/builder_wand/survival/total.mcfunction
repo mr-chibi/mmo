@@ -1,5 +1,5 @@
 # Count Blocks if in "Player's" Inventory:
-$execute store result score @s wand_count run clear @s[nbt={Inventory:[{Slot:-106b, id:"$(block)"}]}] $(block) 0
+$execute store result score @s wand_count run clear @s[nbt={equipment:{offhand:{id:"$(block)"}}}] $(block) 0
 
 # Detect for Errors:
 execute if score @s wand_count >= @s wand_total run tag @s add create_block

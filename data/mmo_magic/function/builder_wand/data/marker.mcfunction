@@ -1,6 +1,6 @@
 # Create & Store Data:
 summon minecraft:marker ~ ~ ~ {data:{block:"minecraft:air", x:0, y:0, z:0, x2:0, y:0, z2:0, total:0},Tags:["builders_wand_entity"]}
-execute as @e[type=minecraft:marker,distance=..20,tag=builders_wand_entity] at @s run data modify entity @s data.block set from entity @p Inventory[{Slot:-106b}].id
+execute as @e[type=minecraft:marker,distance=..20,tag=builders_wand_entity] at @s run data modify entity @s data.block set from entity @p equipment.offhand.id
 execute as @e[type=minecraft:marker,distance=..20,tag=builders_wand_entity] at @s store result entity @s data.x int 1 run scoreboard players get @p wand_x
 execute as @e[type=minecraft:marker,distance=..20,tag=builders_wand_entity] at @s store result entity @s data.y int 1 run scoreboard players get @p wand_y
 execute as @e[type=minecraft:marker,distance=..20,tag=builders_wand_entity] at @s store result entity @s data.z int 1 run scoreboard players get @p wand_z

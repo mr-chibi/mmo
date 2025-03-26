@@ -1,11 +1,30 @@
 ############################################################################################
+	# Farming Loot #
+############################################################################################
+execute if score farming_loot mmo_gamerule matches 0 run function mmo_farming:worldgen/init
+
+############################################################################################
 	# Farming Perks #
 ############################################################################################
-execute if block ~ ~ ~ minecraft:farmland unless block ~ ~1 ~ #mmo_farming:overworld_crops run function #mmo_farming:auto_planting
-execute if block ~ ~ ~ minecraft:soul_sand unless block ~ ~1 ~ #mmo_farming:nether_crops run function #mmo_farming:auto_planting
+execute if block ~ ~ ~ minecraft:farmland unless block ~ ~1 ~ #mmo_farming:overworld_crops run function #mmo_farming:auto_plant_overworld with entity @s SelectedItem
+execute if block ~ ~ ~ minecraft:soul_sand unless block ~ ~1 ~ #mmo_farming:nether_crops run function #mmo_farming:auto_plant_nether with entity @s SelectedItem
 
-#
+############################################################################################
+	# Crystal Tool [Perk]: *
+############################################################################################
 execute if entity @s[tag=mmo_crystalHoe] run function mmo_farming:perks/farming_growth
+
+############################################################################################
+	# Harvest Randomizer [Crops gained] *
+############################################################################################
+function mmo_farming:random_harvest/init
+
+############################################################################################
+	# Composter Gained EXP #
+############################################################################################
+execute anchored eyes positioned ^ ^ ^1 align xyz if block ~ ~ ~ minecraft:composter run function mmo_farming:scoreboards/composter
+execute anchored eyes positioned ^ ^ ^2 align xyz if block ~ ~ ~ minecraft:composter run function mmo_farming:scoreboards/composter
+execute anchored eyes positioned ^ ^ ^3 align xyz if block ~ ~ ~ minecraft:composter run function mmo_farming:scoreboards/composter
 
 ############################################################################################
 	# Farming Gained EXP #

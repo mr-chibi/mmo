@@ -11,6 +11,6 @@
   },
   "result": {
     "id": "minecraft:compass",
-    "components": {"minecraft:custom_name":"{\"text\": \"Item Magnet\", \"color\": \"#ffffff\", \"italic\": false}","minecraft:lore":["[{\"text\": \"Teleports items to player in 10 block distance.\", \"color\": \"#cecece\", \"italic\":false}]", "[{\"text\": \"Mr_Chibi'sMMO Datapack\", \"color\": \"#A496F4\", \"italic\":false}]"],"minecraft:custom_data":{"Tags":["magnet"]}}
+    "components": {"minecraft:custom_name":{"text": "Item Magnet", "color": "#ffffff", "italic": false},"minecraft:lore":[{"text": "Teleports items to player in 10 block distance.", "color": "#cecece", "italic":false}, {"text": "Mr_Chibi'sMMO Datapack", "color": "#A496F4", "italic":false}],"minecraft:custom_data":{"Tags":["magnet"]}}
   }
 }

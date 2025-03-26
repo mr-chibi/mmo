@@ -12,7 +12,7 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:custom_data": {"minecraft:custom_name":"{\"text\": \"Common Salmon Loot\", \"color\": \"gold\"}"},
+                                "minecraft:custom_data": {"minecraft:custom_name":{"text": "Common Salmon Loot", "color": "gold"}},
                                 "minecraft:container": [{"item":{"count":1,"id":"minecraft:salmon","components":{"minecraft:custom_data":{"fishing_mmo":1}}},"slot":3}]
                             }
                         }
@@ -36,7 +36,7 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:custom_data": {"minecraft:custom_name":"{\"text\": \"Common Salmon Treasure Chest\", \"color\": \"gold\"}"},
+                                "minecraft:custom_data": {"minecraft:custom_name":{"text": "Common Salmon Treasure Chest", "color": "gold"}},
                                 "minecraft:container": [{"item":{"count":1,"id":"minecraft:salmon","components":{"minecraft:custom_data":{"fishing_mmo":1}}},"slot":3},{"item":{"count":2,"id":"minecraft:salmon"},"slot":25}]
                             }
                         }
@@ -60,7 +60,7 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:custom_data": {"minecraft:custom_name":"{\"text\": \"Uncommon Salmon Treasure Chest\", \"color\": \"gold\"}"},
+                                "minecraft:custom_data": {"minecraft:custom_name":{"text": "Uncommon Salmon Treasure Chest", "color": "gold"}},
                                 "minecraft:container": [{"item":{"count":1,"id":"minecraft:salmon","components":{"minecraft:custom_data":{"fishing_mmo":1}}},"slot":13},{"item":{"count":1,"id":"minecraft:sea_pickle"},"slot":3},{"item":{"count":1,"id":"minecraft:bubble_coral"},"slot":17},{"item":{"count":1,"id":"minecraft:seagrass"},"slot":19},{"item":{"count":1,"id":"minecraft:sea_pickle"},"slot":20},{"item":{"count":1,"id":"minecraft:seagrass"},"slot":22},{"item":{"count":1,"id":"minecraft:bubble_coral"},"slot":24},{"item":{"count":3,"id":"minecraft:salmon"},"slot":25}]
                             }
                         }
@@ -84,7 +84,7 @@
                         {
                            "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:custom_data": {"minecraft:custom_name":"{\"text\": \"Rare Salmon Treasure Chest\", \"color\": \"gold\"}"},
+                                "minecraft:custom_data": {"minecraft:custom_name":{"text": "Rare Salmon Treasure Chest", "color": "gold"}},
                                 "minecraft:container": [{"item":{"count":1,"id":"minecraft:rotten_flesh"},"slot":1},{"item":{"count":1,"id":"minecraft:cobweb"},"slot":3},{"item":{"count":1,"id":"minecraft:rotten_flesh"},"slot":13},{"item":{"count":1,"id":"minecraft:rotten_flesh"},"slot":15},{"item":{"count":1,"id":"minecraft:cobweb"},"slot":18},{"item":{"count":1,"id":"minecraft:rotten_flesh"},"slot":19},{"item":{"count":1,"id":"minecraft:cobweb"},"slot":24}]
                             }
                         }

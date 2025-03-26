@@ -1,0 +1,6 @@
+{
+	"values": [
+		"mmo_magic:worldgen/trees/oak/init",
+		"mmo_magic:worldgen/trees/birch/init"
+	]
+}

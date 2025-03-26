@@ -17,8 +17,8 @@ execute if score @s mmo_help matches 2 run function mmo:commands/help/2
 ############################################################################################
 	# Page Navigation #
 ############################################################################################
-tellraw @s[scores={mmo_help=1}] [{"text":"\n[1]", "color":"yellow", "bold":true, "clickEvent":{"action":"run_command","value":"/trigger mmo_help set 1"}}, {"text": " | ", "color": "#a9a9a9", "bold":false}, {"text":"[2]", "color":"white", "bold":false, "clickEvent":{"action":"run_command","value":"/trigger mmo_help set 2"}}]
-tellraw @s[scores={mmo_help=2}] [{"text":"\n[1]", "color":"white", "bold":false, "clickEvent":{"action":"run_command","value":"/trigger mmo_help set 1"}}, {"text": " | ", "color": "#a9a9a9", "bold":false}, {"text":"[2]", "color":"yellow", "bold":true, "clickEvent":{"action":"run_command","value":"/trigger mmo_help set 2"}}]
+tellraw @s[scores={mmo_help=1}] [{"text":"\n[1]", "color":"yellow", "bold":true, "click_event":{"action":"run_command","command":"/trigger mmo_help set 1"}}, {"text": " | ", "color": "#a9a9a9", "bold":false}, {"text":"[2]", "color":"white", "bold":false, "click_event":{"action":"run_command","command":"/trigger mmo_help set 2"}}]
+tellraw @s[scores={mmo_help=2}] [{"text":"\n[1]", "color":"white", "bold":false, "click_event":{"action":"run_command","command":"/trigger mmo_help set 1"}}, {"text": " | ", "color": "#a9a9a9", "bold":false}, {"text":"[2]", "color":"yellow", "bold":true, "click_event":{"action":"run_command","command":"/trigger mmo_help set 2"}}]
 
 ############################################################################################
 	# Reset "Menu" Scoreboard: #

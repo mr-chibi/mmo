@@ -12,7 +12,7 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:custom_data": {"minecraft:custom_name":"{\"text\": \"Common Salmon Loot\", \"color\": \"gold\"}"},
+                                "minecraft:custom_data": {"minecraft:custom_name":{"text": "Common Salmon Loot", "color": "gold"}},
                                 "minecraft:container": [{"item":{"count":1,"id":"minecraft:salmon","components":{"minecraft:custom_data":{"fishing_mmo":1}}},"slot":3}]
                             }
                         }
@@ -36,7 +36,7 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:custom_data": {"minecraft:custom_name":"{\"text\": \"Common Salmon Treasure Chest\", \"color\": \"gold\"}"},
+                                "minecraft:custom_data": {"minecraft:custom_name":{"text": "Common Salmon Treasure Chest", "color": "gold"}},
                                 "minecraft:container": [{"item":{"count":1,"id":"minecraft:salmon","components":{"minecraft:custom_data":{"fishing_mmo":1}}},"slot":3},{"item":{"count":2,"id":"minecraft:salmon"},"slot":25}]
                             }
                         }

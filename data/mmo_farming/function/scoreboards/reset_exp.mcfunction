@@ -1,14 +1,4 @@
 ############################################################################################
-	# Reset Tags #
-############################################################################################
-tag @s[tag=mmo_wheat_harvest,scores={harvest_wheat=1..}] remove mmo_wheat_harvest
-tag @s[tag=mmo_carrot_harvest,scores={harvest_carrot=1..}] remove mmo_carrot_harvest
-tag @s[tag=mmo_potatoe_harvest,scores={harvest_potatoe=1..}] remove mmo_potatoe_harvest
-tag @s[tag=mmo_berry_harvest,scores={harvest_berries=1..}] remove mmo_berry_harvest
-tag @s[tag=mmo_beetroot_harvest,scores={harvest_beetroot=1..}] remove mmo_beetroot_harvest
-tag @s[tag=mmo_wart_harvest,scores={harvest_warts=1..}] remove mmo_wart_harvest
-
-############################################################################################
 	# Reset EXP #
 ############################################################################################
 scoreboard players set @s[scores={farming_stat=1..}] farming_stat 0
@@ -21,6 +11,18 @@ scoreboard players set @s[scores={plant_melon=1..}] plant_melon 0
 scoreboard players set @s[scores={plant_beetroot=1..}] plant_beetroot 0
 scoreboard players set @s[scores={plant_sugarcane=1..}] plant_sugarcane 0
 scoreboard players set @s[scores={plant_warts=1..}] plant_warts 0
+scoreboard players set @s[scores={plant_pitcher_pod=1..}] plant_pitcher_pod 0
+
+#
+scoreboard players set @s[scores={compost_beetroot=1..}] compost_beetroot 0
+scoreboard players set @s[scores={compost_pumpkin=1..}] compost_pumpkin 0
+scoreboard players set @s[scores={compost_carved_pumpkin=1..}] compost_carved_pumpkin 0
+scoreboard players set @s[scores={compost_melon=1..}] compost_melon 0
+scoreboard players set @s[scores={compost_melon_slice=1..}] compost_melon_slice 0
+scoreboard players set @s[scores={compost_cocoa_beans=1..}] compost_cocoa_beans 0
+scoreboard players set @s[scores={compost_wheat=1..}] compost_wheat 0
+scoreboard players set @s[scores={compost_torchflower_seeds=1..}] compost_torchflower_seeds 0
+scoreboard players set @s[scores={compost_pitcher_plant=1..}] compost_pitcher_plant 0
 
 #
 scoreboard players set @s[scores={harvest_wheat=1..}] harvest_wheat 0

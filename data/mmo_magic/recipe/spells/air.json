@@ -11,6 +11,6 @@
   "result": {
     "id": "minecraft:book",
     "count": 1,
-    "components": {"minecraft:item_name":"{\"text\": \"Air Spell\", \"color\": \"white\"}", "minecraft:lore":["[{\"text\": \"Mr_Chibi'sMMO Magic\", \"color\": \"blue\", \"italic\":false}]"], "minecraft:custom_data":{"Tags":["mmo_magic", "air_spell"]}, "minecraft:enchantment_glint_override":true}
+    "components": {"minecraft:item_name":{"text": "Air Spell", "color": "white"},  "minecraft:lore":[{"text": "Mr_Chibi'sMMO Magic", "color": "blue", "italic":false}], "minecraft:custom_data":{"Tags":["mmo_magic", "air_spell"]}, "minecraft:enchantment_glint_override":true}
   }
 }

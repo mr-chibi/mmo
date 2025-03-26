@@ -28,6 +28,10 @@ execute if score @s sound_settings matches 0 run function mmo:user/sounds
 ############################################################################################
 	# [WorldGeneration] & [Skills] + [Interactions]: #
 ###########################################################################################
-execute if score worldgen_gamerule mmo_gamerule matches 0 run function mmo:worldgen
 execute if score upgrades_gamerule mmo_gamerule matches 0 run function mmo_upgrades:core with storage minecraft:mmo_tools items
 execute if score skills_gamerule mmo_gamerule matches 0 run function mmo:skills_and_interactions
+
+############################################################################################
+	# RNG Reset: #
+############################################################################################
+scoreboard players set @s[scores={mmo_rng=1..}] mmo_rng 0

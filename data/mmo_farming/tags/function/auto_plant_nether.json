@@ -1,0 +1,9 @@
+{
+	"values":
+	[
+		"mmo_farming:auto_plant/nether/add_exp",
+		"mmo_farming:auto_plant/nether/display_exp",
+		"mmo_farming:auto_plant/nether/setblock",
+		"mmo_farming:auto_plant/nether/clear"
+	]
+}

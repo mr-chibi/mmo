@@ -9,6 +9,7 @@
 		"mmo:user/equitment/shield",
 		"mmo:user/equitment/shovel",
 		"mmo:user/equitment/sword",
+		"mmo:user/equitment/bow",
 
 		// Player Holding Crops:
 		"mmo:user/equitment/farming/crops",
