@@ -1,7 +1,7 @@
 ############################################################################################
 	# Gained EXP: #
 ############################################################################################
-function mmo_attack:bow/scoreboards/gained_exp
+execute if entity @s[tag=mmo_holdingBow] run function mmo_attack:bow/scoreboards/gained_exp
 
 ############################################################################################
 	# Custom Arrow Types: #
