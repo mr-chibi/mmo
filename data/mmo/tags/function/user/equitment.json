@@ -12,7 +12,8 @@
 		"mmo:user/equitment/bow",
 
 		// Player Holding Crops:
-		"mmo:user/equitment/farming/crops",
+		"mmo:user/equitment/farming/add_crops",
+		"mmo:user/equitment/farming/remove_crops",
 
 		// Player Holding Spell Books:
 		"mmo:user/equitment/magic/spells",

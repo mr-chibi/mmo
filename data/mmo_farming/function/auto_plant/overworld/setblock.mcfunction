@@ -1,9 +1,12 @@
-# Plant "Crop" if player has "Item" in their "Mainhand":
-$execute if items entity @s[tag=mmo_auto_plant_beetroot,nbt={SelectedItem:{id:"$(id)"}}] weapon.mainhand #mmo:farming/crops if block ~ ~ ~ minecraft:farmland unless block ~ ~1 ~ minecraft:beetroots[age=0] run setblock ~ ~1 ~ minecraft:beetroots[age=0]
-$execute if items entity @s[tag=mmo_auto_plant_carrot,nbt={SelectedItem:{id:"$(id)"}}] weapon.mainhand #mmo:farming/crops if block ~ ~ ~ minecraft:farmland unless block ~ ~1 ~ minecraft:carrots[age=0] run setblock ~ ~1 ~ minecraft:carrots[age=0]
-$execute if items entity @s[tag=mmo_auto_plant_melon,nbt={SelectedItem:{id:"$(id)"}}] weapon.mainhand #mmo:farming/crops if block ~ ~ ~ minecraft:farmland unless block ~ ~1 ~ minecraft:melon_stem[age=0] run setblock ~ ~1 ~ minecraft:melon_stem[age=0]
-$execute if items entity @s[tag=mmo_auto_plant_potato,nbt={SelectedItem:{id:"$(id)"}}] weapon.mainhand #mmo:farming/crops if block ~ ~ ~ minecraft:farmland unless block ~ ~1 ~ minecraft:potatoes[age=0] run setblock ~ ~1 ~ minecraft:potatoes[age=0]
-$execute if items entity @s[tag=mmo_auto_plant_pumpkin,nbt={SelectedItem:{id:"$(id)"}}] weapon.mainhand #mmo:farming/crops if block ~ ~ ~ minecraft:farmland unless block ~ ~1 ~ minecraft:pumpkin_stem[age=0] run setblock ~ ~1 ~ minecraft:pumpkin_stem[age=0]
-$execute if items entity @s[tag=mmo_auto_plant_sweet_berries,nbt={SelectedItem:{id:"$(id)"}}] weapon.mainhand #mmo:farming/crops if block ~ ~ ~ minecraft:farmland unless block ~ ~1 ~ minecraft:sweet_berry_bush[age=0] run setblock ~ ~1 ~ minecraft:sweet_berry_bush[age=0]
-$execute if items entity @s[tag=mmo_auto_plant_torchflower,nbt={SelectedItem:{id:"$(id)"}}] weapon.mainhand #mmo:farming/crops if block ~ ~ ~ minecraft:farmland unless block ~ ~1 ~ minecraft:torchflower_crop[age=0] run setblock ~ ~1 ~ minecraft:torchflower_crop[age=0]
-$execute if items entity @s[tag=mmo_auto_plant_wheat,nbt={SelectedItem:{id:"$(id)"}}] weapon.mainhand #mmo:farming/crops if block ~ ~ ~ minecraft:farmland unless block ~ ~1 ~ minecraft:wheat[age=0] run setblock ~ ~1 ~ minecraft:wheat[age=0]
+# Seeds:
+execute if entity @s[tag=beetroot_seeds] unless block ~ ~1 ~ minecraft:beetroots[age=0] run setblock ~ ~1 ~ minecraft:beetroots[age=0]
+execute if entity @s[tag=melon_seeds] unless block ~ ~1 ~ minecraft:melon_stem[age=0] run setblock ~ ~1 ~ minecraft:melon_stem[age=0]
+execute if entity @s[tag=pumpkin_seeds] unless block ~ ~1 ~ minecraft:pumpkin_stem[age=0] run setblock ~ ~1 ~ minecraft:pumpkin_stem[age=0]
+execute if entity @s[tag=wheat_seeds] unless block ~ ~1 ~ minecraft:wheat[age=0] run setblock ~ ~1 ~ minecraft:wheat[age=0]
+execute if entity @s[tag=torchflower_seeds] unless block ~ ~1 ~ minecraft:torchflower_crop[age=0] run setblock ~ ~1 ~ minecraft:torchflower_crop[age=0]
+
+# Crops:
+execute if entity @s[tag=carrot] unless block ~ ~1 ~ minecraft:carrots[age=0] run setblock ~ ~1 ~ minecraft:carrots[age=0]
+execute if entity @s[tag=potato] unless block ~ ~1 ~ minecraft:potatoes[age=0] run setblock ~ ~1 ~ minecraft:potatoes[age=0]
+execute if entity @s[tag=sweet_berries] unless block ~ ~1 ~ minecraft:sweet_berry_bush[age=0] run setblock ~ ~1 ~ minecraft:sweet_berry_bush[age=0]
+execute if entity @s[tag=pitcher_crop] unless block ~ ~1 ~ minecraft:pitcher_crop[age=0] run setblock ~ ~1 ~ minecraft:pitcher_crop[age=0]

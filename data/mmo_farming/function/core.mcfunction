@@ -6,8 +6,8 @@ execute if score farming_loot mmo_gamerule matches 0 run function mmo_farming:wo
 ############################################################################################
 	# Farming Perks #
 ############################################################################################
-execute if block ~ ~ ~ minecraft:farmland unless block ~ ~1 ~ #mmo_farming:overworld_crops run function #mmo_farming:auto_plant_overworld with entity @s SelectedItem
-execute if block ~ ~ ~ minecraft:soul_sand unless block ~ ~1 ~ #mmo_farming:nether_crops run function #mmo_farming:auto_plant_nether with entity @s SelectedItem
+execute if block ~ ~ ~ minecraft:farmland unless block ~ ~1 ~ #mmo_farming:overworld_crops if block ~ ~ ~ minecraft:farmland run function #mmo_farming:auto_plant_overworld with entity @s SelectedItem
+execute if block ~ ~ ~ minecraft:soul_sand unless block ~ ~1 ~ #mmo_farming:nether_crops if block ~ ~ ~ minecraft:soul_sand run function #mmo_farming:auto_plant_nether with entity @s SelectedItem
 
 ############################################################################################
 	# Crystal Tool [Perk]: *

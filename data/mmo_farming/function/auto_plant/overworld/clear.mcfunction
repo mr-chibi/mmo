@@ -1,9 +1,12 @@
-#
-$execute if items entity @s[tag=mmo_auto_plant_beetroot,nbt={SelectedItem:{id:"$(id)"}}] weapon.mainhand #mmo:farming/crops if block ~ ~ ~ minecraft:farmland if block ~ ~1 ~ minecraft:beetroots[age=0] run clear @s $(id) 1
-$execute if items entity @s[tag=mmo_auto_plant_carrot,nbt={SelectedItem:{id:"$(id)"}}] weapon.mainhand #mmo:farming/crops if block ~ ~ ~ minecraft:farmland if block ~ ~1 ~ minecraft:carrots[age=0] run clear @s $(id) 1
-$execute if items entity @s[tag=mmo_auto_plant_melon,nbt={SelectedItem:{id:"$(id)"}}] weapon.mainhand #mmo:farming/crops if block ~ ~ ~ minecraft:farmland if block ~ ~1 ~ minecraft:melon_stem[age=0] run clear @s $(id) 1
-$execute if items entity @s[tag=mmo_auto_plant_potato,nbt={SelectedItem:{id:"$(id)"}}] weapon.mainhand #mmo:farming/crops if block ~ ~ ~ minecraft:farmland if block ~ ~1 ~ minecraft:potatoes[age=0] run clear @s $(id) 1
-$execute if items entity @s[tag=mmo_auto_plant_pumpkin,nbt={SelectedItem:{id:"$(id)"}}] weapon.mainhand #mmo:farming/crops if block ~ ~ ~ minecraft:farmland if block ~ ~1 ~ minecraft:pumpkin_stem[age=0] run clear @s $(id) 1
-$execute if items entity @s[tag=mmo_auto_plant_sweet_berries,nbt={SelectedItem:{id:"$(id)"}}] weapon.mainhand #mmo:farming/crops if block ~ ~ ~ minecraft:farmland if block ~ ~1 ~ minecraft:sweet_berry_bush[age=0] run clear @s $(id) 1
-$execute if items entity @s[tag=mmo_auto_plant_torchflower,nbt={SelectedItem:{id:"$(id)"}}] weapon.mainhand #mmo:farming/crops if block ~ ~ ~ minecraft:farmland if block ~ ~1 ~ minecraft:torchflower_crop[age=0] run clear @s $(id) 1
-$execute if items entity @s[tag=mmo_auto_plant_wheat,nbt={SelectedItem:{id:"$(id)"}}] weapon.mainhand #mmo:farming/crops if block ~ ~ ~ minecraft:farmland if block ~ ~1 ~ minecraft:wheat[age=0] run clear @s $(id) 1
+# Seeds:
+$execute if block ~ ~1 ~ minecraft:beetroots[age=0] run clear @s[tag=beetroot_seeds] $(id) 1
+$execute if block ~ ~1 ~ minecraft:melon_stem[age=0] run clear @s[tag=melon_seeds] $(id) 1
+$execute if block ~ ~1 ~ minecraft:pumpkin_stem[age=0] run clear @s[tag=pumpkin_seeds] $(id) 1
+$execute if block ~ ~1 ~ minecraft:wheat[age=0] run clear @s[tag=wheat_seeds] $(id) 1
+$execute if block ~ ~1 ~ minecraft:torchflower_crop[age=0] run clear @s[tag=torchflower_seeds] $(id) 1
+
+# Crops:
+$execute if block ~ ~1 ~ minecraft:carrots[age=0] run clear @s[tag=carrot] $(id) 1
+$execute if block ~ ~1 ~ minecraft:potatoes[age=0] run clear @s[tag=potato] $(id) 1
+$execute if block ~ ~1 ~ minecraft:sweet_berry_bush[age=0] run clear @s[tag=sweet_berries] $(id) 1
+$execute if block ~ ~1 ~ minecraft:pitcher_crop[age=0] run clear @s[tag=pitcher_crop] $(id) 1
