@@ -19,6 +19,10 @@ execute if entity @s[tag=mmo_holdingShovel] if score excavation_skilltree mmo_ga
 execute if entity @s[tag=mmo_holdingFishingRod] if score fishing_skilltree mmo_gamerule matches 0 run function mmo_fishing:core
 execute if entity @s[tag=mmo_holdingPickaxe] if score mining_skilltree mmo_gamerule matches 0 run function mmo_mining:core
 execute if entity @s[tag=mmo_holdingAxe] if score woodcutting_skilltree mmo_gamerule matches 0 run function mmo_woodcutting:core
+
+############################################################################################
+	# Skill Detect Magic [Tools]: #
+############################################################################################
 execute if entity @s[tag=mmo_magic_brush] if score magic_skilltree mmo_gamerule matches 0 run function mmo_magic:core
 
 ############################################################################################
