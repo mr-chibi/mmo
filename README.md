@@ -42,6 +42,9 @@ Like to follow all my releases here's a link below!
 > ### Player's I'd like to thank for providing bug reports
 To thank thoses along way making this datapack where it is today!
 
+- Patch for, **Disabling agility perk results in no speed effect from beacon** <br>
+Thank you, [iJaKobe](https://github.com/iJaKobe) for the bug report.
+
 - Patched for, **infinite experience**! <br>
 Thank you, [moleculer](https://www.planetminecraft.com/member/moleculer/) for providing the bug report.
 
