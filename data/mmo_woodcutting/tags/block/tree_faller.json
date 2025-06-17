@@ -1,6 +1,5 @@
 {
 	"values": [
-		// Logs:
 		"minecraft:oak_log",
 		"minecraft:spruce_log",
 		"minecraft:birch_log",
@@ -13,7 +12,6 @@
 		"minecraft:cherry_log",
 		"minecraft:pale_oak_log",
 
-		// Stripped Wood:
 		"minecraft:oak_wood",
 		"minecraft:spruce_wood",
 		"minecraft:birch_wood",
@@ -26,7 +24,6 @@
 		"minecraft:cherry_wood",
 		"minecraft:pale_oak_wood",
 
-		// Stripped Logs:
 		"minecraft:stripped_oak_log",
 		"minecraft:stripped_spruce_log",
 		"minecraft:stripped_birch_log",
@@ -39,7 +36,6 @@
 		"minecraft:stripped_cherry_log",
 		"minecraft:stripped_pale_oak_log",
 
-		// Stripped Wood:
 		"minecraft:stripped_oak_wood",
 		"minecraft:stripped_spruce_wood",
 		"minecraft:stripped_birch_wood",

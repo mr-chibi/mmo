@@ -12,7 +12,6 @@
 		"minecraft:smooth_basalt",
 		"minecraft:amethyst_block",
 
-		//
 		"minecraft:coal_ore",
 		"minecraft:iron_ore",
 		"minecraft:gold_ore",
@@ -22,7 +21,6 @@
 		"minecraft:redstone_ore",
 		"minecraft:diamond_ore",
 
-		//
 		"minecraft:deepslate_coal_ore",
 		"minecraft:deepslate_iron_ore",
 		"minecraft:deepslate_gold_ore",
@@ -32,7 +30,6 @@
 		"minecraft:deepslate_redstone_ore",
 		"minecraft:deepslate_diamond_ore",
 
-		//
 		"minecraft:terracotta",
 		"minecraft:white_terracotta",
 		"minecraft:orange_terracotta",
@@ -51,17 +48,14 @@
 		"minecraft:red_terracotta",
 		"minecraft:black_terracotta",
 
-		//
 		"minecraft:sandstone",
 		"minecraft:red_sandstone",
 
-		//
 		"minecraft:netherrack",
 		"minecraft:nether_quartz_ore",
 		"minecraft:nether_bricks",
 		"minecraft:magma_block",
 
-		//
 		"minecraft:crimson_nylium",
 		"minecraft:warped_nylium",
 		"minecraft:nether_gold_ore",
@@ -69,7 +63,6 @@
 		"minecraft:gilded_blackstone",
 		"minecraft:ancient_debris",
 
-		//
 		"minecraft:end_stone"
 	]
 }

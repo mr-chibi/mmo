@@ -1,8 +1,6 @@
 {
 	"replace": false,
 	"values": [
-		
-		// Plants:
 		"minecraft:beetroot",
 		"minecraft:melon",
 		"minecraft:melon_slice",
@@ -13,20 +11,17 @@
 		"minecraft:cocoa_beans",
 		"minecraft:pitcher_plant",
 
-		// Seeds:
 		"minecraft:beetroot_seeds",
 		"minecraft:melon_seeds",
 		"minecraft:pumpkin_seeds",
 		"minecraft:wheat_seeds",
 		"minecraft:torchflower_seeds",
 
-		// Crops
 		"minecraft:carrot",
 		"minecraft:potato",
 		"minecraft:sweet_berries",
 		"minecraft:pitcher_pod",
 
-		// Nether:
 		"minecraft:nether_wart"
 	]
 }

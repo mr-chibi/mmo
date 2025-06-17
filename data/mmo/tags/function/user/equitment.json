@@ -1,6 +1,5 @@
 {
 	"values": [	
-		// Player Holding Tools:
 		"mmo:user/equitment/axe",
 		"mmo:user/equitment/brush",
 		"mmo:user/equitment/fishing_rod",
@@ -11,14 +10,11 @@
 		"mmo:user/equitment/sword",
 		"mmo:user/equitment/bow",
 
-		// Player Holding Crops:
 		"mmo:user/equitment/farming/add_crops",
 		"mmo:user/equitment/farming/remove_crops",
 
-		// Player Holding Spell Books:
 		"mmo:user/equitment/magic/spells",
 
-		// Player Holding Item:
 		"mmo:user/equitment/items/magnet"
 	]
 }

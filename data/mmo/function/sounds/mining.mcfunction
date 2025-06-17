@@ -20,6 +20,12 @@ playsound minecraft:block.amethyst_block.fall master @s[scores={mined_redstone=1
 playsound minecraft:block.amethyst_block.fall master @s[scores={mined_diamond=1..}] ~ ~ ~ 1 1.25
 
 ############################################################################################
+	# Playsound, when player mines.. (Nether Ores) #
+############################################################################################
+playsound minecraft:block.amethyst_block.fall master @s[scores={mined_neth_gold=1..}] ~ ~ ~ 1 1.25
+playsound minecraft:block.amethyst_block.fall master @s[scores={mined_gilded=1..}] ~ ~ ~ 1 1.25
+
+############################################################################################
 	# Playsound, when player mines.. (Deepslate Ores) #
 ############################################################################################
 playsound minecraft:block.amethyst_block.fall master @s[scores={mined_deep_coal=1..}] ~ ~ ~ 1 1.25

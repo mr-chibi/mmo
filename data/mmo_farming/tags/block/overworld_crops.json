@@ -1,14 +1,12 @@
 {
 	"values":
 	[
-		// Seeds:
 		"minecraft:beetroots",
 		"minecraft:melon_stem",
 		"minecraft:pumpkin_stem",
 		"minecraft:wheat",
 		"minecraft:torchflower_crop",
 
-		// Crops:
 		"minecraft:carrots",
 		"minecraft:potatoes",
 		"minecraft:sweet_berry_bush",
