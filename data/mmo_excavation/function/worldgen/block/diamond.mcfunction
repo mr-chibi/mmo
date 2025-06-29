@@ -1,2 +1,2 @@
 summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:diamond", Count:1b}}
-tellraw @s [{"text": "When shoveling you randomly found, ", "color": "#c5c5c5"}, {"text": "\"diamond\"", "color": "#BFB4FF"}, {"text": "!", "color": "#c5c5c5"}]
+tellraw @s [{"text": "You randomly found, ", "color": "#c5c5c5"}, {"text": "\"diamond\"", "color": "#BFB4FF"}, {"text": "!", "color": "#c5c5c5"}]
